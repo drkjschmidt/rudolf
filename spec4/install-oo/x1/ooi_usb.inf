@@ -1,0 +1,136 @@
+; Ocean Optics INF file for the USB2000
+;
+; Updated 1/16/2008
+;	Added the Maya 2000 (PID 0x102C) and Maya Pro 2000 (PID 0x102A) spectrometers
+;
+; Updated 2/26/02
+;	Created Class Ocean Optics Devices for all USB and PCI devices
+;
+; Updated 6/22/00
+;	replaced "$WINDOWS NT$" signature with "$CHICAGO$" for support of
+;		Japanese Windows 2000
+; Updated 5/17/00
+;	added support for Windows 2000
+;	installs inf file into windows\inf or winnt\inf
+;	installs ezusb.sys to windows\system32\drivers or winnt\system32\drivers
+;
+;
+; Two versions, one for CD has CopyFiles section active
+;	one for other has it commented out
+
+[Version]
+Signature="$CHICAGO$"
+Class=Ocean Optics Devices
+ClassGuid={EF1317D3-39A5-4d63-92F1-2EC7B79973B2}
+provider=%OceanOptics%
+LayoutFile=layout.inf
+
+[ClassInstall32]
+AddReg = OOIDevicesAddReg
+
+[ClassInstall]
+AddReg = OOIDevicesAddReg
+
+[OOIDevicesAddReg]
+HKR,,,,%Classname%
+HKR,,Icon,,"-5"
+HKR,,NoInstallClass,,1
+
+[Manufacturer]
+%OceanOptics%=OOIDRVR
+
+[OOIDRVR]
+%USB\VID_2457&PID_1002.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1002
+%USB\VID_2457&PID_1004.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1004
+%USB\VID_2457&PID_1006.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1006
+%USB\VID_2457&PID_1008.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1008
+%USB\VID_2457&PID_100A.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_100A
+%USB\VID_2457&PID_100C.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_100C
+%USB\VID_2457&PID_1010.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1010
+%USB\VID_2457&PID_1012.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1012
+%USB\VID_2457&PID_1014.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1014
+%USB\VID_2457&PID_1016.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1016
+%USB\VID_2457&PID_1018.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1018
+%USB\VID_2457&PID_101E.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_101E
+%USB\VID_2457&PID_1022.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1022
+%USB\VID_2457&PID_1024.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1024
+%USB\VID_2457&PID_102A.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_102A
+%USB\VID_2457&PID_102C.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_102C
+%USB\VID_2457&PID_1026.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1026
+%USB\VID_2457&PID_1028.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1028
+%USB\VID_2457&PID_1030.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1030
+%USB\VID_2457&PID_1032.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_1032
+%USB\VID_2457&PID_2000.DeviceDesc%=USB2000.Dev, USB\VID_2457&PID_2000
+%USB\VID_0547&PID_2131.DeviceDesc%=USB2000.Dev, USB\VID_0547&PID_2131
+%USB\VID_0547&PID_2235.DeviceDesc%=USB2000.Dev, USB\VID_0547&PID_2235
+%USB\VID_184c&PID_0000.DeviceDesc%=USB2000.Dev, USB\VID_184c&PID_0000
+%USB\VID_04B4&PID_8613.DeviceDesc%=USB2000.Dev, USB\VID_04B4&PID_8613
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+USB2000.Files.Ext = 10,System32\Drivers
+USB2000.Files.Inf = 10,INF
+
+[USB2000.Dev]
+;CopyFiles=USB2000.Files.Ext, USB2000.Files.Inf
+AddReg=USB2000.AddReg
+
+[USB2000.Dev.NT]
+;CopyFiles=USB2000.Files.Ext, USB2000.Files.Inf
+AddReg=USB2000.AddReg
+
+[USB2000.Dev.NT.Services]
+Addservice = EZUSB, 0x00000002, USB2000.AddService
+
+[USB2000.AddService]
+DisplayName    = %EZUSB.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\ezusb.sys
+LoadOrderGroup = Base
+
+[USB2000.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,ezusb.sys
+
+[USB2000.Files.Ext]
+ezusb.sys
+
+[USB2000.Files.Inf]
+ooi_usb.Inf
+
+;---------------------------------------------------------------;
+
+[Strings]
+Anchor="AnchorChips"
+OceanOptics="Ocean Optics, Inc."
+Classname="Ocean Optics Devices"
+USB\VID_2457&PID_1002.DeviceDesc="Ocean Optics USB2000"
+USB\VID_2457&PID_1004.DeviceDesc="Ocean Optics ADC1000-USB"
+USB\VID_2457&PID_1006.DeviceDesc="Ocean Optics SAS"
+USB\VID_2457&PID_100A.DeviceDesc="Ocean Optics HR2000"
+USB\VID_2457&PID_100C.DeviceDesc="Ocean Optics NIR512"
+USB\VID_2457&PID_1010.DeviceDesc="Ocean Optics NIR256"
+USB\VID_2457&PID_1012.DeviceDesc="Ocean Optics HR4000"
+USB\VID_2457&PID_1014.DeviceDesc="Ocean Optics USB650"
+USB\VID_2457&PID_1016.DeviceDesc="Ocean Optics HR2000+"
+USB\VID_2457&PID_1018.DeviceDesc="Ocean Optics QE65000"
+USB\VID_2457&PID_101E.DeviceDesc="Ocean Optics USB2000+"
+USB\VID_2457&PID_1022.DeviceDesc="Ocean Optics USB4000"
+USB\VID_2457&PID_1024.DeviceDesc="Ocean Optics USB325"
+USB\VID_2457&PID_102A.DeviceDesc="Ocean Optics Maya Pro 2000"
+USB\VID_2457&PID_102C.DeviceDesc="Ocean Optics Maya 2000"
+USB\VID_2457&PID_1026.DeviceDesc="Ocean Optics NIRQuest 512"
+USB\VID_2457&PID_1028.DeviceDesc="Ocean Optics NIRQuest 256"
+USB\VID_2457&PID_1030.DeviceDesc="Ocean Optics USB250"
+USB\VID_2457&PID_1032.DeviceDesc="Ocean Optics S8378"
+USB\VID_2457&PID_2000.DeviceDesc="Ocean Optics Jaz"
+USB\VID_184c&PID_0000.DeviceDesc="Ocean Optics MMS Raman"
+
+USB\VID_0547&PID_2131.DeviceDesc="Unprogrammed EzUSB"
+USB\VID_0547&PID_2235.DeviceDesc="Unprogrammed EzUSB-FX"
+USB\VID_04B4&PID_8613.DeviceDesc="Cypress EZ-USB FX2 (68613) - EEPROM missing"
+EZUSB.SvcDesc="AnchorChips General Purpose USB Driver (ezusb.sys)"

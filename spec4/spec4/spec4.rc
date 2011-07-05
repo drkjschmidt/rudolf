@@ -1,0 +1,1281 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\spec4.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\w-small-2.ico"
+IDR_spec4TYPE           ICON                    "res\\spec4Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITSPLASH           BITMAP                  "res\\w-splash-3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW, GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit", GRAYED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Cursor",                     ID_VIEW_CURSOR
+        MENUITEM SEPARATOR
+        POPUP "&Data Spectrum"
+        BEGIN
+            MENUITEM "&Baseline",                   ID_DSV_BASELINE
+            MENUITEM "&Raw",                        ID_DSV_RAW
+            MENUITEM "&Data",                       ID_DSV_DATA, CHECKED
+        END
+        POPUP "Graph &Type"
+        BEGIN
+            MENUITEM "Current Acquisition",         ID_GRAPHTYPE_CURRENTACQUISITION
+            MENUITEM "Calibration Spectra",         ID_GRAPHTYPE_CALIBRATIONSPECTRA
+            MENUITEM "&Report",                     ID_GRAPHTYPE_REPORT
+            MENUITEM "Conc. vs. time",              ID_GRAPHTYPE_CONC
+            MENUITEM "Conc. vs. location",          ID_GRAPHTYPE_CONC32785
+            MENUITEM "Location on map",             ID_GRAPHTYPE_LOCATIONONMAP
+        END
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Load Setup",                 ID_TOOLS_LOAD
+        MENUITEM "&Change Setup",               ID_TOOLS_CHANGE
+        MENUITEM "&Save Setup",                 ID_TOOLS_SAVE
+    END
+    POPUP "&Mode"
+    BEGIN
+        MENUITEM "&Acquisition",                ID_MODESET_ACQ
+        MENUITEM "&Review",                     ID_MODESET_REV
+        MENUITEM "Control",                     ID_ITEM_DUMMY, CHECKED, GRAYED
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LightPilot...",        ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME_ACQ MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, INACTIVE
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW, INACTIVE
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit", GRAYED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Cursor",                     ID_VIEW_CURSOR
+        MENUITEM SEPARATOR
+        POPUP "&Data Spectrum"
+        BEGIN
+            MENUITEM "&Baseline",                   ID_DSV_BASELINE
+            MENUITEM "&Raw",                        ID_DSV_RAW
+            MENUITEM "&Data",                       ID_DSV_DATA, CHECKED
+        END
+        POPUP "Graph &Type"
+        BEGIN
+            MENUITEM "Current Acquisition",         ID_GRAPHTYPE_CURRENTACQUISITION
+            MENUITEM "Calibration Spectra",         ID_GRAPHTYPE_CALIBRATIONSPECTRA
+            MENUITEM "&Report",                     ID_GRAPHTYPE_REPORT
+            MENUITEM "Conc. vs. time",              ID_GRAPHTYPE_CONC
+            MENUITEM "Conc. vs. location",          ID_GRAPHTYPE_CONC32785
+            MENUITEM "Location on map",             ID_GRAPHTYPE_LOCATIONONMAP
+        END
+    END
+    POPUP "&Tools", GRAYED
+    BEGIN
+        MENUITEM "&Load Setup",                 ID_TOOLS_LOAD
+        MENUITEM "&Change Setup",               ID_TOOLS_CHANGE
+        MENUITEM "&Save Setup",                 ID_TOOLS_SAVE
+    END
+    POPUP "&Mode"
+    BEGIN
+        MENUITEM "Acquisition",                 ID_ITEM_DUMMY, CHECKED, INACTIVE
+        MENUITEM "&Review",                     ID_MODESET_REV
+        MENUITEM "&Control",                    ID_MODESET_CONTROL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LightPilot...",        ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME_REV MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW, GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit", GRAYED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Cursor",                     ID_VIEW_CURSOR
+        MENUITEM SEPARATOR
+        POPUP "&Data Spectrum"
+        BEGIN
+            MENUITEM "&Baseline",                   ID_DSV_BASELINE
+            MENUITEM "&Raw",                        ID_DSV_RAW
+            MENUITEM "&Data",                       ID_DSV_DATA, CHECKED
+        END
+        POPUP "Graph &Type"
+        BEGIN
+            MENUITEM "Current Acquisition",         ID_GRAPHTYPE_CURRENTACQUISITION
+            MENUITEM "Calibration Spectra",         ID_GRAPHTYPE_CALIBRATIONSPECTRA
+            MENUITEM SEPARATOR
+            MENUITEM "&Report",                     ID_GRAPHTYPE_REPORT
+            MENUITEM "Review Spectra",              ID_GRAPHTYPE_REVSPEC
+            MENUITEM "Conc. vs. time",              ID_GRAPHTYPE_CONC
+            MENUITEM "Conc. vs. location",          ID_GRAPHTYPE_CONC32785
+            MENUITEM "Location on map",             ID_GRAPHTYPE_LOCATIONONMAP
+        END
+    END
+    POPUP "&Tools", GRAYED
+    BEGIN
+        MENUITEM "&Load Setup",                 ID_TOOLS_LOAD
+        MENUITEM "&Change Setup",               ID_TOOLS_CHANGE
+        MENUITEM "&Save Setup",                 ID_TOOLS_SAVE
+    END
+    POPUP "&Mode"
+    BEGIN
+        MENUITEM "&Acquisition",                ID_MODESET_ACQ
+        MENUITEM "Review",                      ID_ITEM_DUMMY, CHECKED, GRAYED
+        MENUITEM "&Control",                    ID_MODESET_CONTROL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LightPilot...",        ID_APP_ABOUT
+    END
+END
+
+IDR_OLD_MAINFRAME MENUEX 
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE,MFT_STRING,MFS_GRAYED
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT,MFT_STRING,MFS_GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW,MFT_STRING,MFS_GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Edit",                          65535,MFT_STRING,MFS_GRAYED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Collect",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "[ Substance ]",               ID_COLLECT_SUBSTANCE,MFT_STRING,MFS_GRAYED
+        MENUITEM "Load &Definition\t1",         ID_COLLECT_LOADDEFINITION,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ Location ]",                ID_Menu,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Load ATL\t2",                ID_COLLECT_GPSTOATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&GPS to ATL",                 ID_COLLECT_GPSTOATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Enter ATL",                  ID_COLLECT_ENTERATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save ATL",                   ID_COLLECT_SAVEATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ Measurement ]",             ID_COLLECT_,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Measure\t3",                 ID_COLLECT_MEASURE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&View",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ graphing ]",                ID_VIEW_,MFT_STRING,MFS_GRAYED
+        POPUP "&Data Spectrum",                 65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "&Baseline",                   ID_DSV_BASELINE,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Raw",                        ID_DSV_RAW,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Data",                       ID_DSV_DATA,MFT_STRING,MFS_CHECKED
+        END
+        MENUITEM "&Select Datafiles",           ID_VIEW_SELECTDATAFILES,MFT_STRING,MFS_ENABLED
+        POPUP "Graph &Type",                    65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Current Acquisition",         ID_GRAPHTYPE_CURRENTACQUISITION,MFT_STRING,MFS_ENABLED
+            MENUITEM "Calibration Spectra",         ID_GRAPHTYPE_CALIBRATIONSPECTRA,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Report",                     ID_GRAPHTYPE_REPORT,MFT_STRING,MFS_ENABLED
+            MENUITEM "Conc. vs. time",              ID_GRAPHTYPE_CONC,MFT_STRING,MFS_ENABLED
+            MENUITEM "Conc. vs. location",          ID_GRAPHTYPE_CONC32785,MFT_STRING,MFS_ENABLED
+            MENUITEM "Location on map",             ID_GRAPHTYPE_LOCATIONONMAP,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM "Save graph info",             ID_VIEW_SAVEGRAPHINFO,MFT_STRING,MFS_ENABLED
+        MENUITEM "Load graph info",             ID_VIEW_LOADGRAPHINFO,MFT_STRING,MFS_ENABLED
+        MENUITEM "Export graph",                ID_VIEW_EXPORTGRAPH,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Tools",                         65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Load Setup",                 ID_TOOLS_LOAD,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Change Setup",               ID_TOOLS_CHANGE,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save Setup",                 ID_TOOLS_SAVE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "C&alibration",                   65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Load calibration",           ID_CALIBRATION_LOAD,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Create Calibration",         ID_CALIBRATION_CREATE,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save Calibration",           ID_CALIBRATION_SAVE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About LightPilot...",        ID_APP_ABOUT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "CONTROL MODE",                   65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "Switch to &Acquisition",      ID_MODESET_ACQ,MFT_STRING,MFS_ENABLED
+        MENUITEM "Switch to &Review",           ID_MODESET_REV,MFT_STRING,MFS_ENABLED
+        MENUITEM "Switch to Control",           ID_ITEM_DUMMY,MFT_STRING,MFS_GRAYED
+    END
+END
+
+IDR_OLD_MAINFRAME_ACQ MENUEX 
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE,MFT_STRING,MFS_GRAYED
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT,MFT_STRING,MFS_GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW,MFT_STRING,MFS_GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Edit",                          65535,MFT_STRING,MFS_GRAYED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Collect",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "[ Substance ]",               ID_COLLECT_SUBSTANCE,MFT_STRING,MFS_GRAYED
+        MENUITEM "Load &Definition\t1",         ID_COLLECT_LOADDEFINITION,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ Location ]",                ID_Menu,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Load ATL\t2",                ID_COLLECT_GPSTOATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&GPS to ATL",                 ID_COLLECT_GPSTOATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Enter ATL",                  ID_COLLECT_ENTERATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save ATL",                   ID_COLLECT_SAVEATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ Measurement ]",             ID_COLLECT_,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Measure\t3",                 ID_COLLECT_MEASURE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&View",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ graphing ]",                ID_VIEW_,MFT_STRING,MFS_GRAYED
+        POPUP "&Data Spectrum",                 65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "&Baseline",                   ID_DSV_BASELINE,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Raw",                        ID_DSV_RAW,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Data",                       ID_DSV_DATA,MFT_STRING,MFS_CHECKED
+        END
+        MENUITEM "&Select Datafiles",           ID_VIEW_SELECTDATAFILES,MFT_STRING,MFS_ENABLED
+        POPUP "Graph &Type",                    65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Current Acquisition",         ID_GRAPHTYPE_CURRENTACQUISITION,MFT_STRING,MFS_ENABLED
+            MENUITEM "Calibration Spectra",         ID_GRAPHTYPE_CALIBRATIONSPECTRA,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Report",                     ID_GRAPHTYPE_REPORT,MFT_STRING,MFS_ENABLED
+            MENUITEM "Conc. vs. time",              ID_GRAPHTYPE_CONC,MFT_STRING,MFS_ENABLED
+            MENUITEM "Conc. vs. location",          ID_GRAPHTYPE_CONC32785,MFT_STRING,MFS_ENABLED
+            MENUITEM "Location on map",             ID_GRAPHTYPE_LOCATIONONMAP,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM "Save graph info",             ID_VIEW_SAVEGRAPHINFO,MFT_STRING,MFS_ENABLED
+        MENUITEM "Load graph info",             ID_VIEW_LOADGRAPHINFO,MFT_STRING,MFS_ENABLED
+        MENUITEM "Export graph",                ID_VIEW_EXPORTGRAPH,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Tools",                         65535,MFT_STRING,MFS_GRAYED
+    BEGIN
+        MENUITEM "&Load Setup",                 ID_TOOLS_LOAD,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Change Setup",               ID_TOOLS_CHANGE,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save Setup",                 ID_TOOLS_SAVE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "C&alibration",                   65535,MFT_STRING,MFS_GRAYED
+    BEGIN
+        MENUITEM "&Load calibration",           ID_CALIBRATION_LOAD,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Create Calibration",         ID_CALIBRATION_CREATE,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save Calibration",           ID_CALIBRATION_SAVE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About LightPilot...",        ID_APP_ABOUT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "ACQUISITION MODE",               65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "Switch to Acquisition",       ID_ITEM_DUMMY,MFT_STRING,MFS_GRAYED
+        MENUITEM "Switch to &Review",           ID_MODESET_REV,MFT_STRING,MFS_ENABLED
+        MENUITEM "Switch to &Control",          ID_MODESET_CONTROL,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_OLD_MAINFRAME_REV MENUEX 
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE,MFT_STRING,MFS_GRAYED
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT,MFT_STRING,MFS_GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW,MFT_STRING,MFS_GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Edit",                          65535,MFT_STRING,MFS_GRAYED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Collect",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "[ Substance ]",               ID_COLLECT_SUBSTANCE,MFT_STRING,MFS_GRAYED
+        MENUITEM "Load &Definition\t1",         ID_COLLECT_LOADDEFINITION,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ Location ]",                ID_Menu,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Load ATL\t2",                ID_COLLECT_GPSTOATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&GPS to ATL",                 ID_COLLECT_GPSTOATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Enter ATL",                  ID_COLLECT_ENTERATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save ATL",                   ID_COLLECT_SAVEATL,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ Measurement ]",             ID_COLLECT_,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Measure\t3",                 ID_COLLECT_MEASURE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&View",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR,MFT_STRING,MFS_ENABLED
+        MENUITEM "[ graphing ]",                ID_VIEW_,MFT_STRING,MFS_GRAYED
+        POPUP "&Data Spectrum",                 65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "&Baseline",                   ID_DSV_BASELINE,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Raw",                        ID_DSV_RAW,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Data",                       ID_DSV_DATA,MFT_STRING,MFS_CHECKED
+        END
+        MENUITEM "&Select Datafiles",           ID_VIEW_SELECTDATAFILES,MFT_STRING,MFS_ENABLED
+        POPUP "Graph &Type",                    65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Current Acquisition",         ID_GRAPHTYPE_CURRENTACQUISITION,MFT_STRING,MFS_ENABLED
+            MENUITEM "Calibration Spectra",         ID_GRAPHTYPE_CALIBRATIONSPECTRA,MFT_STRING,MFS_ENABLED
+            MENUITEM MFT_SEPARATOR
+            MENUITEM "&Report",                     ID_GRAPHTYPE_REPORT,MFT_STRING,MFS_ENABLED
+            MENUITEM "Review Spectra",              ID_GRAPHTYPE_REVSPEC,MFT_STRING,MFS_ENABLED
+            MENUITEM "Conc. vs. time",              ID_GRAPHTYPE_CONC,MFT_STRING,MFS_ENABLED
+            MENUITEM "Conc. vs. location",          ID_GRAPHTYPE_CONC32785,MFT_STRING,MFS_ENABLED
+            MENUITEM "Location on map",             ID_GRAPHTYPE_LOCATIONONMAP,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM "Save graph info",             ID_VIEW_SAVEGRAPHINFO,MFT_STRING,MFS_ENABLED
+        MENUITEM "Load graph info",             ID_VIEW_LOADGRAPHINFO,MFT_STRING,MFS_ENABLED
+        MENUITEM "Export graph",                ID_VIEW_EXPORTGRAPH,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Tools",                         65535,MFT_STRING,MFS_GRAYED
+    BEGIN
+        MENUITEM "&Load Setup",                 ID_TOOLS_LOAD,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Change Setup",               ID_TOOLS_CHANGE,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save Setup",                 ID_TOOLS_SAVE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "C&alibration",                   65535,MFT_STRING,MFS_GRAYED
+    BEGIN
+        MENUITEM "&Load calibration",           ID_CALIBRATION_LOAD,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Create Calibration",         ID_CALIBRATION_CREATE,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save Calibration",           ID_CALIBRATION_SAVE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About LightPilot...",        ID_APP_ABOUT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "REVIEW MODE",                    65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "Switch to &Acquisition",      ID_MODESET_ACQ,MFT_STRING,MFS_ENABLED
+        MENUITEM "Switch to Review",            ID_ITEM_DUMMY,MFT_STRING,MFS_GRAYED
+        MENUITEM "Switch to &Control",          ID_MODESET_CONTROL,MFT_STRING,MFS_ENABLED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F1,          ID_DLGLFT_CTRL_F1,      VIRTKEY, NOINVERT
+    VK_F2,          ID_DLGLFT_CTRL_F2,      VIRTKEY, NOINVERT
+    VK_F3,          ID_DLGLFT_CTRL_F3,      VIRTKEY, NOINVERT
+    VK_F4,          ID_DLGLFT_CTRL_F4,      VIRTKEY, NOINVERT
+    VK_F5,          ID_DLGLFT_CTRL_F5,      VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+IDR_MAINFRAME_ACQ ACCELERATORS 
+BEGIN
+    VK_F1,          ID_DLGLFT_S1,           VIRTKEY, NOINVERT
+    VK_F2,          ID_DLGLFT_S2,           VIRTKEY, NOINVERT
+    VK_F3,          ID_DLGLFT_S3,           VIRTKEY, NOINVERT
+    VK_F4,          ID_DLGLFT_S4,           VIRTKEY, NOINVERT
+    VK_F5,          ID_DLGLFT_S5,           VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+IDR_MAINFRAME_REV ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LightPilot"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "Copyright (C) 2009-2010\nWilson Analytical\n\nWritten by Rudolf Potucek\niNovacy.com",IDC_STATIC,42,26,114,46
+    DEFPUSHBUTTON   "OK",IDOK,114,72,50,14,WS_GROUP
+    LTEXT           "Version Message",IDC_STATIC_ABOUT,42,12,120,8
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 288, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         130,IDC_SPLASHIMG,"Static",SS_BITMAP,0,0,223,130
+    CONTROL         "",IDC_PROGRESS3,"msctls_progress32",WS_BORDER,132,96,80,14
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 318, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setup "
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,204,192,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,258,192,50,14
+    COMBOBOX        IDC_SELECT_GPS,60,6,186,72,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select GPS",IDC_STATIC,6,6,48,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Test",IDC_TEST_GPS,258,6,50,14
+    LTEXT           "GPS Name",IDC_STATIC,18,24,36,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_GPS_NAME,60,24,246,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Latitude",IDC_STATIC,18,42,36,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_LATITUDE,60,42,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Longitude",IDC_STATIC,120,42,36,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_LONGITUDE,162,42,48,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Altitude",IDC_STATIC,222,42,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ALTITUDE,258,42,48,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_SELECT_SPECTROMETER,60,66,186,72,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select Spec",IDC_STATIC,6,66,48,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Test",IDC_TEST_SPECTROMETER,258,66,50,14
+    CONTROL         "",IDC_SPECTEST,"Static",SS_BLACKFRAME,60,84,186,54
+    EDITTEXT        IDC_EDIT_PASSWD,60,150,186,14,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,6,150,48,8
+    CONTROL         "Require GPS",IDC_CHK_GPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,174,57,10
+    CONTROL         "Require Spectrometer",IDC_CHK_SPEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,186,88,10
+    CONTROL         "Autosave after acquisition",IDC_CHK_AUTOSV1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,198,100,10
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 419, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Calibration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,306,144,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,360,144,50,14
+    EDITTEXT        IDC_EDIT1,48,78,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Conc. 1",IDC_STATIC,12,78,36,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO1,96,78,48,42,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,78,12,126,12,ES_AUTOHSCROLL
+    LTEXT           "Substance Name",IDC_STATIC,12,12,60,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Measure",IDC_BUTTON1,156,78,50,14
+    LTEXT           "Spectrometer",IDC_STATIC,12,30,60,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO2,78,30,126,48,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Integration time",IDC_STATIC,12,48,60,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO3,78,48,102,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "us",IDC_STATIC,186,48,18,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT3,48,96,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Conc. 2",IDC_STATIC,12,96,36,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO4,96,96,48,42,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Measure",IDC_BUTTON2,156,96,50,14
+    EDITTEXT        IDC_EDIT4,48,114,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Conc. 3",IDC_STATIC,12,114,36,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO5,96,114,48,42,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Measure",IDC_BUTTON3,156,114,50,14
+    CONTROL         "",ID_FRM_SPEC,"Static",SS_BLACKFRAME,216,12,192,60
+    CONTROL         "",IDC_FRM_CAL,"Static",SS_BLACKFRAME,216,78,192,60
+    LTEXT           "Type",IDC_STATIC,12,132,24,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO6,36,132,48,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Frequency",IDC_STATIC,96,132,60,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO7,138,132,66,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 419, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Calibration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,306,144,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,360,144,50,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT2,78,12,126,12,ES_AUTOHSCROLL
+    LTEXT           "Substance Name",-1,12,12,60,12,SS_CENTERIMAGE
+    LTEXT           "Spectrometer",-1,12,30,60,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO2,78,30,126,48,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Integration time",-1,12,48,60,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO3,78,48,102,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "us",-1,186,48,18,12,SS_CENTERIMAGE
+    CONTROL         "",ID_FRM_SPEC,"Static",SS_BLACKFRAME,216,12,192,60
+    CONTROL         "",IDC_FRM_CAL,"Static",SS_BLACKFRAME,216,78,192,60
+    LTEXT           "Type",-1,12,144,24,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO6,36,144,48,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Frequency",-1,96,144,42,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,66,192,48
+    PUSHBUTTON      "Delete",IDC_BUTTON1,168,120,36,14
+    PUSHBUTTON      "Add",IDC_BUTTON2,126,120,36,14
+    EDITTEXT        IDC_EDIT1,12,120,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO1,60,120,48,42,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COMBO7,138,144,66,14,ES_AUTOHSCROLL
+END
+
+IDD_DBAR_LEFT DIALOGEX 0, 0, 99, 315
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Exposure time [ms]",IDC_STATIC,6,6,65,8
+    EDITTEXT        IDC_EDIT_ACQTIME,6,18,84,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Acquire spectrum",IDC_BN_ACQ,6,114,84,14
+    LTEXT           "Average scans",IDC_STATIC,6,42,48,8
+    EDITTEXT        IDC_EDIT_ACQAVG,6,54,84,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Boxcar width",IDC_STATIC,6,78,43,8
+    EDITTEXT        IDC_EDIT_ACQBOXCAR,6,90,84,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Red",IDC_BUTTON1,6,150,30,14
+    PUSHBUTTON      "Green",IDC_BUTTON4,42,150,30,14
+END
+
+IDD_DBAR_TOP DIALOGEX 0, 0, 567, 42
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SUBSEL,198,12,359,24,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONC,6,12,186,24,ES_AUTOHSCROLL
+    LTEXT           "Measured concentration",IDC_STATIC,6,3,79,8
+    LTEXT           "Calibration file used to determine concentration",IDC_STATIC,198,3,156,8
+END
+
+IDD_DBAR_LEFT_ACQ DIALOGEX 0, 0, 123, 315
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Customer / Location [F1]",IDC_BN_ACQ_CL,7,7,107,14
+    PUSHBUTTON      "Select Calibration [F2]",IDC_BN_ACQ_SCAL,6,60,108,14,WS_DISABLED
+    PUSHBUTTON      "Measure Blank [F3]",IDC_BN_ACQ_BLANK,6,144,108,14,WS_DISABLED
+    PUSHBUTTON      "Measure Data [F4]",IDC_BN_ACQ_SCAN,6,162,108,14,WS_DISABLED
+    PUSHBUTTON      "Save Data [F5]",IDC_BN_ACQ_SAVE,6,216,108,14,WS_DISABLED
+    LTEXT           "Customer",IDC_ST_ACQ_CUSTOMER,12,24,102,8
+    LTEXT           "Location",IDC_ST_ACQ_LOC,12,36,102,8
+    LTEXT           "GPS",IDC_ST_ACQ_GPS,12,48,102,8
+    LTEXT           "CalName",IDC_ST_ACQ_CN,12,78,102,8
+    LTEXT           "Concentration",IDC_ST_ACQ_RES,12,180,102,8
+    LTEXT           "[No Data Saved]",IDC_ST_ACQ_FN,12,234,102,22,SS_PATHELLIPSIS
+    LTEXT           "Formula this could be quite long ... so use multiline text field",IDC_ST_ACQ_CN_F,18,114,96,24
+    LTEXT           "Rsquared value",IDC_ST_ACQ_CN_R,18,102,96,8
+    LTEXT           "50 ms / 50x / [100]",IDC_ST_ACQ_CP,12,90,102,8
+    LTEXT           "Sample Info",IDC_ST_ACQ_SI,12,192,102,18
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 419, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Calibration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,306,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,360,180,50,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT2,78,12,126,12,ES_AUTOHSCROLL
+    LTEXT           "Substance Name",-1,12,12,60,12,SS_CENTERIMAGE
+    LTEXT           "Spectrometer",-1,12,30,60,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO2,78,30,126,48,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Integration time",-1,12,48,60,12,SS_CENTERIMAGE
+    LTEXT           "ms",-1,186,48,18,12,SS_CENTERIMAGE
+    CONTROL         "",ID_FRM_SPEC,"Static",SS_BLACKFRAME,216,12,192,78
+    CONTROL         "",IDC_FRM_CAL,"Static",SS_BLACKFRAME,216,96,192,78
+    LTEXT           "Type",-1,12,180,24,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO6,36,180,48,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Wavelength",-1,96,180,42,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,102,192,48
+    PUSHBUTTON      "Delete",IDC_BUTTON1,168,156,36,14
+    PUSHBUTTON      "Add",IDC_BUTTON2,126,156,36,14
+    EDITTEXT        IDC_EDIT1,12,156,36,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,60,156,48,42,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COMBO7,138,180,66,14,ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Scans to average",-1,12,66,60,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COMBO8,78,66,102,12,ES_AUTOHSCROLL
+    LTEXT           "Boxcar width",-1,12,84,60,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COMBO9,78,84,102,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMBO3,78,48,102,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CUSTINFO DIALOGEX 0, 0, 379, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Customer information"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMPNAME,114,48,186,72,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SAMPLOC,114,66,186,72,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SAMPINFO,114,102,246,48,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,264,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,318,180,50,14
+    PUSHBUTTON      "Browse",IDC_LOAD,312,48,50,14
+    PUSHBUTTON      "Save As",IDC_SAVE,312,66,50,14
+    LTEXT           "GPS location",IDC_STATIC,18,18,42,8
+    LTEXT           "114.57 W 54N 3600m 22:00:00",IDC_GPSLOC,114,18,246,8
+    LTEXT           "Name / Company",IDC_STATIC,18,48,58,8
+    GROUPBOX        "Customer information",IDC_STATIC,12,36,354,48
+    LTEXT           "Location / Sampling point",IDC_STATIC,18,66,84,8
+    LTEXT           "Sample information",IDC_STATIC,18,102,90,8
+    GROUPBOX        "Auto location",IDC_STATIC,12,6,354,24
+    GROUPBOX        "Sample information",IDC_STATIC,12,90,354,84
+    EDITTEXT        IDC_PIPEKM,204,156,30,14,ES_AUTOHSCROLL
+    LTEXT           "km",IDC_STATIC,240,156,18,8
+    LTEXT           "x",IDC_STATIC,186,156,8,8
+    LTEXT           "Dilution:",IDC_STATIC,114,156,30,8
+    EDITTEXT        IDC_USERDEF,306,156,54,14,ES_AUTOHSCROLL
+    LTEXT           "Userdef #",IDC_STATIC,264,156,36,8
+    COMBOBOX        IDC_DILUTION,144,156,36,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_PWD DIALOGEX 0, 0, 186, 56
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Control Mode Password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PWD,6,18,168,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,72,36,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,126,36,50,14
+    LTEXT           "Please enter password to enter configuration mode",IDC_STATIC,7,7,168,8
+END
+
+IDD_DBAR_LEFT_CONTROL DIALOGEX 0, 0, 213, 297
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save Curve",IDC_DLG_LEFT_CTRL_SAVE,78,270,60,14
+    EDITTEXT        IDC_EDIT_SUBNAME,78,12,126,12,ES_AUTOHSCROLL
+    LTEXT           "Substance Name",-1,12,12,60,12,SS_CENTERIMAGE
+    LTEXT           "QuatBox no.",-1,12,30,60,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO2,78,30,126,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Integration [ms]",-1,12,48,60,12,SS_CENTERIMAGE
+    LTEXT           "Choose Calibration Wavelength",-1,12,222,108,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,126,192,48
+    PUSHBUTTON      "Delete Selected Concentration(s)",IDC_DLG_LEFT_CTRL_DEL,12,198,192,14
+    PUSHBUTTON      "Add Concentration [F2]",IDC_DLG_LEFT_CTRL_ACQ,108,180,96,14
+    EDITTEXT        IDC_EDIT1,36,180,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMBO7,120,222,66,14,ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Scans to average",-1,78,48,60,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COMBO8,78,60,60,12,ES_AUTOHSCROLL
+    LTEXT           "Boxcar width",-1,144,48,60,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COMBO9,144,60,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMBO3,12,60,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Acquire Baseline [F1]",IDC_DLG_LEFT_CTRL_ACQ0,12,108,192,14
+    LTEXT           "Conc.",-1,12,180,24,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    LTEXT           "ppm",-1,78,180,24,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    LTEXT           "nm",-1,192,222,12,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Load Curve",IDC_DLG_LEFT_CTRL_LOAD,12,270,60,14
+    LTEXT           "ppm = ...",ID_TEXT_FORMULA,12,240,192,8
+    LTEXT           "Rsquared = ... ",ID_TEXT_RSQUARED,12,252,192,8
+    PUSHBUTTON      "Reset Curve",IDC_DLG_LEFT_CTRL_RESET,144,270,60,14
+    LTEXT           "Thresholds [ppm]",-1,78,72,60,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ERR_LOW,12,84,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WARN_LOW,60,84,42,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_WARN_HIGH,114,84,42,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_ERR_HIGH,162,84,42,14,ES_AUTOHSCROLL
+END
+
+IDD_DBAR_LEFT_REV DIALOGEX 0, 0, 357, 78
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DATALIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,78,6,264,66
+    PUSHBUTTON      "Add Data Sets",IDC_BTN_ADD,6,6,66,14
+    PUSHBUTTON      "Remove Data",IDC_BTN_REM,6,24,66,14
+    PUSHBUTTON      "Highlight Selected",IDC_HIGHLIGHT,6,60,66,14
+END
+
+IDD_CURSOR DIALOGEX 0, 0, 130, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cursor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,66,48,14
+    EDITTEXT        IDC_CUR_WAVLEN,30,30,42,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CUR_COUNTS,78,30,42,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CUR_NAME,30,12,90,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    SCROLLBAR       IDC_SCROLLBAR1,12,48,108,12
+    SCROLLBAR       IDC_SCROLLBAR2,12,12,12,30,SBS_VERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DBAR_LEFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+    END
+
+    IDD_DBAR_TOP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 560
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_DBAR_LEFT_ACQ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DIALOG_CUSTINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DIALOG_PWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 49
+    END
+
+    IDD_DBAR_LEFT_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_DBAR_LEFT_REV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_CURSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG2 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 4, 0
+0x7070, 0x006d, 
+    IDC_COMBO1, 0x403, 4, 0
+0x2f67, 0x006c, 
+    IDC_COMBO2, 0x403, 4, 0
+0x6e61, 0x0079, 
+    IDC_COMBO2, 0x403, 9, 0
+0x7375, 0x2062, 0x3032, 0x3030, "\000" 
+    IDC_COMBO3, 0x403, 4, 0
+0x6e61, 0x0079, 
+    IDC_COMBO3, 0x403, 9, 0
+0x7375, 0x2062, 0x3032, 0x3030, "\000" 
+    IDC_COMBO4, 0x403, 4, 0
+0x7070, 0x006d, 
+    IDC_COMBO4, 0x403, 4, 0
+0x2f67, 0x006c, 
+    IDC_COMBO5, 0x403, 4, 0
+0x7070, 0x006d, 
+    IDC_COMBO5, 0x403, 4, 0
+0x2f67, 0x006c, 
+    IDC_COMBO6, 0x403, 7, 0
+0x696c, 0x656e, 0x7261, "\000" 
+    IDC_COMBO7, 0x403, 7, 0
+0x696c, 0x656e, 0x7261, "\000" 
+    0
+END
+
+IDD_DIALOG3 DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 4, 0
+0x6e61, 0x0079, 
+    IDC_COMBO2, 0x403, 9, 0
+0x7375, 0x2062, 0x3032, 0x3030, "\000" 
+    IDC_COMBO3, 0x403, 4, 0
+0x6e61, 0x0079, 
+    IDC_COMBO3, 0x403, 9, 0
+0x7375, 0x2062, 0x3032, 0x3030, "\000" 
+    IDC_COMBO6, 0x403, 7, 0
+0x696c, 0x656e, 0x7261, "\000" 
+    IDC_COMBO6, 0x403, 8, 0
+0x7320, 0x7571, 0x7261, 0x0065, 
+    IDC_COMBO6, 0x403, 7, 0
+0x6320, 0x6275, 0x6369, "\000" 
+    IDC_COMBO1, 0x403, 4, 0
+0x7070, 0x006d, 
+    0
+END
+
+IDD_DIALOG4 DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 4, 0
+0x6e61, 0x0079, 
+    IDC_COMBO6, 0x403, 7, 0
+0x696c, 0x656e, 0x7261, "\000" 
+    IDC_COMBO6, 0x403, 8, 0
+0x7320, 0x7571, 0x7261, 0x0065, 
+    IDC_COMBO6, 0x403, 7, 0
+0x6320, 0x6275, 0x6369, "\000" 
+    IDC_COMBO1, 0x403, 4, 0
+0x7070, 0x006d, 
+    0
+END
+
+IDD_DBAR_LEFT_CONTROL DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 4, 0
+0x6e61, 0x0079, 
+    0
+END
+
+IDD_DIALOG_CUSTINFO DLGINIT
+BEGIN
+    IDC_DILUTION, 0x403, 2, 0
+0x0031, 
+    IDC_DILUTION, 0x403, 2, 0
+0x0032, 
+    IDC_DILUTION, 0x403, 2, 0
+0x0035, 
+    IDC_DILUTION, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_DILUTION, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_DILUTION, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_DILUTION, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_DILUTION, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_DILUTION, 0x403, 4, 0
+0x3035, 0x0030, 
+    IDC_DILUTION, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "LightPilot\n\nLightPilot\n\n\nLightPilot.Document\nLightPilot.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "LightPilot"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\spec4.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
