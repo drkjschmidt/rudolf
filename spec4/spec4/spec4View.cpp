@@ -124,10 +124,18 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 	theApp.ChangeStatusText(tval.GetString());
 
 	if (pDC->IsPrinting()) {
+		// get the max page dimensions
 		myrect.left=0;
 		myrect.top=0;
 		myrect.bottom=vertres;
 		myrect.right=horzres;
+
+		// crop by margins
+		// @@@ there are no sanity checks here so margins could swap things in ugly ways ...
+		myrect.left   += rpsgn(myrect.right-myrect.left)*hdpi*theApp.pConfig->getPrintLeftMargin();
+		myrect.right  -= rpsgn(myrect.right-myrect.left)*hdpi*theApp.pConfig->getPrintRightMargin();
+		myrect.top    += rpsgn(myrect.bottom-myrect.top)*vdpi*theApp.pConfig->getPrintTopMargin();
+		myrect.bottom -= rpsgn(myrect.bottom-myrect.top)*vdpi*theApp.pConfig->getPrintBottomMargin();
 
 		// override view and force report in printing modes
 		tempView=VIEW_DATA_REPORT;

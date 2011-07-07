@@ -83,6 +83,18 @@ public:
 	inline void setAutosaveWarn(bool set) { specAutoSaveWarn=set; }
 	inline bool getAutosaveAll() { return specAutoSaveAll; }
 
+	inline void  setPrintLeftMargin(float set) { print_lm_in=set; }
+	inline float getPrintLeftMargin() { return print_lm_in; }
+
+	inline void  setPrintRightMargin(float set) { print_rm_in=set; }
+	inline float getPrintRightMargin() { return print_rm_in; }
+
+	inline void  setPrintTopMargin(float set) { print_tm_in=set; }
+	inline float getPrintTopMargin() { return print_tm_in; }
+
+	inline void  setPrintBottomMargin(float set) { print_bm_in=set; }
+	inline float getPrintBottomMargin() { return print_bm_in; }
+
 protected:
 	CString lastSpectrometer;
 	CString lastGPS;
@@ -104,5 +116,18 @@ protected:
 	bool specAutoSaveAll; // Save all acquired spectra in safe location
 	bool specAutoSaveImmediate; // Immediately after measuring show save dialog
 	bool specAutoSaveWarn; // Warn before leaving acquisition without saving spectrum
+
+	// hard margins, nothing goes outside here
+	float print_lm_in; // left
+	float print_rm_in; // right
+	float print_tm_in; // top
+	float print_bm_in; // bottom
+
+	// constraints on logo
+	float print_logo_max_w_in; // max width (default 2")
+	float print_logo_max_h_in; // max height (default 1")
+	int   print_logo_hc_off_in; // how to position logo horizontally: offset from center, can't go past edge
+	int   print_logo_vc_off_in; // how to position logo veritcally: offset from center, can't go past edge
+
 
 };
