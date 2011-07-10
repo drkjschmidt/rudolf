@@ -241,9 +241,8 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 							// ... this should ideally be part of the report generation
 							// but since the report itself is such a hardcoded hack ...
 							trect=myrect; 
-							xcon=(LONG)rpabs(theApp.pConfig->getPrintLogoMaxWidth()*hdpi);
-							ycon=(LONG)rpabs(theApp.pConfig->getPrintLogoMaxHeight()*vdpi);
-							xcon=rpmin(xcon,rpabs(myrect.right-myrect.left));
+							ycon=1*vdpi; // default formatting 1" high cell
+							xcon=           rpabs(myrect.right-myrect.left);
 							ycon=rpmin(ycon,rpabs(myrect.bottom-myrect.top));
 							xcon=xcon*rpsgn(myrect.right-myrect.left);
 							ycon=ycon*rpsgn(myrect.bottom-myrect.top);
@@ -313,10 +312,9 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 							// Print logo into top 1" of screen 
 							// ... this should ideally be part of the report generation
 							// but since the report itself is such a hardcoded hack ...
-							trect=myrect; 
-							xcon=(LONG)rpabs(theApp.pConfig->getPrintLogoMaxWidth()*hdpi);
-							ycon=(LONG)rpabs(theApp.pConfig->getPrintLogoMaxHeight()*vdpi);
-							xcon=rpmin(xcon,rpabs(myrect.right-myrect.left));
+							trect=myrect;
+							ycon=1*vdpi; // default formatting 1" high cell
+							xcon=           rpabs(myrect.right-myrect.left);
 							ycon=rpmin(ycon,rpabs(myrect.bottom-myrect.top));
 							xcon=xcon*rpsgn(myrect.right-myrect.left);
 							ycon=ycon*rpsgn(myrect.bottom-myrect.top);

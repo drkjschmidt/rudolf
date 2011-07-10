@@ -37,6 +37,17 @@
 #define TEXT_CNF_AS_ALL		"Autosave All"			// Will the spectra be saved directly to safe location (no used in program)
 #define TEXT_CNF_AS_WARN	"Autosave Warnings"		// Will the program warn about unsaved spectra? (not used in program)
 
+#define TEXT_CNF_PRINT_LM   "Left Page Margin"   // Unprintable left margin in inches
+#define TEXT_CNF_PRINT_RM   "Right Page Margin"  // Unprintable right margin in inches
+#define TEXT_CNF_PRINT_TM   "Top Page Margin"    // Unprintable top margin in inches
+#define TEXT_CNF_PRINT_BM   "Bottom Page Margin" // Unprintable bottom margin in inches
+
+#define TEXT_CNF_PRINT_LOGO_MAXW "Maximum Logo Width"
+#define TEXT_CNF_PRINT_LOGO_MAXH "Maximum Logo Heigth"
+#define TEXT_CNF_PRINT_LOGO_XOFF "Logo X Offset"
+#define TEXT_CNF_PRINT_LOGO_YOFF "Logo Y Offset"
+#define TEXT_CNF_PRINT_LOGO_EXIT "Logo May Bleed"
+
 // Customer info file strings
 #define TEXT_CUST_START     "CustomerFile"
 #define TEXT_CUST_VERSION   "Version"

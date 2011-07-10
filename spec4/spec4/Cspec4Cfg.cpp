@@ -156,6 +156,39 @@ Cspec4Cfg::Save(CString *fname)
 		line.Format(_T(TEXT_CNF_AS_WARN ",%d\n"),specAutoSaveWarn?1:0);
 		cfgfile.WriteString(line.GetString());
 
+		// --- bug fix branch ---
+
+		line.Format(_T(TEXT_CNF_PRINT_LM ",%f\n"),print_lm_in);
+		cfgfile.WriteString(line.GetString());
+
+		line.Format(_T(TEXT_CNF_PRINT_RM ",%f\n"),print_rm_in);
+		cfgfile.WriteString(line.GetString());
+
+		line.Format(_T(TEXT_CNF_PRINT_TM ",%f\n"),print_tm_in);
+		cfgfile.WriteString(line.GetString());
+
+		line.Format(_T(TEXT_CNF_PRINT_BM ",%f\n"),print_bm_in);
+		cfgfile.WriteString(line.GetString());
+
+		line.Format(_T(TEXT_CNF_PRINT_LOGO_MAXW ",%f\n"),print_logo_max_w_in);
+		cfgfile.WriteString(line.GetString());
+
+		line.Format(_T(TEXT_CNF_PRINT_LOGO_MAXH ",%f\n"),print_logo_max_h_in);
+		cfgfile.WriteString(line.GetString());
+
+		line.Format(_T(TEXT_CNF_PRINT_LOGO_XOFF ",%f\n"),print_logo_hc_off_in);
+		cfgfile.WriteString(line.GetString());
+
+		line.Format(_T(TEXT_CNF_PRINT_LOGO_YOFF ",%f\n"),print_logo_vc_off_in);
+		cfgfile.WriteString(line.GetString());
+
+		line.Format(_T(TEXT_CNF_PRINT_LOGO_EXIT ",%d\n"),print_logo_escape?1:0);
+		cfgfile.WriteString(line.GetString());
+
+
+
+
+
 		cfgfile.Close();
 	}
 	catch(CFileException* pe)
@@ -286,6 +319,41 @@ Cspec4Cfg::Load(CString *fname)
 					specAutoSaveImmediate=false;
 				if (! value.CompareNoCase(_T("0")))
 					specAutoSaveImmediate=false;
+			}
+
+			// --- bug fix branch ---
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_LM)))
+				print_lm_in=atof(value);
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_RM)))
+				print_rm_in=atof(value);
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_TM)))
+				print_tm_in=atof(value);
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_BM)))
+				print_bm_in=atof(value);
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_LOGO_MAXW)))
+				print_logo_max_w_in=atof(value);
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_LOGO_MAXH)))
+				print_logo_max_h_in=atof(value);
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_LOGO_XOFF)))
+				print_logo_hc_off_in=atof(value);
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_LOGO_YOFF)))
+				print_logo_vc_off_in=atof(value);
+
+			if (! token.CompareNoCase(_T(TEXT_CNF_PRINT_LOGO_EXIT)))
+			{
+				print_logo_escape=false;
+				if (! value.CompareNoCase(_T("true")))
+					print_logo_escape=true;
+				if (! value.CompareNoCase(_T("1")))
+					print_logo_escape=true;
 			}
 
 		}
