@@ -118,7 +118,7 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 	LONG xcon,ycon; // constraints
 	LONG ival; //@@@ should be removed in favor of xcon,ycon
 	int tempView=currentView;
-#define DEBUG_GRID
+// #define DEBUG_GRID
 #ifdef DEBUG_GRID
 	CBrush tempbrush(RGB(0,0,0));
 #endif
