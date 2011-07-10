@@ -93,7 +93,16 @@ public:
 	//! You probably want to wrap any call to this into a SaveDC / RestoreDC pair ... 
 	void setClipRectangle(CDC *pDC, LPRECT clrect);
 
-
+	//! Draw a grid
+	//
+	//! Parameters
+	//
+	//! @param boundary - grid boundary in grid coordinates
+	//! @param ox - origin x position in grid coordinats
+	//! @param oy - origin y position in grid coordinats
+	//! @param xs - x grid step in inches
+	//! @param ys - y grid step in inches
+	static void drawGridImperial(CDC *pDC, RECT boundary, int ox, int oy, double xs, double ys);
 
 
 protected:

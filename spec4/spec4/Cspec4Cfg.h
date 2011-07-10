@@ -95,6 +95,21 @@ public:
 	inline void  setPrintBottomMargin(float set) { print_bm_in=set; }
 	inline float getPrintBottomMargin() { return print_bm_in; }
 
+	inline void  setPrintLogoMaxHeight(float set) { print_logo_max_h_in=set; }
+	inline float getPrintLogoMaxHeight() { return print_logo_max_h_in; }
+
+	inline void  setPrintLogoMaxWidth(float set) { print_logo_max_w_in=set; }
+	inline float getPrintLogoMaxWidth() { return print_logo_max_w_in; }
+
+	inline void  setPrintLogoXoff(float set) { print_logo_hc_off_in=set; }
+	inline float getPrintLogoXoff() { return print_logo_hc_off_in; }
+
+	inline void  setPrintLogoYoff(float set) { print_logo_vc_off_in=set; }
+	inline float getPrintLogoYoff() { return print_logo_vc_off_in; }
+
+	inline void  setPrintLogoEscape(bool set) { print_logo_escape=set; }
+	inline bool getPrintLogoEscape() { return print_logo_escape; }
+
 protected:
 	CString lastSpectrometer;
 	CString lastGPS;
@@ -126,8 +141,8 @@ protected:
 	// constraints on logo
 	float print_logo_max_w_in; // max width (default 2")
 	float print_logo_max_h_in; // max height (default 1")
-	int   print_logo_hc_off_in; // how to position logo horizontally: offset from center, can't go past edge
-	int   print_logo_vc_off_in; // how to position logo veritcally: offset from center, can't go past edge
-
+	float print_logo_hc_off_in; // how to position logo horizontally: offset from center, can't go past edge
+	float print_logo_vc_off_in; // how to position logo veritcally: offset from center, can't go past edge
+	bool  print_logo_escape; // whether the logo may escape the bounding box
 
 };

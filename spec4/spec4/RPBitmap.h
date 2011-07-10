@@ -20,7 +20,10 @@ public:
 
 	//! Plot stretched bitmap with constrained aspect ration to not exceed 
 	//! the boundaries of provided RECT
-	BOOL ConstBlt(CDC *pDC, LPRECT bbox);
+	BOOL ConstBlt(CDC *pDC, LPRECT bbox, 
+		double maxw_in=0, double maxh_in=0, 
+		double xoff_in=0, double yoff_in=0,
+		bool escape=false);
 
 	inline bool isValid() { return valid; }
 	inline CSize getSize() { CSize tsize(pxWidth,pxHeight); return tsize; }

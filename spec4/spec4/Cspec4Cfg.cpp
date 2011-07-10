@@ -22,6 +22,7 @@ Cspec4Cfg::Cspec4Cfg(void)
 , print_logo_max_w_in(2.0)
 , print_logo_hc_off_in(-1000)
 , print_logo_vc_off_in(-1000)
+, print_logo_escape(false)
 {
 	// _MAX_PATH is defined in a system file:
 	// c:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\stdlib.h
@@ -57,6 +58,15 @@ Cspec4Cfg::Cspec4Cfg(CString savepath)
 , specAutoSaveAll(false)
 , specAutoSaveWarn(true)
 , cfg_runmode(RUNMODE_ACQUISITION)
+, print_lm_in(1.0)
+, print_rm_in(0.5)
+, print_tm_in(0.5)
+, print_bm_in(0.5)
+, print_logo_max_h_in(1.0)
+, print_logo_max_w_in(2.0)
+, print_logo_hc_off_in(-1000)
+, print_logo_vc_off_in(-1000)
+, print_logo_escape(false)
 {
 	savepath.TrimRight(_T("\\"));
 

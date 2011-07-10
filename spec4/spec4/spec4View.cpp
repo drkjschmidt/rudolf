@@ -7,6 +7,7 @@
 #include "spec4Doc.h"
 #include "spec4View.h"
 #include "WavlenCursor.h"
+#include "RPGraphHelper.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -114,8 +115,13 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 	pDC->GetBoundsRect(&bdrect,0);
 
 	CString tval;
-	LONG ival;
+	LONG xcon,ycon; // constraints
+	LONG ival; //@@@ should be removed in favor of xcon,ycon
 	int tempView=currentView;
+#define DEBUG_GRID
+#ifdef DEBUG_GRID
+	CBrush tempbrush(RGB(0,0,0));
+#endif
 
 	tval.Format(_T("(%d,%d,%d,%d) <-> w:%dmm w:%dpx h:%dmm h:%dpx <-> (%d,%d,%d,%d)"),
 		myrect.left,myrect.top,myrect.right,myrect.bottom,
@@ -130,6 +136,10 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 		myrect.bottom=vertres;
 		myrect.right=horzres;
 
+#ifdef DEBUG_GRID
+		CRPGraphHelper::drawGridImperial(pDC, myrect, myrect.left,myrect.bottom,0.25,0.25);
+#endif
+
 		// crop by margins
 		// @@@ there are no sanity checks here so margins could swap things in ugly ways ...
 		myrect.left   += rpsgn(myrect.right-myrect.left)*hdpi*theApp.pConfig->getPrintLeftMargin();
@@ -137,6 +147,9 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 		myrect.top    += rpsgn(myrect.bottom-myrect.top)*vdpi*theApp.pConfig->getPrintTopMargin();
 		myrect.bottom -= rpsgn(myrect.bottom-myrect.top)*vdpi*theApp.pConfig->getPrintBottomMargin();
 
+#ifdef DEBUG_GRID
+		pDC->FrameRect(&myrect,&tempbrush);
+#endif
 		// override view and force report in printing modes
 		tempView=VIEW_DATA_REPORT;
 	} 
@@ -228,11 +241,23 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 							// ... this should ideally be part of the report generation
 							// but since the report itself is such a hardcoded hack ...
 							trect=myrect; 
-							ival=(LONG)rpabs(1*vdpi);
-							ival=rpmin(ival,rpabs(myrect.bottom-myrect.top));
-							ival=ival*rpsgn(myrect.bottom-myrect.top);
-							trect.bottom=myrect.top+ival;
-							logoPrint.ConstBlt(pDC,&trect);
+							xcon=(LONG)rpabs(theApp.pConfig->getPrintLogoMaxWidth()*hdpi);
+							ycon=(LONG)rpabs(theApp.pConfig->getPrintLogoMaxHeight()*vdpi);
+							xcon=rpmin(xcon,rpabs(myrect.right-myrect.left));
+							ycon=rpmin(ycon,rpabs(myrect.bottom-myrect.top));
+							xcon=xcon*rpsgn(myrect.right-myrect.left);
+							ycon=ycon*rpsgn(myrect.bottom-myrect.top);
+							trect.right=myrect.left+xcon;
+							trect.bottom=myrect.top+ycon;
+							logoPrint.ConstBlt(pDC,&trect,
+								theApp.pConfig->getPrintLogoMaxWidth(),
+								theApp.pConfig->getPrintLogoMaxHeight(),
+								theApp.pConfig->getPrintLogoXoff(),
+								theApp.pConfig->getPrintLogoYoff(),
+								theApp.pConfig->getPrintLogoEscape());
+#ifdef DEBUG_GRID
+							pDC->FrameRect(&trect,&tempbrush);
+#endif
 
 							// Print report header on top of logo. The header will have 
 							// the "CONCENTRATION REPORT" title in the first inch but will
@@ -289,11 +314,20 @@ int Cspec4View::MyDrawAndPrint(CDC* pDC,CPrintInfo *pInfo, bool count)
 							// ... this should ideally be part of the report generation
 							// but since the report itself is such a hardcoded hack ...
 							trect=myrect; 
-							ival=(LONG)rpabs(1*vdpi);
-							ival=rpmin(ival,rpabs(myrect.bottom-myrect.top));
-							ival=ival*rpsgn(myrect.bottom-myrect.top);
-							trect.bottom=myrect.top+ival;
-							logoPrint.ConstBlt(pDC,&trect);
+							xcon=(LONG)rpabs(theApp.pConfig->getPrintLogoMaxWidth()*hdpi);
+							ycon=(LONG)rpabs(theApp.pConfig->getPrintLogoMaxHeight()*vdpi);
+							xcon=rpmin(xcon,rpabs(myrect.right-myrect.left));
+							ycon=rpmin(ycon,rpabs(myrect.bottom-myrect.top));
+							xcon=xcon*rpsgn(myrect.right-myrect.left);
+							ycon=ycon*rpsgn(myrect.bottom-myrect.top);
+							trect.right=myrect.left+xcon;
+							trect.bottom=myrect.top+ycon;
+							logoPrint.ConstBlt(pDC,&trect,
+								theApp.pConfig->getPrintLogoMaxWidth(),
+								theApp.pConfig->getPrintLogoMaxHeight(),
+								theApp.pConfig->getPrintLogoXoff(),
+								theApp.pConfig->getPrintLogoYoff(),
+								theApp.pConfig->getPrintLogoEscape());
 
 							// Print report header on top of logo. The header will have 
 							// the "CONCENTRATION REPORT" title in the first inch but will

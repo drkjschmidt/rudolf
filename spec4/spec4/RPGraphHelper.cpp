@@ -396,3 +396,48 @@ void CRPGraphHelper::setClipRectangle(CDC *pDC, LPRECT clrect) {
 	ClipRgn.CreateRectRgnIndirect(&ClipRect);
 	pDC->SelectClipRgn(&ClipRgn);
 }
+
+void CRPGraphHelper::drawGridImperial(CDC *pDC, RECT boundary, int ox, int oy, double xs, double ys) 
+{
+	// Save DC status (pens, brushes etc.)
+	int sDC=pDC->SaveDC();
+
+	// Canvas resoluition so we can calculate line locations
+	int xdpi = pDC->GetDeviceCaps(LOGPIXELSX);
+	int ydpi = pDC->GetDeviceCaps(LOGPIXELSY);
+
+	int xsign=1; if (boundary.right <boundary.left  ) xsign=-1;
+	int ysign=1; if (boundary.top   <boundary.bottom) ysign=-1;
+
+	int xs_px=(int)(xs*xdpi);
+	int ys_px=(int)(ys*ydpi);
+
+	int ii;
+
+	int xc_left  = -ABS((boundary.left   - ox)/xs_px);
+	int xc_right =  ABS((boundary.right  - ox)/xs_px);
+	int yc_up    =  ABS((boundary.top    - oy)/ys_px);
+	int yc_down  = -ABS((boundary.bottom - oy)/ys_px);
+
+	CPen greyp(PS_SOLID, 1,RGB(192,192,192)); // really narrow grey line
+
+
+	pDC->SelectObject(&greyp);
+
+	// Vertical lines
+	for (ii=xc_left; ii<=xc_right; ii++) {
+		pDC->MoveTo(ii*xsign*xs_px+ox,boundary.top);
+		pDC->LineTo(ii*xsign*xs_px+ox,boundary.bottom);
+	}
+
+	// Horizontal lines 
+	for (ii=yc_down; ii<=yc_up; ii++) {
+		pDC->MoveTo(boundary.left,ii*ysign*ys_px+oy);
+		pDC->LineTo(boundary.right,ii*ysign*ys_px+oy);
+	}
+
+
+	// Restore DC status ... make sure this gets called!
+	pDC->RestoreDC(sDC);
+
+}
