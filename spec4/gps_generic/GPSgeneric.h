@@ -6,8 +6,32 @@
 //  * RPGarmCom - class to read data from Serial Port attached NMEA devices
 //  * GarXface4 - class to read data from USB/Serial Port attached Garmin GPS devices
 //
-#define USE_RPNMEA   1
+// also currently the com port classes for NMEA and the GARXFACE library do not play 
+// together well at all so it should only be under exceptional circumstances that we want to
+// enable both!
+//
+// These constants should really be set in the build definitions, but just in case set a sane
+// default here ... 
+#if !defined USE_RPNMEA
+#define USE_RPNMEA   0
+#endif
+#if !defined USE_GARXFACE
 #define USE_GARXFACE 1
+#endif
+
+#if USE_RPNMEA == 1
+#define NMEAINFO "[NMEA] "
+#else
+# define NMEAINFO "[no NMEA] "
+#endif
+#if USE_GARXFACE == 1
+#define GARXFACEINFO "[GarXface4]"
+#else
+#define GARXFACEINFO "[no GarXface4]"
+#endif
+
+// Don't exactly remember but I think this was to indicate that you cannot instanciate multiple
+// garxface objects because it internally uses static variables
 #define GARXFACE_HAS_SCOPE_ISSUES 1
 
 #include <vector> // ATL vector template

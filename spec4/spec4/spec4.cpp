@@ -282,9 +282,14 @@ END_MESSAGE_MAP()
 BOOL CAboutDlg::OnInitDialog()
 {
 	CDialog::OnInitDialog();
-	
+
 	// TODO:  Add extra initialization here
-	GetDlgItem(IDC_STATIC_ABOUT)->SetWindowTextA(STRVERINFO);
+	GetDlgItem(IDC_STATIC_ABOUT)->SetWindowTextA(
+		STRVERINFO
+		"\n"
+		BUGFIXINFO 
+		NMEAINFO 
+		GARXFACEINFO);
 
 	return TRUE;  // return TRUE unless you set the focus to a control
 	// EXCEPTION: OCX Property Pages should return FALSE

@@ -2,6 +2,11 @@
 // Configuration constants that didn't fit anywhere else ... this is 
 // probably very bad form ...
 
+// Preinit for BUGFIXINFO just in case
+#ifndef BUGFIXINFO
+#define BUGFIXINFO ", NORMAL"
+#endif
+
 // Run mode
 #define RUNMODE_UNDEF -1
 #define RUNMODE_ACQUISITION  0
