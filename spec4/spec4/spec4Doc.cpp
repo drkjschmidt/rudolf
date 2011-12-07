@@ -170,7 +170,7 @@ void Cspec4Doc::SetProgMode(int askmode)
 			// or implement a proper check for presence of GPS ... 
 			else {
 				// @@@ this used to have an isValid() check ... 
-				if (theApp.pGPS->updateInfo()) {
+				if (! theApp.pGPS->updateInfo()) {
 					mode=RUNMODE_REVIEW;
 					warn_gps=true;
 				}
@@ -193,7 +193,9 @@ void Cspec4Doc::SetProgMode(int askmode)
 				"\n"));
 
 		if (! tval.IsEmpty()) {
+#if !defined SUPPRESS_SPLASH
 			CSplashDialog::HideSplashScreen();
+#endif
 			tval.Append(_T("Meanwhile, only REVIEW mode will be available.\n"));
 			MessageBox(NULL,tval.GetString(),_T("Error"),0);
 		}

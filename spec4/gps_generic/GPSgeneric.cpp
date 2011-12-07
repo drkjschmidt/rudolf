@@ -432,7 +432,7 @@ bool CGPSgeneric::findPort(CGPSport *portinfo,CString *portname, CString *device
 					if (shortList.size() > 0)
 					{
 						wholeList=shortList;
-						shortList.empty();
+						shortList.clear();
 					}
 				}
 				break;
@@ -447,7 +447,7 @@ bool CGPSgeneric::findPort(CGPSport *portinfo,CString *portname, CString *device
 					if (shortList.size() > 0)
 					{
 						wholeList=shortList;
-						shortList.empty();
+						shortList.clear();
 					}
 				}
 				break;
@@ -462,7 +462,7 @@ bool CGPSgeneric::findPort(CGPSport *portinfo,CString *portname, CString *device
 					if (shortList.size() > 0)
 					{
 						wholeList=shortList;
-						shortList.empty();
+						shortList.clear();
 					}
 				}
 				break;

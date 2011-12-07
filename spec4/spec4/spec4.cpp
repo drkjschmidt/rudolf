@@ -164,8 +164,10 @@ BOOL Cspec4App::InitInstance()
 	// @@RP ... this is where our code starts
 	// @@@
 
+#if !defined SUPPRESS_SPLASH
 	theApp.ChangeStatusText(_T("Splash Screen and Initializations here"));
 	CSplashDialog::ShowSplashScreen(m_pMainWnd,20000,500);
+#endif
 
 	// Get working directory ... this is now done by the config file loader ...
 	theApp.pConfig=new Cspec4Cfg();
@@ -238,8 +240,10 @@ BOOL Cspec4App::InitInstance()
 
 	// This should be a safe way to force the window into the run mode we want ... 
 	// @@@ for some reason the dialog cannot be killed by mouseclick?!?
+#if !defined SUPPRESS_SPLASH
 	if (theApp.pConfig->getCfgRunmode() == RUNMODE_CONFIGURATION)
 		CSplashDialog::HideSplashScreen();
+#endif
 	theApp.setRunmode(theApp.pConfig->getCfgRunmode());
 
 	return TRUE;
