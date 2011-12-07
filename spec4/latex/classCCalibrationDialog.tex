@@ -1,0 +1,244 @@
+\hypertarget{classCCalibrationDialog}{
+\section{CCalibrationDialog Class Reference}
+\label{classCCalibrationDialog}\index{CCalibrationDialog@{CCalibrationDialog}}
+}
+
+
+{\ttfamily \#include $<$CalibrationDialog.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classCCalibrationDialog_a3fb705c96f8b99665a8d2b40ed36f11fa57eba41a34c60aaa1d1d60fc7310ff86}{IDD} =  IDD\_\-DIALOG4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCCalibrationDialog_aacb00c57bb5f6232ea7cbdcb06c41dd8}{CCalibrationDialog} (CWnd $\ast$pParent=NULL)
+\item 
+virtual \hyperlink{classCCalibrationDialog_a2679e154901bdeda340bbbd9ce27deeb}{$\sim$CCalibrationDialog} ()
+\item 
+virtual BOOL \hyperlink{classCCalibrationDialog_ab6a78f071f1e6d86044591bb500355c1}{OnInitDialog} ()
+\item 
+afx\_\-msg void \hyperlink{classCCalibrationDialog_abc149fe574f82413f3f1e4246dffe8d3}{OnBnClickedButtonAddPoint} ()
+\item 
+afx\_\-msg void \hyperlink{classCCalibrationDialog_a90e91fe8e0bc31b1f39b1db183407f9d}{OnBnClickedButtonDeletePoint} ()
+\item 
+afx\_\-msg void \hyperlink{classCCalibrationDialog_a2e9ac55a33eeb27dd613168337b66675}{OnCbnSelchangeFitType} ()
+\item 
+afx\_\-msg void \hyperlink{classCCalibrationDialog_a15f211f5fc7c71ff33c970980f3d72ce}{OnEnChangeWavelen} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CComboBox \hyperlink{classCCalibrationDialog_a0a3a4fb91f59ada500e77bac22c3a11a}{c\_\-specName}
+\item 
+CString \hyperlink{classCCalibrationDialog_ac572ac6320283939a210f9d6b17a9647}{m\_\-substanceName}
+\item 
+CComboBox \hyperlink{classCCalibrationDialog_a5157376398273168ab3b68e1f887f6e2}{c\_\-integrationTime}
+\item 
+CListCtrl \hyperlink{classCCalibrationDialog_ad135265b9822e8d7fd5337625b41c874}{c\_\-listControl}
+\item 
+CComboBox \hyperlink{classCCalibrationDialog_a271c77a45d57fad3a49c8783f2f696a2}{c\_\-wavelenSelect}
+\item 
+CComboBox \hyperlink{classCCalibrationDialog_a9c2d4ea81e9024d6ed8d4fea43c7b866}{c\_\-calibrationType}
+\item 
+\hyperlink{classCStaticRefreshSpectra}{CStaticRefreshSpectra} \hyperlink{classCCalibrationDialog_a9a7358482a088c297a04c0f042bed923}{c\_\-frameSpectrum}
+\item 
+\hyperlink{classCStaticRefreshCalibration}{CStaticRefreshCalibration} \hyperlink{classCCalibrationDialog_a590aeaff751390fe3ef3b9aa681b3309}{c\_\-frameCalibration}
+\item 
+CString \hyperlink{classCCalibrationDialog_a69a425629aced9ff506f1335f8ddede1}{m\_\-integrationTime}
+\item 
+CEdit \hyperlink{classCCalibrationDialog_abacb72fe4123d5209a1811aec7720d6f}{c\_\-concAVal}
+\item 
+CComboBox \hyperlink{classCCalibrationDialog_af9ce66ade6c343a603a907dd436a2461}{c\_\-concAUnit}
+\item 
+CComboBox \hyperlink{classCCalibrationDialog_aefbb1953b1e9776bfcd6ed07ce752087}{c\_\-scansToAverage}
+\item 
+CComboBox \hyperlink{classCCalibrationDialog_ab6fc45fb9d6bb1174b444efd4ae04725}{c\_\-boxcarWidth}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classCCalibrationDialog_ae767d980b230184d3e631c5460891759}{DoDataExchange} (CDataExchange $\ast$pDX)
+\item 
+virtual void \hyperlink{classCCalibrationDialog_a64ccffda450c76e2f0fcd03b72f11eca}{OnOK} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCCalibrationDialog_a3fb705c96f8b99665a8d2b40ed36f11f}{
+\subsubsection[{"@0}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}
+\label{classCCalibrationDialog_a3fb705c96f8b99665a8d2b40ed36f11f}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IDD@{IDD}!CCalibrationDialog@{CCalibrationDialog}}\index{CCalibrationDialog@{CCalibrationDialog}!IDD@{IDD}}\item[{\em 
+\hypertarget{classCCalibrationDialog_a3fb705c96f8b99665a8d2b40ed36f11fa57eba41a34c60aaa1d1d60fc7310ff86}{
+IDD}
+\label{classCCalibrationDialog_a3fb705c96f8b99665a8d2b40ed36f11fa57eba41a34c60aaa1d1d60fc7310ff86}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCCalibrationDialog_aacb00c57bb5f6232ea7cbdcb06c41dd8}{
+\index{CCalibrationDialog@{CCalibrationDialog}!CCalibrationDialog@{CCalibrationDialog}}
+\index{CCalibrationDialog@{CCalibrationDialog}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{CCalibrationDialog}]{\setlength{\rightskip}{0pt plus 5cm}CCalibrationDialog::CCalibrationDialog (
+\begin{DoxyParamCaption}
+\item[{CWnd $\ast$}]{ pParent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationDialog_aacb00c57bb5f6232ea7cbdcb06c41dd8}
+\hypertarget{classCCalibrationDialog_a2679e154901bdeda340bbbd9ce27deeb}{
+\index{CCalibrationDialog@{CCalibrationDialog}!$\sim$CCalibrationDialog@{$\sim$CCalibrationDialog}}
+\index{$\sim$CCalibrationDialog@{$\sim$CCalibrationDialog}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{$\sim$CCalibrationDialog}]{\setlength{\rightskip}{0pt plus 5cm}CCalibrationDialog::$\sim$CCalibrationDialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCCalibrationDialog_a2679e154901bdeda340bbbd9ce27deeb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCCalibrationDialog_ae767d980b230184d3e631c5460891759}{
+\index{CCalibrationDialog@{CCalibrationDialog}!DoDataExchange@{DoDataExchange}}
+\index{DoDataExchange@{DoDataExchange}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{DoDataExchange}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationDialog::DoDataExchange (
+\begin{DoxyParamCaption}
+\item[{CDataExchange $\ast$}]{ pDX}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classCCalibrationDialog_ae767d980b230184d3e631c5460891759}
+\hypertarget{classCCalibrationDialog_abc149fe574f82413f3f1e4246dffe8d3}{
+\index{CCalibrationDialog@{CCalibrationDialog}!OnBnClickedButtonAddPoint@{OnBnClickedButtonAddPoint}}
+\index{OnBnClickedButtonAddPoint@{OnBnClickedButtonAddPoint}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{OnBnClickedButtonAddPoint}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationDialog::OnBnClickedButtonAddPoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationDialog_abc149fe574f82413f3f1e4246dffe8d3}
+\hypertarget{classCCalibrationDialog_a90e91fe8e0bc31b1f39b1db183407f9d}{
+\index{CCalibrationDialog@{CCalibrationDialog}!OnBnClickedButtonDeletePoint@{OnBnClickedButtonDeletePoint}}
+\index{OnBnClickedButtonDeletePoint@{OnBnClickedButtonDeletePoint}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{OnBnClickedButtonDeletePoint}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationDialog::OnBnClickedButtonDeletePoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationDialog_a90e91fe8e0bc31b1f39b1db183407f9d}
+\hypertarget{classCCalibrationDialog_a2e9ac55a33eeb27dd613168337b66675}{
+\index{CCalibrationDialog@{CCalibrationDialog}!OnCbnSelchangeFitType@{OnCbnSelchangeFitType}}
+\index{OnCbnSelchangeFitType@{OnCbnSelchangeFitType}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{OnCbnSelchangeFitType}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationDialog::OnCbnSelchangeFitType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationDialog_a2e9ac55a33eeb27dd613168337b66675}
+\hypertarget{classCCalibrationDialog_a15f211f5fc7c71ff33c970980f3d72ce}{
+\index{CCalibrationDialog@{CCalibrationDialog}!OnEnChangeWavelen@{OnEnChangeWavelen}}
+\index{OnEnChangeWavelen@{OnEnChangeWavelen}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{OnEnChangeWavelen}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationDialog::OnEnChangeWavelen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationDialog_a15f211f5fc7c71ff33c970980f3d72ce}
+\hypertarget{classCCalibrationDialog_ab6a78f071f1e6d86044591bb500355c1}{
+\index{CCalibrationDialog@{CCalibrationDialog}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{OnInitDialog}]{\setlength{\rightskip}{0pt plus 5cm}BOOL CCalibrationDialog::OnInitDialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCCalibrationDialog_ab6a78f071f1e6d86044591bb500355c1}
+\hypertarget{classCCalibrationDialog_a64ccffda450c76e2f0fcd03b72f11eca}{
+\index{CCalibrationDialog@{CCalibrationDialog}!OnOK@{OnOK}}
+\index{OnOK@{OnOK}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{OnOK}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationDialog::OnOK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classCCalibrationDialog_a64ccffda450c76e2f0fcd03b72f11eca}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCCalibrationDialog_ab6fc45fb9d6bb1174b444efd4ae04725}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-boxcarWidth@{c\_\-boxcarWidth}}
+\index{c\_\-boxcarWidth@{c\_\-boxcarWidth}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-boxcarWidth}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CCalibrationDialog::c\_\-boxcarWidth}}}
+\label{classCCalibrationDialog_ab6fc45fb9d6bb1174b444efd4ae04725}
+\hypertarget{classCCalibrationDialog_a9c2d4ea81e9024d6ed8d4fea43c7b866}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-calibrationType@{c\_\-calibrationType}}
+\index{c\_\-calibrationType@{c\_\-calibrationType}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-calibrationType}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CCalibrationDialog::c\_\-calibrationType}}}
+\label{classCCalibrationDialog_a9c2d4ea81e9024d6ed8d4fea43c7b866}
+\hypertarget{classCCalibrationDialog_af9ce66ade6c343a603a907dd436a2461}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-concAUnit@{c\_\-concAUnit}}
+\index{c\_\-concAUnit@{c\_\-concAUnit}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-concAUnit}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CCalibrationDialog::c\_\-concAUnit}}}
+\label{classCCalibrationDialog_af9ce66ade6c343a603a907dd436a2461}
+\hypertarget{classCCalibrationDialog_abacb72fe4123d5209a1811aec7720d6f}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-concAVal@{c\_\-concAVal}}
+\index{c\_\-concAVal@{c\_\-concAVal}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-concAVal}]{\setlength{\rightskip}{0pt plus 5cm}CEdit {\bf CCalibrationDialog::c\_\-concAVal}}}
+\label{classCCalibrationDialog_abacb72fe4123d5209a1811aec7720d6f}
+\hypertarget{classCCalibrationDialog_a590aeaff751390fe3ef3b9aa681b3309}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-frameCalibration@{c\_\-frameCalibration}}
+\index{c\_\-frameCalibration@{c\_\-frameCalibration}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-frameCalibration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CStaticRefreshCalibration} {\bf CCalibrationDialog::c\_\-frameCalibration}}}
+\label{classCCalibrationDialog_a590aeaff751390fe3ef3b9aa681b3309}
+\hypertarget{classCCalibrationDialog_a9a7358482a088c297a04c0f042bed923}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-frameSpectrum@{c\_\-frameSpectrum}}
+\index{c\_\-frameSpectrum@{c\_\-frameSpectrum}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-frameSpectrum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CStaticRefreshSpectra} {\bf CCalibrationDialog::c\_\-frameSpectrum}}}
+\label{classCCalibrationDialog_a9a7358482a088c297a04c0f042bed923}
+\hypertarget{classCCalibrationDialog_a5157376398273168ab3b68e1f887f6e2}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-integrationTime@{c\_\-integrationTime}}
+\index{c\_\-integrationTime@{c\_\-integrationTime}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-integrationTime}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CCalibrationDialog::c\_\-integrationTime}}}
+\label{classCCalibrationDialog_a5157376398273168ab3b68e1f887f6e2}
+\hypertarget{classCCalibrationDialog_ad135265b9822e8d7fd5337625b41c874}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-listControl@{c\_\-listControl}}
+\index{c\_\-listControl@{c\_\-listControl}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-listControl}]{\setlength{\rightskip}{0pt plus 5cm}CListCtrl {\bf CCalibrationDialog::c\_\-listControl}}}
+\label{classCCalibrationDialog_ad135265b9822e8d7fd5337625b41c874}
+\hypertarget{classCCalibrationDialog_aefbb1953b1e9776bfcd6ed07ce752087}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-scansToAverage@{c\_\-scansToAverage}}
+\index{c\_\-scansToAverage@{c\_\-scansToAverage}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-scansToAverage}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CCalibrationDialog::c\_\-scansToAverage}}}
+\label{classCCalibrationDialog_aefbb1953b1e9776bfcd6ed07ce752087}
+\hypertarget{classCCalibrationDialog_a0a3a4fb91f59ada500e77bac22c3a11a}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-specName@{c\_\-specName}}
+\index{c\_\-specName@{c\_\-specName}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-specName}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CCalibrationDialog::c\_\-specName}}}
+\label{classCCalibrationDialog_a0a3a4fb91f59ada500e77bac22c3a11a}
+\hypertarget{classCCalibrationDialog_a271c77a45d57fad3a49c8783f2f696a2}{
+\index{CCalibrationDialog@{CCalibrationDialog}!c\_\-wavelenSelect@{c\_\-wavelenSelect}}
+\index{c\_\-wavelenSelect@{c\_\-wavelenSelect}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{c\_\-wavelenSelect}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CCalibrationDialog::c\_\-wavelenSelect}}}
+\label{classCCalibrationDialog_a271c77a45d57fad3a49c8783f2f696a2}
+\hypertarget{classCCalibrationDialog_a69a425629aced9ff506f1335f8ddede1}{
+\index{CCalibrationDialog@{CCalibrationDialog}!m\_\-integrationTime@{m\_\-integrationTime}}
+\index{m\_\-integrationTime@{m\_\-integrationTime}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{m\_\-integrationTime}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCalibrationDialog::m\_\-integrationTime}}}
+\label{classCCalibrationDialog_a69a425629aced9ff506f1335f8ddede1}
+\hypertarget{classCCalibrationDialog_ac572ac6320283939a210f9d6b17a9647}{
+\index{CCalibrationDialog@{CCalibrationDialog}!m\_\-substanceName@{m\_\-substanceName}}
+\index{m\_\-substanceName@{m\_\-substanceName}!CCalibrationDialog@{CCalibrationDialog}}
+\subsubsection[{m\_\-substanceName}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCalibrationDialog::m\_\-substanceName}}}
+\label{classCCalibrationDialog_ac572ac6320283939a210f9d6b17a9647}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{CalibrationDialog_8h}{CalibrationDialog.h}\item 
+spec4/\hyperlink{CalibrationDialog_8cpp}{CalibrationDialog.cpp}\end{DoxyCompactItemize}

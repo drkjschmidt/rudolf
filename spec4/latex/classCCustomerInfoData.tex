@@ -1,0 +1,476 @@
+\hypertarget{classCCustomerInfoData}{
+\section{CCustomerInfoData Class Reference}
+\label{classCCustomerInfoData}\index{CCustomerInfoData@{CCustomerInfoData}}
+}
+
+
+{\ttfamily \#include $<$CustomerInfoData.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849}{SerializeModes} \{ \hyperlink{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849a88f455d6bd3966c10c9e68b4001e5b84}{outputCSV} =  (unsigned char) 0x01, 
+\hyperlink{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849a8b150883e3f025a1ead3ce167b587be4}{outputXML} =  (unsigned char) 0x02
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCCustomerInfoData_ac08151a758a5d5c978ebe0c799b3088f}{CCustomerInfoData} (void)
+\item 
+\hyperlink{classCCustomerInfoData_afda9de2789940ecb037a2b20c1559357}{$\sim$CCustomerInfoData} (void)
+\item 
+bool \hyperlink{classCCustomerInfoData_ab82f0824c1205c8a9748ea770db19e79}{isValid} ()
+\item 
+void \hyperlink{classCCustomerInfoData_a5f8077003b38a3a7af8b87497ea90b31}{setValid} ()
+\item 
+void \hyperlink{classCCustomerInfoData_ac82001af9efef72e111d51185c6bc63b}{setInValid} ()
+\item 
+CString \hyperlink{classCCustomerInfoData_ad04996b9e521441b2c6cd39b93d728af}{getNameCust} ()
+\item 
+CString \hyperlink{classCCustomerInfoData_a4b16d09f168ef2846a62d4ad40a9d943}{getNameLoc} ()
+\item 
+CString \hyperlink{classCCustomerInfoData_a10dc4afaa8ee2535a4fe53745a5939d2}{getNameSamp} ()
+\item 
+CString \hyperlink{classCCustomerInfoData_a3a97f41f5d07af066c86a1801b437207}{getGpsString} ()
+\item 
+double \hyperlink{classCCustomerInfoData_a8dd7a1987e8b4d45b0b2032d5c6692c2}{getDataPipeKm} ()
+\item 
+CString \hyperlink{classCCustomerInfoData_aa53784e91fbb1fd1c0dcc3f19f48f113}{getDataPipeKmStr} ()
+\item 
+double \hyperlink{classCCustomerInfoData_a565cb620f8db8762e6ae181ba410ccc8}{getDataDilution} ()
+\item 
+CString \hyperlink{classCCustomerInfoData_a72e77ae79d914e8fcdc276d5d4ab3ba1}{getDataDilutionStr} ()
+\item 
+CString \hyperlink{classCCustomerInfoData_a8cf40c721f44d664720620785b6d3c18}{getDataFF1} ()
+\item 
+CString \hyperlink{classCCustomerInfoData_a84ae7ae042a3ff8117498b700f6812d7}{getDataFF2} ()
+\item 
+void \hyperlink{classCCustomerInfoData_a9b314ec3d93d3c3027730555f0050e27}{setNameCust} (CString name)
+\item 
+void \hyperlink{classCCustomerInfoData_a84aff422889f89d95819610e1c94ae5a}{setNameLoc} (CString name)
+\item 
+void \hyperlink{classCCustomerInfoData_abcef72ac95e8806a780c8bb5d828706c}{setNameSamp} (CString name)
+\item 
+void \hyperlink{classCCustomerInfoData_af7fcb14bd38174cad5b75f28902a459c}{setGpsLoc} (double slat, double slon, double salt)
+\item 
+void \hyperlink{classCCustomerInfoData_a33ff24ec471cdb508c90a16923f3f024}{setGpsLoc} (\hyperlink{classCGPSData}{CGPSData} \&sGPS)
+\item 
+void \hyperlink{classCCustomerInfoData_a1d2b27041c50b9d9121529fc5fd5e220}{setDataPipeKm} (double data)
+\item 
+void \hyperlink{classCCustomerInfoData_a4640f9ff0e67ab173b763a6994ec6ac1}{setDataPipeKmStr} (CString data)
+\item 
+void \hyperlink{classCCustomerInfoData_a604518a314a72578a2384a6571dd6bb2}{setDataDilution} (double data)
+\item 
+void \hyperlink{classCCustomerInfoData_abc04bfff4ca279bf0fb0cdfa07300819}{setDataDilutionStr} (CString data)
+\item 
+void \hyperlink{classCCustomerInfoData_ac6ae25cad62ebcb3acb45005fbc467cc}{setDataFF1} (CString data)
+\item 
+void \hyperlink{classCCustomerInfoData_a39e7f0e44d029ca8108dc1359c488a6a}{setDataFF2} (CString data)
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCCustomerInfoData_a19e3b91538a41fb6bf0f656ffc63383f}{Save} (CString $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Save to file. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCCustomerInfoData_a7979c283e9a7873feb777e922a6ddf5c}{Load} (CString $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Load from file. \item\end{DoxyCompactList}\item 
+CString \hyperlink{classCCustomerInfoData_ae7ec69bbcf0e57fdf8cda308cdd7f7b6}{serializeData} (unsigned char modes)
+\begin{DoxyCompactList}\small\item\em Create serialized data for save function. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCCustomerInfoData_a164b89d82b07c42b1e1a910a31fbb4e9}{deserializeData} (CString data, int \&lpos, int \&llpos)
+\begin{DoxyCompactList}\small\item\em Convert serialized data from load function to calibration curve contents. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCCustomerInfoData_ac67f5590832bae201ffd0f14c86357e9}{isvalid}
+\item 
+\hyperlink{classCGPSData}{CGPSData} \hyperlink{classCCustomerInfoData_a71d4d204d1ef10c635d3dd665d2ca5e6}{acqGPSInfo}
+\item 
+CString \hyperlink{classCCustomerInfoData_ad389acb7e9b5714d258ffe1211cbeee9}{nameCust}
+\item 
+CString \hyperlink{classCCustomerInfoData_aa91d2e5c7291f408f465f5161ef24b73}{nameLoc}
+\item 
+CString \hyperlink{classCCustomerInfoData_a7163a983b6e3c632dd80159577f6d1a3}{nameSamp}
+\item 
+double \hyperlink{classCCustomerInfoData_afdae97342e110dc8d7fd4ba906692d71}{dataPipeKm}
+\item 
+double \hyperlink{classCCustomerInfoData_a3eefa5f913ee8837d5fd5606445f4099}{dataDilution}
+\item 
+CString \hyperlink{classCCustomerInfoData_a61c1265f1a795e38f6a40235ceb49278}{dataFF1}
+\item 
+CString \hyperlink{classCCustomerInfoData_a71c5c553315fdde41f961a83a5503cdc}{dataFF2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849}{
+\index{CCustomerInfoData@{CCustomerInfoData}!SerializeModes@{SerializeModes}}
+\index{SerializeModes@{SerializeModes}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{SerializeModes}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CCustomerInfoData::SerializeModes}}}
+\label{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{outputCSV@{outputCSV}!CCustomerInfoData@{CCustomerInfoData}}\index{CCustomerInfoData@{CCustomerInfoData}!outputCSV@{outputCSV}}\item[{\em 
+\hypertarget{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849a88f455d6bd3966c10c9e68b4001e5b84}{
+outputCSV}
+\label{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849a88f455d6bd3966c10c9e68b4001e5b84}
+}]\index{outputXML@{outputXML}!CCustomerInfoData@{CCustomerInfoData}}\index{CCustomerInfoData@{CCustomerInfoData}!outputXML@{outputXML}}\item[{\em 
+\hypertarget{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849a8b150883e3f025a1ead3ce167b587be4}{
+outputXML}
+\label{classCCustomerInfoData_afe8407ab593ac7caf8577439c22af849a8b150883e3f025a1ead3ce167b587be4}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCCustomerInfoData_ac08151a758a5d5c978ebe0c799b3088f}{
+\index{CCustomerInfoData@{CCustomerInfoData}!CCustomerInfoData@{CCustomerInfoData}}
+\index{CCustomerInfoData@{CCustomerInfoData}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{CCustomerInfoData}]{\setlength{\rightskip}{0pt plus 5cm}CCustomerInfoData::CCustomerInfoData (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCCustomerInfoData_ac08151a758a5d5c978ebe0c799b3088f}
+\hypertarget{classCCustomerInfoData_afda9de2789940ecb037a2b20c1559357}{
+\index{CCustomerInfoData@{CCustomerInfoData}!$\sim$CCustomerInfoData@{$\sim$CCustomerInfoData}}
+\index{$\sim$CCustomerInfoData@{$\sim$CCustomerInfoData}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{$\sim$CCustomerInfoData}]{\setlength{\rightskip}{0pt plus 5cm}CCustomerInfoData::$\sim$CCustomerInfoData (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCCustomerInfoData_afda9de2789940ecb037a2b20c1559357}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCCustomerInfoData_a164b89d82b07c42b1e1a910a31fbb4e9}{
+\index{CCustomerInfoData@{CCustomerInfoData}!deserializeData@{deserializeData}}
+\index{deserializeData@{deserializeData}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{deserializeData}]{\setlength{\rightskip}{0pt plus 5cm}bool CCustomerInfoData::deserializeData (
+\begin{DoxyParamCaption}
+\item[{CString}]{ data, }
+\item[{int \&}]{ lpos, }
+\item[{int \&}]{ llpos}
+\end{DoxyParamCaption}
+)}}
+\label{classCCustomerInfoData_a164b89d82b07c42b1e1a910a31fbb4e9}
+
+
+Convert serialized data from load function to calibration curve contents. 
+
+\hypertarget{classCCustomerInfoData_a565cb620f8db8762e6ae181ba410ccc8}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getDataDilution@{getDataDilution}}
+\index{getDataDilution@{getDataDilution}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getDataDilution}]{\setlength{\rightskip}{0pt plus 5cm}double CCustomerInfoData::getDataDilution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a565cb620f8db8762e6ae181ba410ccc8}
+\hypertarget{classCCustomerInfoData_a72e77ae79d914e8fcdc276d5d4ab3ba1}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getDataDilutionStr@{getDataDilutionStr}}
+\index{getDataDilutionStr@{getDataDilutionStr}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getDataDilutionStr}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::getDataDilutionStr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a72e77ae79d914e8fcdc276d5d4ab3ba1}
+\hypertarget{classCCustomerInfoData_a8cf40c721f44d664720620785b6d3c18}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getDataFF1@{getDataFF1}}
+\index{getDataFF1@{getDataFF1}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getDataFF1}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::getDataFF1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a8cf40c721f44d664720620785b6d3c18}
+\hypertarget{classCCustomerInfoData_a84ae7ae042a3ff8117498b700f6812d7}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getDataFF2@{getDataFF2}}
+\index{getDataFF2@{getDataFF2}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getDataFF2}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::getDataFF2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a84ae7ae042a3ff8117498b700f6812d7}
+\hypertarget{classCCustomerInfoData_a8dd7a1987e8b4d45b0b2032d5c6692c2}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getDataPipeKm@{getDataPipeKm}}
+\index{getDataPipeKm@{getDataPipeKm}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getDataPipeKm}]{\setlength{\rightskip}{0pt plus 5cm}double CCustomerInfoData::getDataPipeKm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a8dd7a1987e8b4d45b0b2032d5c6692c2}
+\hypertarget{classCCustomerInfoData_aa53784e91fbb1fd1c0dcc3f19f48f113}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getDataPipeKmStr@{getDataPipeKmStr}}
+\index{getDataPipeKmStr@{getDataPipeKmStr}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getDataPipeKmStr}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::getDataPipeKmStr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_aa53784e91fbb1fd1c0dcc3f19f48f113}
+\hypertarget{classCCustomerInfoData_a3a97f41f5d07af066c86a1801b437207}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getGpsString@{getGpsString}}
+\index{getGpsString@{getGpsString}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getGpsString}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::getGpsString (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a3a97f41f5d07af066c86a1801b437207}
+\hypertarget{classCCustomerInfoData_ad04996b9e521441b2c6cd39b93d728af}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getNameCust@{getNameCust}}
+\index{getNameCust@{getNameCust}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getNameCust}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::getNameCust (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_ad04996b9e521441b2c6cd39b93d728af}
+\hypertarget{classCCustomerInfoData_a4b16d09f168ef2846a62d4ad40a9d943}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getNameLoc@{getNameLoc}}
+\index{getNameLoc@{getNameLoc}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getNameLoc}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::getNameLoc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a4b16d09f168ef2846a62d4ad40a9d943}
+\hypertarget{classCCustomerInfoData_a10dc4afaa8ee2535a4fe53745a5939d2}{
+\index{CCustomerInfoData@{CCustomerInfoData}!getNameSamp@{getNameSamp}}
+\index{getNameSamp@{getNameSamp}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{getNameSamp}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::getNameSamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a10dc4afaa8ee2535a4fe53745a5939d2}
+\hypertarget{classCCustomerInfoData_ab82f0824c1205c8a9748ea770db19e79}{
+\index{CCustomerInfoData@{CCustomerInfoData}!isValid@{isValid}}
+\index{isValid@{isValid}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{isValid}]{\setlength{\rightskip}{0pt plus 5cm}bool CCustomerInfoData::isValid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_ab82f0824c1205c8a9748ea770db19e79}
+\hypertarget{classCCustomerInfoData_a7979c283e9a7873feb777e922a6ddf5c}{
+\index{CCustomerInfoData@{CCustomerInfoData}!Load@{Load}}
+\index{Load@{Load}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}bool CCustomerInfoData::Load (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{classCCustomerInfoData_a7979c283e9a7873feb777e922a6ddf5c}
+
+
+Load from file. 
+
+\hypertarget{classCCustomerInfoData_a19e3b91538a41fb6bf0f656ffc63383f}{
+\index{CCustomerInfoData@{CCustomerInfoData}!Save@{Save}}
+\index{Save@{Save}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}bool CCustomerInfoData::Save (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ filename = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCCustomerInfoData_a19e3b91538a41fb6bf0f656ffc63383f}
+
+
+Save to file. 
+
+\hypertarget{classCCustomerInfoData_ae7ec69bbcf0e57fdf8cda308cdd7f7b6}{
+\index{CCustomerInfoData@{CCustomerInfoData}!serializeData@{serializeData}}
+\index{serializeData@{serializeData}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{serializeData}]{\setlength{\rightskip}{0pt plus 5cm}CString CCustomerInfoData::serializeData (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{ modes}
+\end{DoxyParamCaption}
+)}}
+\label{classCCustomerInfoData_ae7ec69bbcf0e57fdf8cda308cdd7f7b6}
+
+
+Create serialized data for save function. 
+
+\hypertarget{classCCustomerInfoData_a604518a314a72578a2384a6571dd6bb2}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setDataDilution@{setDataDilution}}
+\index{setDataDilution@{setDataDilution}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setDataDilution}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setDataDilution (
+\begin{DoxyParamCaption}
+\item[{double}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a604518a314a72578a2384a6571dd6bb2}
+\hypertarget{classCCustomerInfoData_abc04bfff4ca279bf0fb0cdfa07300819}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setDataDilutionStr@{setDataDilutionStr}}
+\index{setDataDilutionStr@{setDataDilutionStr}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setDataDilutionStr}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setDataDilutionStr (
+\begin{DoxyParamCaption}
+\item[{CString}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_abc04bfff4ca279bf0fb0cdfa07300819}
+\hypertarget{classCCustomerInfoData_ac6ae25cad62ebcb3acb45005fbc467cc}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setDataFF1@{setDataFF1}}
+\index{setDataFF1@{setDataFF1}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setDataFF1}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setDataFF1 (
+\begin{DoxyParamCaption}
+\item[{CString}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_ac6ae25cad62ebcb3acb45005fbc467cc}
+\hypertarget{classCCustomerInfoData_a39e7f0e44d029ca8108dc1359c488a6a}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setDataFF2@{setDataFF2}}
+\index{setDataFF2@{setDataFF2}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setDataFF2}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setDataFF2 (
+\begin{DoxyParamCaption}
+\item[{CString}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a39e7f0e44d029ca8108dc1359c488a6a}
+\hypertarget{classCCustomerInfoData_a1d2b27041c50b9d9121529fc5fd5e220}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setDataPipeKm@{setDataPipeKm}}
+\index{setDataPipeKm@{setDataPipeKm}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setDataPipeKm}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setDataPipeKm (
+\begin{DoxyParamCaption}
+\item[{double}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a1d2b27041c50b9d9121529fc5fd5e220}
+\hypertarget{classCCustomerInfoData_a4640f9ff0e67ab173b763a6994ec6ac1}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setDataPipeKmStr@{setDataPipeKmStr}}
+\index{setDataPipeKmStr@{setDataPipeKmStr}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setDataPipeKmStr}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setDataPipeKmStr (
+\begin{DoxyParamCaption}
+\item[{CString}]{ data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a4640f9ff0e67ab173b763a6994ec6ac1}
+\hypertarget{classCCustomerInfoData_af7fcb14bd38174cad5b75f28902a459c}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setGpsLoc@{setGpsLoc}}
+\index{setGpsLoc@{setGpsLoc}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setGpsLoc}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setGpsLoc (
+\begin{DoxyParamCaption}
+\item[{double}]{ slat, }
+\item[{double}]{ slon, }
+\item[{double}]{ salt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_af7fcb14bd38174cad5b75f28902a459c}
+\hypertarget{classCCustomerInfoData_a33ff24ec471cdb508c90a16923f3f024}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setGpsLoc@{setGpsLoc}}
+\index{setGpsLoc@{setGpsLoc}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setGpsLoc}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setGpsLoc (
+\begin{DoxyParamCaption}
+\item[{{\bf CGPSData} \&}]{ sGPS}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a33ff24ec471cdb508c90a16923f3f024}
+\hypertarget{classCCustomerInfoData_ac82001af9efef72e111d51185c6bc63b}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setInValid@{setInValid}}
+\index{setInValid@{setInValid}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setInValid}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setInValid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_ac82001af9efef72e111d51185c6bc63b}
+\hypertarget{classCCustomerInfoData_a9b314ec3d93d3c3027730555f0050e27}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setNameCust@{setNameCust}}
+\index{setNameCust@{setNameCust}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setNameCust}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setNameCust (
+\begin{DoxyParamCaption}
+\item[{CString}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a9b314ec3d93d3c3027730555f0050e27}
+\hypertarget{classCCustomerInfoData_a84aff422889f89d95819610e1c94ae5a}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setNameLoc@{setNameLoc}}
+\index{setNameLoc@{setNameLoc}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setNameLoc}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setNameLoc (
+\begin{DoxyParamCaption}
+\item[{CString}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a84aff422889f89d95819610e1c94ae5a}
+\hypertarget{classCCustomerInfoData_abcef72ac95e8806a780c8bb5d828706c}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setNameSamp@{setNameSamp}}
+\index{setNameSamp@{setNameSamp}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setNameSamp}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setNameSamp (
+\begin{DoxyParamCaption}
+\item[{CString}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_abcef72ac95e8806a780c8bb5d828706c}
+\hypertarget{classCCustomerInfoData_a5f8077003b38a3a7af8b87497ea90b31}{
+\index{CCustomerInfoData@{CCustomerInfoData}!setValid@{setValid}}
+\index{setValid@{setValid}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{setValid}]{\setlength{\rightskip}{0pt plus 5cm}void CCustomerInfoData::setValid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCustomerInfoData_a5f8077003b38a3a7af8b87497ea90b31}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCCustomerInfoData_a71d4d204d1ef10c635d3dd665d2ca5e6}{
+\index{CCustomerInfoData@{CCustomerInfoData}!acqGPSInfo@{acqGPSInfo}}
+\index{acqGPSInfo@{acqGPSInfo}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{acqGPSInfo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGPSData} {\bf CCustomerInfoData::acqGPSInfo}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_a71d4d204d1ef10c635d3dd665d2ca5e6}
+\hypertarget{classCCustomerInfoData_a3eefa5f913ee8837d5fd5606445f4099}{
+\index{CCustomerInfoData@{CCustomerInfoData}!dataDilution@{dataDilution}}
+\index{dataDilution@{dataDilution}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{dataDilution}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCustomerInfoData::dataDilution}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_a3eefa5f913ee8837d5fd5606445f4099}
+\hypertarget{classCCustomerInfoData_a61c1265f1a795e38f6a40235ceb49278}{
+\index{CCustomerInfoData@{CCustomerInfoData}!dataFF1@{dataFF1}}
+\index{dataFF1@{dataFF1}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{dataFF1}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCustomerInfoData::dataFF1}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_a61c1265f1a795e38f6a40235ceb49278}
+\hypertarget{classCCustomerInfoData_a71c5c553315fdde41f961a83a5503cdc}{
+\index{CCustomerInfoData@{CCustomerInfoData}!dataFF2@{dataFF2}}
+\index{dataFF2@{dataFF2}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{dataFF2}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCustomerInfoData::dataFF2}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_a71c5c553315fdde41f961a83a5503cdc}
+\hypertarget{classCCustomerInfoData_afdae97342e110dc8d7fd4ba906692d71}{
+\index{CCustomerInfoData@{CCustomerInfoData}!dataPipeKm@{dataPipeKm}}
+\index{dataPipeKm@{dataPipeKm}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{dataPipeKm}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCustomerInfoData::dataPipeKm}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_afdae97342e110dc8d7fd4ba906692d71}
+\hypertarget{classCCustomerInfoData_ac67f5590832bae201ffd0f14c86357e9}{
+\index{CCustomerInfoData@{CCustomerInfoData}!isvalid@{isvalid}}
+\index{isvalid@{isvalid}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{isvalid}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CCustomerInfoData::isvalid}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_ac67f5590832bae201ffd0f14c86357e9}
+\hypertarget{classCCustomerInfoData_ad389acb7e9b5714d258ffe1211cbeee9}{
+\index{CCustomerInfoData@{CCustomerInfoData}!nameCust@{nameCust}}
+\index{nameCust@{nameCust}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{nameCust}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCustomerInfoData::nameCust}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_ad389acb7e9b5714d258ffe1211cbeee9}
+\hypertarget{classCCustomerInfoData_aa91d2e5c7291f408f465f5161ef24b73}{
+\index{CCustomerInfoData@{CCustomerInfoData}!nameLoc@{nameLoc}}
+\index{nameLoc@{nameLoc}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{nameLoc}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCustomerInfoData::nameLoc}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_aa91d2e5c7291f408f465f5161ef24b73}
+\hypertarget{classCCustomerInfoData_a7163a983b6e3c632dd80159577f6d1a3}{
+\index{CCustomerInfoData@{CCustomerInfoData}!nameSamp@{nameSamp}}
+\index{nameSamp@{nameSamp}!CCustomerInfoData@{CCustomerInfoData}}
+\subsubsection[{nameSamp}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCustomerInfoData::nameSamp}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCCustomerInfoData_a7163a983b6e3c632dd80159577f6d1a3}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{CustomerInfoData_8h}{CustomerInfoData.h}\item 
+spec4/\hyperlink{CustomerInfoData_8cpp}{CustomerInfoData.cpp}\end{DoxyCompactItemize}

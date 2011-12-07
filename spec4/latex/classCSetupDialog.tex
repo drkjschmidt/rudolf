@@ -1,0 +1,243 @@
+\hypertarget{classCSetupDialog}{
+\section{CSetupDialog Class Reference}
+\label{classCSetupDialog}\index{CSetupDialog@{CSetupDialog}}
+}
+
+
+{\ttfamily \#include $<$SetupDialog.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classCSetupDialog_ace495d39f6e137af9aa38d8280538bc8a3b834c0eeebd3d78c306c35b991bcf2d}{IDD} =  IDD\_\-DIALOG1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSetupDialog_ab8dcb94ea30d7976cc4ce7c860735c11}{CSetupDialog} (CWnd $\ast$pParent=NULL)
+\item 
+virtual \hyperlink{classCSetupDialog_aa0c13855f758753466953374e55b1f83}{$\sim$CSetupDialog} ()
+\item 
+virtual BOOL \hyperlink{classCSetupDialog_a04c93b2a69b09491c17ab0d7f01d0385}{OnInitDialog} ()
+\item 
+afx\_\-msg void \hyperlink{classCSetupDialog_a913713df904a301126dc536cc102a8bc}{OnBnClickedTestSpectrometer} ()
+\item 
+afx\_\-msg void \hyperlink{classCSetupDialog_aaf4a03bebfe2ee647b291c0584f4ddac}{OnCbnSelchangeSelectSpectrometer} ()
+\item 
+afx\_\-msg void \hyperlink{classCSetupDialog_acb6215e491e1c11a7cfeff4b64b78bfa}{OnBnClickedTestGps} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CComboBox \hyperlink{classCSetupDialog_a1a0f9e4bec0c20637f2589da2c1d804c}{c\_\-SetupGPS}
+\item 
+CButton \hyperlink{classCSetupDialog_acefe06eb4c212a09f9c0a6b615b0d35f}{c\_\-TestGPS}
+\item 
+CString \hyperlink{classCSetupDialog_aad1a3ae46513e4df1199e6ff13715a6f}{m\_\-GPSName}
+\item 
+CString \hyperlink{classCSetupDialog_ad5fbe9645170fc5bf172f338aa4c029e}{m\_\-GPSlat}
+\item 
+CString \hyperlink{classCSetupDialog_aeaf91b37cc812e8de9330f2ba12d27b3}{m\_\-GPSlon}
+\item 
+CString \hyperlink{classCSetupDialog_a8750ab7d5683e14d0e7802a3177aedc6}{m\_\-GPSalt}
+\item 
+CComboBox \hyperlink{classCSetupDialog_a0a66e6d51d04b9a568b2c78d10161b30}{c\_\-SelectSpec}
+\item 
+CStatic \hyperlink{classCSetupDialog_a06485b5a59838ea8d4c4751ad294b151}{c\_\-SpecFrame}
+\item 
+CString \hyperlink{classCSetupDialog_ab857444d15fb333c2a7232e3b9ee799d}{m\_\-SelectSpec}
+\item 
+CButton \hyperlink{classCSetupDialog_afdf50f7162cb151b4c2841f4fc9cb8c8}{c\_\-requireGPS}
+\item 
+CButton \hyperlink{classCSetupDialog_ab7c5adbfcb68c03fe442d16512b3576a}{c\_\-requireSpec}
+\item 
+CButton \hyperlink{classCSetupDialog_a789c028127b67f50c7cf7cd244128fd4}{c\_\-autosaveSpec}
+\item 
+CEdit \hyperlink{classCSetupDialog_aba904d5349c9a004c61bdf91418615dc}{c\_\-passwordText}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classCSetupDialog_ad7ed1e55cc89c2cf54da5ddf7dbb7f6d}{DoDataExchange} (CDataExchange $\ast$pDX)
+\item 
+virtual void \hyperlink{classCSetupDialog_a59285fb2ba6be17a7fc61cc9aa08e9f4}{OnOK} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CGPSportList \hyperlink{classCSetupDialog_ac05f58b8de217ce33a9f52b7f41a497a}{ports}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCSetupDialog_ace495d39f6e137af9aa38d8280538bc8}{
+\subsubsection[{"@9}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}
+\label{classCSetupDialog_ace495d39f6e137af9aa38d8280538bc8}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IDD@{IDD}!CSetupDialog@{CSetupDialog}}\index{CSetupDialog@{CSetupDialog}!IDD@{IDD}}\item[{\em 
+\hypertarget{classCSetupDialog_ace495d39f6e137af9aa38d8280538bc8a3b834c0eeebd3d78c306c35b991bcf2d}{
+IDD}
+\label{classCSetupDialog_ace495d39f6e137af9aa38d8280538bc8a3b834c0eeebd3d78c306c35b991bcf2d}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCSetupDialog_ab8dcb94ea30d7976cc4ce7c860735c11}{
+\index{CSetupDialog@{CSetupDialog}!CSetupDialog@{CSetupDialog}}
+\index{CSetupDialog@{CSetupDialog}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{CSetupDialog}]{\setlength{\rightskip}{0pt plus 5cm}CSetupDialog::CSetupDialog (
+\begin{DoxyParamCaption}
+\item[{CWnd $\ast$}]{ pParent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCSetupDialog_ab8dcb94ea30d7976cc4ce7c860735c11}
+\hypertarget{classCSetupDialog_aa0c13855f758753466953374e55b1f83}{
+\index{CSetupDialog@{CSetupDialog}!$\sim$CSetupDialog@{$\sim$CSetupDialog}}
+\index{$\sim$CSetupDialog@{$\sim$CSetupDialog}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{$\sim$CSetupDialog}]{\setlength{\rightskip}{0pt plus 5cm}CSetupDialog::$\sim$CSetupDialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCSetupDialog_aa0c13855f758753466953374e55b1f83}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCSetupDialog_ad7ed1e55cc89c2cf54da5ddf7dbb7f6d}{
+\index{CSetupDialog@{CSetupDialog}!DoDataExchange@{DoDataExchange}}
+\index{DoDataExchange@{DoDataExchange}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{DoDataExchange}]{\setlength{\rightskip}{0pt plus 5cm}void CSetupDialog::DoDataExchange (
+\begin{DoxyParamCaption}
+\item[{CDataExchange $\ast$}]{ pDX}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classCSetupDialog_ad7ed1e55cc89c2cf54da5ddf7dbb7f6d}
+\hypertarget{classCSetupDialog_acb6215e491e1c11a7cfeff4b64b78bfa}{
+\index{CSetupDialog@{CSetupDialog}!OnBnClickedTestGps@{OnBnClickedTestGps}}
+\index{OnBnClickedTestGps@{OnBnClickedTestGps}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{OnBnClickedTestGps}]{\setlength{\rightskip}{0pt plus 5cm}void CSetupDialog::OnBnClickedTestGps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCSetupDialog_acb6215e491e1c11a7cfeff4b64b78bfa}
+\hypertarget{classCSetupDialog_a913713df904a301126dc536cc102a8bc}{
+\index{CSetupDialog@{CSetupDialog}!OnBnClickedTestSpectrometer@{OnBnClickedTestSpectrometer}}
+\index{OnBnClickedTestSpectrometer@{OnBnClickedTestSpectrometer}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{OnBnClickedTestSpectrometer}]{\setlength{\rightskip}{0pt plus 5cm}void CSetupDialog::OnBnClickedTestSpectrometer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCSetupDialog_a913713df904a301126dc536cc102a8bc}
+\hypertarget{classCSetupDialog_aaf4a03bebfe2ee647b291c0584f4ddac}{
+\index{CSetupDialog@{CSetupDialog}!OnCbnSelchangeSelectSpectrometer@{OnCbnSelchangeSelectSpectrometer}}
+\index{OnCbnSelchangeSelectSpectrometer@{OnCbnSelchangeSelectSpectrometer}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{OnCbnSelchangeSelectSpectrometer}]{\setlength{\rightskip}{0pt plus 5cm}void CSetupDialog::OnCbnSelchangeSelectSpectrometer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCSetupDialog_aaf4a03bebfe2ee647b291c0584f4ddac}
+\hypertarget{classCSetupDialog_a04c93b2a69b09491c17ab0d7f01d0385}{
+\index{CSetupDialog@{CSetupDialog}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{OnInitDialog}]{\setlength{\rightskip}{0pt plus 5cm}BOOL CSetupDialog::OnInitDialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCSetupDialog_a04c93b2a69b09491c17ab0d7f01d0385}
+\hypertarget{classCSetupDialog_a59285fb2ba6be17a7fc61cc9aa08e9f4}{
+\index{CSetupDialog@{CSetupDialog}!OnOK@{OnOK}}
+\index{OnOK@{OnOK}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{OnOK}]{\setlength{\rightskip}{0pt plus 5cm}void CSetupDialog::OnOK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classCSetupDialog_a59285fb2ba6be17a7fc61cc9aa08e9f4}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCSetupDialog_a789c028127b67f50c7cf7cd244128fd4}{
+\index{CSetupDialog@{CSetupDialog}!c\_\-autosaveSpec@{c\_\-autosaveSpec}}
+\index{c\_\-autosaveSpec@{c\_\-autosaveSpec}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{c\_\-autosaveSpec}]{\setlength{\rightskip}{0pt plus 5cm}CButton {\bf CSetupDialog::c\_\-autosaveSpec}}}
+\label{classCSetupDialog_a789c028127b67f50c7cf7cd244128fd4}
+\hypertarget{classCSetupDialog_aba904d5349c9a004c61bdf91418615dc}{
+\index{CSetupDialog@{CSetupDialog}!c\_\-passwordText@{c\_\-passwordText}}
+\index{c\_\-passwordText@{c\_\-passwordText}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{c\_\-passwordText}]{\setlength{\rightskip}{0pt plus 5cm}CEdit {\bf CSetupDialog::c\_\-passwordText}}}
+\label{classCSetupDialog_aba904d5349c9a004c61bdf91418615dc}
+\hypertarget{classCSetupDialog_afdf50f7162cb151b4c2841f4fc9cb8c8}{
+\index{CSetupDialog@{CSetupDialog}!c\_\-requireGPS@{c\_\-requireGPS}}
+\index{c\_\-requireGPS@{c\_\-requireGPS}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{c\_\-requireGPS}]{\setlength{\rightskip}{0pt plus 5cm}CButton {\bf CSetupDialog::c\_\-requireGPS}}}
+\label{classCSetupDialog_afdf50f7162cb151b4c2841f4fc9cb8c8}
+\hypertarget{classCSetupDialog_ab7c5adbfcb68c03fe442d16512b3576a}{
+\index{CSetupDialog@{CSetupDialog}!c\_\-requireSpec@{c\_\-requireSpec}}
+\index{c\_\-requireSpec@{c\_\-requireSpec}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{c\_\-requireSpec}]{\setlength{\rightskip}{0pt plus 5cm}CButton {\bf CSetupDialog::c\_\-requireSpec}}}
+\label{classCSetupDialog_ab7c5adbfcb68c03fe442d16512b3576a}
+\hypertarget{classCSetupDialog_a0a66e6d51d04b9a568b2c78d10161b30}{
+\index{CSetupDialog@{CSetupDialog}!c\_\-SelectSpec@{c\_\-SelectSpec}}
+\index{c\_\-SelectSpec@{c\_\-SelectSpec}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{c\_\-SelectSpec}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CSetupDialog::c\_\-SelectSpec}}}
+\label{classCSetupDialog_a0a66e6d51d04b9a568b2c78d10161b30}
+\hypertarget{classCSetupDialog_a1a0f9e4bec0c20637f2589da2c1d804c}{
+\index{CSetupDialog@{CSetupDialog}!c\_\-SetupGPS@{c\_\-SetupGPS}}
+\index{c\_\-SetupGPS@{c\_\-SetupGPS}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{c\_\-SetupGPS}]{\setlength{\rightskip}{0pt plus 5cm}CComboBox {\bf CSetupDialog::c\_\-SetupGPS}}}
+\label{classCSetupDialog_a1a0f9e4bec0c20637f2589da2c1d804c}
+\hypertarget{classCSetupDialog_a06485b5a59838ea8d4c4751ad294b151}{
+\index{CSetupDialog@{CSetupDialog}!c\_\-SpecFrame@{c\_\-SpecFrame}}
+\index{c\_\-SpecFrame@{c\_\-SpecFrame}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{c\_\-SpecFrame}]{\setlength{\rightskip}{0pt plus 5cm}CStatic {\bf CSetupDialog::c\_\-SpecFrame}}}
+\label{classCSetupDialog_a06485b5a59838ea8d4c4751ad294b151}
+\hypertarget{classCSetupDialog_acefe06eb4c212a09f9c0a6b615b0d35f}{
+\index{CSetupDialog@{CSetupDialog}!c\_\-TestGPS@{c\_\-TestGPS}}
+\index{c\_\-TestGPS@{c\_\-TestGPS}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{c\_\-TestGPS}]{\setlength{\rightskip}{0pt plus 5cm}CButton {\bf CSetupDialog::c\_\-TestGPS}}}
+\label{classCSetupDialog_acefe06eb4c212a09f9c0a6b615b0d35f}
+\hypertarget{classCSetupDialog_a8750ab7d5683e14d0e7802a3177aedc6}{
+\index{CSetupDialog@{CSetupDialog}!m\_\-GPSalt@{m\_\-GPSalt}}
+\index{m\_\-GPSalt@{m\_\-GPSalt}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{m\_\-GPSalt}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CSetupDialog::m\_\-GPSalt}}}
+\label{classCSetupDialog_a8750ab7d5683e14d0e7802a3177aedc6}
+\hypertarget{classCSetupDialog_ad5fbe9645170fc5bf172f338aa4c029e}{
+\index{CSetupDialog@{CSetupDialog}!m\_\-GPSlat@{m\_\-GPSlat}}
+\index{m\_\-GPSlat@{m\_\-GPSlat}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{m\_\-GPSlat}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CSetupDialog::m\_\-GPSlat}}}
+\label{classCSetupDialog_ad5fbe9645170fc5bf172f338aa4c029e}
+\hypertarget{classCSetupDialog_aeaf91b37cc812e8de9330f2ba12d27b3}{
+\index{CSetupDialog@{CSetupDialog}!m\_\-GPSlon@{m\_\-GPSlon}}
+\index{m\_\-GPSlon@{m\_\-GPSlon}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{m\_\-GPSlon}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CSetupDialog::m\_\-GPSlon}}}
+\label{classCSetupDialog_aeaf91b37cc812e8de9330f2ba12d27b3}
+\hypertarget{classCSetupDialog_aad1a3ae46513e4df1199e6ff13715a6f}{
+\index{CSetupDialog@{CSetupDialog}!m\_\-GPSName@{m\_\-GPSName}}
+\index{m\_\-GPSName@{m\_\-GPSName}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{m\_\-GPSName}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CSetupDialog::m\_\-GPSName}}}
+\label{classCSetupDialog_aad1a3ae46513e4df1199e6ff13715a6f}
+\hypertarget{classCSetupDialog_ab857444d15fb333c2a7232e3b9ee799d}{
+\index{CSetupDialog@{CSetupDialog}!m\_\-SelectSpec@{m\_\-SelectSpec}}
+\index{m\_\-SelectSpec@{m\_\-SelectSpec}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{m\_\-SelectSpec}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CSetupDialog::m\_\-SelectSpec}}}
+\label{classCSetupDialog_ab857444d15fb333c2a7232e3b9ee799d}
+\hypertarget{classCSetupDialog_ac05f58b8de217ce33a9f52b7f41a497a}{
+\index{CSetupDialog@{CSetupDialog}!ports@{ports}}
+\index{ports@{ports}!CSetupDialog@{CSetupDialog}}
+\subsubsection[{ports}]{\setlength{\rightskip}{0pt plus 5cm}CGPSportList {\bf CSetupDialog::ports}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCSetupDialog_ac05f58b8de217ce33a9f52b7f41a497a}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{SetupDialog_8h}{SetupDialog.h}\item 
+spec4/\hyperlink{SetupDialog_8cpp}{SetupDialog.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,325 @@
+\hypertarget{classCMainFrame}{
+\section{CMainFrame Class Reference}
+\label{classCMainFrame}\index{CMainFrame@{CMainFrame}}
+}
+
+
+{\ttfamily \#include $<$MainFrm.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual BOOL \hyperlink{classCMainFrame_a549bf677c955c2898c3c683321633c16}{PreCreateWindow} (CREATESTRUCT \&cs)
+\item 
+virtual \hyperlink{classCMainFrame_a8ae555f23fdf97edb4feb4d3e1bfa4ee}{$\sim$CMainFrame} ()
+\item 
+void \hyperlink{classCMainFrame_ae6d5a88cda792005ac27d280695a74bf}{ChangeStatusText} (LPCTSTR text)
+\item 
+void \hyperlink{classCMainFrame_a7fdb21df5ff31e62a4474795b4c030ed}{DlgTop\_\-SetName} (CString name)
+\item 
+void \hyperlink{classCMainFrame_aed5e82fe9e43effc4a1eb9e4d66ec9c7}{DlgTop\_\-SetPPM} (double ppm)
+\item 
+void \hyperlink{classCMainFrame_aa7286fd6eca543c50752268a21534c91}{DlgTop\_\-SetPPM} (CString ppmstr)
+\item 
+void \hyperlink{classCMainFrame_a6fec7d3a62cd056f6c2cff8b19cd2112}{DlgTop\_\-SetPPMOK} ()
+\item 
+void \hyperlink{classCMainFrame_a22d8af71732f7d458a0ccfbfb9b0cc20}{DlgTop\_\-SetPPMFail} ()
+\item 
+void \hyperlink{classCMainFrame_ad9c1c7e7f2b4d1322f8a95805d6181d3}{DlgTop\_\-Hide} ()
+\item 
+void \hyperlink{classCMainFrame_a01beeffe01a72d56194dced023eb7cd6}{DlgTop\_\-Show} ()
+\item 
+void \hyperlink{classCMainFrame_aa98160b422fdedcbfb6a4a2963948855}{DlgLeftCtrl\_\-Show} ()
+\item 
+void \hyperlink{classCMainFrame_ac64887ea64223b7b45b7fb9c41440cf5}{DlgLeftCtrl\_\-Hide} ()
+\item 
+bool \hyperlink{classCMainFrame_a10c31f69c847e755bbe498b6567182af}{DlgLeftCtrl\_\-Reset} ()
+\item 
+void \hyperlink{classCMainFrame_a80bae36b692b1c988d79fb338164d0cb}{DlgLeftRev\_\-Show} ()
+\item 
+void \hyperlink{classCMainFrame_acb8c5f6aeface1393941abefea11112d}{DlgLeftRev\_\-Hide} ()
+\item 
+void \hyperlink{classCMainFrame_a46cb6f35c6d3f41cf3c831e3d75dc689}{DlgLeftAcq\_\-Show} ()
+\item 
+void \hyperlink{classCMainFrame_a0a11a7a661082094f109d7c10229cea9}{DlgLeftAcq\_\-Hide} ()
+\item 
+bool \hyperlink{classCMainFrame_a404e620451487a56ab741ff592c96527}{DlgLeftAcq\_\-Reset} ()
+\item 
+virtual BOOL \hyperlink{classCMainFrame_ade959eb0bab719bf06bb9b18ee407101}{OnCmdMsg} (UINT nID, int nCode, void $\ast$pExtra, AFX\_\-CMDHANDLERINFO $\ast$pHandlerInfo)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCDlgBarControl}{CDlgBarControl} \hyperlink{classCMainFrame_a8579281ed025c8a7c6aaa06aa4a41c2a}{m\_\-DlgLeftCtrl}
+\item 
+\hyperlink{classCDlgBarReview}{CDlgBarReview} \hyperlink{classCMainFrame_ae0e57c519c845b8d52e03f899253ff84}{m\_\-DlgLeftRev}
+\item 
+\hyperlink{classCDlgBarAcq}{CDlgBarAcq} \hyperlink{classCMainFrame_a4f072ce2952caf08ac3bfa7d95615eeb}{m\_\-DlgLeftAcq}
+\item 
+\hyperlink{classCDlgBarTop}{CDlgBarTop} \hyperlink{classCMainFrame_a0d47ffaae457eff994867478019bbc69}{m\_\-DlgTop}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCMainFrame_af3e997aeae4148d2aaa4a1e1ae7bdd53}{CMainFrame} ()
+\item 
+afx\_\-msg int \hyperlink{classCMainFrame_a48666466fd37412fcaeff75c3b12e0ed}{OnCreate} (LPCREATESTRUCT lpCreateStruct)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CStatusBar \hyperlink{classCMainFrame_ac01bafc03aee69cf982e6f029b4db6b0}{m\_\-wndStatusBar}
+\item 
+CToolBar \hyperlink{classCMainFrame_a73024d794dce2fe918f6b117371c25fc}{m\_\-wndToolBar}
+\item 
+\hyperlink{classCColorEdit}{CColorEdit} \hyperlink{classCMainFrame_ac3f899e2be2db6cd9831920789448799}{c\_\-colSubst}
+\item 
+\hyperlink{classCColorEdit}{CColorEdit} \hyperlink{classCMainFrame_ae4d768fcb7c1899492e1bf580288cf00}{c\_\-colConc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCMainFrame_af3e997aeae4148d2aaa4a1e1ae7bdd53}{
+\index{CMainFrame@{CMainFrame}!CMainFrame@{CMainFrame}}
+\index{CMainFrame@{CMainFrame}!CMainFrame@{CMainFrame}}
+\subsubsection[{CMainFrame}]{\setlength{\rightskip}{0pt plus 5cm}CMainFrame::CMainFrame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCMainFrame_af3e997aeae4148d2aaa4a1e1ae7bdd53}
+\hypertarget{classCMainFrame_a8ae555f23fdf97edb4feb4d3e1bfa4ee}{
+\index{CMainFrame@{CMainFrame}!$\sim$CMainFrame@{$\sim$CMainFrame}}
+\index{$\sim$CMainFrame@{$\sim$CMainFrame}!CMainFrame@{CMainFrame}}
+\subsubsection[{$\sim$CMainFrame}]{\setlength{\rightskip}{0pt plus 5cm}CMainFrame::$\sim$CMainFrame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCMainFrame_a8ae555f23fdf97edb4feb4d3e1bfa4ee}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCMainFrame_ae6d5a88cda792005ac27d280695a74bf}{
+\index{CMainFrame@{CMainFrame}!ChangeStatusText@{ChangeStatusText}}
+\index{ChangeStatusText@{ChangeStatusText}!CMainFrame@{CMainFrame}}
+\subsubsection[{ChangeStatusText}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::ChangeStatusText (
+\begin{DoxyParamCaption}
+\item[{LPCTSTR}]{ text}
+\end{DoxyParamCaption}
+)}}
+\label{classCMainFrame_ae6d5a88cda792005ac27d280695a74bf}
+\hypertarget{classCMainFrame_a0a11a7a661082094f109d7c10229cea9}{
+\index{CMainFrame@{CMainFrame}!DlgLeftAcq\_\-Hide@{DlgLeftAcq\_\-Hide}}
+\index{DlgLeftAcq\_\-Hide@{DlgLeftAcq\_\-Hide}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgLeftAcq\_\-Hide}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgLeftAcq\_\-Hide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a0a11a7a661082094f109d7c10229cea9}
+\hypertarget{classCMainFrame_a404e620451487a56ab741ff592c96527}{
+\index{CMainFrame@{CMainFrame}!DlgLeftAcq\_\-Reset@{DlgLeftAcq\_\-Reset}}
+\index{DlgLeftAcq\_\-Reset@{DlgLeftAcq\_\-Reset}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgLeftAcq\_\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}bool CMainFrame::DlgLeftAcq\_\-Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a404e620451487a56ab741ff592c96527}
+\hypertarget{classCMainFrame_a46cb6f35c6d3f41cf3c831e3d75dc689}{
+\index{CMainFrame@{CMainFrame}!DlgLeftAcq\_\-Show@{DlgLeftAcq\_\-Show}}
+\index{DlgLeftAcq\_\-Show@{DlgLeftAcq\_\-Show}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgLeftAcq\_\-Show}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgLeftAcq\_\-Show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a46cb6f35c6d3f41cf3c831e3d75dc689}
+\hypertarget{classCMainFrame_ac64887ea64223b7b45b7fb9c41440cf5}{
+\index{CMainFrame@{CMainFrame}!DlgLeftCtrl\_\-Hide@{DlgLeftCtrl\_\-Hide}}
+\index{DlgLeftCtrl\_\-Hide@{DlgLeftCtrl\_\-Hide}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgLeftCtrl\_\-Hide}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgLeftCtrl\_\-Hide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_ac64887ea64223b7b45b7fb9c41440cf5}
+\hypertarget{classCMainFrame_a10c31f69c847e755bbe498b6567182af}{
+\index{CMainFrame@{CMainFrame}!DlgLeftCtrl\_\-Reset@{DlgLeftCtrl\_\-Reset}}
+\index{DlgLeftCtrl\_\-Reset@{DlgLeftCtrl\_\-Reset}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgLeftCtrl\_\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}bool CMainFrame::DlgLeftCtrl\_\-Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a10c31f69c847e755bbe498b6567182af}
+\hypertarget{classCMainFrame_aa98160b422fdedcbfb6a4a2963948855}{
+\index{CMainFrame@{CMainFrame}!DlgLeftCtrl\_\-Show@{DlgLeftCtrl\_\-Show}}
+\index{DlgLeftCtrl\_\-Show@{DlgLeftCtrl\_\-Show}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgLeftCtrl\_\-Show}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgLeftCtrl\_\-Show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_aa98160b422fdedcbfb6a4a2963948855}
+\hypertarget{classCMainFrame_acb8c5f6aeface1393941abefea11112d}{
+\index{CMainFrame@{CMainFrame}!DlgLeftRev\_\-Hide@{DlgLeftRev\_\-Hide}}
+\index{DlgLeftRev\_\-Hide@{DlgLeftRev\_\-Hide}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgLeftRev\_\-Hide}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgLeftRev\_\-Hide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_acb8c5f6aeface1393941abefea11112d}
+\hypertarget{classCMainFrame_a80bae36b692b1c988d79fb338164d0cb}{
+\index{CMainFrame@{CMainFrame}!DlgLeftRev\_\-Show@{DlgLeftRev\_\-Show}}
+\index{DlgLeftRev\_\-Show@{DlgLeftRev\_\-Show}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgLeftRev\_\-Show}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgLeftRev\_\-Show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a80bae36b692b1c988d79fb338164d0cb}
+\hypertarget{classCMainFrame_ad9c1c7e7f2b4d1322f8a95805d6181d3}{
+\index{CMainFrame@{CMainFrame}!DlgTop\_\-Hide@{DlgTop\_\-Hide}}
+\index{DlgTop\_\-Hide@{DlgTop\_\-Hide}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgTop\_\-Hide}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgTop\_\-Hide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_ad9c1c7e7f2b4d1322f8a95805d6181d3}
+\hypertarget{classCMainFrame_a7fdb21df5ff31e62a4474795b4c030ed}{
+\index{CMainFrame@{CMainFrame}!DlgTop\_\-SetName@{DlgTop\_\-SetName}}
+\index{DlgTop\_\-SetName@{DlgTop\_\-SetName}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgTop\_\-SetName}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgTop\_\-SetName (
+\begin{DoxyParamCaption}
+\item[{CString}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a7fdb21df5ff31e62a4474795b4c030ed}
+\hypertarget{classCMainFrame_aed5e82fe9e43effc4a1eb9e4d66ec9c7}{
+\index{CMainFrame@{CMainFrame}!DlgTop\_\-SetPPM@{DlgTop\_\-SetPPM}}
+\index{DlgTop\_\-SetPPM@{DlgTop\_\-SetPPM}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgTop\_\-SetPPM}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgTop\_\-SetPPM (
+\begin{DoxyParamCaption}
+\item[{double}]{ ppm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_aed5e82fe9e43effc4a1eb9e4d66ec9c7}
+\hypertarget{classCMainFrame_aa7286fd6eca543c50752268a21534c91}{
+\index{CMainFrame@{CMainFrame}!DlgTop\_\-SetPPM@{DlgTop\_\-SetPPM}}
+\index{DlgTop\_\-SetPPM@{DlgTop\_\-SetPPM}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgTop\_\-SetPPM}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgTop\_\-SetPPM (
+\begin{DoxyParamCaption}
+\item[{CString}]{ ppmstr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_aa7286fd6eca543c50752268a21534c91}
+\hypertarget{classCMainFrame_a22d8af71732f7d458a0ccfbfb9b0cc20}{
+\index{CMainFrame@{CMainFrame}!DlgTop\_\-SetPPMFail@{DlgTop\_\-SetPPMFail}}
+\index{DlgTop\_\-SetPPMFail@{DlgTop\_\-SetPPMFail}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgTop\_\-SetPPMFail}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgTop\_\-SetPPMFail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a22d8af71732f7d458a0ccfbfb9b0cc20}
+\hypertarget{classCMainFrame_a6fec7d3a62cd056f6c2cff8b19cd2112}{
+\index{CMainFrame@{CMainFrame}!DlgTop\_\-SetPPMOK@{DlgTop\_\-SetPPMOK}}
+\index{DlgTop\_\-SetPPMOK@{DlgTop\_\-SetPPMOK}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgTop\_\-SetPPMOK}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgTop\_\-SetPPMOK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a6fec7d3a62cd056f6c2cff8b19cd2112}
+\hypertarget{classCMainFrame_a01beeffe01a72d56194dced023eb7cd6}{
+\index{CMainFrame@{CMainFrame}!DlgTop\_\-Show@{DlgTop\_\-Show}}
+\index{DlgTop\_\-Show@{DlgTop\_\-Show}!CMainFrame@{CMainFrame}}
+\subsubsection[{DlgTop\_\-Show}]{\setlength{\rightskip}{0pt plus 5cm}void CMainFrame::DlgTop\_\-Show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCMainFrame_a01beeffe01a72d56194dced023eb7cd6}
+\hypertarget{classCMainFrame_ade959eb0bab719bf06bb9b18ee407101}{
+\index{CMainFrame@{CMainFrame}!OnCmdMsg@{OnCmdMsg}}
+\index{OnCmdMsg@{OnCmdMsg}!CMainFrame@{CMainFrame}}
+\subsubsection[{OnCmdMsg}]{\setlength{\rightskip}{0pt plus 5cm}BOOL CMainFrame::OnCmdMsg (
+\begin{DoxyParamCaption}
+\item[{UINT}]{ nID, }
+\item[{int}]{ nCode, }
+\item[{void $\ast$}]{ pExtra, }
+\item[{AFX\_\-CMDHANDLERINFO $\ast$}]{ pHandlerInfo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCMainFrame_ade959eb0bab719bf06bb9b18ee407101}
+\hypertarget{classCMainFrame_a48666466fd37412fcaeff75c3b12e0ed}{
+\index{CMainFrame@{CMainFrame}!OnCreate@{OnCreate}}
+\index{OnCreate@{OnCreate}!CMainFrame@{CMainFrame}}
+\subsubsection[{OnCreate}]{\setlength{\rightskip}{0pt plus 5cm}int CMainFrame::OnCreate (
+\begin{DoxyParamCaption}
+\item[{LPCREATESTRUCT}]{ lpCreateStruct}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCMainFrame_a48666466fd37412fcaeff75c3b12e0ed}
+\hypertarget{classCMainFrame_a549bf677c955c2898c3c683321633c16}{
+\index{CMainFrame@{CMainFrame}!PreCreateWindow@{PreCreateWindow}}
+\index{PreCreateWindow@{PreCreateWindow}!CMainFrame@{CMainFrame}}
+\subsubsection[{PreCreateWindow}]{\setlength{\rightskip}{0pt plus 5cm}BOOL CMainFrame::PreCreateWindow (
+\begin{DoxyParamCaption}
+\item[{CREATESTRUCT \&}]{ cs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCMainFrame_a549bf677c955c2898c3c683321633c16}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCMainFrame_ae4d768fcb7c1899492e1bf580288cf00}{
+\index{CMainFrame@{CMainFrame}!c\_\-colConc@{c\_\-colConc}}
+\index{c\_\-colConc@{c\_\-colConc}!CMainFrame@{CMainFrame}}
+\subsubsection[{c\_\-colConc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CColorEdit} {\bf CMainFrame::c\_\-colConc}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCMainFrame_ae4d768fcb7c1899492e1bf580288cf00}
+\hypertarget{classCMainFrame_ac3f899e2be2db6cd9831920789448799}{
+\index{CMainFrame@{CMainFrame}!c\_\-colSubst@{c\_\-colSubst}}
+\index{c\_\-colSubst@{c\_\-colSubst}!CMainFrame@{CMainFrame}}
+\subsubsection[{c\_\-colSubst}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CColorEdit} {\bf CMainFrame::c\_\-colSubst}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCMainFrame_ac3f899e2be2db6cd9831920789448799}
+\hypertarget{classCMainFrame_a4f072ce2952caf08ac3bfa7d95615eeb}{
+\index{CMainFrame@{CMainFrame}!m\_\-DlgLeftAcq@{m\_\-DlgLeftAcq}}
+\index{m\_\-DlgLeftAcq@{m\_\-DlgLeftAcq}!CMainFrame@{CMainFrame}}
+\subsubsection[{m\_\-DlgLeftAcq}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CDlgBarAcq} {\bf CMainFrame::m\_\-DlgLeftAcq}}}
+\label{classCMainFrame_a4f072ce2952caf08ac3bfa7d95615eeb}
+\hypertarget{classCMainFrame_a8579281ed025c8a7c6aaa06aa4a41c2a}{
+\index{CMainFrame@{CMainFrame}!m\_\-DlgLeftCtrl@{m\_\-DlgLeftCtrl}}
+\index{m\_\-DlgLeftCtrl@{m\_\-DlgLeftCtrl}!CMainFrame@{CMainFrame}}
+\subsubsection[{m\_\-DlgLeftCtrl}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CDlgBarControl} {\bf CMainFrame::m\_\-DlgLeftCtrl}}}
+\label{classCMainFrame_a8579281ed025c8a7c6aaa06aa4a41c2a}
+\hypertarget{classCMainFrame_ae0e57c519c845b8d52e03f899253ff84}{
+\index{CMainFrame@{CMainFrame}!m\_\-DlgLeftRev@{m\_\-DlgLeftRev}}
+\index{m\_\-DlgLeftRev@{m\_\-DlgLeftRev}!CMainFrame@{CMainFrame}}
+\subsubsection[{m\_\-DlgLeftRev}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CDlgBarReview} {\bf CMainFrame::m\_\-DlgLeftRev}}}
+\label{classCMainFrame_ae0e57c519c845b8d52e03f899253ff84}
+\hypertarget{classCMainFrame_a0d47ffaae457eff994867478019bbc69}{
+\index{CMainFrame@{CMainFrame}!m\_\-DlgTop@{m\_\-DlgTop}}
+\index{m\_\-DlgTop@{m\_\-DlgTop}!CMainFrame@{CMainFrame}}
+\subsubsection[{m\_\-DlgTop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CDlgBarTop} {\bf CMainFrame::m\_\-DlgTop}}}
+\label{classCMainFrame_a0d47ffaae457eff994867478019bbc69}
+\hypertarget{classCMainFrame_ac01bafc03aee69cf982e6f029b4db6b0}{
+\index{CMainFrame@{CMainFrame}!m\_\-wndStatusBar@{m\_\-wndStatusBar}}
+\index{m\_\-wndStatusBar@{m\_\-wndStatusBar}!CMainFrame@{CMainFrame}}
+\subsubsection[{m\_\-wndStatusBar}]{\setlength{\rightskip}{0pt plus 5cm}CStatusBar {\bf CMainFrame::m\_\-wndStatusBar}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCMainFrame_ac01bafc03aee69cf982e6f029b4db6b0}
+\hypertarget{classCMainFrame_a73024d794dce2fe918f6b117371c25fc}{
+\index{CMainFrame@{CMainFrame}!m\_\-wndToolBar@{m\_\-wndToolBar}}
+\index{m\_\-wndToolBar@{m\_\-wndToolBar}!CMainFrame@{CMainFrame}}
+\subsubsection[{m\_\-wndToolBar}]{\setlength{\rightskip}{0pt plus 5cm}CToolBar {\bf CMainFrame::m\_\-wndToolBar}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCMainFrame_a73024d794dce2fe918f6b117371c25fc}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{MainFrm_8h}{MainFrm.h}\item 
+spec4/\hyperlink{MainFrm_8cpp}{MainFrm.cpp}\end{DoxyCompactItemize}

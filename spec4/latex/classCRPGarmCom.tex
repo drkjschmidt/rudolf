@@ -1,0 +1,544 @@
+\hypertarget{classCRPGarmCom}{
+\section{CRPGarmCom Class Reference}
+\label{classCRPGarmCom}\index{CRPGarmCom@{CRPGarmCom}}
+}
+
+
+{\ttfamily \#include $<$RPGarmCom.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCRPGarmCom_af99792554c80cdf9aa51fdedcd08c1fd}{CRPGarmCom} (void)
+\item 
+\hyperlink{classCRPGarmCom_a9282cdc9cc8c35f68aeecb8b1948670c}{$\sim$CRPGarmCom} (void)
+\item 
+bool \hyperlink{classCRPGarmCom_a9323c9386fc90462b60e2973554a206b}{getGarminPorts} (CStringArray \&ports)
+\begin{DoxyCompactList}\small\item\em list available ports (currently only COM ports are supported) \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCRPGarmCom_a23afa4d35dc6f61821a2494bebae3344}{getComPorts} (CUIntArray \&portnos)
+\begin{DoxyCompactList}\small\item\em list available COM ports \item\end{DoxyCompactList}\item 
+CString \hyperlink{classCRPGarmCom_a35fcc94c290c25389a352bf8c76501d8}{getComPort} (void)
+\begin{DoxyCompactList}\small\item\em get the currently selected com port \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCRPGarmCom_a469e30de2b823fa581f883e7da68b444}{setGarminPort} (CString \&port)
+\begin{DoxyCompactList}\small\item\em set the port on which to operate (currently only COM ports are supported) \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCRPGarmCom_ad40670c8653858333fbe11991079994c}{setComPort} (CString \&port)
+\begin{DoxyCompactList}\small\item\em set the com port on which to operate \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCRPGarmCom_a33880a28543f9a14fc04111829688768}{openGarminPort} (void)
+\begin{DoxyCompactList}\small\item\em open previously selected port for reading (currently only COM ports are supported) \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCRPGarmCom_ae14a9d049104c720253c07f6701d5173}{openComPort} (void)
+\begin{DoxyCompactList}\small\item\em open previously selected port for reading ... with default Spanner values \item\end{DoxyCompactList}\item 
+void \hyperlink{classCRPGarmCom_ae246ed4a7806d140aeef2bc3477b6cd1}{closeGarminPort} (void)
+\begin{DoxyCompactList}\small\item\em close the port (currently only COM ports are supported) \item\end{DoxyCompactList}\item 
+void \hyperlink{classCRPGarmCom_a09213c5020f0d47f7ec1e9c3221db7f7}{closeComPort} (void)
+\begin{DoxyCompactList}\small\item\em close the COM port \item\end{DoxyCompactList}\item 
+int \hyperlink{classCRPGarmCom_a76d4078f237ba98e567b34447e7ae445}{readComPort} (void)
+\begin{DoxyCompactList}\small\item\em read data from COM port \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCRPGarmCom_a4717f6f353ade216d6dd51acbfeb7c87}{isValid} ()
+\begin{DoxyCompactList}\small\item\em check whether we seem to have a valid GPS \item\end{DoxyCompactList}\item 
+void \hyperlink{classCRPGarmCom_a240c353e44f4a04b8eac224aebc69a08}{invalidateInfo} (bool inv\_\-lat=true, bool inv\_\-lon=true, bool inv\_\-alt=true, bool inv\_\-spd=true, bool inv\_\-dir=true, bool inv\_\-time=true, bool inv\_\-date=true, bool inv\_\-name=true)
+\begin{DoxyCompactList}\small\item\em invalidate stored info selectively. By default $\ast$all$\ast$ data will be invalidated \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCRPGarmCom_a6aca8dd2f254f68580e77e6f56f384e5}{updateInfo} (bool invalidate=false)
+\begin{DoxyCompactList}\small\item\em update location info \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classCRPGarmCom_a1cc429ea88124e2eceb110d26f74f94c}{getIObuf} (void)
+\item 
+bool \hyperlink{classCRPGarmCom_ad16fbe473e60979eb7c73db9912153ff}{getLoc} (double $\ast$lat, double $\ast$lon, double $\ast$alt)
+\item 
+bool \hyperlink{classCRPGarmCom_a6a7cb254b7d20328ad72106a6b736dda}{getMov} (double $\ast$spd, double $\ast$dir)
+\item 
+bool \hyperlink{classCRPGarmCom_a9b03b1649a9710e50593ac16020212ae}{getTimeData} (INT32 $\ast$time, INT32 $\ast$date)
+\item 
+bool \hyperlink{classCRPGarmCom_a7a0c002ccffafe6dbe5ab600b7555279}{getName} (CString $\ast$xname)
+\item 
+CString \hyperlink{classCRPGarmCom_ae751232dc2959d6bab5f9e5348360706}{cser} (unsigned char mode)
+\item 
+CString \hyperlink{classCRPGarmCom_aa3efe9b25d2264d9198e41b3884b7f65}{formatLoc} ()
+\item 
+CString \hyperlink{classCRPGarmCom_ac72f1117caee1fb4c493976b364599d9}{formatTime} ()
+\item 
+CString \hyperlink{classCRPGarmCom_ae83c84b67bb967c03b5080862fea8fa1}{formatDate} ()
+\item 
+\hyperlink{classCGPSData}{CGPSData} \hyperlink{classCRPGarmCom_a233cf8478f890623393df0b172a5e743}{getGPSInfo} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CTime \hyperlink{classCRPGarmCom_a77709891a71132ed0f4673d6fb3bbdf2}{lastGPRMC}
+\item 
+CTime \hyperlink{classCRPGarmCom_a8a982dc5a3c374108e95d94a3a968c9b}{lastGPGGA}
+\item 
+CTime \hyperlink{classCRPGarmCom_ac23675cb58d274ca7ff1f20027feb314}{lastPGRMT}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCRPGarmCom_ac7dea1c440b2b59827b12b1d536d9750}{check\_\-csum} (const char $\ast$temptoks, unsigned char $\ast$return\_\-cs=NULL)
+\item 
+char $\ast$ \hyperlink{classCRPGarmCom_abff12f02f6c9eb9a033622860f6ffe23}{strstok} (char $\ast$s, const char $\ast$delim)
+\begin{DoxyCompactList}\small\item\em tokenize GPS sentences \item\end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classCRPGarmCom_abc2a81b003a013814dfe39ffc5ed7f59}{strstok\_\-r} (char $\ast$s, const char $\ast$delim, char $\ast$$\ast$lasts)
+\item 
+bool \hyperlink{classCRPGarmCom_a658c70ce6d4b4eac6edc2d454a8587a0}{parseGPRMC} (const char $\ast$temptoks, INT32 $\ast$time, INT32 $\ast$date, double $\ast$loc\_\-lat, double $\ast$loc\_\-lon, double $\ast$mov\_\-spd, double $\ast$mov\_\-dir)
+\item 
+bool \hyperlink{classCRPGarmCom_a67af633f229eed889f21d060daf22875}{parseGPGGA} (const char $\ast$temptoks, INT32 $\ast$time, double $\ast$loc\_\-lat, double $\ast$loc\_\-lon, double $\ast$loc\_\-alt)
+\item 
+bool \hyperlink{classCRPGarmCom_a865788a16e406fed5787244b34a2d3f3}{parsePGRMT} (const char $\ast$temptoks, char $\ast$name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CString \hyperlink{classCRPGarmCom_a116e8d3aeef702bac9ee730fd7732dda}{comPort}
+\item 
+CSerialPort \hyperlink{classCRPGarmCom_ad34e4fe761769eff8304542339c8a764}{comPortCtrl}
+\item 
+\hyperlink{classCGPSData}{CGPSData} \hyperlink{classCRPGarmCom_a164f7f5d1a9bbb3346b2b52f33f10c7a}{curData}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classCRPGarmCom_af6991e2c8562ad2ba6532990e30bde9d}{garloc\_\-to\_\-realloc} (CString $\ast$garloc)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classCRPGarmCom_af309c1b2cacb0d9c11156890c7e9777d}{iobuf} \mbox{[}GARM\_\-SER\_\-BUF\mbox{]}
+\item 
+bool \hyperlink{classCRPGarmCom_a11b1a8233c49119c46f24b1de4c62685}{is\_\-open}
+\item 
+bool \hyperlink{classCRPGarmCom_a3bd878214f7f921f003d743aa321cfd2}{is\_\-valid}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+GPS class ... currently this only allows interacting with a serial port GPS sending continuous NMEA data 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCRPGarmCom_af99792554c80cdf9aa51fdedcd08c1fd}{
+\index{CRPGarmCom@{CRPGarmCom}!CRPGarmCom@{CRPGarmCom}}
+\index{CRPGarmCom@{CRPGarmCom}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{CRPGarmCom}]{\setlength{\rightskip}{0pt plus 5cm}CRPGarmCom::CRPGarmCom (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_af99792554c80cdf9aa51fdedcd08c1fd}
+\hypertarget{classCRPGarmCom_a9282cdc9cc8c35f68aeecb8b1948670c}{
+\index{CRPGarmCom@{CRPGarmCom}!$\sim$CRPGarmCom@{$\sim$CRPGarmCom}}
+\index{$\sim$CRPGarmCom@{$\sim$CRPGarmCom}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{$\sim$CRPGarmCom}]{\setlength{\rightskip}{0pt plus 5cm}CRPGarmCom::$\sim$CRPGarmCom (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_a9282cdc9cc8c35f68aeecb8b1948670c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCRPGarmCom_ac7dea1c440b2b59827b12b1d536d9750}{
+\index{CRPGarmCom@{CRPGarmCom}!check\_\-csum@{check\_\-csum}}
+\index{check\_\-csum@{check\_\-csum}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{check\_\-csum}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::check\_\-csum (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ temptoks, }
+\item[{unsigned char $\ast$}]{ return\_\-cs = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_ac7dea1c440b2b59827b12b1d536d9750}
+\hypertarget{classCRPGarmCom_a09213c5020f0d47f7ec1e9c3221db7f7}{
+\index{CRPGarmCom@{CRPGarmCom}!closeComPort@{closeComPort}}
+\index{closeComPort@{closeComPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{closeComPort}]{\setlength{\rightskip}{0pt plus 5cm}void CRPGarmCom::closeComPort (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_a09213c5020f0d47f7ec1e9c3221db7f7}
+
+
+close the COM port 
+
+\hypertarget{classCRPGarmCom_ae246ed4a7806d140aeef2bc3477b6cd1}{
+\index{CRPGarmCom@{CRPGarmCom}!closeGarminPort@{closeGarminPort}}
+\index{closeGarminPort@{closeGarminPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{closeGarminPort}]{\setlength{\rightskip}{0pt plus 5cm}void CRPGarmCom::closeGarminPort (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_ae246ed4a7806d140aeef2bc3477b6cd1}
+
+
+close the port (currently only COM ports are supported) 
+
+\hypertarget{classCRPGarmCom_ae751232dc2959d6bab5f9e5348360706}{
+\index{CRPGarmCom@{CRPGarmCom}!cser@{cser}}
+\index{cser@{cser}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{cser}]{\setlength{\rightskip}{0pt plus 5cm}CString CRPGarmCom::cser (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{ mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_ae751232dc2959d6bab5f9e5348360706}
+\hypertarget{classCRPGarmCom_ae83c84b67bb967c03b5080862fea8fa1}{
+\index{CRPGarmCom@{CRPGarmCom}!formatDate@{formatDate}}
+\index{formatDate@{formatDate}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{formatDate}]{\setlength{\rightskip}{0pt plus 5cm}CString CRPGarmCom::formatDate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_ae83c84b67bb967c03b5080862fea8fa1}
+\hypertarget{classCRPGarmCom_aa3efe9b25d2264d9198e41b3884b7f65}{
+\index{CRPGarmCom@{CRPGarmCom}!formatLoc@{formatLoc}}
+\index{formatLoc@{formatLoc}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{formatLoc}]{\setlength{\rightskip}{0pt plus 5cm}CString CRPGarmCom::formatLoc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_aa3efe9b25d2264d9198e41b3884b7f65}
+\hypertarget{classCRPGarmCom_ac72f1117caee1fb4c493976b364599d9}{
+\index{CRPGarmCom@{CRPGarmCom}!formatTime@{formatTime}}
+\index{formatTime@{formatTime}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{formatTime}]{\setlength{\rightskip}{0pt plus 5cm}CString CRPGarmCom::formatTime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_ac72f1117caee1fb4c493976b364599d9}
+\hypertarget{classCRPGarmCom_af6991e2c8562ad2ba6532990e30bde9d}{
+\index{CRPGarmCom@{CRPGarmCom}!garloc\_\-to\_\-realloc@{garloc\_\-to\_\-realloc}}
+\index{garloc\_\-to\_\-realloc@{garloc\_\-to\_\-realloc}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{garloc\_\-to\_\-realloc}]{\setlength{\rightskip}{0pt plus 5cm}double CRPGarmCom::garloc\_\-to\_\-realloc (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ garloc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCRPGarmCom_af6991e2c8562ad2ba6532990e30bde9d}
+\hypertarget{classCRPGarmCom_a35fcc94c290c25389a352bf8c76501d8}{
+\index{CRPGarmCom@{CRPGarmCom}!getComPort@{getComPort}}
+\index{getComPort@{getComPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getComPort}]{\setlength{\rightskip}{0pt plus 5cm}CString CRPGarmCom::getComPort (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_a35fcc94c290c25389a352bf8c76501d8}
+
+
+get the currently selected com port 
+
+\hypertarget{classCRPGarmCom_a23afa4d35dc6f61821a2494bebae3344}{
+\index{CRPGarmCom@{CRPGarmCom}!getComPorts@{getComPorts}}
+\index{getComPorts@{getComPorts}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getComPorts}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::getComPorts (
+\begin{DoxyParamCaption}
+\item[{CUIntArray \&}]{ portnos}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_a23afa4d35dc6f61821a2494bebae3344}
+
+
+list available COM ports 
+
+\hypertarget{classCRPGarmCom_a9323c9386fc90462b60e2973554a206b}{
+\index{CRPGarmCom@{CRPGarmCom}!getGarminPorts@{getGarminPorts}}
+\index{getGarminPorts@{getGarminPorts}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getGarminPorts}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::getGarminPorts (
+\begin{DoxyParamCaption}
+\item[{CStringArray \&}]{ ports}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_a9323c9386fc90462b60e2973554a206b}
+
+
+list available ports (currently only COM ports are supported) 
+
+\hypertarget{classCRPGarmCom_a233cf8478f890623393df0b172a5e743}{
+\index{CRPGarmCom@{CRPGarmCom}!getGPSInfo@{getGPSInfo}}
+\index{getGPSInfo@{getGPSInfo}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getGPSInfo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGPSData} CRPGarmCom::getGPSInfo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a233cf8478f890623393df0b172a5e743}
+\hypertarget{classCRPGarmCom_a1cc429ea88124e2eceb110d26f74f94c}{
+\index{CRPGarmCom@{CRPGarmCom}!getIObuf@{getIObuf}}
+\index{getIObuf@{getIObuf}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getIObuf}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ CRPGarmCom::getIObuf (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a1cc429ea88124e2eceb110d26f74f94c}
+\hypertarget{classCRPGarmCom_ad16fbe473e60979eb7c73db9912153ff}{
+\index{CRPGarmCom@{CRPGarmCom}!getLoc@{getLoc}}
+\index{getLoc@{getLoc}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getLoc}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::getLoc (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat, }
+\item[{double $\ast$}]{ lon, }
+\item[{double $\ast$}]{ alt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_ad16fbe473e60979eb7c73db9912153ff}
+\hypertarget{classCRPGarmCom_a6a7cb254b7d20328ad72106a6b736dda}{
+\index{CRPGarmCom@{CRPGarmCom}!getMov@{getMov}}
+\index{getMov@{getMov}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getMov}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::getMov (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ spd, }
+\item[{double $\ast$}]{ dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a6a7cb254b7d20328ad72106a6b736dda}
+\hypertarget{classCRPGarmCom_a7a0c002ccffafe6dbe5ab600b7555279}{
+\index{CRPGarmCom@{CRPGarmCom}!getName@{getName}}
+\index{getName@{getName}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::getName (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ xname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a7a0c002ccffafe6dbe5ab600b7555279}
+\hypertarget{classCRPGarmCom_a9b03b1649a9710e50593ac16020212ae}{
+\index{CRPGarmCom@{CRPGarmCom}!getTimeData@{getTimeData}}
+\index{getTimeData@{getTimeData}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{getTimeData}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::getTimeData (
+\begin{DoxyParamCaption}
+\item[{INT32 $\ast$}]{ time, }
+\item[{INT32 $\ast$}]{ date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a9b03b1649a9710e50593ac16020212ae}
+\hypertarget{classCRPGarmCom_a240c353e44f4a04b8eac224aebc69a08}{
+\index{CRPGarmCom@{CRPGarmCom}!invalidateInfo@{invalidateInfo}}
+\index{invalidateInfo@{invalidateInfo}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{invalidateInfo}]{\setlength{\rightskip}{0pt plus 5cm}void CRPGarmCom::invalidateInfo (
+\begin{DoxyParamCaption}
+\item[{bool}]{ inv\_\-lat = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-lon = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-alt = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-spd = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-dir = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-time = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-date = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-name = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a240c353e44f4a04b8eac224aebc69a08}
+
+
+invalidate stored info selectively. By default $\ast$all$\ast$ data will be invalidated 
+
+\hypertarget{classCRPGarmCom_a4717f6f353ade216d6dd51acbfeb7c87}{
+\index{CRPGarmCom@{CRPGarmCom}!isValid@{isValid}}
+\index{isValid@{isValid}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{isValid}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::isValid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a4717f6f353ade216d6dd51acbfeb7c87}
+
+
+check whether we seem to have a valid GPS 
+
+This function will only return meaningful data after a successful checksum is found, so a call to updataInfo preceding this function is advised! \hypertarget{classCRPGarmCom_ae14a9d049104c720253c07f6701d5173}{
+\index{CRPGarmCom@{CRPGarmCom}!openComPort@{openComPort}}
+\index{openComPort@{openComPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{openComPort}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::openComPort (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_ae14a9d049104c720253c07f6701d5173}
+
+
+open previously selected port for reading ... with default Spanner values 
+
+\hypertarget{classCRPGarmCom_a33880a28543f9a14fc04111829688768}{
+\index{CRPGarmCom@{CRPGarmCom}!openGarminPort@{openGarminPort}}
+\index{openGarminPort@{openGarminPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{openGarminPort}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::openGarminPort (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a33880a28543f9a14fc04111829688768}
+
+
+open previously selected port for reading (currently only COM ports are supported) 
+
+\hypertarget{classCRPGarmCom_a67af633f229eed889f21d060daf22875}{
+\index{CRPGarmCom@{CRPGarmCom}!parseGPGGA@{parseGPGGA}}
+\index{parseGPGGA@{parseGPGGA}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{parseGPGGA}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::parseGPGGA (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ temptoks, }
+\item[{INT32 $\ast$}]{ time, }
+\item[{double $\ast$}]{ loc\_\-lat, }
+\item[{double $\ast$}]{ loc\_\-lon, }
+\item[{double $\ast$}]{ loc\_\-alt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_a67af633f229eed889f21d060daf22875}
+\hypertarget{classCRPGarmCom_a658c70ce6d4b4eac6edc2d454a8587a0}{
+\index{CRPGarmCom@{CRPGarmCom}!parseGPRMC@{parseGPRMC}}
+\index{parseGPRMC@{parseGPRMC}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{parseGPRMC}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::parseGPRMC (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ temptoks, }
+\item[{INT32 $\ast$}]{ time, }
+\item[{INT32 $\ast$}]{ date, }
+\item[{double $\ast$}]{ loc\_\-lat, }
+\item[{double $\ast$}]{ loc\_\-lon, }
+\item[{double $\ast$}]{ mov\_\-spd, }
+\item[{double $\ast$}]{ mov\_\-dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_a658c70ce6d4b4eac6edc2d454a8587a0}
+\hypertarget{classCRPGarmCom_a865788a16e406fed5787244b34a2d3f3}{
+\index{CRPGarmCom@{CRPGarmCom}!parsePGRMT@{parsePGRMT}}
+\index{parsePGRMT@{parsePGRMT}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{parsePGRMT}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::parsePGRMT (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ temptoks, }
+\item[{char $\ast$}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_a865788a16e406fed5787244b34a2d3f3}
+\hypertarget{classCRPGarmCom_a76d4078f237ba98e567b34447e7ae445}{
+\index{CRPGarmCom@{CRPGarmCom}!readComPort@{readComPort}}
+\index{readComPort@{readComPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{readComPort}]{\setlength{\rightskip}{0pt plus 5cm}int CRPGarmCom::readComPort (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_a76d4078f237ba98e567b34447e7ae445}
+
+
+read data from COM port 
+
+\hypertarget{classCRPGarmCom_ad40670c8653858333fbe11991079994c}{
+\index{CRPGarmCom@{CRPGarmCom}!setComPort@{setComPort}}
+\index{setComPort@{setComPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{setComPort}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::setComPort (
+\begin{DoxyParamCaption}
+\item[{CString \&}]{ port}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_ad40670c8653858333fbe11991079994c}
+
+
+set the com port on which to operate 
+
+\hypertarget{classCRPGarmCom_a469e30de2b823fa581f883e7da68b444}{
+\index{CRPGarmCom@{CRPGarmCom}!setGarminPort@{setGarminPort}}
+\index{setGarminPort@{setGarminPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{setGarminPort}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::setGarminPort (
+\begin{DoxyParamCaption}
+\item[{CString \&}]{ port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCRPGarmCom_a469e30de2b823fa581f883e7da68b444}
+
+
+set the port on which to operate (currently only COM ports are supported) 
+
+\hypertarget{classCRPGarmCom_abff12f02f6c9eb9a033622860f6ffe23}{
+\index{CRPGarmCom@{CRPGarmCom}!strstok@{strstok}}
+\index{strstok@{strstok}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{strstok}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ CRPGarmCom::strstok (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ s, }
+\item[{const char $\ast$}]{ delim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_abff12f02f6c9eb9a033622860f6ffe23}
+
+
+tokenize GPS sentences 
+
+strtok() will skip multiple delimiters at once. We need a single delimiter at a time \hypertarget{classCRPGarmCom_abc2a81b003a013814dfe39ffc5ed7f59}{
+\index{CRPGarmCom@{CRPGarmCom}!strstok\_\-r@{strstok\_\-r}}
+\index{strstok\_\-r@{strstok\_\-r}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{strstok\_\-r}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ CRPGarmCom::strstok\_\-r (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ s, }
+\item[{const char $\ast$}]{ delim, }
+\item[{char $\ast$$\ast$}]{ lasts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_abc2a81b003a013814dfe39ffc5ed7f59}
+\hypertarget{classCRPGarmCom_a6aca8dd2f254f68580e77e6f56f384e5}{
+\index{CRPGarmCom@{CRPGarmCom}!updateInfo@{updateInfo}}
+\index{updateInfo@{updateInfo}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{updateInfo}]{\setlength{\rightskip}{0pt plus 5cm}bool CRPGarmCom::updateInfo (
+\begin{DoxyParamCaption}
+\item[{bool}]{ invalidate = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPGarmCom_a6aca8dd2f254f68580e77e6f56f384e5}
+
+
+update location info 
+
+This will read $\ast$one$\ast$ set of GPS info and can be used to invalidate data before reading 
+\begin{DoxyParams}{Parameters}
+\item[{\em invalidate}]\mbox{[}false\mbox{]} -\/ if set to true, this will first invalidate previously stored data \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCRPGarmCom_a116e8d3aeef702bac9ee730fd7732dda}{
+\index{CRPGarmCom@{CRPGarmCom}!comPort@{comPort}}
+\index{comPort@{comPort}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{comPort}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CRPGarmCom::comPort}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_a116e8d3aeef702bac9ee730fd7732dda}
+\hypertarget{classCRPGarmCom_ad34e4fe761769eff8304542339c8a764}{
+\index{CRPGarmCom@{CRPGarmCom}!comPortCtrl@{comPortCtrl}}
+\index{comPortCtrl@{comPortCtrl}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{comPortCtrl}]{\setlength{\rightskip}{0pt plus 5cm}CSerialPort {\bf CRPGarmCom::comPortCtrl}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_ad34e4fe761769eff8304542339c8a764}
+\hypertarget{classCRPGarmCom_a164f7f5d1a9bbb3346b2b52f33f10c7a}{
+\index{CRPGarmCom@{CRPGarmCom}!curData@{curData}}
+\index{curData@{curData}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{curData}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGPSData} {\bf CRPGarmCom::curData}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCRPGarmCom_a164f7f5d1a9bbb3346b2b52f33f10c7a}
+\hypertarget{classCRPGarmCom_af309c1b2cacb0d9c11156890c7e9777d}{
+\index{CRPGarmCom@{CRPGarmCom}!iobuf@{iobuf}}
+\index{iobuf@{iobuf}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{iobuf}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf CRPGarmCom::iobuf}\mbox{[}GARM\_\-SER\_\-BUF\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCRPGarmCom_af309c1b2cacb0d9c11156890c7e9777d}
+\hypertarget{classCRPGarmCom_a11b1a8233c49119c46f24b1de4c62685}{
+\index{CRPGarmCom@{CRPGarmCom}!is\_\-open@{is\_\-open}}
+\index{is\_\-open@{is\_\-open}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{is\_\-open}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CRPGarmCom::is\_\-open}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCRPGarmCom_a11b1a8233c49119c46f24b1de4c62685}
+\hypertarget{classCRPGarmCom_a3bd878214f7f921f003d743aa321cfd2}{
+\index{CRPGarmCom@{CRPGarmCom}!is\_\-valid@{is\_\-valid}}
+\index{is\_\-valid@{is\_\-valid}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{is\_\-valid}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CRPGarmCom::is\_\-valid}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCRPGarmCom_a3bd878214f7f921f003d743aa321cfd2}
+\hypertarget{classCRPGarmCom_a8a982dc5a3c374108e95d94a3a968c9b}{
+\index{CRPGarmCom@{CRPGarmCom}!lastGPGGA@{lastGPGGA}}
+\index{lastGPGGA@{lastGPGGA}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{lastGPGGA}]{\setlength{\rightskip}{0pt plus 5cm}CTime {\bf CRPGarmCom::lastGPGGA}}}
+\label{classCRPGarmCom_a8a982dc5a3c374108e95d94a3a968c9b}
+\hypertarget{classCRPGarmCom_a77709891a71132ed0f4673d6fb3bbdf2}{
+\index{CRPGarmCom@{CRPGarmCom}!lastGPRMC@{lastGPRMC}}
+\index{lastGPRMC@{lastGPRMC}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{lastGPRMC}]{\setlength{\rightskip}{0pt plus 5cm}CTime {\bf CRPGarmCom::lastGPRMC}}}
+\label{classCRPGarmCom_a77709891a71132ed0f4673d6fb3bbdf2}
+\hypertarget{classCRPGarmCom_ac23675cb58d274ca7ff1f20027feb314}{
+\index{CRPGarmCom@{CRPGarmCom}!lastPGRMT@{lastPGRMT}}
+\index{lastPGRMT@{lastPGRMT}!CRPGarmCom@{CRPGarmCom}}
+\subsubsection[{lastPGRMT}]{\setlength{\rightskip}{0pt plus 5cm}CTime {\bf CRPGarmCom::lastPGRMT}}}
+\label{classCRPGarmCom_ac23675cb58d274ca7ff1f20027feb314}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+garmin-\/serial/\hyperlink{RPGarmCom_8h}{RPGarmCom.h}\item 
+garmin-\/serial/\hyperlink{RPGarmCom_8cpp}{RPGarmCom.cpp}\end{DoxyCompactItemize}

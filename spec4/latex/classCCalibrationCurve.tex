@@ -1,0 +1,941 @@
+\hypertarget{classCCalibrationCurve}{
+\section{CCalibrationCurve Class Reference}
+\label{classCCalibrationCurve}\index{CCalibrationCurve@{CCalibrationCurve}}
+}
+
+
+Class to hold calibration data and calculate calibration curves.  
+
+
+
+
+{\ttfamily \#include $<$CalibrationCurve.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7a}{curveType} \{ \hyperlink{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aad184b8f95bee845df76b10e8efb2055f}{Linear} =  (unsigned char)2, 
+\hyperlink{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aaf2225c7e6d9d2f917d06ee37239a5742}{Polyn2} =  (unsigned char)3, 
+\hyperlink{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aad7bc14f586131cf28f8e724fe61aa6a8}{Polyn3} =  (unsigned char)4
+ \}
+\item 
+enum \hyperlink{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1b}{FitInfoType} \{ \hyperlink{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1ba18edc584634ffdbac3bd86c8d3645453}{FIT\_\-FORMULA} =  (unsigned int)0x01, 
+\hyperlink{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1bac3f78c18b83515aef2a2774fbc5f9113}{FIT\_\-RSQUARED} =  (unsigned int)0x02
+ \}
+\begin{DoxyCompactList}\small\item\em Return a string with the fit parameters. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCCalibrationCurve_a026901601dbaeb81bc8f39aa847ab241}{CCalibrationCurve} (void)
+\item 
+\hyperlink{classCCalibrationCurve_a0e77dc015e5faadae5e924911c836a77}{$\sim$CCalibrationCurve} (void)
+\item 
+void \hyperlink{classCCalibrationCurve_a34355b48eb894115f9c6e8b3f1cfd0c7}{SetCalWavelength} (double wavelength)
+\item 
+double \hyperlink{classCCalibrationCurve_a03e94704b773f5872162809b9ccc1701}{GetCalWavelength} (void)
+\item 
+bool \hyperlink{classCCalibrationCurve_ab1e1a60d5806e9a2445ebe50c2c71c3b}{acquire} (int idx, double set\_\-conc, double integration, long average, long boxwidth)
+\item 
+bool \hyperlink{classCCalibrationCurve_ac41b51a11cbf4d46e5e8cd01465cd1c7}{acquire} (int idx, double set\_\-conc)
+\item 
+int \hyperlink{classCCalibrationCurve_a7e8dbc6ae5cb11deaafad88a2fb41ff1}{add} (\hyperlink{classCSpectrumData}{CSpectrumData} data)
+\item 
+int \hyperlink{classCCalibrationCurve_a4bce3316ed741b0b231d03d48b24f493}{replace} (int idx, \hyperlink{classCSpectrumData}{CSpectrumData} data)
+\item 
+\hyperlink{classCSpectrumData}{CSpectrumData} $\ast$ \hyperlink{classCCalibrationCurve_a0d572610811ce542042e17e7e34af864}{get} (int idx)
+\item 
+bool \hyperlink{classCCalibrationCurve_a12eeb53660e1199d970f6ba63e3c2e10}{remove} (int idx)
+\item 
+bool \hyperlink{classCCalibrationCurve_adda16926f5dfd9c30bafc14cc13c839f}{hasBaseline} (void)
+\item 
+int \hyperlink{classCCalibrationCurve_abbc2743a81d5566b90c09109cf200466}{getCount} (void)
+\item 
+void \hyperlink{classCCalibrationCurve_a9c3ea937334300851386139ac3cdc378}{PaintCalCurve} (CDC $\ast$pDC, CPrintInfo $\ast$pInfo, LPRECT myrect)
+\begin{DoxyCompactList}\small\item\em Draw a calibration curve based on stored calibration data. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCCalibrationCurve_a364813fa675050d610a05f1bb5b459c6}{PaintCalSpectra} (CDC $\ast$pDC, CPrintInfo $\ast$pInfo, LPRECT myrect)
+\begin{DoxyCompactList}\small\item\em Draw calibration graph of calibration spectra. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCCalibrationCurve_a80c55b25c20f4f2e24d180fedb1fa9f2}{PaintReport} (CDC $\ast$pDC, CPrintInfo $\ast$pInfo, LPRECT myrect)
+\begin{DoxyCompactList}\small\item\em Create a (print) report. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCCalibrationCurve_a63c6f064aa08f3daa9f227958a5c6164}{SetupCalCurveList} (CListCtrl $\ast$listCtrl, bool init=false)
+\begin{DoxyCompactList}\small\item\em Populate a CListCtrl with the data about the stored calibration curves. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCCalibrationCurve_a5554aab100774cb2358e6a3eb40de523}{CalcBestFit} (bool update\_\-spectra=true)
+\begin{DoxyCompactList}\small\item\em Using the spectra and fit type stored previously, calculate best fit parameters. \item\end{DoxyCompactList}\item 
+double \hyperlink{classCCalibrationCurve_a8d3be4b7f143bde1d89ccd9845ece01b}{bestFitXY} (double count, double basecount=0)
+\item 
+CString \hyperlink{classCCalibrationCurve_a8d88120889a7d37df6680d268d80a473}{getFitInfo} (unsigned int infotype)
+\begin{DoxyCompactList}\small\item\em Return contained calibration information. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCCalibrationCurve_a490fb5f1ce72ba3a7650bdbbd97bb0b5}{setFitType} (\hyperlink{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7a}{curveType} stype)
+\item 
+\hyperlink{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7a}{curveType} \hyperlink{classCCalibrationCurve_ad8f09357c0155b1518c34ee652fbe1a5}{getFitType} ()
+\item 
+double $\ast$ \hyperlink{classCCalibrationCurve_a6474aaaaa9ad9cfaef29256a475a1695}{getFitParms} ()
+\item 
+CString \hyperlink{classCCalibrationCurve_a9860f94981c46b2a933450327310f678}{getSubstanceName} ()
+\item 
+void \hyperlink{classCCalibrationCurve_af38083f137498c03dd93076687fedc57}{setSubstanceName} (CString name)
+\item 
+double \hyperlink{classCCalibrationCurve_aabe946263d40abf2e8bec421a778d8a9}{getIntegrationTime} ()
+\item 
+void \hyperlink{classCCalibrationCurve_ae733513f42ac7e366625c0af777b9bc7}{setIntegrationTime} (double time)
+\item 
+int \hyperlink{classCCalibrationCurve_a3e9061278432be5d21940911d20ce563}{getSpectraToAverage} ()
+\item 
+void \hyperlink{classCCalibrationCurve_a106f0479b4403fb1522d776795a7689d}{setSpectraToAverage} (int avg)
+\item 
+int \hyperlink{classCCalibrationCurve_aa75d2639eebd9d63513287bea713699e}{getBoxcarWidth} ()
+\item 
+void \hyperlink{classCCalibrationCurve_aecdd598c14f9953cf746e41b985957c9}{setBoxcarWidth} (int width)
+\item 
+CString \hyperlink{classCCalibrationCurve_a051983b27dad60c67cc42083e48652ca}{getSpecName} ()
+\item 
+void \hyperlink{classCCalibrationCurve_a7a09f42bb8f962bfa146747dcff3cf73}{setSpecName} (CString spec)
+\item 
+CString \hyperlink{classCCalibrationCurve_a1ac9c3231165a6038ea99caf09f4595d}{getSpecSerial} ()
+\item 
+void \hyperlink{classCCalibrationCurve_ab2a5908c9ea158c72bb334cbca19df92}{setSpecSerial} (CString serial)
+\item 
+bool \hyperlink{classCCalibrationCurve_a437859e13307f1539b08bbd8455cc71e}{isValid} ()
+\item 
+double \hyperlink{classCCalibrationCurve_a5ddfcd77d6ef18355b44f512875a581e}{getRSquare} ()
+\item 
+const double $\ast$ \hyperlink{classCCalibrationCurve_ae83a15c78f4e66f065d43f136ddf2f50}{getCalConcArray} ()
+\item 
+const double $\ast$ \hyperlink{classCCalibrationCurve_aa3c562cb790998230c1c214a0339474b}{getCalIntnArray} ()
+\item 
+double \hyperlink{classCCalibrationCurve_a04bfb1a44ea24cd150e43545057d0dec}{getWarnLow} ()
+\item 
+double \hyperlink{classCCalibrationCurve_ae84cc3903f72ea9763a9d66ec7214390}{getWarnHigh} ()
+\item 
+void \hyperlink{classCCalibrationCurve_a86176710dba4a8dc6d7e356363438f6c}{setErrLow} (double set)
+\item 
+double \hyperlink{classCCalibrationCurve_a08572e94d45f04cc2648a8c768a7d265}{getErrLow} ()
+\item 
+void \hyperlink{classCCalibrationCurve_a1886adaef9e94b57cf71a27f4f5bacfe}{setErrHigh} (double set)
+\item 
+double \hyperlink{classCCalibrationCurve_a5d04d0a4271727ea19cd22ed641cfa90}{getErrHigh} ()
+\item 
+bool \hyperlink{classCCalibrationCurve_a1f6e4bed16361c720b73de1a5d5e38c5}{getXY} (int idx, double $\ast$x, double $\ast$y)
+\item 
+CString \hyperlink{classCCalibrationCurve_a8d0fb3d3298adf5731797fc14aec1fc9}{getUFID} ()
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCCalibrationCurve_a6b9ae54fcc8556e9b9b805078dba7a4f}{Save} (CString $\ast$filename=NULL)
+\begin{DoxyCompactList}\small\item\em Save to file. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCCalibrationCurve_a117574561109aaba0a020716e9b14be7}{Load} (CString $\ast$filename=NULL)
+\begin{DoxyCompactList}\small\item\em Load from file. \item\end{DoxyCompactList}\item 
+CString \hyperlink{classCCalibrationCurve_a7036817ba7417322803d9eeee0170261}{serializeData} (unsigned char modes)
+\begin{DoxyCompactList}\small\item\em Create serialized data for save function. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCCalibrationCurve_a558b593e6e030ce267feb5196eb629da}{deserializeData} (CString data, int \&lpos, int \&llpos)
+\begin{DoxyCompactList}\small\item\em Convert serialized data from load function to calibration curve contents. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classCCalibrationCurve_a6526de50281edf2117c75b9ea84a5a96}{PaintCalCurve} (CDC $\ast$pDC, CPrintInfo $\ast$pInfo, LPRECT myrect, int ct, const double $\ast$cp, int pc, const double $\ast$xv, const double $\ast$yv)
+\begin{DoxyCompactList}\small\item\em Draw a calibration curve based on xy data provided. \item\end{DoxyCompactList}\item 
+static double \hyperlink{classCCalibrationCurve_a93ec9c1df638b1b991d00a83fe413de1}{bestFitXY} (double count, double basecount, int ct, const double $\ast$cp)
+\item 
+static CString \hyperlink{classCCalibrationCurve_a17a1f44399dc47e9636ae8b86216319d}{formatFitInfo} (unsigned int infotype, int ctype, double $\ast$cparm, int cplen, double crsqr)
+\begin{DoxyCompactList}\small\item\em Format arbitrary calibration information. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7a}{curveType} \hyperlink{classCCalibrationCurve_a4bab63d0e43e43415ccd187ae08d511e}{type}
+\item 
+CString \hyperlink{classCCalibrationCurve_a7634cd9a6c79e0e68ecbe4fd5ed480cb}{uniqueID}
+\item 
+CString \hyperlink{classCCalibrationCurve_a2cd5d2fd5debcc2791cb8ff6fa7f15a4}{requiredSpectrometer}
+\item 
+CString \hyperlink{classCCalibrationCurve_a4cb54b94c003dbaede11c461ac8da44e}{requiredSpecSerial}
+\item 
+CString \hyperlink{classCCalibrationCurve_a4fb073155998e24486464ba870da81c3}{substanceName}
+\item 
+double \hyperlink{classCCalibrationCurve_a05ef3e4d96dbc566554e4d94434e56cc}{calWavelength}
+\item 
+double \hyperlink{classCCalibrationCurve_a3625101f7dc3ae37e347b36bb51b2605}{calIntegrationTime}
+\item 
+int \hyperlink{classCCalibrationCurve_a3dca7a8cb366dea3eb9d5ad12ee9affc}{calSpectraToAverage}
+\item 
+int \hyperlink{classCCalibrationCurve_ab1ef11c45a983e95342e31f51191a512}{calBoxcarWidth}
+\item 
+int \hyperlink{classCCalibrationCurve_a30ff71dcb7acaca69bc0a169e77681f1}{calCount}
+\item 
+double \hyperlink{classCCalibrationCurve_a1034401a36caabbad0f2ab2ffef2aff5}{calConcValues} \mbox{[}MAX\_\-CAL\_\-SPEC\mbox{]}
+\item 
+double \hyperlink{classCCalibrationCurve_a1ca7dd8bfec2fee56e6f35a5fcc344bf}{calIntnValues} \mbox{[}MAX\_\-CAL\_\-SPEC\mbox{]}
+\item 
+double \hyperlink{classCCalibrationCurve_a98547faad841f428235be92291e7b10e}{calRawIntnValues} \mbox{[}MAX\_\-CAL\_\-SPEC\mbox{]}
+\item 
+double \hyperlink{classCCalibrationCurve_a2b0f4f43bd32a1b4484ddcd29e3632e5}{calParms} \mbox{[}4\mbox{]}
+\item 
+double \hyperlink{classCCalibrationCurve_aea9bdb495ccb4d3f3415bb7e0a9f68e0}{calRSquare}
+\item 
+bool \hyperlink{classCCalibrationCurve_a5c925ccae443af016a13ebb50436550f}{hasBaselineVar}
+\item 
+double \hyperlink{classCCalibrationCurve_a2deaf658bd351d099ae5b07faea5fd66}{baselineInt}
+\item 
+\hyperlink{classCSpectrumData}{CSpectrumData} \hyperlink{classCCalibrationCurve_a824fa0eb0c09eba9bacb327e2647e304}{calDark}
+\item 
+\hyperlink{classCSpectrumData}{CSpectrumData} \hyperlink{classCCalibrationCurve_a6af9fee76ca40350819d1f8d319be2e2}{CalSpec} \mbox{[}MAX\_\-CAL\_\-SPEC\mbox{]}
+\item 
+double \hyperlink{classCCalibrationCurve_a5782040dee61541b2bd3d4a213d7a3a6}{ppmWarnLow}
+\item 
+double \hyperlink{classCCalibrationCurve_a10733d71ce0df543b1b3eeab0bf1bc4b}{ppmWarnHigh}
+\item 
+double \hyperlink{classCCalibrationCurve_a4889720b95e92b82ede1d3492e8ad350}{ppmErrLow}
+\item 
+double \hyperlink{classCCalibrationCurve_ab034b5065c9289fc92f9575c02f32506}{ppmErrHigh}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to hold calibration data and calculate calibration curves. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7a}{
+\index{CCalibrationCurve@{CCalibrationCurve}!curveType@{curveType}}
+\index{curveType@{curveType}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{curveType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CCalibrationCurve::curveType}}}
+\label{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7a}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{Linear@{Linear}!CCalibrationCurve@{CCalibrationCurve}}\index{CCalibrationCurve@{CCalibrationCurve}!Linear@{Linear}}\item[{\em 
+\hypertarget{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aad184b8f95bee845df76b10e8efb2055f}{
+Linear}
+\label{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aad184b8f95bee845df76b10e8efb2055f}
+}]\index{Polyn2@{Polyn2}!CCalibrationCurve@{CCalibrationCurve}}\index{CCalibrationCurve@{CCalibrationCurve}!Polyn2@{Polyn2}}\item[{\em 
+\hypertarget{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aaf2225c7e6d9d2f917d06ee37239a5742}{
+Polyn2}
+\label{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aaf2225c7e6d9d2f917d06ee37239a5742}
+}]\index{Polyn3@{Polyn3}!CCalibrationCurve@{CCalibrationCurve}}\index{CCalibrationCurve@{CCalibrationCurve}!Polyn3@{Polyn3}}\item[{\em 
+\hypertarget{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aad7bc14f586131cf28f8e724fe61aa6a8}{
+Polyn3}
+\label{classCCalibrationCurve_ab9d3dc7e1f672a8bd6b7705f94798b7aad7bc14f586131cf28f8e724fe61aa6a8}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1b}{
+\index{CCalibrationCurve@{CCalibrationCurve}!FitInfoType@{FitInfoType}}
+\index{FitInfoType@{FitInfoType}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{FitInfoType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CCalibrationCurve::FitInfoType}}}
+\label{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1b}
+
+
+Return a string with the fit parameters. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{FIT\_\-FORMULA@{FIT\_\-FORMULA}!CCalibrationCurve@{CCalibrationCurve}}\index{CCalibrationCurve@{CCalibrationCurve}!FIT\_\-FORMULA@{FIT\_\-FORMULA}}\item[{\em 
+\hypertarget{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1ba18edc584634ffdbac3bd86c8d3645453}{
+FIT\_\-FORMULA}
+\label{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1ba18edc584634ffdbac3bd86c8d3645453}
+}]\index{FIT\_\-RSQUARED@{FIT\_\-RSQUARED}!CCalibrationCurve@{CCalibrationCurve}}\index{CCalibrationCurve@{CCalibrationCurve}!FIT\_\-RSQUARED@{FIT\_\-RSQUARED}}\item[{\em 
+\hypertarget{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1bac3f78c18b83515aef2a2774fbc5f9113}{
+FIT\_\-RSQUARED}
+\label{classCCalibrationCurve_ab445458ebea97f43ffb079e88ac1ab1bac3f78c18b83515aef2a2774fbc5f9113}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCCalibrationCurve_a026901601dbaeb81bc8f39aa847ab241}{
+\index{CCalibrationCurve@{CCalibrationCurve}!CCalibrationCurve@{CCalibrationCurve}}
+\index{CCalibrationCurve@{CCalibrationCurve}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{CCalibrationCurve}]{\setlength{\rightskip}{0pt plus 5cm}CCalibrationCurve::CCalibrationCurve (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a026901601dbaeb81bc8f39aa847ab241}
+\hypertarget{classCCalibrationCurve_a0e77dc015e5faadae5e924911c836a77}{
+\index{CCalibrationCurve@{CCalibrationCurve}!$\sim$CCalibrationCurve@{$\sim$CCalibrationCurve}}
+\index{$\sim$CCalibrationCurve@{$\sim$CCalibrationCurve}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{$\sim$CCalibrationCurve}]{\setlength{\rightskip}{0pt plus 5cm}CCalibrationCurve::$\sim$CCalibrationCurve (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a0e77dc015e5faadae5e924911c836a77}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCCalibrationCurve_ab1e1a60d5806e9a2445ebe50c2c71c3b}{
+\index{CCalibrationCurve@{CCalibrationCurve}!acquire@{acquire}}
+\index{acquire@{acquire}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{acquire}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::acquire (
+\begin{DoxyParamCaption}
+\item[{int}]{ idx, }
+\item[{double}]{ set\_\-conc, }
+\item[{double}]{ integration, }
+\item[{long}]{ average, }
+\item[{long}]{ boxwidth}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_ab1e1a60d5806e9a2445ebe50c2c71c3b}
+\hypertarget{classCCalibrationCurve_ac41b51a11cbf4d46e5e8cd01465cd1c7}{
+\index{CCalibrationCurve@{CCalibrationCurve}!acquire@{acquire}}
+\index{acquire@{acquire}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{acquire}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::acquire (
+\begin{DoxyParamCaption}
+\item[{int}]{ idx, }
+\item[{double}]{ set\_\-conc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_ac41b51a11cbf4d46e5e8cd01465cd1c7}
+\hypertarget{classCCalibrationCurve_a7e8dbc6ae5cb11deaafad88a2fb41ff1}{
+\index{CCalibrationCurve@{CCalibrationCurve}!add@{add}}
+\index{add@{add}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}int CCalibrationCurve::add (
+\begin{DoxyParamCaption}
+\item[{{\bf CSpectrumData}}]{ data}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a7e8dbc6ae5cb11deaafad88a2fb41ff1}
+\hypertarget{classCCalibrationCurve_a8d3be4b7f143bde1d89ccd9845ece01b}{
+\index{CCalibrationCurve@{CCalibrationCurve}!bestFitXY@{bestFitXY}}
+\index{bestFitXY@{bestFitXY}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{bestFitXY}]{\setlength{\rightskip}{0pt plus 5cm}double CCalibrationCurve::bestFitXY (
+\begin{DoxyParamCaption}
+\item[{double}]{ count, }
+\item[{double}]{ basecount = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a8d3be4b7f143bde1d89ccd9845ece01b}
+Using best fit parameters stored (make sure you called CalcBestFit first) calculate coordinates for points of a fit curve \hypertarget{classCCalibrationCurve_a93ec9c1df638b1b991d00a83fe413de1}{
+\index{CCalibrationCurve@{CCalibrationCurve}!bestFitXY@{bestFitXY}}
+\index{bestFitXY@{bestFitXY}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{bestFitXY}]{\setlength{\rightskip}{0pt plus 5cm}static double CCalibrationCurve::bestFitXY (
+\begin{DoxyParamCaption}
+\item[{double}]{ count, }
+\item[{double}]{ basecount, }
+\item[{int}]{ ct, }
+\item[{const double $\ast$}]{ cp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classCCalibrationCurve_a93ec9c1df638b1b991d00a83fe413de1}
+Calculate best fit coordinates based on arbitrary fitting curve calculate coordinates for points of a fit curve \hypertarget{classCCalibrationCurve_a5554aab100774cb2358e6a3eb40de523}{
+\index{CCalibrationCurve@{CCalibrationCurve}!CalcBestFit@{CalcBestFit}}
+\index{CalcBestFit@{CalcBestFit}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{CalcBestFit}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::CalcBestFit (
+\begin{DoxyParamCaption}
+\item[{bool}]{ update\_\-spectra = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a5554aab100774cb2358e6a3eb40de523}
+
+
+Using the spectra and fit type stored previously, calculate best fit parameters. 
+
+This function can (and by default will) update the calibration information stored within each spectrum. \hypertarget{classCCalibrationCurve_a558b593e6e030ce267feb5196eb629da}{
+\index{CCalibrationCurve@{CCalibrationCurve}!deserializeData@{deserializeData}}
+\index{deserializeData@{deserializeData}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{deserializeData}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::deserializeData (
+\begin{DoxyParamCaption}
+\item[{CString}]{ data, }
+\item[{int \&}]{ lpos, }
+\item[{int \&}]{ llpos}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a558b593e6e030ce267feb5196eb629da}
+
+
+Convert serialized data from load function to calibration curve contents. 
+
+\hypertarget{classCCalibrationCurve_a17a1f44399dc47e9636ae8b86216319d}{
+\index{CCalibrationCurve@{CCalibrationCurve}!formatFitInfo@{formatFitInfo}}
+\index{formatFitInfo@{formatFitInfo}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{formatFitInfo}]{\setlength{\rightskip}{0pt plus 5cm}static CString CCalibrationCurve::formatFitInfo (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ infotype, }
+\item[{int}]{ ctype, }
+\item[{double $\ast$}]{ cparm, }
+\item[{int}]{ cplen, }
+\item[{double}]{ crsqr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classCCalibrationCurve_a17a1f44399dc47e9636ae8b86216319d}
+
+
+Format arbitrary calibration information. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em infotype}]-\/ OR-\/ed selection of values from FitInfoType ENUM (currently FIT\_\-FORMULA, FIT\_\-RSQUARED) \item[{\em ctype}]-\/ one of the values from curveTypefit ENUM (currently linear, Polyn2, Polyn3) ... this defines the number of necessary fit parameters \item[{\em cparm}]-\/ array of the fit coefficients in ascending power order \item[{\em crsqr}]-\/ the rsquared value \end{DoxyParams}
+\hypertarget{classCCalibrationCurve_a0d572610811ce542042e17e7e34af864}{
+\index{CCalibrationCurve@{CCalibrationCurve}!get@{get}}
+\index{get@{get}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSpectrumData} $\ast$ CCalibrationCurve::get (
+\begin{DoxyParamCaption}
+\item[{int}]{ idx}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a0d572610811ce542042e17e7e34af864}
+\hypertarget{classCCalibrationCurve_aa75d2639eebd9d63513287bea713699e}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getBoxcarWidth@{getBoxcarWidth}}
+\index{getBoxcarWidth@{getBoxcarWidth}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getBoxcarWidth}]{\setlength{\rightskip}{0pt plus 5cm}int CCalibrationCurve::getBoxcarWidth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_aa75d2639eebd9d63513287bea713699e}
+\hypertarget{classCCalibrationCurve_ae83a15c78f4e66f065d43f136ddf2f50}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getCalConcArray@{getCalConcArray}}
+\index{getCalConcArray@{getCalConcArray}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getCalConcArray}]{\setlength{\rightskip}{0pt plus 5cm}const double$\ast$ CCalibrationCurve::getCalConcArray (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_ae83a15c78f4e66f065d43f136ddf2f50}
+\hypertarget{classCCalibrationCurve_aa3c562cb790998230c1c214a0339474b}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getCalIntnArray@{getCalIntnArray}}
+\index{getCalIntnArray@{getCalIntnArray}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getCalIntnArray}]{\setlength{\rightskip}{0pt plus 5cm}const double$\ast$ CCalibrationCurve::getCalIntnArray (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_aa3c562cb790998230c1c214a0339474b}
+\hypertarget{classCCalibrationCurve_a03e94704b773f5872162809b9ccc1701}{
+\index{CCalibrationCurve@{CCalibrationCurve}!GetCalWavelength@{GetCalWavelength}}
+\index{GetCalWavelength@{GetCalWavelength}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{GetCalWavelength}]{\setlength{\rightskip}{0pt plus 5cm}double CCalibrationCurve::GetCalWavelength (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a03e94704b773f5872162809b9ccc1701}
+\hypertarget{classCCalibrationCurve_abbc2743a81d5566b90c09109cf200466}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getCount@{getCount}}
+\index{getCount@{getCount}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getCount}]{\setlength{\rightskip}{0pt plus 5cm}int CCalibrationCurve::getCount (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_abbc2743a81d5566b90c09109cf200466}
+\hypertarget{classCCalibrationCurve_a5d04d0a4271727ea19cd22ed641cfa90}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getErrHigh@{getErrHigh}}
+\index{getErrHigh@{getErrHigh}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getErrHigh}]{\setlength{\rightskip}{0pt plus 5cm}double CCalibrationCurve::getErrHigh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a5d04d0a4271727ea19cd22ed641cfa90}
+\hypertarget{classCCalibrationCurve_a08572e94d45f04cc2648a8c768a7d265}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getErrLow@{getErrLow}}
+\index{getErrLow@{getErrLow}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getErrLow}]{\setlength{\rightskip}{0pt plus 5cm}double CCalibrationCurve::getErrLow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a08572e94d45f04cc2648a8c768a7d265}
+\hypertarget{classCCalibrationCurve_a8d88120889a7d37df6680d268d80a473}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getFitInfo@{getFitInfo}}
+\index{getFitInfo@{getFitInfo}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getFitInfo}]{\setlength{\rightskip}{0pt plus 5cm}CString CCalibrationCurve::getFitInfo (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ infotype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a8d88120889a7d37df6680d268d80a473}
+
+
+Return contained calibration information. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em infotype}]-\/ OR-\/ed selection of values from FitInfoType ENUM (currently FIT\_\-FORMULA, FIT\_\-RSQUARED) \end{DoxyParams}
+\hypertarget{classCCalibrationCurve_a6474aaaaa9ad9cfaef29256a475a1695}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getFitParms@{getFitParms}}
+\index{getFitParms@{getFitParms}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getFitParms}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ CCalibrationCurve::getFitParms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a6474aaaaa9ad9cfaef29256a475a1695}
+\hypertarget{classCCalibrationCurve_ad8f09357c0155b1518c34ee652fbe1a5}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getFitType@{getFitType}}
+\index{getFitType@{getFitType}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getFitType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf curveType} CCalibrationCurve::getFitType (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_ad8f09357c0155b1518c34ee652fbe1a5}
+\hypertarget{classCCalibrationCurve_aabe946263d40abf2e8bec421a778d8a9}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getIntegrationTime@{getIntegrationTime}}
+\index{getIntegrationTime@{getIntegrationTime}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getIntegrationTime}]{\setlength{\rightskip}{0pt plus 5cm}double CCalibrationCurve::getIntegrationTime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_aabe946263d40abf2e8bec421a778d8a9}
+\hypertarget{classCCalibrationCurve_a5ddfcd77d6ef18355b44f512875a581e}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getRSquare@{getRSquare}}
+\index{getRSquare@{getRSquare}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getRSquare}]{\setlength{\rightskip}{0pt plus 5cm}double CCalibrationCurve::getRSquare (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a5ddfcd77d6ef18355b44f512875a581e}
+\hypertarget{classCCalibrationCurve_a051983b27dad60c67cc42083e48652ca}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getSpecName@{getSpecName}}
+\index{getSpecName@{getSpecName}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getSpecName}]{\setlength{\rightskip}{0pt plus 5cm}CString CCalibrationCurve::getSpecName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a051983b27dad60c67cc42083e48652ca}
+\hypertarget{classCCalibrationCurve_a1ac9c3231165a6038ea99caf09f4595d}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getSpecSerial@{getSpecSerial}}
+\index{getSpecSerial@{getSpecSerial}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getSpecSerial}]{\setlength{\rightskip}{0pt plus 5cm}CString CCalibrationCurve::getSpecSerial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a1ac9c3231165a6038ea99caf09f4595d}
+\hypertarget{classCCalibrationCurve_a3e9061278432be5d21940911d20ce563}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getSpectraToAverage@{getSpectraToAverage}}
+\index{getSpectraToAverage@{getSpectraToAverage}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getSpectraToAverage}]{\setlength{\rightskip}{0pt plus 5cm}int CCalibrationCurve::getSpectraToAverage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a3e9061278432be5d21940911d20ce563}
+\hypertarget{classCCalibrationCurve_a9860f94981c46b2a933450327310f678}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getSubstanceName@{getSubstanceName}}
+\index{getSubstanceName@{getSubstanceName}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getSubstanceName}]{\setlength{\rightskip}{0pt plus 5cm}CString CCalibrationCurve::getSubstanceName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a9860f94981c46b2a933450327310f678}
+\hypertarget{classCCalibrationCurve_a8d0fb3d3298adf5731797fc14aec1fc9}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getUFID@{getUFID}}
+\index{getUFID@{getUFID}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getUFID}]{\setlength{\rightskip}{0pt plus 5cm}CString CCalibrationCurve::getUFID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a8d0fb3d3298adf5731797fc14aec1fc9}
+\hypertarget{classCCalibrationCurve_ae84cc3903f72ea9763a9d66ec7214390}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getWarnHigh@{getWarnHigh}}
+\index{getWarnHigh@{getWarnHigh}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getWarnHigh}]{\setlength{\rightskip}{0pt plus 5cm}double CCalibrationCurve::getWarnHigh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_ae84cc3903f72ea9763a9d66ec7214390}
+\hypertarget{classCCalibrationCurve_a04bfb1a44ea24cd150e43545057d0dec}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getWarnLow@{getWarnLow}}
+\index{getWarnLow@{getWarnLow}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getWarnLow}]{\setlength{\rightskip}{0pt plus 5cm}double CCalibrationCurve::getWarnLow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a04bfb1a44ea24cd150e43545057d0dec}
+\hypertarget{classCCalibrationCurve_a1f6e4bed16361c720b73de1a5d5e38c5}{
+\index{CCalibrationCurve@{CCalibrationCurve}!getXY@{getXY}}
+\index{getXY@{getXY}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{getXY}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::getXY (
+\begin{DoxyParamCaption}
+\item[{int}]{ idx, }
+\item[{double $\ast$}]{ x, }
+\item[{double $\ast$}]{ y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a1f6e4bed16361c720b73de1a5d5e38c5}
+\hypertarget{classCCalibrationCurve_adda16926f5dfd9c30bafc14cc13c839f}{
+\index{CCalibrationCurve@{CCalibrationCurve}!hasBaseline@{hasBaseline}}
+\index{hasBaseline@{hasBaseline}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{hasBaseline}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::hasBaseline (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_adda16926f5dfd9c30bafc14cc13c839f}
+\hypertarget{classCCalibrationCurve_a437859e13307f1539b08bbd8455cc71e}{
+\index{CCalibrationCurve@{CCalibrationCurve}!isValid@{isValid}}
+\index{isValid@{isValid}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{isValid}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::isValid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a437859e13307f1539b08bbd8455cc71e}
+\hypertarget{classCCalibrationCurve_a117574561109aaba0a020716e9b14be7}{
+\index{CCalibrationCurve@{CCalibrationCurve}!Load@{Load}}
+\index{Load@{Load}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::Load (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ filename = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a117574561109aaba0a020716e9b14be7}
+
+
+Load from file. 
+
+\hypertarget{classCCalibrationCurve_a9c3ea937334300851386139ac3cdc378}{
+\index{CCalibrationCurve@{CCalibrationCurve}!PaintCalCurve@{PaintCalCurve}}
+\index{PaintCalCurve@{PaintCalCurve}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{PaintCalCurve}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::PaintCalCurve (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{CPrintInfo $\ast$}]{ pInfo, }
+\item[{LPRECT}]{ myrect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a9c3ea937334300851386139ac3cdc378}
+
+
+Draw a calibration curve based on stored calibration data. 
+
+This is a convenience wrapper that will insert the stored calibration data and draw the calibration curve \hypertarget{classCCalibrationCurve_a6526de50281edf2117c75b9ea84a5a96}{
+\index{CCalibrationCurve@{CCalibrationCurve}!PaintCalCurve@{PaintCalCurve}}
+\index{PaintCalCurve@{PaintCalCurve}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{PaintCalCurve}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::PaintCalCurve (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{CPrintInfo $\ast$}]{ pInfo, }
+\item[{LPRECT}]{ myrect, }
+\item[{int}]{ ct, }
+\item[{const double $\ast$}]{ cp, }
+\item[{int}]{ pc, }
+\item[{const double $\ast$}]{ xv, }
+\item[{const double $\ast$}]{ yv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCCalibrationCurve_a6526de50281edf2117c75b9ea84a5a96}
+
+
+Draw a calibration curve based on xy data provided. 
+
+This is the full customizable function and could conceivable work on any xy data \hypertarget{classCCalibrationCurve_a364813fa675050d610a05f1bb5b459c6}{
+\index{CCalibrationCurve@{CCalibrationCurve}!PaintCalSpectra@{PaintCalSpectra}}
+\index{PaintCalSpectra@{PaintCalSpectra}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{PaintCalSpectra}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::PaintCalSpectra (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{CPrintInfo $\ast$}]{ pInfo, }
+\item[{LPRECT}]{ myrect}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a364813fa675050d610a05f1bb5b459c6}
+
+
+Draw calibration graph of calibration spectra. 
+
+\hypertarget{classCCalibrationCurve_a80c55b25c20f4f2e24d180fedb1fa9f2}{
+\index{CCalibrationCurve@{CCalibrationCurve}!PaintReport@{PaintReport}}
+\index{PaintReport@{PaintReport}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{PaintReport}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::PaintReport (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{CPrintInfo $\ast$}]{ pInfo, }
+\item[{LPRECT}]{ myrect}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a80c55b25c20f4f2e24d180fedb1fa9f2}
+
+
+Create a (print) report. 
+
+The report contains
+
+a header with all the relevant text data, an optional logo to be printed in the header the calibration spectra the best fit calibration curve \hypertarget{classCCalibrationCurve_a12eeb53660e1199d970f6ba63e3c2e10}{
+\index{CCalibrationCurve@{CCalibrationCurve}!remove@{remove}}
+\index{remove@{remove}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::remove (
+\begin{DoxyParamCaption}
+\item[{int}]{ idx}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a12eeb53660e1199d970f6ba63e3c2e10}
+\hypertarget{classCCalibrationCurve_a4bce3316ed741b0b231d03d48b24f493}{
+\index{CCalibrationCurve@{CCalibrationCurve}!replace@{replace}}
+\index{replace@{replace}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}int CCalibrationCurve::replace (
+\begin{DoxyParamCaption}
+\item[{int}]{ idx, }
+\item[{{\bf CSpectrumData}}]{ data}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a4bce3316ed741b0b231d03d48b24f493}
+\hypertarget{classCCalibrationCurve_a6b9ae54fcc8556e9b9b805078dba7a4f}{
+\index{CCalibrationCurve@{CCalibrationCurve}!Save@{Save}}
+\index{Save@{Save}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}bool CCalibrationCurve::Save (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ filename = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a6b9ae54fcc8556e9b9b805078dba7a4f}
+
+
+Save to file. 
+
+Save calibration curve. \hypertarget{classCCalibrationCurve_a7036817ba7417322803d9eeee0170261}{
+\index{CCalibrationCurve@{CCalibrationCurve}!serializeData@{serializeData}}
+\index{serializeData@{serializeData}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{serializeData}]{\setlength{\rightskip}{0pt plus 5cm}CString CCalibrationCurve::serializeData (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{ modes}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a7036817ba7417322803d9eeee0170261}
+
+
+Create serialized data for save function. 
+
+\hypertarget{classCCalibrationCurve_aecdd598c14f9953cf746e41b985957c9}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setBoxcarWidth@{setBoxcarWidth}}
+\index{setBoxcarWidth@{setBoxcarWidth}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setBoxcarWidth}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setBoxcarWidth (
+\begin{DoxyParamCaption}
+\item[{int}]{ width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_aecdd598c14f9953cf746e41b985957c9}
+\hypertarget{classCCalibrationCurve_a34355b48eb894115f9c6e8b3f1cfd0c7}{
+\index{CCalibrationCurve@{CCalibrationCurve}!SetCalWavelength@{SetCalWavelength}}
+\index{SetCalWavelength@{SetCalWavelength}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{SetCalWavelength}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::SetCalWavelength (
+\begin{DoxyParamCaption}
+\item[{double}]{ wavelength}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a34355b48eb894115f9c6e8b3f1cfd0c7}
+\hypertarget{classCCalibrationCurve_a1886adaef9e94b57cf71a27f4f5bacfe}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setErrHigh@{setErrHigh}}
+\index{setErrHigh@{setErrHigh}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setErrHigh}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setErrHigh (
+\begin{DoxyParamCaption}
+\item[{double}]{ set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a1886adaef9e94b57cf71a27f4f5bacfe}
+\hypertarget{classCCalibrationCurve_a86176710dba4a8dc6d7e356363438f6c}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setErrLow@{setErrLow}}
+\index{setErrLow@{setErrLow}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setErrLow}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setErrLow (
+\begin{DoxyParamCaption}
+\item[{double}]{ set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a86176710dba4a8dc6d7e356363438f6c}
+\hypertarget{classCCalibrationCurve_a490fb5f1ce72ba3a7650bdbbd97bb0b5}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setFitType@{setFitType}}
+\index{setFitType@{setFitType}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setFitType}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setFitType (
+\begin{DoxyParamCaption}
+\item[{{\bf curveType}}]{ stype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a490fb5f1ce72ba3a7650bdbbd97bb0b5}
+\hypertarget{classCCalibrationCurve_ae733513f42ac7e366625c0af777b9bc7}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setIntegrationTime@{setIntegrationTime}}
+\index{setIntegrationTime@{setIntegrationTime}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setIntegrationTime}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setIntegrationTime (
+\begin{DoxyParamCaption}
+\item[{double}]{ time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_ae733513f42ac7e366625c0af777b9bc7}
+\hypertarget{classCCalibrationCurve_a7a09f42bb8f962bfa146747dcff3cf73}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setSpecName@{setSpecName}}
+\index{setSpecName@{setSpecName}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setSpecName}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setSpecName (
+\begin{DoxyParamCaption}
+\item[{CString}]{ spec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a7a09f42bb8f962bfa146747dcff3cf73}
+\hypertarget{classCCalibrationCurve_ab2a5908c9ea158c72bb334cbca19df92}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setSpecSerial@{setSpecSerial}}
+\index{setSpecSerial@{setSpecSerial}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setSpecSerial}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setSpecSerial (
+\begin{DoxyParamCaption}
+\item[{CString}]{ serial}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_ab2a5908c9ea158c72bb334cbca19df92}
+\hypertarget{classCCalibrationCurve_a106f0479b4403fb1522d776795a7689d}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setSpectraToAverage@{setSpectraToAverage}}
+\index{setSpectraToAverage@{setSpectraToAverage}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setSpectraToAverage}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setSpectraToAverage (
+\begin{DoxyParamCaption}
+\item[{int}]{ avg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_a106f0479b4403fb1522d776795a7689d}
+\hypertarget{classCCalibrationCurve_af38083f137498c03dd93076687fedc57}{
+\index{CCalibrationCurve@{CCalibrationCurve}!setSubstanceName@{setSubstanceName}}
+\index{setSubstanceName@{setSubstanceName}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{setSubstanceName}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::setSubstanceName (
+\begin{DoxyParamCaption}
+\item[{CString}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCCalibrationCurve_af38083f137498c03dd93076687fedc57}
+\hypertarget{classCCalibrationCurve_a63c6f064aa08f3daa9f227958a5c6164}{
+\index{CCalibrationCurve@{CCalibrationCurve}!SetupCalCurveList@{SetupCalCurveList}}
+\index{SetupCalCurveList@{SetupCalCurveList}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{SetupCalCurveList}]{\setlength{\rightskip}{0pt plus 5cm}void CCalibrationCurve::SetupCalCurveList (
+\begin{DoxyParamCaption}
+\item[{CListCtrl $\ast$}]{ listCtrl, }
+\item[{bool}]{ init = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}
+\label{classCCalibrationCurve_a63c6f064aa08f3daa9f227958a5c6164}
+
+
+Populate a CListCtrl with the data about the stored calibration curves. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em listCtrl}]-\/ list control pointer to control to be modified \item[{\em init}]-\/ defines whether to recreate the list headers and set up list options \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCCalibrationCurve_a2deaf658bd351d099ae5b07faea5fd66}{
+\index{CCalibrationCurve@{CCalibrationCurve}!baselineInt@{baselineInt}}
+\index{baselineInt@{baselineInt}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{baselineInt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::baselineInt}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a2deaf658bd351d099ae5b07faea5fd66}
+\hypertarget{classCCalibrationCurve_ab1ef11c45a983e95342e31f51191a512}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calBoxcarWidth@{calBoxcarWidth}}
+\index{calBoxcarWidth@{calBoxcarWidth}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calBoxcarWidth}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CCalibrationCurve::calBoxcarWidth}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_ab1ef11c45a983e95342e31f51191a512}
+\hypertarget{classCCalibrationCurve_a1034401a36caabbad0f2ab2ffef2aff5}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calConcValues@{calConcValues}}
+\index{calConcValues@{calConcValues}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calConcValues}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::calConcValues}\mbox{[}MAX\_\-CAL\_\-SPEC\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a1034401a36caabbad0f2ab2ffef2aff5}
+\hypertarget{classCCalibrationCurve_a30ff71dcb7acaca69bc0a169e77681f1}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calCount@{calCount}}
+\index{calCount@{calCount}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calCount}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CCalibrationCurve::calCount}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a30ff71dcb7acaca69bc0a169e77681f1}
+\hypertarget{classCCalibrationCurve_a824fa0eb0c09eba9bacb327e2647e304}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calDark@{calDark}}
+\index{calDark@{calDark}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calDark}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSpectrumData} {\bf CCalibrationCurve::calDark}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a824fa0eb0c09eba9bacb327e2647e304}
+\hypertarget{classCCalibrationCurve_a3625101f7dc3ae37e347b36bb51b2605}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calIntegrationTime@{calIntegrationTime}}
+\index{calIntegrationTime@{calIntegrationTime}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calIntegrationTime}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::calIntegrationTime}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a3625101f7dc3ae37e347b36bb51b2605}
+\hypertarget{classCCalibrationCurve_a1ca7dd8bfec2fee56e6f35a5fcc344bf}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calIntnValues@{calIntnValues}}
+\index{calIntnValues@{calIntnValues}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calIntnValues}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::calIntnValues}\mbox{[}MAX\_\-CAL\_\-SPEC\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a1ca7dd8bfec2fee56e6f35a5fcc344bf}
+\hypertarget{classCCalibrationCurve_a2b0f4f43bd32a1b4484ddcd29e3632e5}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calParms@{calParms}}
+\index{calParms@{calParms}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calParms}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::calParms}\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a2b0f4f43bd32a1b4484ddcd29e3632e5}
+\hypertarget{classCCalibrationCurve_a98547faad841f428235be92291e7b10e}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calRawIntnValues@{calRawIntnValues}}
+\index{calRawIntnValues@{calRawIntnValues}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calRawIntnValues}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::calRawIntnValues}\mbox{[}MAX\_\-CAL\_\-SPEC\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a98547faad841f428235be92291e7b10e}
+\hypertarget{classCCalibrationCurve_aea9bdb495ccb4d3f3415bb7e0a9f68e0}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calRSquare@{calRSquare}}
+\index{calRSquare@{calRSquare}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calRSquare}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::calRSquare}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_aea9bdb495ccb4d3f3415bb7e0a9f68e0}
+\hypertarget{classCCalibrationCurve_a6af9fee76ca40350819d1f8d319be2e2}{
+\index{CCalibrationCurve@{CCalibrationCurve}!CalSpec@{CalSpec}}
+\index{CalSpec@{CalSpec}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{CalSpec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSpectrumData} {\bf CCalibrationCurve::CalSpec}\mbox{[}MAX\_\-CAL\_\-SPEC\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a6af9fee76ca40350819d1f8d319be2e2}
+\hypertarget{classCCalibrationCurve_a3dca7a8cb366dea3eb9d5ad12ee9affc}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calSpectraToAverage@{calSpectraToAverage}}
+\index{calSpectraToAverage@{calSpectraToAverage}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calSpectraToAverage}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CCalibrationCurve::calSpectraToAverage}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a3dca7a8cb366dea3eb9d5ad12ee9affc}
+\hypertarget{classCCalibrationCurve_a05ef3e4d96dbc566554e4d94434e56cc}{
+\index{CCalibrationCurve@{CCalibrationCurve}!calWavelength@{calWavelength}}
+\index{calWavelength@{calWavelength}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{calWavelength}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::calWavelength}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a05ef3e4d96dbc566554e4d94434e56cc}
+\hypertarget{classCCalibrationCurve_a5c925ccae443af016a13ebb50436550f}{
+\index{CCalibrationCurve@{CCalibrationCurve}!hasBaselineVar@{hasBaselineVar}}
+\index{hasBaselineVar@{hasBaselineVar}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{hasBaselineVar}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CCalibrationCurve::hasBaselineVar}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a5c925ccae443af016a13ebb50436550f}
+\hypertarget{classCCalibrationCurve_ab034b5065c9289fc92f9575c02f32506}{
+\index{CCalibrationCurve@{CCalibrationCurve}!ppmErrHigh@{ppmErrHigh}}
+\index{ppmErrHigh@{ppmErrHigh}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{ppmErrHigh}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::ppmErrHigh}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_ab034b5065c9289fc92f9575c02f32506}
+\hypertarget{classCCalibrationCurve_a4889720b95e92b82ede1d3492e8ad350}{
+\index{CCalibrationCurve@{CCalibrationCurve}!ppmErrLow@{ppmErrLow}}
+\index{ppmErrLow@{ppmErrLow}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{ppmErrLow}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::ppmErrLow}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a4889720b95e92b82ede1d3492e8ad350}
+\hypertarget{classCCalibrationCurve_a10733d71ce0df543b1b3eeab0bf1bc4b}{
+\index{CCalibrationCurve@{CCalibrationCurve}!ppmWarnHigh@{ppmWarnHigh}}
+\index{ppmWarnHigh@{ppmWarnHigh}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{ppmWarnHigh}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::ppmWarnHigh}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a10733d71ce0df543b1b3eeab0bf1bc4b}
+\hypertarget{classCCalibrationCurve_a5782040dee61541b2bd3d4a213d7a3a6}{
+\index{CCalibrationCurve@{CCalibrationCurve}!ppmWarnLow@{ppmWarnLow}}
+\index{ppmWarnLow@{ppmWarnLow}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{ppmWarnLow}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CCalibrationCurve::ppmWarnLow}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a5782040dee61541b2bd3d4a213d7a3a6}
+\hypertarget{classCCalibrationCurve_a4cb54b94c003dbaede11c461ac8da44e}{
+\index{CCalibrationCurve@{CCalibrationCurve}!requiredSpecSerial@{requiredSpecSerial}}
+\index{requiredSpecSerial@{requiredSpecSerial}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{requiredSpecSerial}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCalibrationCurve::requiredSpecSerial}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a4cb54b94c003dbaede11c461ac8da44e}
+\hypertarget{classCCalibrationCurve_a2cd5d2fd5debcc2791cb8ff6fa7f15a4}{
+\index{CCalibrationCurve@{CCalibrationCurve}!requiredSpectrometer@{requiredSpectrometer}}
+\index{requiredSpectrometer@{requiredSpectrometer}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{requiredSpectrometer}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCalibrationCurve::requiredSpectrometer}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a2cd5d2fd5debcc2791cb8ff6fa7f15a4}
+\hypertarget{classCCalibrationCurve_a4fb073155998e24486464ba870da81c3}{
+\index{CCalibrationCurve@{CCalibrationCurve}!substanceName@{substanceName}}
+\index{substanceName@{substanceName}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{substanceName}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCalibrationCurve::substanceName}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a4fb073155998e24486464ba870da81c3}
+\hypertarget{classCCalibrationCurve_a4bab63d0e43e43415ccd187ae08d511e}{
+\index{CCalibrationCurve@{CCalibrationCurve}!type@{type}}
+\index{type@{type}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf curveType} {\bf CCalibrationCurve::type}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a4bab63d0e43e43415ccd187ae08d511e}
+\hypertarget{classCCalibrationCurve_a7634cd9a6c79e0e68ecbe4fd5ed480cb}{
+\index{CCalibrationCurve@{CCalibrationCurve}!uniqueID@{uniqueID}}
+\index{uniqueID@{uniqueID}!CCalibrationCurve@{CCalibrationCurve}}
+\subsubsection[{uniqueID}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CCalibrationCurve::uniqueID}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCCalibrationCurve_a7634cd9a6c79e0e68ecbe4fd5ed480cb}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{CalibrationCurve_8h}{CalibrationCurve.h}\item 
+spec4/\hyperlink{CalibrationCurve_8cpp}{CalibrationCurve.cpp}\end{DoxyCompactItemize}

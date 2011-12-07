@@ -1,0 +1,291 @@
+\hypertarget{classCRPString}{
+\section{CRPString Class Reference}
+\label{classCRPString}\index{CRPString@{CRPString}}
+}
+
+
+{\ttfamily \#include $<$RPString.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classCRPString_a824035c48474991b0267f00fae35776d}{KeepGroups} \{ \par
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776da53e9644df524b8aa36b303d56653d7f2}{capitals} =  (int)0x0001, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776da38c048edeef94807c77db131b4c127ee}{lowercase} =  (int)0x0002, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776dae7a4fbc9875d2819cd4bb2e486c00048}{numbers} =  (int)0x0004, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776daf3e51c413ca36ccf13a1c91735055637}{spaces} =  (int)0x0010, 
+\par
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776daec8a7ff272c865f42aa275ec52992dbe}{newlines} =  (int)0x0020, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776dabe4ce79ab637fda95b6c9b8461c39570}{tabs} =  (int)0x0040, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776da71ceeb491b02b6baa3e24075158f8454}{dots} =  (int)0x0100, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776da8cd9ca6d933c61edacd2aca6070196e2}{dashes} =  (int)0x0200, 
+\par
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776dae5865446433f12b7ca0958b33a04f0bf}{underscore} =  (int)0x0400, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776daf04e4c2d019cf8f7686992e683a78964}{letters} =  (int)0x0003, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776da35ace468ff829637f5da5e7b5d137df9}{whitespace} =  (int)0x0070, 
+\hyperlink{classCRPString_a824035c48474991b0267f00fae35776dab656a2ebbedb69fea3e7750f755b91cd}{punct} =  (int)0x0700
+ \}
+\item 
+enum \hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2}{ppmFormat} \{ \par
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a0ab35cab83603c06f258545a0f5b3f2f}{ppmFmt\_\-Vx} =  (int)0x02, 
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a210de584c5de2198d270ef046f346b54}{ppmFmt\_\-xU} =  (int)0x01, 
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2afb75ab021a09066b01b1b4f28d79d667}{ppmFmt\_\-VU} =  ppmFmt\_\-Vx$|$ppmFmt\_\-xU, 
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a73208d6c62e15962360564bd839ef531}{ppmFmt\_\-PPM} =  (int)0x10, 
+\par
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a27eef2174538d8c39bc60c295c748af9}{ppmFmt\_\-PPX} =  (int)0x20, 
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a35540c80148657b2d0aea5cc7a7b6790}{ppmFmtPPM\_\-VU} =  ppmFmt\_\-PPM$|$ppmFmt\_\-VU, 
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a69967fc21c9b94a1742fb363b7bde6ea}{ppmFmtPPM\_\-Vx} =  ppmFmt\_\-PPM$|$ppmFmt\_\-Vx, 
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2abe84a5c14b3600afbcd78be133363d84}{ppmFmtPPM\_\-xU} =  ppmFmt\_\-PPM$|$ppmFmt\_\-xU, 
+\par
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a4341b404226aec9087e01fd5d46066c7}{ppmFmtPPX\_\-VU} =  ppmFmt\_\-PPX$|$ppmFmt\_\-VU, 
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a46a3eb9ac2d6cff28b8e1b02995fb7b8}{ppmFmtPPX\_\-Vx} =  ppmFmt\_\-PPX$|$ppmFmt\_\-Vx, 
+\hyperlink{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a1363a26a91003d3356a5c7475996437b}{ppmFmtPPX\_\-xU} =  ppmFmt\_\-PPX$|$ppmFmt\_\-xU
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCRPString_a9f11032df8603145bc2dcf362e17b8b9}{CRPString} (void)
+\item 
+\hyperlink{classCRPString_a24dcee7ab95d0f8d30ced81278c76457}{CRPString} (CString init)
+\item 
+\hyperlink{classCRPString_a76748d02f8bd3e4d44d13ca243e17a0d}{$\sim$CRPString} (void)
+\item 
+\hyperlink{classCRPString}{CRPString} \hyperlink{classCRPString_ab55c3eb38f02b0f1e212171703aabb73}{GetReplaceWithUnderscores} (int keep=(CRPString::letters$|$CRPString::numbers$|$CRPString::punct))
+\item 
+\hyperlink{classCRPString}{CRPString} \hyperlink{classCRPString_a287f8e6f51feb0d60efdad915097984e}{GetEscaped} (int keep=(CRPString::letters$|$CRPString::numbers$|$CRPString::spaces$|$CRPString::punct))
+\item 
+\hyperlink{classCRPString}{CRPString} \hyperlink{classCRPString_a0d9fad03c6ec2c4fc1ea62e9af2a9fad}{GetUnEscaped} ()
+\item 
+\hyperlink{classCRPString}{CRPString} \hyperlink{classCRPString_a0382de4893ea232e29afad535a67a601}{CreateUniqueID} ()
+\begin{DoxyCompactList}\small\item\em Creates a unique identifier composed of system time, system name, and a random number. \item\end{DoxyCompactList}\item 
+\hyperlink{classCRPString}{CRPString} \hyperlink{classCRPString_a1d24b77d94ec9357575b20cbd756bb80}{PseudoHexEncode} ()
+\item 
+\hyperlink{classCRPString}{CRPString} \hyperlink{classCRPString_afdad60e2b6a6875041630c6d87bfda62}{PseudoHexDecode} ()
+\item 
+\hyperlink{classCRPString}{CRPString} \hyperlink{classCRPString_a01d8cb97d36a898804a802f10d53b993}{ppxFormat} (double f, int style=ppmFmtPPX\_\-VU)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776d}{
+\index{CRPString@{CRPString}!KeepGroups@{KeepGroups}}
+\index{KeepGroups@{KeepGroups}!CRPString@{CRPString}}
+\subsubsection[{KeepGroups}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CRPString::KeepGroups}}}
+\label{classCRPString_a824035c48474991b0267f00fae35776d}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{capitals@{capitals}!CRPString@{CRPString}}\index{CRPString@{CRPString}!capitals@{capitals}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776da53e9644df524b8aa36b303d56653d7f2}{
+capitals}
+\label{classCRPString_a824035c48474991b0267f00fae35776da53e9644df524b8aa36b303d56653d7f2}
+}]\index{lowercase@{lowercase}!CRPString@{CRPString}}\index{CRPString@{CRPString}!lowercase@{lowercase}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776da38c048edeef94807c77db131b4c127ee}{
+lowercase}
+\label{classCRPString_a824035c48474991b0267f00fae35776da38c048edeef94807c77db131b4c127ee}
+}]\index{numbers@{numbers}!CRPString@{CRPString}}\index{CRPString@{CRPString}!numbers@{numbers}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776dae7a4fbc9875d2819cd4bb2e486c00048}{
+numbers}
+\label{classCRPString_a824035c48474991b0267f00fae35776dae7a4fbc9875d2819cd4bb2e486c00048}
+}]\index{spaces@{spaces}!CRPString@{CRPString}}\index{CRPString@{CRPString}!spaces@{spaces}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776daf3e51c413ca36ccf13a1c91735055637}{
+spaces}
+\label{classCRPString_a824035c48474991b0267f00fae35776daf3e51c413ca36ccf13a1c91735055637}
+}]\index{newlines@{newlines}!CRPString@{CRPString}}\index{CRPString@{CRPString}!newlines@{newlines}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776daec8a7ff272c865f42aa275ec52992dbe}{
+newlines}
+\label{classCRPString_a824035c48474991b0267f00fae35776daec8a7ff272c865f42aa275ec52992dbe}
+}]\index{tabs@{tabs}!CRPString@{CRPString}}\index{CRPString@{CRPString}!tabs@{tabs}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776dabe4ce79ab637fda95b6c9b8461c39570}{
+tabs}
+\label{classCRPString_a824035c48474991b0267f00fae35776dabe4ce79ab637fda95b6c9b8461c39570}
+}]\index{dots@{dots}!CRPString@{CRPString}}\index{CRPString@{CRPString}!dots@{dots}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776da71ceeb491b02b6baa3e24075158f8454}{
+dots}
+\label{classCRPString_a824035c48474991b0267f00fae35776da71ceeb491b02b6baa3e24075158f8454}
+}]\index{dashes@{dashes}!CRPString@{CRPString}}\index{CRPString@{CRPString}!dashes@{dashes}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776da8cd9ca6d933c61edacd2aca6070196e2}{
+dashes}
+\label{classCRPString_a824035c48474991b0267f00fae35776da8cd9ca6d933c61edacd2aca6070196e2}
+}]\index{underscore@{underscore}!CRPString@{CRPString}}\index{CRPString@{CRPString}!underscore@{underscore}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776dae5865446433f12b7ca0958b33a04f0bf}{
+underscore}
+\label{classCRPString_a824035c48474991b0267f00fae35776dae5865446433f12b7ca0958b33a04f0bf}
+}]\index{letters@{letters}!CRPString@{CRPString}}\index{CRPString@{CRPString}!letters@{letters}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776daf04e4c2d019cf8f7686992e683a78964}{
+letters}
+\label{classCRPString_a824035c48474991b0267f00fae35776daf04e4c2d019cf8f7686992e683a78964}
+}]\index{whitespace@{whitespace}!CRPString@{CRPString}}\index{CRPString@{CRPString}!whitespace@{whitespace}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776da35ace468ff829637f5da5e7b5d137df9}{
+whitespace}
+\label{classCRPString_a824035c48474991b0267f00fae35776da35ace468ff829637f5da5e7b5d137df9}
+}]\index{punct@{punct}!CRPString@{CRPString}}\index{CRPString@{CRPString}!punct@{punct}}\item[{\em 
+\hypertarget{classCRPString_a824035c48474991b0267f00fae35776dab656a2ebbedb69fea3e7750f755b91cd}{
+punct}
+\label{classCRPString_a824035c48474991b0267f00fae35776dab656a2ebbedb69fea3e7750f755b91cd}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2}{
+\index{CRPString@{CRPString}!ppmFormat@{ppmFormat}}
+\index{ppmFormat@{ppmFormat}!CRPString@{CRPString}}
+\subsubsection[{ppmFormat}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CRPString::ppmFormat}}}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ppmFmt\_\-Vx@{ppmFmt\_\-Vx}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmt\_\-Vx@{ppmFmt\_\-Vx}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a0ab35cab83603c06f258545a0f5b3f2f}{
+ppmFmt\_\-Vx}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a0ab35cab83603c06f258545a0f5b3f2f}
+}]\index{ppmFmt\_\-xU@{ppmFmt\_\-xU}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmt\_\-xU@{ppmFmt\_\-xU}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a210de584c5de2198d270ef046f346b54}{
+ppmFmt\_\-xU}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a210de584c5de2198d270ef046f346b54}
+}]\index{ppmFmt\_\-VU@{ppmFmt\_\-VU}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmt\_\-VU@{ppmFmt\_\-VU}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2afb75ab021a09066b01b1b4f28d79d667}{
+ppmFmt\_\-VU}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2afb75ab021a09066b01b1b4f28d79d667}
+}]\index{ppmFmt\_\-PPM@{ppmFmt\_\-PPM}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmt\_\-PPM@{ppmFmt\_\-PPM}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a73208d6c62e15962360564bd839ef531}{
+ppmFmt\_\-PPM}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a73208d6c62e15962360564bd839ef531}
+}]\index{ppmFmt\_\-PPX@{ppmFmt\_\-PPX}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmt\_\-PPX@{ppmFmt\_\-PPX}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a27eef2174538d8c39bc60c295c748af9}{
+ppmFmt\_\-PPX}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a27eef2174538d8c39bc60c295c748af9}
+}]\index{ppmFmtPPM\_\-VU@{ppmFmtPPM\_\-VU}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmtPPM\_\-VU@{ppmFmtPPM\_\-VU}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a35540c80148657b2d0aea5cc7a7b6790}{
+ppmFmtPPM\_\-VU}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a35540c80148657b2d0aea5cc7a7b6790}
+}]\index{ppmFmtPPM\_\-Vx@{ppmFmtPPM\_\-Vx}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmtPPM\_\-Vx@{ppmFmtPPM\_\-Vx}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a69967fc21c9b94a1742fb363b7bde6ea}{
+ppmFmtPPM\_\-Vx}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a69967fc21c9b94a1742fb363b7bde6ea}
+}]\index{ppmFmtPPM\_\-xU@{ppmFmtPPM\_\-xU}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmtPPM\_\-xU@{ppmFmtPPM\_\-xU}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2abe84a5c14b3600afbcd78be133363d84}{
+ppmFmtPPM\_\-xU}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2abe84a5c14b3600afbcd78be133363d84}
+}]\index{ppmFmtPPX\_\-VU@{ppmFmtPPX\_\-VU}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmtPPX\_\-VU@{ppmFmtPPX\_\-VU}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a4341b404226aec9087e01fd5d46066c7}{
+ppmFmtPPX\_\-VU}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a4341b404226aec9087e01fd5d46066c7}
+}]\index{ppmFmtPPX\_\-Vx@{ppmFmtPPX\_\-Vx}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmtPPX\_\-Vx@{ppmFmtPPX\_\-Vx}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a46a3eb9ac2d6cff28b8e1b02995fb7b8}{
+ppmFmtPPX\_\-Vx}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a46a3eb9ac2d6cff28b8e1b02995fb7b8}
+}]\index{ppmFmtPPX\_\-xU@{ppmFmtPPX\_\-xU}!CRPString@{CRPString}}\index{CRPString@{CRPString}!ppmFmtPPX\_\-xU@{ppmFmtPPX\_\-xU}}\item[{\em 
+\hypertarget{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a1363a26a91003d3356a5c7475996437b}{
+ppmFmtPPX\_\-xU}
+\label{classCRPString_a01c768ebc97b32bbd7bdbe6ca227c3a2a1363a26a91003d3356a5c7475996437b}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCRPString_a9f11032df8603145bc2dcf362e17b8b9}{
+\index{CRPString@{CRPString}!CRPString@{CRPString}}
+\index{CRPString@{CRPString}!CRPString@{CRPString}}
+\subsubsection[{CRPString}]{\setlength{\rightskip}{0pt plus 5cm}CRPString::CRPString (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_a9f11032df8603145bc2dcf362e17b8b9}
+\hypertarget{classCRPString_a24dcee7ab95d0f8d30ced81278c76457}{
+\index{CRPString@{CRPString}!CRPString@{CRPString}}
+\index{CRPString@{CRPString}!CRPString@{CRPString}}
+\subsubsection[{CRPString}]{\setlength{\rightskip}{0pt plus 5cm}CRPString::CRPString (
+\begin{DoxyParamCaption}
+\item[{CString}]{ init}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_a24dcee7ab95d0f8d30ced81278c76457}
+\hypertarget{classCRPString_a76748d02f8bd3e4d44d13ca243e17a0d}{
+\index{CRPString@{CRPString}!$\sim$CRPString@{$\sim$CRPString}}
+\index{$\sim$CRPString@{$\sim$CRPString}!CRPString@{CRPString}}
+\subsubsection[{$\sim$CRPString}]{\setlength{\rightskip}{0pt plus 5cm}CRPString::$\sim$CRPString (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_a76748d02f8bd3e4d44d13ca243e17a0d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCRPString_a0382de4893ea232e29afad535a67a601}{
+\index{CRPString@{CRPString}!CreateUniqueID@{CreateUniqueID}}
+\index{CreateUniqueID@{CreateUniqueID}!CRPString@{CRPString}}
+\subsubsection[{CreateUniqueID}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRPString} CRPString::CreateUniqueID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_a0382de4893ea232e29afad535a67a601}
+
+
+Creates a unique identifier composed of system time, system name, and a random number. 
+
+\hypertarget{classCRPString_a287f8e6f51feb0d60efdad915097984e}{
+\index{CRPString@{CRPString}!GetEscaped@{GetEscaped}}
+\index{GetEscaped@{GetEscaped}!CRPString@{CRPString}}
+\subsubsection[{GetEscaped}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRPString} CRPString::GetEscaped (
+\begin{DoxyParamCaption}
+\item[{int}]{ keep = {\ttfamily (		CRPString::letters$|$		CRPString::numbers$|$		CRPString::spaces$|$		CRPString::punct)}}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_a287f8e6f51feb0d60efdad915097984e}
+\hypertarget{classCRPString_ab55c3eb38f02b0f1e212171703aabb73}{
+\index{CRPString@{CRPString}!GetReplaceWithUnderscores@{GetReplaceWithUnderscores}}
+\index{GetReplaceWithUnderscores@{GetReplaceWithUnderscores}!CRPString@{CRPString}}
+\subsubsection[{GetReplaceWithUnderscores}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRPString} CRPString::GetReplaceWithUnderscores (
+\begin{DoxyParamCaption}
+\item[{int}]{ keep = {\ttfamily (		CRPString::letters$|$		CRPString::numbers$|$		CRPString::punct)}}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_ab55c3eb38f02b0f1e212171703aabb73}
+\hypertarget{classCRPString_a0d9fad03c6ec2c4fc1ea62e9af2a9fad}{
+\index{CRPString@{CRPString}!GetUnEscaped@{GetUnEscaped}}
+\index{GetUnEscaped@{GetUnEscaped}!CRPString@{CRPString}}
+\subsubsection[{GetUnEscaped}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRPString} CRPString::GetUnEscaped (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_a0d9fad03c6ec2c4fc1ea62e9af2a9fad}
+\hypertarget{classCRPString_a01d8cb97d36a898804a802f10d53b993}{
+\index{CRPString@{CRPString}!ppxFormat@{ppxFormat}}
+\index{ppxFormat@{ppxFormat}!CRPString@{CRPString}}
+\subsubsection[{ppxFormat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRPString} CRPString::ppxFormat (
+\begin{DoxyParamCaption}
+\item[{double}]{ f, }
+\item[{int}]{ style = {\ttfamily ppmFmtPPX\_\-VU}}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_a01d8cb97d36a898804a802f10d53b993}
+\hypertarget{classCRPString_afdad60e2b6a6875041630c6d87bfda62}{
+\index{CRPString@{CRPString}!PseudoHexDecode@{PseudoHexDecode}}
+\index{PseudoHexDecode@{PseudoHexDecode}!CRPString@{CRPString}}
+\subsubsection[{PseudoHexDecode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRPString} CRPString::PseudoHexDecode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_afdad60e2b6a6875041630c6d87bfda62}
+\hypertarget{classCRPString_a1d24b77d94ec9357575b20cbd756bb80}{
+\index{CRPString@{CRPString}!PseudoHexEncode@{PseudoHexEncode}}
+\index{PseudoHexEncode@{PseudoHexEncode}!CRPString@{CRPString}}
+\subsubsection[{PseudoHexEncode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRPString} CRPString::PseudoHexEncode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCRPString_a1d24b77d94ec9357575b20cbd756bb80}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{RPString_8h}{RPString.h}\item 
+spec4/\hyperlink{RPString_8cpp}{RPString.cpp}\end{DoxyCompactItemize}

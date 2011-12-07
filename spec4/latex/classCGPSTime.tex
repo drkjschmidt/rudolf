@@ -1,0 +1,158 @@
+\hypertarget{classCGPSTime}{
+\section{CGPSTime Class Reference}
+\label{classCGPSTime}\index{CGPSTime@{CGPSTime}}
+}
+
+
+Manipulate time stamps as used by NMEA / GPS.  
+
+
+
+
+{\ttfamily \#include $<$RPGarmCom.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGPSTime_ad6550fa71c7fdc603c939a21760aaec8}{CGPSTime} (void)
+\item 
+\hyperlink{classCGPSTime_a9ef76c34fe69327325090ef471309e7c}{$\sim$CGPSTime} (void)
+\item 
+void \hyperlink{classCGPSTime_aebfe89b0e1ab1cfe8a7c375a6398518c}{setTimeInt} (INT32 set)
+\begin{DoxyCompactList}\small\item\em directly set int32 time stamp \item\end{DoxyCompactList}\item 
+INT32 \hyperlink{classCGPSTime_a6806d2e158419bd9f7c544d18921983f}{getTimeInt} (void)
+\begin{DoxyCompactList}\small\item\em retrieve int32 time stamp \item\end{DoxyCompactList}\item 
+void \hyperlink{classCGPSTime_adfd79af454e601e5a3f614e9c9bda864}{getHMS} (int $\ast$hh, int $\ast$mm, int $\ast$ss)
+\begin{DoxyCompactList}\small\item\em retrieve hh mm ss values of timestamp \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSTime_af5b000156e8043e136f01579cb85d4f6}{operator$<$} (\hyperlink{classCGPSTime}{CGPSTime} \&right)
+\begin{DoxyCompactList}\small\item\em compare timestamps \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSTime_a63c5ec182d3a067dfd884ba9bc3ac0cb}{operator$>$} (\hyperlink{classCGPSTime}{CGPSTime} \&right)
+\begin{DoxyCompactList}\small\item\em compare timestamps \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSTime_ab6bc91a36369e818491747cd06b8eea8}{operator==} (\hyperlink{classCGPSTime}{CGPSTime} \&right)
+\begin{DoxyCompactList}\small\item\em compare timestamps \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+INT32 \hyperlink{classCGPSTime_af6905e087847eda9c239be33e3c6e13a}{GPStime}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manipulate time stamps as used by NMEA / GPS. NMEA time is reported as an int32 value in human-\/readable hh-\/mm-\/ss format (000000 to 235959) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGPSTime_ad6550fa71c7fdc603c939a21760aaec8}{
+\index{CGPSTime@{CGPSTime}!CGPSTime@{CGPSTime}}
+\index{CGPSTime@{CGPSTime}!CGPSTime@{CGPSTime}}
+\subsubsection[{CGPSTime}]{\setlength{\rightskip}{0pt plus 5cm}CGPSTime::CGPSTime (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSTime_ad6550fa71c7fdc603c939a21760aaec8}
+\hypertarget{classCGPSTime_a9ef76c34fe69327325090ef471309e7c}{
+\index{CGPSTime@{CGPSTime}!$\sim$CGPSTime@{$\sim$CGPSTime}}
+\index{$\sim$CGPSTime@{$\sim$CGPSTime}!CGPSTime@{CGPSTime}}
+\subsubsection[{$\sim$CGPSTime}]{\setlength{\rightskip}{0pt plus 5cm}CGPSTime::$\sim$CGPSTime (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSTime_a9ef76c34fe69327325090ef471309e7c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGPSTime_adfd79af454e601e5a3f614e9c9bda864}{
+\index{CGPSTime@{CGPSTime}!getHMS@{getHMS}}
+\index{getHMS@{getHMS}!CGPSTime@{CGPSTime}}
+\subsubsection[{getHMS}]{\setlength{\rightskip}{0pt plus 5cm}void CGPSTime::getHMS (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ hh, }
+\item[{int $\ast$}]{ mm, }
+\item[{int $\ast$}]{ ss}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSTime_adfd79af454e601e5a3f614e9c9bda864}
+
+
+retrieve hh mm ss values of timestamp 
+
+\hypertarget{classCGPSTime_a6806d2e158419bd9f7c544d18921983f}{
+\index{CGPSTime@{CGPSTime}!getTimeInt@{getTimeInt}}
+\index{getTimeInt@{getTimeInt}!CGPSTime@{CGPSTime}}
+\subsubsection[{getTimeInt}]{\setlength{\rightskip}{0pt plus 5cm}INT32 CGPSTime::getTimeInt (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSTime_a6806d2e158419bd9f7c544d18921983f}
+
+
+retrieve int32 time stamp 
+
+\hypertarget{classCGPSTime_af5b000156e8043e136f01579cb85d4f6}{
+\index{CGPSTime@{CGPSTime}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!CGPSTime@{CGPSTime}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSTime::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf CGPSTime} \&}]{ right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSTime_af5b000156e8043e136f01579cb85d4f6}
+
+
+compare timestamps 
+
+\hypertarget{classCGPSTime_ab6bc91a36369e818491747cd06b8eea8}{
+\index{CGPSTime@{CGPSTime}!operator==@{operator==}}
+\index{operator==@{operator==}!CGPSTime@{CGPSTime}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSTime::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf CGPSTime} \&}]{ right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSTime_ab6bc91a36369e818491747cd06b8eea8}
+
+
+compare timestamps 
+
+\hypertarget{classCGPSTime_a63c5ec182d3a067dfd884ba9bc3ac0cb}{
+\index{CGPSTime@{CGPSTime}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!CGPSTime@{CGPSTime}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSTime::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf CGPSTime} \&}]{ right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSTime_a63c5ec182d3a067dfd884ba9bc3ac0cb}
+
+
+compare timestamps 
+
+\hypertarget{classCGPSTime_aebfe89b0e1ab1cfe8a7c375a6398518c}{
+\index{CGPSTime@{CGPSTime}!setTimeInt@{setTimeInt}}
+\index{setTimeInt@{setTimeInt}!CGPSTime@{CGPSTime}}
+\subsubsection[{setTimeInt}]{\setlength{\rightskip}{0pt plus 5cm}void CGPSTime::setTimeInt (
+\begin{DoxyParamCaption}
+\item[{INT32}]{ set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSTime_aebfe89b0e1ab1cfe8a7c375a6398518c}
+
+
+directly set int32 time stamp 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCGPSTime_af6905e087847eda9c239be33e3c6e13a}{
+\index{CGPSTime@{CGPSTime}!GPStime@{GPStime}}
+\index{GPStime@{GPStime}!CGPSTime@{CGPSTime}}
+\subsubsection[{GPStime}]{\setlength{\rightskip}{0pt plus 5cm}INT32 {\bf CGPSTime::GPStime}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSTime_af6905e087847eda9c239be33e3c6e13a}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+garmin-\/serial/\hyperlink{RPGarmCom_8h}{RPGarmCom.h}\item 
+garmin-\/serial/\hyperlink{RPGarmCom_8cpp}{RPGarmCom.cpp}\end{DoxyCompactItemize}

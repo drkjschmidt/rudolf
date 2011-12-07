@@ -1,0 +1,204 @@
+\hypertarget{classCSplashDialog}{
+\section{CSplashDialog Class Reference}
+\label{classCSplashDialog}\index{CSplashDialog@{CSplashDialog}}
+}
+
+
+{\ttfamily \#include $<$SplashDialog.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classCSplashDialog_a280298b4d1d645d8f9536333c79214dda18bb872e47d50ba3a3ad56e938588791}{IDD} =  IDD\_\-SPLASH
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSplashDialog_a96369042a0bb1a68a042890eed5cbf25}{CSplashDialog} (CWnd $\ast$pParent=NULL)
+\item 
+virtual \hyperlink{classCSplashDialog_a950f67c9473af7e591fe0bba0a0feab7}{$\sim$CSplashDialog} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classCSplashDialog_aa72c8002e6217d4347ec7ad0b91a4c8a}{ShowSplashScreen} (CWnd $\ast$pParentWnd, double splashTime=10000.0, double stepTime=1000.0)
+\begin{DoxyCompactList}\small\item\em Show a splash screen. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{classCSplashDialog_a653f62e37741ca09c1277a24d1e43fbe}{HideSplashScreen} (void)
+\begin{DoxyCompactList}\small\item\em Hide splash screen -\/ from app side. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{classCSplashDialog_ab53b6b2fdb09477b1da7438a874ef98f}{PreTranslateAppMessage} (MSG $\ast$pMsg)
+\begin{DoxyCompactList}\small\item\em Windows message handler. Insert this in the message handler of the calling app. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classCSplashDialog_ae212964580361c6c4b7a6ce9f35d56a7}{DoDataExchange} (CDataExchange $\ast$pDX)
+\item 
+bool \hyperlink{classCSplashDialog_a0362b263b926494b386f18ef1a7c6d89}{HideSplashScreenInternal} (void)
+\begin{DoxyCompactList}\small\item\em Hide splash screen -\/ from inside class. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCSplashDialog_a05339035b3f1726a398f6932f4aa7949}{SetupTimerBar} (double splashTime, double stepTime)
+\begin{DoxyCompactList}\small\item\em Show/Hide timer bar on splash dialog. \item\end{DoxyCompactList}\item 
+afx\_\-msg void \hyperlink{classCSplashDialog_a6d3f618ac91e10727efeb24726d67a23}{OnTimer} (UINT\_\-PTR nIDEvent)
+\begin{DoxyCompactList}\small\item\em Process timer events (move timer bar, suicide splash). \item\end{DoxyCompactList}\item 
+virtual BOOL \hyperlink{classCSplashDialog_aa2f1d8e47c9ee2093d68927e4f084446}{OnInitDialog} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CProgressCtrl \hyperlink{classCSplashDialog_ad7450722ad4ee62e87390e01bb15b13e}{c\_\-splashProgress}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCSplashDialog_a280298b4d1d645d8f9536333c79214dd}{
+\subsubsection[{"@11}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}
+\label{classCSplashDialog_a280298b4d1d645d8f9536333c79214dd}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IDD@{IDD}!CSplashDialog@{CSplashDialog}}\index{CSplashDialog@{CSplashDialog}!IDD@{IDD}}\item[{\em 
+\hypertarget{classCSplashDialog_a280298b4d1d645d8f9536333c79214dda18bb872e47d50ba3a3ad56e938588791}{
+IDD}
+\label{classCSplashDialog_a280298b4d1d645d8f9536333c79214dda18bb872e47d50ba3a3ad56e938588791}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCSplashDialog_a96369042a0bb1a68a042890eed5cbf25}{
+\index{CSplashDialog@{CSplashDialog}!CSplashDialog@{CSplashDialog}}
+\index{CSplashDialog@{CSplashDialog}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{CSplashDialog}]{\setlength{\rightskip}{0pt plus 5cm}CSplashDialog::CSplashDialog (
+\begin{DoxyParamCaption}
+\item[{CWnd $\ast$}]{ pParent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCSplashDialog_a96369042a0bb1a68a042890eed5cbf25}
+\hypertarget{classCSplashDialog_a950f67c9473af7e591fe0bba0a0feab7}{
+\index{CSplashDialog@{CSplashDialog}!$\sim$CSplashDialog@{$\sim$CSplashDialog}}
+\index{$\sim$CSplashDialog@{$\sim$CSplashDialog}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{$\sim$CSplashDialog}]{\setlength{\rightskip}{0pt plus 5cm}CSplashDialog::$\sim$CSplashDialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCSplashDialog_a950f67c9473af7e591fe0bba0a0feab7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCSplashDialog_ae212964580361c6c4b7a6ce9f35d56a7}{
+\index{CSplashDialog@{CSplashDialog}!DoDataExchange@{DoDataExchange}}
+\index{DoDataExchange@{DoDataExchange}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{DoDataExchange}]{\setlength{\rightskip}{0pt plus 5cm}void CSplashDialog::DoDataExchange (
+\begin{DoxyParamCaption}
+\item[{CDataExchange $\ast$}]{ pDX}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classCSplashDialog_ae212964580361c6c4b7a6ce9f35d56a7}
+\hypertarget{classCSplashDialog_a653f62e37741ca09c1277a24d1e43fbe}{
+\index{CSplashDialog@{CSplashDialog}!HideSplashScreen@{HideSplashScreen}}
+\index{HideSplashScreen@{HideSplashScreen}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{HideSplashScreen}]{\setlength{\rightskip}{0pt plus 5cm}bool CSplashDialog::HideSplashScreen (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSplashDialog_a653f62e37741ca09c1277a24d1e43fbe}
+
+
+Hide splash screen -\/ from app side. 
+
+\hypertarget{classCSplashDialog_a0362b263b926494b386f18ef1a7c6d89}{
+\index{CSplashDialog@{CSplashDialog}!HideSplashScreenInternal@{HideSplashScreenInternal}}
+\index{HideSplashScreenInternal@{HideSplashScreenInternal}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{HideSplashScreenInternal}]{\setlength{\rightskip}{0pt plus 5cm}bool CSplashDialog::HideSplashScreenInternal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSplashDialog_a0362b263b926494b386f18ef1a7c6d89}
+
+
+Hide splash screen -\/ from inside class. 
+
+\hypertarget{classCSplashDialog_aa2f1d8e47c9ee2093d68927e4f084446}{
+\index{CSplashDialog@{CSplashDialog}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{OnInitDialog}]{\setlength{\rightskip}{0pt plus 5cm}BOOL CSplashDialog::OnInitDialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classCSplashDialog_aa2f1d8e47c9ee2093d68927e4f084446}
+\hypertarget{classCSplashDialog_a6d3f618ac91e10727efeb24726d67a23}{
+\index{CSplashDialog@{CSplashDialog}!OnTimer@{OnTimer}}
+\index{OnTimer@{OnTimer}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{OnTimer}]{\setlength{\rightskip}{0pt plus 5cm}void CSplashDialog::OnTimer (
+\begin{DoxyParamCaption}
+\item[{UINT\_\-PTR}]{ nIDEvent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSplashDialog_a6d3f618ac91e10727efeb24726d67a23}
+
+
+Process timer events (move timer bar, suicide splash). 
+
+\hypertarget{classCSplashDialog_ab53b6b2fdb09477b1da7438a874ef98f}{
+\index{CSplashDialog@{CSplashDialog}!PreTranslateAppMessage@{PreTranslateAppMessage}}
+\index{PreTranslateAppMessage@{PreTranslateAppMessage}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{PreTranslateAppMessage}]{\setlength{\rightskip}{0pt plus 5cm}bool CSplashDialog::PreTranslateAppMessage (
+\begin{DoxyParamCaption}
+\item[{MSG $\ast$}]{ pMsg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSplashDialog_ab53b6b2fdb09477b1da7438a874ef98f}
+
+
+Windows message handler. Insert this in the message handler of the calling app. 
+
+\hypertarget{classCSplashDialog_a05339035b3f1726a398f6932f4aa7949}{
+\index{CSplashDialog@{CSplashDialog}!SetupTimerBar@{SetupTimerBar}}
+\index{SetupTimerBar@{SetupTimerBar}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{SetupTimerBar}]{\setlength{\rightskip}{0pt plus 5cm}bool CSplashDialog::SetupTimerBar (
+\begin{DoxyParamCaption}
+\item[{double}]{ splashTime, }
+\item[{double}]{ stepTime}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSplashDialog_a05339035b3f1726a398f6932f4aa7949}
+
+
+Show/Hide timer bar on splash dialog. 
+
+\hypertarget{classCSplashDialog_aa72c8002e6217d4347ec7ad0b91a4c8a}{
+\index{CSplashDialog@{CSplashDialog}!ShowSplashScreen@{ShowSplashScreen}}
+\index{ShowSplashScreen@{ShowSplashScreen}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{ShowSplashScreen}]{\setlength{\rightskip}{0pt plus 5cm}bool CSplashDialog::ShowSplashScreen (
+\begin{DoxyParamCaption}
+\item[{CWnd $\ast$}]{ pParentWnd, }
+\item[{double}]{ splashTime = {\ttfamily 10000.0}, }
+\item[{double}]{ stepTime = {\ttfamily 1000.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSplashDialog_aa72c8002e6217d4347ec7ad0b91a4c8a}
+
+
+Show a splash screen. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pParentWnd}]-\/ window with respect to which splash screen shoulg be aligned \item[{\em splashTime}]-\/ how long to wait until splash screen autohides \mbox{[}ms\mbox{]} \item[{\em splashStep}]-\/ 0 means not to show a timer bar; $>$0 show timer bar \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCSplashDialog_ad7450722ad4ee62e87390e01bb15b13e}{
+\index{CSplashDialog@{CSplashDialog}!c\_\-splashProgress@{c\_\-splashProgress}}
+\index{c\_\-splashProgress@{c\_\-splashProgress}!CSplashDialog@{CSplashDialog}}
+\subsubsection[{c\_\-splashProgress}]{\setlength{\rightskip}{0pt plus 5cm}CProgressCtrl {\bf CSplashDialog::c\_\-splashProgress}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSplashDialog_ad7450722ad4ee62e87390e01bb15b13e}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{SplashDialog_8h}{SplashDialog.h}\item 
+spec4/\hyperlink{SplashDialog_8cpp}{SplashDialog.cpp}\end{DoxyCompactItemize}

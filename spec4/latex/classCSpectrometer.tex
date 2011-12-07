@@ -1,0 +1,755 @@
+\hypertarget{classCSpectrometer}{
+\section{CSpectrometer Class Reference}
+\label{classCSpectrometer}\index{CSpectrometer@{CSpectrometer}}
+}
+
+
+{\ttfamily \#include $<$Spectrometer.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSpectrometer_a3a99b32f1a814d28fc44e7dee6771fd6}{CSpectrometer} (void)
+\item 
+\hyperlink{classCSpectrometer_afcb50fb25f6e993ae9a74a6ab129bc45}{$\sim$CSpectrometer} (void)
+\item 
+int \hyperlink{classCSpectrometer_a689000fea405ec9af470e3473d4ab611}{GetCurSpec} ()
+\item 
+int \hyperlink{classCSpectrometer_a166af7b1246577656ad2f79a1c139aa4}{GetSpecCount} ()
+\item 
+CString \hyperlink{classCSpectrometer_adbc48b1c1cbe397ed8228a7d1ce2efa7}{GetSpecName} (int index)
+\item 
+CString \hyperlink{classCSpectrometer_a3e7e41e8709f25a4d4a1903f5acb9678}{GetSpecSerial} (int index)
+\item 
+void \hyperlink{classCSpectrometer_aef3c19ce41e279705e8ea9bfdc8e8495}{GetWavelengths} (DoubleArray $\ast$wavelengths)
+\item 
+int \hyperlink{classCSpectrometer_a4527f950adf93f5284ee524aa30642b8}{SelectSpectrometer} (CString name, CString serial=CString(\_\-T(\char`\"{}\char`\"{})))
+\item 
+int \hyperlink{classCSpectrometer_af89a8438325c82aea9c8f18aaae096d5}{SelectSpectrometer} (int index)
+\item 
+void \hyperlink{classCSpectrometer_a0a0c81d5d07acf6c2fe0321063e8d6e5}{SetIntegrationTime} (double time)
+\item 
+void \hyperlink{classCSpectrometer_a677c5d75311bbeaac73aa136b703cf96}{SetBoxcarWidth} (int width)
+\item 
+void \hyperlink{classCSpectrometer_a8c64c393489f17a79146d9df26510be8}{SetScansToAverage} (int num)
+\item 
+void \hyperlink{classCSpectrometer_aa58f1ae664a6a146e4c72a7c77f86e7e}{EnableElecticalDark} (bool enable, bool reset)
+\item 
+void \hyperlink{classCSpectrometer_a7dbda9c55445b6570fe149d27f705da4}{ForkWrapperGetSpectrum} (LPVOID param)
+\item 
+bool \hyperlink{classCSpectrometer_a0f998eb992829015c5cbfb578d1b1073}{Spectrum\_\-AcquireSpectrum} (DoubleArray $\ast$datastore)
+\item 
+bool \hyperlink{classCSpectrometer_accad97a6bf3396d92bf6bb1946eda4e2}{Spectrum\_\-LoadAllSpectra} (CString $\ast$filename=NULL)
+\begin{DoxyCompactList}\small\item\em Save Blank / Data / Difference spectrum. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCSpectrometer_a9ba221f05aed4bc47e45bf6b2b82cab8}{Spectrum\_\-SaveAllSpectra} (CString $\ast$filename=NULL)
+\item 
+double \hyperlink{classCSpectrometer_ae599ab9349878aff8f02718745d355ce}{getMinW} (void)
+\item 
+double \hyperlink{classCSpectrometer_a1b82cdce185789cb333d233466c1b6ba}{getMaxW} (void)
+\item 
+void \hyperlink{classCSpectrometer_ab6c2609fecfbb05bc1592e87e7271e7d}{PaintDReport} (CDC $\ast$pDC, CPrintInfo $\ast$pInfo, LPRECT myrect)
+\begin{DoxyCompactList}\small\item\em Draw a text report for current acquisition. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCSpectrometer_a23e973f1c8f369344c5326109b756ecf}{PaintRReport} (CDC $\ast$pDC, CPrintInfo $\ast$pInfo, LPRECT myrect)
+\begin{DoxyCompactList}\small\item\em Draw a text report for review spectrum. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCSpectrometer_a057b4b5a32cca4151b8bba3ac4159e57}{PaintReport} (CDC $\ast$pDC, CPrintInfo $\ast$pInfo, LPRECT myrect, \hyperlink{classCSpectrumData}{CSpectrumData} ReportSpec)
+\begin{DoxyCompactList}\small\item\em Draw text report for provided spectrum. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCSpectrometer_af6001c8c46a0e71159a7e7ecfdc02934}{PaintCSpectra} (CDC $\ast$pDC, LPRECT myrect)
+\begin{DoxyCompactList}\small\item\em Draw all the calibration spectra. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCSpectrometer_af35d86b3aaf2b3f85124fdad35fc4931}{PaintDSpectra} (CDC $\ast$pDC, LPRECT myrect)
+\begin{DoxyCompactList}\small\item\em Draw data and baseline spectra for current acquisition ... this is a wrapper for \hyperlink{classCDlgBarAcq}{CDlgBarAcq}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCSpectrometer_a4899d03fcf472b062757cc0d6febab10}{PaintRSpectra} (CDC $\ast$pDC, CPrintInfo $\ast$pInfo, LPRECT myrect)
+\begin{DoxyCompactList}\small\item\em Draw data spectra in review list. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCSpectrometer_a967b4745f665e20e708faeec9a4498f6}{PaintSpectrum} (CDC $\ast$pDC, LPRECT myrect, CPen $\ast$pen, \hyperlink{classCSpectrumData}{CSpectrumData} \&data, double \hyperlink{classCSpectrometer_a82f43ea9e9294a0e5f4f5609464db845}{wmin}, double \hyperlink{classCSpectrometer_a2baa66aaecaf486e610e352a89799609}{wmax}, double imin, double imax, bool redraw\_\-axis=true, bool wavlen\_\-line=true)
+\begin{DoxyCompactList}\small\item\em Draw a spectrum. \item\end{DoxyCompactList}\item 
+int \hyperlink{classCSpectrometer_aeeac50ddbf78f88cd8a30d46c61511bb}{GetMaxIntTime} ()
+\item 
+void \hyperlink{classCSpectrometer_afbddb477263a2903b1bce92931187abe}{PaintOpt\_\-SetDSpecBaseline} (bool set)
+\item 
+bool \hyperlink{classCSpectrometer_a0d8aa37eb5c26468fe73c5a99f234828}{PaintOpt\_\-GetDSpecBaseline} (void)
+\item 
+void \hyperlink{classCSpectrometer_a352c2639c40c17b841ebaa50d8f1d537}{PaintOpt\_\-SetDSpecBaselineOverride} (bool set)
+\item 
+bool \hyperlink{classCSpectrometer_a21dc6cefdada24b14c352365fe304bff}{PaintOpt\_\-GetDSpecBaselineOverride} (void)
+\item 
+void \hyperlink{classCSpectrometer_a8ce2c697a7539748d5ef2d7d617ac7f3}{PaintOpt\_\-SetDSpecRaw} (bool set)
+\item 
+bool \hyperlink{classCSpectrometer_aa076873718f1df392ca151f25124c1cd}{PaintOpt\_\-GetDSpecRaw} (void)
+\item 
+void \hyperlink{classCSpectrometer_a3c240859299d0c355c2e89c644953cf0}{PaintOpt\_\-SetDSpecDiff} (bool set)
+\item 
+bool \hyperlink{classCSpectrometer_a86c0e470b24a584972deb31ce91c6587}{PaintOpt\_\-GetDSpecDiff} (void)
+\item 
+void \hyperlink{classCSpectrometer_a15be31d22a30a23c6ecac2454a542318}{PaintOpt\_\-ShowCursor} (double wavelen)
+\item 
+void \hyperlink{classCSpectrometer_a3307bb315256ba7dc9bc442289856924}{PaintOpt\_\-HideCursor} ()
+\item 
+bool \hyperlink{classCSpectrometer_a06387841a78d0c8bf26b525e83606a46}{PaintOpt\_\-GetCursor} ()
+\item 
+double \hyperlink{classCSpectrometer_ae81b1b0607bff8d33f7756b363e99e8a}{PaintOpt\_\-GetCursorWavelen} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classCSpectrometer_acf5e9dbbc7f576f010cf2d56917ee990}{RevSpec\_\-SortAFileName} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_aba3cd899b5c2d40322fdb60ba277e0f9}{RevSpec\_\-SortDFileName} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_affbbd72ce840ba281f1acc3c7dd3d972}{RevSpec\_\-SortATimeStamp} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_a26aa48f84c66ef0aa0eeef55a9b5fb78}{RevSpec\_\-SortDTimeStamp} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_a3a99ffd9cd6194380842f9bc186c2ee1}{RevSpec\_\-SortAPipeKm} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_a5ca4588182f4cc631df977e7c4239559}{RevSpec\_\-SortDPipeKm} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_a3b176796b61740d7be8fd145e364f8a7}{RevSpec\_\-SortAConc} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_aec524c4fbb161f50c925f660daa848d3}{RevSpec\_\-SortDConc} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_a5dd3f3a9e14793e4f02cb4182a6a2ddf}{RevSpec\_\-SortADil} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\item 
+static bool \hyperlink{classCSpectrometer_af952347266c3766eec0b8e2b7e864409}{RevSpec\_\-SortDDil} (\hyperlink{classCDSpectrumData}{CDSpectrumData} \&d1, \hyperlink{classCDSpectrumData}{CDSpectrumData} \&d2)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::vector$<$ \hyperlink{classCDSpectrumData}{CDSpectrumData} $>$ \hyperlink{classCSpectrometer_a75d6df9d683281a8390c425c3530e2a6}{RevSpecs}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Wrapper $\ast$ \hyperlink{classCSpectrometer_a54e4c92187f303ebb76ca6f8717ca644}{pWrapper}
+\item 
+int \hyperlink{classCSpectrometer_a681feb9200933a1a6a16002275442dfc}{SpecCount}
+\item 
+int \hyperlink{classCSpectrometer_a57be4704cd6c42cec4b6b256cde7fbde}{curSpectrometer}
+\item 
+CString \hyperlink{classCSpectrometer_a35456e3a5eba64cf5d42a8d5d91605cd}{curSpecName}
+\item 
+CString \hyperlink{classCSpectrometer_ac21a2d3d07dac2d7d64db3401b7f9373}{curSpecSerial}
+\item 
+DoubleArray \hyperlink{classCSpectrometer_abb04ee8adc4b30350e23f00aea799dec}{SpecWavelengths}
+\item 
+double \hyperlink{classCSpectrometer_a82f43ea9e9294a0e5f4f5609464db845}{wmin}
+\item 
+double \hyperlink{classCSpectrometer_a2baa66aaecaf486e610e352a89799609}{wmax}
+\item 
+double \hyperlink{classCSpectrometer_a2b113a0eb67d6581327fa4193c3af699}{parm\_\-integration\_\-time}
+\item 
+int \hyperlink{classCSpectrometer_a4fd7d950c220dd44033c4fe3a992e7a0}{parm\_\-boxcar\_\-width}
+\item 
+int \hyperlink{classCSpectrometer_a55d75756399a14fe1074e14551628f4d}{parm\_\-averaging\_\-num}
+\item 
+bool \hyperlink{classCSpectrometer_a48ecc7e901f3e07f4c280266f0130124}{parm\_\-electrical\_\-dark\_\-on}
+\item 
+bool \hyperlink{classCSpectrometer_a896f74cc1936017bb5189d43d8c27f6f}{parm\_\-electrical\_\-dark\_\-reset}
+\item 
+double \hyperlink{classCSpectrometer_ae0b5232a08194d9520ca56df395377ed}{cursor\_\-wavelen}
+\item 
+DoubleArray \hyperlink{classCSpectrometer_ac04b2fce0185a9c84cb6f636e36a4f8b}{SpecDummy}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCSpectrometer_a3a99b32f1a814d28fc44e7dee6771fd6}{
+\index{CSpectrometer@{CSpectrometer}!CSpectrometer@{CSpectrometer}}
+\index{CSpectrometer@{CSpectrometer}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{CSpectrometer}]{\setlength{\rightskip}{0pt plus 5cm}CSpectrometer::CSpectrometer (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a3a99b32f1a814d28fc44e7dee6771fd6}
+\hypertarget{classCSpectrometer_afcb50fb25f6e993ae9a74a6ab129bc45}{
+\index{CSpectrometer@{CSpectrometer}!$\sim$CSpectrometer@{$\sim$CSpectrometer}}
+\index{$\sim$CSpectrometer@{$\sim$CSpectrometer}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{$\sim$CSpectrometer}]{\setlength{\rightskip}{0pt plus 5cm}CSpectrometer::$\sim$CSpectrometer (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_afcb50fb25f6e993ae9a74a6ab129bc45}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCSpectrometer_aa58f1ae664a6a146e4c72a7c77f86e7e}{
+\index{CSpectrometer@{CSpectrometer}!EnableElecticalDark@{EnableElecticalDark}}
+\index{EnableElecticalDark@{EnableElecticalDark}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{EnableElecticalDark}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::EnableElecticalDark (
+\begin{DoxyParamCaption}
+\item[{bool}]{ enable, }
+\item[{bool}]{ reset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_aa58f1ae664a6a146e4c72a7c77f86e7e}
+\hypertarget{classCSpectrometer_a7dbda9c55445b6570fe149d27f705da4}{
+\index{CSpectrometer@{CSpectrometer}!ForkWrapperGetSpectrum@{ForkWrapperGetSpectrum}}
+\index{ForkWrapperGetSpectrum@{ForkWrapperGetSpectrum}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{ForkWrapperGetSpectrum}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::ForkWrapperGetSpectrum (
+\begin{DoxyParamCaption}
+\item[{LPVOID}]{ param}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a7dbda9c55445b6570fe149d27f705da4}
+\hypertarget{classCSpectrometer_a689000fea405ec9af470e3473d4ab611}{
+\index{CSpectrometer@{CSpectrometer}!GetCurSpec@{GetCurSpec}}
+\index{GetCurSpec@{GetCurSpec}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{GetCurSpec}]{\setlength{\rightskip}{0pt plus 5cm}int CSpectrometer::GetCurSpec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a689000fea405ec9af470e3473d4ab611}
+\hypertarget{classCSpectrometer_aeeac50ddbf78f88cd8a30d46c61511bb}{
+\index{CSpectrometer@{CSpectrometer}!GetMaxIntTime@{GetMaxIntTime}}
+\index{GetMaxIntTime@{GetMaxIntTime}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{GetMaxIntTime}]{\setlength{\rightskip}{0pt plus 5cm}int CSpectrometer::GetMaxIntTime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_aeeac50ddbf78f88cd8a30d46c61511bb}
+\hypertarget{classCSpectrometer_a1b82cdce185789cb333d233466c1b6ba}{
+\index{CSpectrometer@{CSpectrometer}!getMaxW@{getMaxW}}
+\index{getMaxW@{getMaxW}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{getMaxW}]{\setlength{\rightskip}{0pt plus 5cm}double CSpectrometer::getMaxW (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a1b82cdce185789cb333d233466c1b6ba}
+\hypertarget{classCSpectrometer_ae599ab9349878aff8f02718745d355ce}{
+\index{CSpectrometer@{CSpectrometer}!getMinW@{getMinW}}
+\index{getMinW@{getMinW}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{getMinW}]{\setlength{\rightskip}{0pt plus 5cm}double CSpectrometer::getMinW (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_ae599ab9349878aff8f02718745d355ce}
+\hypertarget{classCSpectrometer_a166af7b1246577656ad2f79a1c139aa4}{
+\index{CSpectrometer@{CSpectrometer}!GetSpecCount@{GetSpecCount}}
+\index{GetSpecCount@{GetSpecCount}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{GetSpecCount}]{\setlength{\rightskip}{0pt plus 5cm}int CSpectrometer::GetSpecCount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a166af7b1246577656ad2f79a1c139aa4}
+\hypertarget{classCSpectrometer_adbc48b1c1cbe397ed8228a7d1ce2efa7}{
+\index{CSpectrometer@{CSpectrometer}!GetSpecName@{GetSpecName}}
+\index{GetSpecName@{GetSpecName}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{GetSpecName}]{\setlength{\rightskip}{0pt plus 5cm}CString CSpectrometer::GetSpecName (
+\begin{DoxyParamCaption}
+\item[{int}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_adbc48b1c1cbe397ed8228a7d1ce2efa7}
+\hypertarget{classCSpectrometer_a3e7e41e8709f25a4d4a1903f5acb9678}{
+\index{CSpectrometer@{CSpectrometer}!GetSpecSerial@{GetSpecSerial}}
+\index{GetSpecSerial@{GetSpecSerial}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{GetSpecSerial}]{\setlength{\rightskip}{0pt plus 5cm}CString CSpectrometer::GetSpecSerial (
+\begin{DoxyParamCaption}
+\item[{int}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a3e7e41e8709f25a4d4a1903f5acb9678}
+\hypertarget{classCSpectrometer_aef3c19ce41e279705e8ea9bfdc8e8495}{
+\index{CSpectrometer@{CSpectrometer}!GetWavelengths@{GetWavelengths}}
+\index{GetWavelengths@{GetWavelengths}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{GetWavelengths}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::GetWavelengths (
+\begin{DoxyParamCaption}
+\item[{DoubleArray $\ast$}]{ wavelengths}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_aef3c19ce41e279705e8ea9bfdc8e8495}
+\hypertarget{classCSpectrometer_af6001c8c46a0e71159a7e7ecfdc02934}{
+\index{CSpectrometer@{CSpectrometer}!PaintCSpectra@{PaintCSpectra}}
+\index{PaintCSpectra@{PaintCSpectra}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintCSpectra}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintCSpectra (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{LPRECT}]{ myrect}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_af6001c8c46a0e71159a7e7ecfdc02934}
+
+
+Draw all the calibration spectra. 
+
+\hypertarget{classCSpectrometer_ab6c2609fecfbb05bc1592e87e7271e7d}{
+\index{CSpectrometer@{CSpectrometer}!PaintDReport@{PaintDReport}}
+\index{PaintDReport@{PaintDReport}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintDReport}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintDReport (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{CPrintInfo $\ast$}]{ pInfo, }
+\item[{LPRECT}]{ myrect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_ab6c2609fecfbb05bc1592e87e7271e7d}
+
+
+Draw a text report for current acquisition. 
+
+\hypertarget{classCSpectrometer_af35d86b3aaf2b3f85124fdad35fc4931}{
+\index{CSpectrometer@{CSpectrometer}!PaintDSpectra@{PaintDSpectra}}
+\index{PaintDSpectra@{PaintDSpectra}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintDSpectra}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintDSpectra (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{LPRECT}]{ myrect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_af35d86b3aaf2b3f85124fdad35fc4931}
+
+
+Draw data and baseline spectra for current acquisition ... this is a wrapper for \hyperlink{classCDlgBarAcq}{CDlgBarAcq}. 
+
+\hypertarget{classCSpectrometer_a06387841a78d0c8bf26b525e83606a46}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-GetCursor@{PaintOpt\_\-GetCursor}}
+\index{PaintOpt\_\-GetCursor@{PaintOpt\_\-GetCursor}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-GetCursor}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::PaintOpt\_\-GetCursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a06387841a78d0c8bf26b525e83606a46}
+\hypertarget{classCSpectrometer_ae81b1b0607bff8d33f7756b363e99e8a}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-GetCursorWavelen@{PaintOpt\_\-GetCursorWavelen}}
+\index{PaintOpt\_\-GetCursorWavelen@{PaintOpt\_\-GetCursorWavelen}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-GetCursorWavelen}]{\setlength{\rightskip}{0pt plus 5cm}double CSpectrometer::PaintOpt\_\-GetCursorWavelen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_ae81b1b0607bff8d33f7756b363e99e8a}
+\hypertarget{classCSpectrometer_a0d8aa37eb5c26468fe73c5a99f234828}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-GetDSpecBaseline@{PaintOpt\_\-GetDSpecBaseline}}
+\index{PaintOpt\_\-GetDSpecBaseline@{PaintOpt\_\-GetDSpecBaseline}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-GetDSpecBaseline}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::PaintOpt\_\-GetDSpecBaseline (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a0d8aa37eb5c26468fe73c5a99f234828}
+\hypertarget{classCSpectrometer_a21dc6cefdada24b14c352365fe304bff}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-GetDSpecBaselineOverride@{PaintOpt\_\-GetDSpecBaselineOverride}}
+\index{PaintOpt\_\-GetDSpecBaselineOverride@{PaintOpt\_\-GetDSpecBaselineOverride}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-GetDSpecBaselineOverride}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::PaintOpt\_\-GetDSpecBaselineOverride (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a21dc6cefdada24b14c352365fe304bff}
+\hypertarget{classCSpectrometer_a86c0e470b24a584972deb31ce91c6587}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-GetDSpecDiff@{PaintOpt\_\-GetDSpecDiff}}
+\index{PaintOpt\_\-GetDSpecDiff@{PaintOpt\_\-GetDSpecDiff}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-GetDSpecDiff}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::PaintOpt\_\-GetDSpecDiff (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a86c0e470b24a584972deb31ce91c6587}
+\hypertarget{classCSpectrometer_aa076873718f1df392ca151f25124c1cd}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-GetDSpecRaw@{PaintOpt\_\-GetDSpecRaw}}
+\index{PaintOpt\_\-GetDSpecRaw@{PaintOpt\_\-GetDSpecRaw}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-GetDSpecRaw}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::PaintOpt\_\-GetDSpecRaw (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_aa076873718f1df392ca151f25124c1cd}
+\hypertarget{classCSpectrometer_a3307bb315256ba7dc9bc442289856924}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-HideCursor@{PaintOpt\_\-HideCursor}}
+\index{PaintOpt\_\-HideCursor@{PaintOpt\_\-HideCursor}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-HideCursor}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintOpt\_\-HideCursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a3307bb315256ba7dc9bc442289856924}
+\hypertarget{classCSpectrometer_afbddb477263a2903b1bce92931187abe}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-SetDSpecBaseline@{PaintOpt\_\-SetDSpecBaseline}}
+\index{PaintOpt\_\-SetDSpecBaseline@{PaintOpt\_\-SetDSpecBaseline}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-SetDSpecBaseline}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintOpt\_\-SetDSpecBaseline (
+\begin{DoxyParamCaption}
+\item[{bool}]{ set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_afbddb477263a2903b1bce92931187abe}
+\hypertarget{classCSpectrometer_a352c2639c40c17b841ebaa50d8f1d537}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-SetDSpecBaselineOverride@{PaintOpt\_\-SetDSpecBaselineOverride}}
+\index{PaintOpt\_\-SetDSpecBaselineOverride@{PaintOpt\_\-SetDSpecBaselineOverride}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-SetDSpecBaselineOverride}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintOpt\_\-SetDSpecBaselineOverride (
+\begin{DoxyParamCaption}
+\item[{bool}]{ set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a352c2639c40c17b841ebaa50d8f1d537}
+\hypertarget{classCSpectrometer_a3c240859299d0c355c2e89c644953cf0}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-SetDSpecDiff@{PaintOpt\_\-SetDSpecDiff}}
+\index{PaintOpt\_\-SetDSpecDiff@{PaintOpt\_\-SetDSpecDiff}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-SetDSpecDiff}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintOpt\_\-SetDSpecDiff (
+\begin{DoxyParamCaption}
+\item[{bool}]{ set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a3c240859299d0c355c2e89c644953cf0}
+\hypertarget{classCSpectrometer_a8ce2c697a7539748d5ef2d7d617ac7f3}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-SetDSpecRaw@{PaintOpt\_\-SetDSpecRaw}}
+\index{PaintOpt\_\-SetDSpecRaw@{PaintOpt\_\-SetDSpecRaw}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-SetDSpecRaw}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintOpt\_\-SetDSpecRaw (
+\begin{DoxyParamCaption}
+\item[{bool}]{ set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a8ce2c697a7539748d5ef2d7d617ac7f3}
+\hypertarget{classCSpectrometer_a15be31d22a30a23c6ecac2454a542318}{
+\index{CSpectrometer@{CSpectrometer}!PaintOpt\_\-ShowCursor@{PaintOpt\_\-ShowCursor}}
+\index{PaintOpt\_\-ShowCursor@{PaintOpt\_\-ShowCursor}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintOpt\_\-ShowCursor}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintOpt\_\-ShowCursor (
+\begin{DoxyParamCaption}
+\item[{double}]{ wavelen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a15be31d22a30a23c6ecac2454a542318}
+\hypertarget{classCSpectrometer_a057b4b5a32cca4151b8bba3ac4159e57}{
+\index{CSpectrometer@{CSpectrometer}!PaintReport@{PaintReport}}
+\index{PaintReport@{PaintReport}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintReport}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintReport (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{CPrintInfo $\ast$}]{ pInfo, }
+\item[{LPRECT}]{ myrect, }
+\item[{{\bf CSpectrumData}}]{ ReportSpec}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a057b4b5a32cca4151b8bba3ac4159e57}
+
+
+Draw text report for provided spectrum. 
+
+\hypertarget{classCSpectrometer_a23e973f1c8f369344c5326109b756ecf}{
+\index{CSpectrometer@{CSpectrometer}!PaintRReport@{PaintRReport}}
+\index{PaintRReport@{PaintRReport}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintRReport}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintRReport (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{CPrintInfo $\ast$}]{ pInfo, }
+\item[{LPRECT}]{ myrect}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a23e973f1c8f369344c5326109b756ecf}
+
+
+Draw a text report for review spectrum. 
+
+\hypertarget{classCSpectrometer_a4899d03fcf472b062757cc0d6febab10}{
+\index{CSpectrometer@{CSpectrometer}!PaintRSpectra@{PaintRSpectra}}
+\index{PaintRSpectra@{PaintRSpectra}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintRSpectra}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::PaintRSpectra (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{CPrintInfo $\ast$}]{ pInfo, }
+\item[{LPRECT}]{ myrect}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a4899d03fcf472b062757cc0d6febab10}
+
+
+Draw data spectra in review list. 
+
+\hypertarget{classCSpectrometer_a967b4745f665e20e708faeec9a4498f6}{
+\index{CSpectrometer@{CSpectrometer}!PaintSpectrum@{PaintSpectrum}}
+\index{PaintSpectrum@{PaintSpectrum}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{PaintSpectrum}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::PaintSpectrum (
+\begin{DoxyParamCaption}
+\item[{CDC $\ast$}]{ pDC, }
+\item[{LPRECT}]{ myrect, }
+\item[{CPen $\ast$}]{ pen, }
+\item[{{\bf CSpectrumData} \&}]{ data, }
+\item[{double}]{ wmin, }
+\item[{double}]{ wmax, }
+\item[{double}]{ imin, }
+\item[{double}]{ imax, }
+\item[{bool}]{ redraw\_\-axis = {\ttfamily true}, }
+\item[{bool}]{ wavlen\_\-line = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a967b4745f665e20e708faeec9a4498f6}
+
+
+Draw a spectrum. 
+
+This is a helper function for all the other spectrum painters
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em wmin}]-\/ set the axis minimum wavelength \item[{\em wmax}]-\/ set the axis maximum wavelength \item[{\em imin}]-\/ set the axis minimum intensity \item[{\em imax}]-\/ set the axis maximum intensity\item[{\em pDC}]-\/ pointer to drawing canvas \item[{\em myrect}]-\/ dimensions of whole canvas (what are the boundary conditions?) \item[{\em pen}]-\/ line color of spectrum \item[{\em data}]-\/ wavelengths and intensities \item[{\em wmin}]-\/ minimum wavelength of spectrum \item[{\em wmax}]-\/ maximum wavelength of spectrum \item[{\em imin}]-\/ minimum intensity / count value of spectrum \item[{\em imax}]-\/ maximum intensity / count value of spectrum \item[{\em redraw\_\-axis}]-\/ allow suppressing axis drawing if we are painting multiple spectra \end{DoxyParams}
+\hypertarget{classCSpectrometer_a3b176796b61740d7be8fd145e364f8a7}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortAConc@{RevSpec\_\-SortAConc}}
+\index{RevSpec\_\-SortAConc@{RevSpec\_\-SortAConc}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortAConc}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortAConc (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_a3b176796b61740d7be8fd145e364f8a7}
+\hypertarget{classCSpectrometer_a5dd3f3a9e14793e4f02cb4182a6a2ddf}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortADil@{RevSpec\_\-SortADil}}
+\index{RevSpec\_\-SortADil@{RevSpec\_\-SortADil}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortADil}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortADil (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_a5dd3f3a9e14793e4f02cb4182a6a2ddf}
+\hypertarget{classCSpectrometer_acf5e9dbbc7f576f010cf2d56917ee990}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortAFileName@{RevSpec\_\-SortAFileName}}
+\index{RevSpec\_\-SortAFileName@{RevSpec\_\-SortAFileName}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortAFileName}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortAFileName (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_acf5e9dbbc7f576f010cf2d56917ee990}
+\hypertarget{classCSpectrometer_a3a99ffd9cd6194380842f9bc186c2ee1}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortAPipeKm@{RevSpec\_\-SortAPipeKm}}
+\index{RevSpec\_\-SortAPipeKm@{RevSpec\_\-SortAPipeKm}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortAPipeKm}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortAPipeKm (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_a3a99ffd9cd6194380842f9bc186c2ee1}
+\hypertarget{classCSpectrometer_affbbd72ce840ba281f1acc3c7dd3d972}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortATimeStamp@{RevSpec\_\-SortATimeStamp}}
+\index{RevSpec\_\-SortATimeStamp@{RevSpec\_\-SortATimeStamp}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortATimeStamp}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortATimeStamp (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_affbbd72ce840ba281f1acc3c7dd3d972}
+\hypertarget{classCSpectrometer_aec524c4fbb161f50c925f660daa848d3}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortDConc@{RevSpec\_\-SortDConc}}
+\index{RevSpec\_\-SortDConc@{RevSpec\_\-SortDConc}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortDConc}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortDConc (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_aec524c4fbb161f50c925f660daa848d3}
+\hypertarget{classCSpectrometer_af952347266c3766eec0b8e2b7e864409}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortDDil@{RevSpec\_\-SortDDil}}
+\index{RevSpec\_\-SortDDil@{RevSpec\_\-SortDDil}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortDDil}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortDDil (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_af952347266c3766eec0b8e2b7e864409}
+\hypertarget{classCSpectrometer_aba3cd899b5c2d40322fdb60ba277e0f9}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortDFileName@{RevSpec\_\-SortDFileName}}
+\index{RevSpec\_\-SortDFileName@{RevSpec\_\-SortDFileName}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortDFileName}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortDFileName (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_aba3cd899b5c2d40322fdb60ba277e0f9}
+\hypertarget{classCSpectrometer_a5ca4588182f4cc631df977e7c4239559}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortDPipeKm@{RevSpec\_\-SortDPipeKm}}
+\index{RevSpec\_\-SortDPipeKm@{RevSpec\_\-SortDPipeKm}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortDPipeKm}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortDPipeKm (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_a5ca4588182f4cc631df977e7c4239559}
+\hypertarget{classCSpectrometer_a26aa48f84c66ef0aa0eeef55a9b5fb78}{
+\index{CSpectrometer@{CSpectrometer}!RevSpec\_\-SortDTimeStamp@{RevSpec\_\-SortDTimeStamp}}
+\index{RevSpec\_\-SortDTimeStamp@{RevSpec\_\-SortDTimeStamp}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpec\_\-SortDTimeStamp}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::RevSpec\_\-SortDTimeStamp (
+\begin{DoxyParamCaption}
+\item[{{\bf CDSpectrumData} \&}]{ d1, }
+\item[{{\bf CDSpectrumData} \&}]{ d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classCSpectrometer_a26aa48f84c66ef0aa0eeef55a9b5fb78}
+\hypertarget{classCSpectrometer_a4527f950adf93f5284ee524aa30642b8}{
+\index{CSpectrometer@{CSpectrometer}!SelectSpectrometer@{SelectSpectrometer}}
+\index{SelectSpectrometer@{SelectSpectrometer}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{SelectSpectrometer}]{\setlength{\rightskip}{0pt plus 5cm}int CSpectrometer::SelectSpectrometer (
+\begin{DoxyParamCaption}
+\item[{CString}]{ name, }
+\item[{CString}]{ serial = {\ttfamily CString(\_\-T(\char`\"{}\char`\"{}))}}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a4527f950adf93f5284ee524aa30642b8}
+\hypertarget{classCSpectrometer_af89a8438325c82aea9c8f18aaae096d5}{
+\index{CSpectrometer@{CSpectrometer}!SelectSpectrometer@{SelectSpectrometer}}
+\index{SelectSpectrometer@{SelectSpectrometer}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{SelectSpectrometer}]{\setlength{\rightskip}{0pt plus 5cm}int CSpectrometer::SelectSpectrometer (
+\begin{DoxyParamCaption}
+\item[{int}]{ index}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_af89a8438325c82aea9c8f18aaae096d5}
+\hypertarget{classCSpectrometer_a677c5d75311bbeaac73aa136b703cf96}{
+\index{CSpectrometer@{CSpectrometer}!SetBoxcarWidth@{SetBoxcarWidth}}
+\index{SetBoxcarWidth@{SetBoxcarWidth}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{SetBoxcarWidth}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::SetBoxcarWidth (
+\begin{DoxyParamCaption}
+\item[{int}]{ width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a677c5d75311bbeaac73aa136b703cf96}
+\hypertarget{classCSpectrometer_a0a0c81d5d07acf6c2fe0321063e8d6e5}{
+\index{CSpectrometer@{CSpectrometer}!SetIntegrationTime@{SetIntegrationTime}}
+\index{SetIntegrationTime@{SetIntegrationTime}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{SetIntegrationTime}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::SetIntegrationTime (
+\begin{DoxyParamCaption}
+\item[{double}]{ time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a0a0c81d5d07acf6c2fe0321063e8d6e5}
+\hypertarget{classCSpectrometer_a8c64c393489f17a79146d9df26510be8}{
+\index{CSpectrometer@{CSpectrometer}!SetScansToAverage@{SetScansToAverage}}
+\index{SetScansToAverage@{SetScansToAverage}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{SetScansToAverage}]{\setlength{\rightskip}{0pt plus 5cm}void CSpectrometer::SetScansToAverage (
+\begin{DoxyParamCaption}
+\item[{int}]{ num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCSpectrometer_a8c64c393489f17a79146d9df26510be8}
+\hypertarget{classCSpectrometer_a0f998eb992829015c5cbfb578d1b1073}{
+\index{CSpectrometer@{CSpectrometer}!Spectrum\_\-AcquireSpectrum@{Spectrum\_\-AcquireSpectrum}}
+\index{Spectrum\_\-AcquireSpectrum@{Spectrum\_\-AcquireSpectrum}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{Spectrum\_\-AcquireSpectrum}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::Spectrum\_\-AcquireSpectrum (
+\begin{DoxyParamCaption}
+\item[{DoubleArray $\ast$}]{ datastore}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a0f998eb992829015c5cbfb578d1b1073}
+\hypertarget{classCSpectrometer_accad97a6bf3396d92bf6bb1946eda4e2}{
+\index{CSpectrometer@{CSpectrometer}!Spectrum\_\-LoadAllSpectra@{Spectrum\_\-LoadAllSpectra}}
+\index{Spectrum\_\-LoadAllSpectra@{Spectrum\_\-LoadAllSpectra}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{Spectrum\_\-LoadAllSpectra}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::Spectrum\_\-LoadAllSpectra (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ filename = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_accad97a6bf3396d92bf6bb1946eda4e2}
+
+
+Save Blank / Data / Difference spectrum. 
+
+\hypertarget{classCSpectrometer_a9ba221f05aed4bc47e45bf6b2b82cab8}{
+\index{CSpectrometer@{CSpectrometer}!Spectrum\_\-SaveAllSpectra@{Spectrum\_\-SaveAllSpectra}}
+\index{Spectrum\_\-SaveAllSpectra@{Spectrum\_\-SaveAllSpectra}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{Spectrum\_\-SaveAllSpectra}]{\setlength{\rightskip}{0pt plus 5cm}bool CSpectrometer::Spectrum\_\-SaveAllSpectra (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ filename = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCSpectrometer_a9ba221f05aed4bc47e45bf6b2b82cab8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCSpectrometer_ae0b5232a08194d9520ca56df395377ed}{
+\index{CSpectrometer@{CSpectrometer}!cursor\_\-wavelen@{cursor\_\-wavelen}}
+\index{cursor\_\-wavelen@{cursor\_\-wavelen}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{cursor\_\-wavelen}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CSpectrometer::cursor\_\-wavelen}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_ae0b5232a08194d9520ca56df395377ed}
+\hypertarget{classCSpectrometer_a35456e3a5eba64cf5d42a8d5d91605cd}{
+\index{CSpectrometer@{CSpectrometer}!curSpecName@{curSpecName}}
+\index{curSpecName@{curSpecName}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{curSpecName}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CSpectrometer::curSpecName}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a35456e3a5eba64cf5d42a8d5d91605cd}
+\hypertarget{classCSpectrometer_ac21a2d3d07dac2d7d64db3401b7f9373}{
+\index{CSpectrometer@{CSpectrometer}!curSpecSerial@{curSpecSerial}}
+\index{curSpecSerial@{curSpecSerial}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{curSpecSerial}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CSpectrometer::curSpecSerial}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_ac21a2d3d07dac2d7d64db3401b7f9373}
+\hypertarget{classCSpectrometer_a57be4704cd6c42cec4b6b256cde7fbde}{
+\index{CSpectrometer@{CSpectrometer}!curSpectrometer@{curSpectrometer}}
+\index{curSpectrometer@{curSpectrometer}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{curSpectrometer}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CSpectrometer::curSpectrometer}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a57be4704cd6c42cec4b6b256cde7fbde}
+\hypertarget{classCSpectrometer_a55d75756399a14fe1074e14551628f4d}{
+\index{CSpectrometer@{CSpectrometer}!parm\_\-averaging\_\-num@{parm\_\-averaging\_\-num}}
+\index{parm\_\-averaging\_\-num@{parm\_\-averaging\_\-num}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{parm\_\-averaging\_\-num}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CSpectrometer::parm\_\-averaging\_\-num}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a55d75756399a14fe1074e14551628f4d}
+\hypertarget{classCSpectrometer_a4fd7d950c220dd44033c4fe3a992e7a0}{
+\index{CSpectrometer@{CSpectrometer}!parm\_\-boxcar\_\-width@{parm\_\-boxcar\_\-width}}
+\index{parm\_\-boxcar\_\-width@{parm\_\-boxcar\_\-width}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{parm\_\-boxcar\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CSpectrometer::parm\_\-boxcar\_\-width}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a4fd7d950c220dd44033c4fe3a992e7a0}
+\hypertarget{classCSpectrometer_a48ecc7e901f3e07f4c280266f0130124}{
+\index{CSpectrometer@{CSpectrometer}!parm\_\-electrical\_\-dark\_\-on@{parm\_\-electrical\_\-dark\_\-on}}
+\index{parm\_\-electrical\_\-dark\_\-on@{parm\_\-electrical\_\-dark\_\-on}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{parm\_\-electrical\_\-dark\_\-on}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CSpectrometer::parm\_\-electrical\_\-dark\_\-on}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a48ecc7e901f3e07f4c280266f0130124}
+\hypertarget{classCSpectrometer_a896f74cc1936017bb5189d43d8c27f6f}{
+\index{CSpectrometer@{CSpectrometer}!parm\_\-electrical\_\-dark\_\-reset@{parm\_\-electrical\_\-dark\_\-reset}}
+\index{parm\_\-electrical\_\-dark\_\-reset@{parm\_\-electrical\_\-dark\_\-reset}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{parm\_\-electrical\_\-dark\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CSpectrometer::parm\_\-electrical\_\-dark\_\-reset}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a896f74cc1936017bb5189d43d8c27f6f}
+\hypertarget{classCSpectrometer_a2b113a0eb67d6581327fa4193c3af699}{
+\index{CSpectrometer@{CSpectrometer}!parm\_\-integration\_\-time@{parm\_\-integration\_\-time}}
+\index{parm\_\-integration\_\-time@{parm\_\-integration\_\-time}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{parm\_\-integration\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CSpectrometer::parm\_\-integration\_\-time}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a2b113a0eb67d6581327fa4193c3af699}
+\hypertarget{classCSpectrometer_a54e4c92187f303ebb76ca6f8717ca644}{
+\index{CSpectrometer@{CSpectrometer}!pWrapper@{pWrapper}}
+\index{pWrapper@{pWrapper}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{pWrapper}]{\setlength{\rightskip}{0pt plus 5cm}Wrapper$\ast$ {\bf CSpectrometer::pWrapper}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a54e4c92187f303ebb76ca6f8717ca644}
+\hypertarget{classCSpectrometer_a75d6df9d683281a8390c425c3530e2a6}{
+\index{CSpectrometer@{CSpectrometer}!RevSpecs@{RevSpecs}}
+\index{RevSpecs@{RevSpecs}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{RevSpecs}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf CDSpectrumData}$>$ {\bf CSpectrometer::RevSpecs}}}
+\label{classCSpectrometer_a75d6df9d683281a8390c425c3530e2a6}
+\hypertarget{classCSpectrometer_a681feb9200933a1a6a16002275442dfc}{
+\index{CSpectrometer@{CSpectrometer}!SpecCount@{SpecCount}}
+\index{SpecCount@{SpecCount}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{SpecCount}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CSpectrometer::SpecCount}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a681feb9200933a1a6a16002275442dfc}
+\hypertarget{classCSpectrometer_ac04b2fce0185a9c84cb6f636e36a4f8b}{
+\index{CSpectrometer@{CSpectrometer}!SpecDummy@{SpecDummy}}
+\index{SpecDummy@{SpecDummy}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{SpecDummy}]{\setlength{\rightskip}{0pt plus 5cm}DoubleArray {\bf CSpectrometer::SpecDummy}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_ac04b2fce0185a9c84cb6f636e36a4f8b}
+\hypertarget{classCSpectrometer_abb04ee8adc4b30350e23f00aea799dec}{
+\index{CSpectrometer@{CSpectrometer}!SpecWavelengths@{SpecWavelengths}}
+\index{SpecWavelengths@{SpecWavelengths}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{SpecWavelengths}]{\setlength{\rightskip}{0pt plus 5cm}DoubleArray {\bf CSpectrometer::SpecWavelengths}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_abb04ee8adc4b30350e23f00aea799dec}
+\hypertarget{classCSpectrometer_a2baa66aaecaf486e610e352a89799609}{
+\index{CSpectrometer@{CSpectrometer}!wmax@{wmax}}
+\index{wmax@{wmax}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{wmax}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CSpectrometer::wmax}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a2baa66aaecaf486e610e352a89799609}
+\hypertarget{classCSpectrometer_a82f43ea9e9294a0e5f4f5609464db845}{
+\index{CSpectrometer@{CSpectrometer}!wmin@{wmin}}
+\index{wmin@{wmin}!CSpectrometer@{CSpectrometer}}
+\subsubsection[{wmin}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CSpectrometer::wmin}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCSpectrometer_a82f43ea9e9294a0e5f4f5609464db845}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{Spectrometer_8h}{Spectrometer.h}\item 
+spec4/\hyperlink{Spectrometer_8cpp}{Spectrometer.cpp}\end{DoxyCompactItemize}

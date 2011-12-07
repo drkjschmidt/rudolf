@@ -1,0 +1,677 @@
+\hypertarget{classCGPSData}{
+\section{CGPSData Class Reference}
+\label{classCGPSData}\index{CGPSData@{CGPSData}}
+}
+
+
+Store and manipulate GPS data (time, date, location).  
+
+
+
+
+{\ttfamily \#include $<$RPGarmCom.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5}{SerializeModes} \{ \hyperlink{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5adffe984c3311ab5327b5dbf8cceb2944}{outputCSV} =  (unsigned char) 0x01, 
+\hyperlink{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5a5d9fcdcdbf6756012ff5c553e693b718}{outputXML} =  (unsigned char) 0x02, 
+\hyperlink{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5aaebaf5d98136feb3281b6cc80c2ccdbe}{outputHDR} =  (unsigned char) 0x80
+ \}
+\begin{DoxyCompactList}\small\item\em Output format flags for seriazlize function. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCGPSData_a869795eff4f38b2c04d061769eacd9f0}{CGPSData} (void)
+\item 
+\hyperlink{classCGPSData_ab5db4714507f97c4df02ca303c38999d}{CGPSData} (double $\ast$lat, double $\ast$lon, double $\ast$alt, double $\ast$spd, double $\ast$dir, INT32 $\ast$time, INT32 $\ast$date, char $\ast$name)
+\item 
+\hyperlink{classCGPSData_a74361e39f121cf96fc9cc35eccf4b490}{CGPSData} (double $\ast$lat, double $\ast$lon, double $\ast$alt, double $\ast$spd, double $\ast$dir, INT32 $\ast$xtime, INT32 $\ast$xdate, CString $\ast$name)
+\item 
+\hyperlink{classCGPSData_afd5615827ea13ed72a5231b9b2361ba2}{CGPSData} (double $\ast$lat, double $\ast$lon, double $\ast$alt, double $\ast$spd, double $\ast$dir, CTime $\ast$xtimestamp, CString $\ast$name)
+\item 
+\hyperlink{classCGPSData_af3a1549219c9ff5526b68458f0c82e23}{$\sim$CGPSData} (void)
+\item 
+void \hyperlink{classCGPSData_a7fdad98ca21ad7c6681413ff38d9352c}{setData} (double $\ast$lat, double $\ast$lon, double $\ast$alt, double $\ast$spd, double $\ast$dir, INT32 $\ast$xtime, INT32 $\ast$xdate, CString $\ast$name)
+\begin{DoxyCompactList}\small\item\em Store data in class. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCGPSData_a19d2920213b594d6a689f547a6ed4f95}{setData} (double $\ast$lat, double $\ast$lon, double $\ast$alt, double $\ast$spd, double $\ast$dir, INT32 $\ast$xtime, INT32 $\ast$xdate, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Store data in class. \item\end{DoxyCompactList}\item 
+void \hyperlink{classCGPSData_af5972f0f81cedc5197d7abc61a5dd412}{setData} (double $\ast$lat, double $\ast$lon, double $\ast$alt, double $\ast$spd, double $\ast$dir, CTime $\ast$timestamp, CString $\ast$name)
+\begin{DoxyCompactList}\small\item\em Store data in class. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_a8df7f0f21a4ff0183d257b7821f8d991}{getLat} (double $\ast$lat)
+\begin{DoxyCompactList}\small\item\em Retrieve latitude \mbox{[}deg, S$<$0\mbox{]} ... return false if not known. \item\end{DoxyCompactList}\item 
+double \hyperlink{classCGPSData_a1ed8bb5259fc8e55472c769e8791e9ea}{getLat} (void)
+\begin{DoxyCompactList}\small\item\em Retrieve latitude \mbox{[}deg, S$<$0\mbox{]} ... return 255 if not known. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_a24496ef773a2014dd75ae17ae217ed7e}{getLon} (double $\ast$lon)
+\begin{DoxyCompactList}\small\item\em Retrieve longitude \mbox{[}deg, W$<$0\mbox{]} ... return false if not known. \item\end{DoxyCompactList}\item 
+double \hyperlink{classCGPSData_a275f85957cb3f28e8fad30675cd2d76a}{getLon} (void)
+\begin{DoxyCompactList}\small\item\em Retrieve longitude \mbox{[}deg, W$<$0\mbox{]} ... return 255 if not known. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_afb0286ddeb07d9b29ed63539bce31d11}{getAlt} (double $\ast$alt)
+\begin{DoxyCompactList}\small\item\em Retrieve altitude \mbox{[}m\mbox{]} ... return false if not known. \item\end{DoxyCompactList}\item 
+double \hyperlink{classCGPSData_a25d0505b8eb0d34e31b7909f7cf4bfe9}{getAlt} (void)
+\begin{DoxyCompactList}\small\item\em Retrieve altitude \mbox{[}m\mbox{]} ... return 36000000 if not known. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_a680b3dff34b1839250eb4ea707917b02}{getLoc} (double $\ast$lat, double $\ast$lon, double $\ast$alt)
+\item 
+bool \hyperlink{classCGPSData_acd8a7993ac32bae593f6a7400e6925bb}{getSpd} (double $\ast$spd)
+\begin{DoxyCompactList}\small\item\em Retrieve speed \mbox{[}knots?\mbox{]} ... return false if not known. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_ab5f59cc73a1f6212b7ce1b6e77879255}{getDir} (double $\ast$dir)
+\begin{DoxyCompactList}\small\item\em Retrieve direction \mbox{[}deg?\mbox{]} ... return false if not known. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_aff898f5b25991b59c883848b6c0441fd}{getMov} (double $\ast$spd, double $\ast$dir)
+\item 
+bool \hyperlink{classCGPSData_a711acc6ad968a80cfc568955c1f3c064}{getTime} (INT32 $\ast$time)
+\begin{DoxyCompactList}\small\item\em Retrieve time \mbox{[}int32 = hhmmss\mbox{]} ... return false if not known. \item\end{DoxyCompactList}\item 
+INT32 \hyperlink{classCGPSData_a0d2ebcc1079953780d10f7cbff48b1fc}{getTime} (void)
+\begin{DoxyCompactList}\small\item\em Retrieve time \mbox{[}int32 = hhmmss\mbox{]} ... return -\/1 if not known. \item\end{DoxyCompactList}\item 
+\hyperlink{classCGPSTime}{CGPSTime} \hyperlink{classCGPSData_a2441f1d3ec9dc0fe91a1cafdcbc68cdf}{getGPSTime} (void)
+\begin{DoxyCompactList}\small\item\em Retrieve time \mbox{[}CGPStime\mbox{]} ... there is no validity check?!? \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_ad3c9264233a0e6ab8fe5b155ccacf0a5}{getDate} (INT32 $\ast$date)
+\begin{DoxyCompactList}\small\item\em Retrieve date \mbox{[}int32 = ddmmyy\mbox{]} ... return false if not known. \item\end{DoxyCompactList}\item 
+INT32 \hyperlink{classCGPSData_a9583ab5dc6d62fe9b834f9f60a941c46}{getDate} (void)
+\begin{DoxyCompactList}\small\item\em Retrieve date \mbox{[}int32 = ddmmyy\mbox{]} ... return -\/1 if not known. \item\end{DoxyCompactList}\item 
+\hyperlink{classCGPSDate}{CGPSDate} \hyperlink{classCGPSData_a584126066851ff423552623dbac18aa4}{getGPSDate} (void)
+\begin{DoxyCompactList}\small\item\em Retrieve date \mbox{[}CGPSdate\mbox{]} ... there is no validity check?!? \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_a88077fca813b5bf9da6db8e3c28119d4}{getTimeDate} (INT32 $\ast$time, INT32 $\ast$date)
+\item 
+bool \hyperlink{classCGPSData_a0b2a7356ee6838b3e499c09f01afe128}{getTimeDate} (CTime $\ast$timestamp)
+\begin{DoxyCompactList}\small\item\em Retrieve time and data encapsulated in a convenient CTime structure ... \item\end{DoxyCompactList}\item 
+bool \hyperlink{classCGPSData_adbbe1bbc3921aeedcfb8cb25d8839562}{getName} (CString $\ast$name)
+\begin{DoxyCompactList}\small\item\em Retrieve gps name ... return false if not known. \item\end{DoxyCompactList}\item 
+CString \hyperlink{classCGPSData_a979ff9cfa092eb3aec37c54bd2470bb7}{serialize} (unsigned char mode)
+\begin{DoxyCompactList}\small\item\em Output GPS data in CSV or XML format (don't think XML is implemented). \item\end{DoxyCompactList}\item 
+CString \hyperlink{classCGPSData_acc4a072edd7468a6b63c9413b706d1c9}{formatLoc} ()
+\item 
+CString \hyperlink{classCGPSData_af3bfb72e6274e4c0f5cf7a8663cac1a4}{formatTime} ()
+\item 
+CString \hyperlink{classCGPSData_ada2f10d46084a5351f6beb2e8f7b8a0d}{formatDate} ()
+\item 
+void \hyperlink{classCGPSData_a36fa1f44defa2ebfce6345a8bc500f1a}{invalidateData} (bool inv\_\-lat=true, bool inv\_\-lon=true, bool inv\_\-alt=true, bool inv\_\-spd=true, bool inv\_\-dir=true, bool inv\_\-time=true, bool inv\_\-date=true, bool inv\_\-name=true)
+\begin{DoxyCompactList}\small\item\em Invalidate some or all stored settings. By default all settings are invaldated. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classCGPSData_a06d07f0846f193d39382a68af36a285e}{loc\_\-lat}
+\item 
+double \hyperlink{classCGPSData_acf00f72540ec6345d2422f33a5fd0b1f}{loc\_\-lon}
+\item 
+double \hyperlink{classCGPSData_a6fdeb6174a04d86ee1f007d1db1b9002}{loc\_\-alt}
+\item 
+bool \hyperlink{classCGPSData_a36519c126bf507902e5d770ba8c95458}{val\_\-lat}
+\item 
+bool \hyperlink{classCGPSData_a49a67e538fa5945e0bfc736a443174bf}{val\_\-lon}
+\item 
+bool \hyperlink{classCGPSData_ac013f01207268ae1d22bb8a1fc77f424}{val\_\-alt}
+\item 
+double \hyperlink{classCGPSData_abbaf3f6b71e49e3aef87816449c28e48}{mov\_\-spd}
+\item 
+double \hyperlink{classCGPSData_a543d109aa9298d17278c9a7db58cdb4e}{mov\_\-dir}
+\item 
+bool \hyperlink{classCGPSData_a4cb88aa6709b11e2726ff08abf657601}{val\_\-spd}
+\item 
+bool \hyperlink{classCGPSData_aba46466e3a48ba5e69c1a8bedc7daa00}{val\_\-dir}
+\item 
+INT32 \hyperlink{classCGPSData_afb7905ff297607cc06e4846720ef6143}{gps\_\-time}
+\item 
+bool \hyperlink{classCGPSData_a5ef2d271e3356ee58b5dfdf9a0924a0a}{val\_\-time}
+\item 
+INT32 \hyperlink{classCGPSData_a20f13f73b2834db116560dc3067184b5}{gps\_\-date}
+\item 
+bool \hyperlink{classCGPSData_a00222a654d92f5ce8338b768ba6f42aa}{val\_\-date}
+\item 
+CString \hyperlink{classCGPSData_af1f3f6f7e4751c48e32a5e62d2d24224}{gps\_\-name}
+\item 
+bool \hyperlink{classCGPSData_ac5c339f86542189ba70f5284f256b6e1}{val\_\-name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Store and manipulate GPS data (time, date, location). 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5}{
+\index{CGPSData@{CGPSData}!SerializeModes@{SerializeModes}}
+\index{SerializeModes@{SerializeModes}!CGPSData@{CGPSData}}
+\subsubsection[{SerializeModes}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CGPSData::SerializeModes}}}
+\label{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5}
+
+
+Output format flags for seriazlize function. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{outputCSV@{outputCSV}!CGPSData@{CGPSData}}\index{CGPSData@{CGPSData}!outputCSV@{outputCSV}}\item[{\em 
+\hypertarget{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5adffe984c3311ab5327b5dbf8cceb2944}{
+outputCSV}
+\label{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5adffe984c3311ab5327b5dbf8cceb2944}
+}]\index{outputXML@{outputXML}!CGPSData@{CGPSData}}\index{CGPSData@{CGPSData}!outputXML@{outputXML}}\item[{\em 
+\hypertarget{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5a5d9fcdcdbf6756012ff5c553e693b718}{
+outputXML}
+\label{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5a5d9fcdcdbf6756012ff5c553e693b718}
+}]\index{outputHDR@{outputHDR}!CGPSData@{CGPSData}}\index{CGPSData@{CGPSData}!outputHDR@{outputHDR}}\item[{\em 
+\hypertarget{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5aaebaf5d98136feb3281b6cc80c2ccdbe}{
+outputHDR}
+\label{classCGPSData_a3ed27f817d8b14809afa88f75761c8f5aaebaf5d98136feb3281b6cc80c2ccdbe}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCGPSData_a869795eff4f38b2c04d061769eacd9f0}{
+\index{CGPSData@{CGPSData}!CGPSData@{CGPSData}}
+\index{CGPSData@{CGPSData}!CGPSData@{CGPSData}}
+\subsubsection[{CGPSData}]{\setlength{\rightskip}{0pt plus 5cm}CGPSData::CGPSData (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSData_a869795eff4f38b2c04d061769eacd9f0}
+\hypertarget{classCGPSData_ab5db4714507f97c4df02ca303c38999d}{
+\index{CGPSData@{CGPSData}!CGPSData@{CGPSData}}
+\index{CGPSData@{CGPSData}!CGPSData@{CGPSData}}
+\subsubsection[{CGPSData}]{\setlength{\rightskip}{0pt plus 5cm}CGPSData::CGPSData (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat, }
+\item[{double $\ast$}]{ lon, }
+\item[{double $\ast$}]{ alt, }
+\item[{double $\ast$}]{ spd, }
+\item[{double $\ast$}]{ dir, }
+\item[{INT32 $\ast$}]{ time, }
+\item[{INT32 $\ast$}]{ date, }
+\item[{char $\ast$}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSData_ab5db4714507f97c4df02ca303c38999d}
+\hypertarget{classCGPSData_a74361e39f121cf96fc9cc35eccf4b490}{
+\index{CGPSData@{CGPSData}!CGPSData@{CGPSData}}
+\index{CGPSData@{CGPSData}!CGPSData@{CGPSData}}
+\subsubsection[{CGPSData}]{\setlength{\rightskip}{0pt plus 5cm}CGPSData::CGPSData (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat, }
+\item[{double $\ast$}]{ lon, }
+\item[{double $\ast$}]{ alt, }
+\item[{double $\ast$}]{ spd, }
+\item[{double $\ast$}]{ dir, }
+\item[{INT32 $\ast$}]{ xtime, }
+\item[{INT32 $\ast$}]{ xdate, }
+\item[{CString $\ast$}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSData_a74361e39f121cf96fc9cc35eccf4b490}
+\hypertarget{classCGPSData_afd5615827ea13ed72a5231b9b2361ba2}{
+\index{CGPSData@{CGPSData}!CGPSData@{CGPSData}}
+\index{CGPSData@{CGPSData}!CGPSData@{CGPSData}}
+\subsubsection[{CGPSData}]{\setlength{\rightskip}{0pt plus 5cm}CGPSData::CGPSData (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat, }
+\item[{double $\ast$}]{ lon, }
+\item[{double $\ast$}]{ alt, }
+\item[{double $\ast$}]{ spd, }
+\item[{double $\ast$}]{ dir, }
+\item[{CTime $\ast$}]{ xtimestamp, }
+\item[{CString $\ast$}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSData_afd5615827ea13ed72a5231b9b2361ba2}
+\hypertarget{classCGPSData_af3a1549219c9ff5526b68458f0c82e23}{
+\index{CGPSData@{CGPSData}!$\sim$CGPSData@{$\sim$CGPSData}}
+\index{$\sim$CGPSData@{$\sim$CGPSData}!CGPSData@{CGPSData}}
+\subsubsection[{$\sim$CGPSData}]{\setlength{\rightskip}{0pt plus 5cm}CGPSData::$\sim$CGPSData (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSData_af3a1549219c9ff5526b68458f0c82e23}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCGPSData_ada2f10d46084a5351f6beb2e8f7b8a0d}{
+\index{CGPSData@{CGPSData}!formatDate@{formatDate}}
+\index{formatDate@{formatDate}!CGPSData@{CGPSData}}
+\subsubsection[{formatDate}]{\setlength{\rightskip}{0pt plus 5cm}CString CGPSData::formatDate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_ada2f10d46084a5351f6beb2e8f7b8a0d}
+Output GPS date as formatted string (note that this date is based on GPS UTC clock): \char`\"{}yyyy-\/mm-\/dd \char`\"{} with the assumption that the recorded year is between 2000 and 2099 Unknown date will be printed as \char`\"{}Unknown date \char`\"{} \hypertarget{classCGPSData_acc4a072edd7468a6b63c9413b706d1c9}{
+\index{CGPSData@{CGPSData}!formatLoc@{formatLoc}}
+\index{formatLoc@{formatLoc}!CGPSData@{CGPSData}}
+\subsubsection[{formatLoc}]{\setlength{\rightskip}{0pt plus 5cm}CString CGPSData::formatLoc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_acc4a072edd7468a6b63c9413b706d1c9}
+Output GPS location as formatted string: \char`\"{}\mbox{[}deg\mbox{]}\mbox{[}N/S\mbox{]} \mbox{[}deg\mbox{]}\mbox{[}E/W\mbox{]} \mbox{[}m\mbox{]}\mbox{[}m\mbox{]} \char`\"{} Unknown lat/lon/alt values will be replaced with \char`\"{}??\char`\"{} \hypertarget{classCGPSData_af3bfb72e6274e4c0f5cf7a8663cac1a4}{
+\index{CGPSData@{CGPSData}!formatTime@{formatTime}}
+\index{formatTime@{formatTime}!CGPSData@{CGPSData}}
+\subsubsection[{formatTime}]{\setlength{\rightskip}{0pt plus 5cm}CString CGPSData::formatTime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_af3bfb72e6274e4c0f5cf7a8663cac1a4}
+Output GPS time (UTC) as formatted string: \char`\"{}hh:mm:ss UTC \char`\"{} Unknown time will be printed as \char`\"{}Unknown time \char`\"{} \hypertarget{classCGPSData_a25d0505b8eb0d34e31b7909f7cf4bfe9}{
+\index{CGPSData@{CGPSData}!getAlt@{getAlt}}
+\index{getAlt@{getAlt}!CGPSData@{CGPSData}}
+\subsubsection[{getAlt}]{\setlength{\rightskip}{0pt plus 5cm}double CGPSData::getAlt (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a25d0505b8eb0d34e31b7909f7cf4bfe9}
+
+
+Retrieve altitude \mbox{[}m\mbox{]} ... return 36000000 if not known. 
+
+\hypertarget{classCGPSData_afb0286ddeb07d9b29ed63539bce31d11}{
+\index{CGPSData@{CGPSData}!getAlt@{getAlt}}
+\index{getAlt@{getAlt}!CGPSData@{CGPSData}}
+\subsubsection[{getAlt}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getAlt (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ alt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_afb0286ddeb07d9b29ed63539bce31d11}
+
+
+Retrieve altitude \mbox{[}m\mbox{]} ... return false if not known. 
+
+\hypertarget{classCGPSData_ad3c9264233a0e6ab8fe5b155ccacf0a5}{
+\index{CGPSData@{CGPSData}!getDate@{getDate}}
+\index{getDate@{getDate}!CGPSData@{CGPSData}}
+\subsubsection[{getDate}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getDate (
+\begin{DoxyParamCaption}
+\item[{INT32 $\ast$}]{ date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_ad3c9264233a0e6ab8fe5b155ccacf0a5}
+
+
+Retrieve date \mbox{[}int32 = ddmmyy\mbox{]} ... return false if not known. 
+
+\hypertarget{classCGPSData_a9583ab5dc6d62fe9b834f9f60a941c46}{
+\index{CGPSData@{CGPSData}!getDate@{getDate}}
+\index{getDate@{getDate}!CGPSData@{CGPSData}}
+\subsubsection[{getDate}]{\setlength{\rightskip}{0pt plus 5cm}INT32 CGPSData::getDate (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a9583ab5dc6d62fe9b834f9f60a941c46}
+
+
+Retrieve date \mbox{[}int32 = ddmmyy\mbox{]} ... return -\/1 if not known. 
+
+\hypertarget{classCGPSData_ab5f59cc73a1f6212b7ce1b6e77879255}{
+\index{CGPSData@{CGPSData}!getDir@{getDir}}
+\index{getDir@{getDir}!CGPSData@{CGPSData}}
+\subsubsection[{getDir}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getDir (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_ab5f59cc73a1f6212b7ce1b6e77879255}
+
+
+Retrieve direction \mbox{[}deg?\mbox{]} ... return false if not known. 
+
+\hypertarget{classCGPSData_a584126066851ff423552623dbac18aa4}{
+\index{CGPSData@{CGPSData}!getGPSDate@{getGPSDate}}
+\index{getGPSDate@{getGPSDate}!CGPSData@{CGPSData}}
+\subsubsection[{getGPSDate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGPSDate} CGPSData::getGPSDate (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a584126066851ff423552623dbac18aa4}
+
+
+Retrieve date \mbox{[}CGPSdate\mbox{]} ... there is no validity check?!? 
+
+\hypertarget{classCGPSData_a2441f1d3ec9dc0fe91a1cafdcbc68cdf}{
+\index{CGPSData@{CGPSData}!getGPSTime@{getGPSTime}}
+\index{getGPSTime@{getGPSTime}!CGPSData@{CGPSData}}
+\subsubsection[{getGPSTime}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CGPSTime} CGPSData::getGPSTime (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a2441f1d3ec9dc0fe91a1cafdcbc68cdf}
+
+
+Retrieve time \mbox{[}CGPStime\mbox{]} ... there is no validity check?!? 
+
+\hypertarget{classCGPSData_a8df7f0f21a4ff0183d257b7821f8d991}{
+\index{CGPSData@{CGPSData}!getLat@{getLat}}
+\index{getLat@{getLat}!CGPSData@{CGPSData}}
+\subsubsection[{getLat}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getLat (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a8df7f0f21a4ff0183d257b7821f8d991}
+
+
+Retrieve latitude \mbox{[}deg, S$<$0\mbox{]} ... return false if not known. 
+
+\hypertarget{classCGPSData_a1ed8bb5259fc8e55472c769e8791e9ea}{
+\index{CGPSData@{CGPSData}!getLat@{getLat}}
+\index{getLat@{getLat}!CGPSData@{CGPSData}}
+\subsubsection[{getLat}]{\setlength{\rightskip}{0pt plus 5cm}double CGPSData::getLat (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a1ed8bb5259fc8e55472c769e8791e9ea}
+
+
+Retrieve latitude \mbox{[}deg, S$<$0\mbox{]} ... return 255 if not known. 
+
+\hypertarget{classCGPSData_a680b3dff34b1839250eb4ea707917b02}{
+\index{CGPSData@{CGPSData}!getLoc@{getLoc}}
+\index{getLoc@{getLoc}!CGPSData@{CGPSData}}
+\subsubsection[{getLoc}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getLoc (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat, }
+\item[{double $\ast$}]{ lon, }
+\item[{double $\ast$}]{ alt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a680b3dff34b1839250eb4ea707917b02}
+Retrieve location: latitude \mbox{[}deg, S$<$0\mbox{]}, longitude \mbox{[}deg, W$<$0\mbox{]}, and altitude \mbox{[}m\mbox{]} ... return false if $\ast$any$\ast$ value not known \hypertarget{classCGPSData_a24496ef773a2014dd75ae17ae217ed7e}{
+\index{CGPSData@{CGPSData}!getLon@{getLon}}
+\index{getLon@{getLon}!CGPSData@{CGPSData}}
+\subsubsection[{getLon}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getLon (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lon}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a24496ef773a2014dd75ae17ae217ed7e}
+
+
+Retrieve longitude \mbox{[}deg, W$<$0\mbox{]} ... return false if not known. 
+
+\hypertarget{classCGPSData_a275f85957cb3f28e8fad30675cd2d76a}{
+\index{CGPSData@{CGPSData}!getLon@{getLon}}
+\index{getLon@{getLon}!CGPSData@{CGPSData}}
+\subsubsection[{getLon}]{\setlength{\rightskip}{0pt plus 5cm}double CGPSData::getLon (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a275f85957cb3f28e8fad30675cd2d76a}
+
+
+Retrieve longitude \mbox{[}deg, W$<$0\mbox{]} ... return 255 if not known. 
+
+\hypertarget{classCGPSData_aff898f5b25991b59c883848b6c0441fd}{
+\index{CGPSData@{CGPSData}!getMov@{getMov}}
+\index{getMov@{getMov}!CGPSData@{CGPSData}}
+\subsubsection[{getMov}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getMov (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ spd, }
+\item[{double $\ast$}]{ dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_aff898f5b25991b59c883848b6c0441fd}
+Retrieve movement vector: speed \mbox{[}knots?\mbox{]}, and direction \mbox{[}deg?\mbox{]} ... return false if $\ast$any$\ast$ value not known \hypertarget{classCGPSData_adbbe1bbc3921aeedcfb8cb25d8839562}{
+\index{CGPSData@{CGPSData}!getName@{getName}}
+\index{getName@{getName}!CGPSData@{CGPSData}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getName (
+\begin{DoxyParamCaption}
+\item[{CString $\ast$}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_adbbe1bbc3921aeedcfb8cb25d8839562}
+
+
+Retrieve gps name ... return false if not known. 
+
+\hypertarget{classCGPSData_acd8a7993ac32bae593f6a7400e6925bb}{
+\index{CGPSData@{CGPSData}!getSpd@{getSpd}}
+\index{getSpd@{getSpd}!CGPSData@{CGPSData}}
+\subsubsection[{getSpd}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getSpd (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ spd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_acd8a7993ac32bae593f6a7400e6925bb}
+
+
+Retrieve speed \mbox{[}knots?\mbox{]} ... return false if not known. 
+
+\hypertarget{classCGPSData_a711acc6ad968a80cfc568955c1f3c064}{
+\index{CGPSData@{CGPSData}!getTime@{getTime}}
+\index{getTime@{getTime}!CGPSData@{CGPSData}}
+\subsubsection[{getTime}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getTime (
+\begin{DoxyParamCaption}
+\item[{INT32 $\ast$}]{ time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a711acc6ad968a80cfc568955c1f3c064}
+
+
+Retrieve time \mbox{[}int32 = hhmmss\mbox{]} ... return false if not known. 
+
+\hypertarget{classCGPSData_a0d2ebcc1079953780d10f7cbff48b1fc}{
+\index{CGPSData@{CGPSData}!getTime@{getTime}}
+\index{getTime@{getTime}!CGPSData@{CGPSData}}
+\subsubsection[{getTime}]{\setlength{\rightskip}{0pt plus 5cm}INT32 CGPSData::getTime (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a0d2ebcc1079953780d10f7cbff48b1fc}
+
+
+Retrieve time \mbox{[}int32 = hhmmss\mbox{]} ... return -\/1 if not known. 
+
+\hypertarget{classCGPSData_a88077fca813b5bf9da6db8e3c28119d4}{
+\index{CGPSData@{CGPSData}!getTimeDate@{getTimeDate}}
+\index{getTimeDate@{getTimeDate}!CGPSData@{CGPSData}}
+\subsubsection[{getTimeDate}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getTimeDate (
+\begin{DoxyParamCaption}
+\item[{INT32 $\ast$}]{ time, }
+\item[{INT32 $\ast$}]{ date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a88077fca813b5bf9da6db8e3c28119d4}
+Retrieve time and date: time \mbox{[}int32 = hhmmss\mbox{]}, date \mbox{[}int32 = ddmmyy\mbox{]} ... return false if $\ast$any$\ast$ value not known \hypertarget{classCGPSData_a0b2a7356ee6838b3e499c09f01afe128}{
+\index{CGPSData@{CGPSData}!getTimeDate@{getTimeDate}}
+\index{getTimeDate@{getTimeDate}!CGPSData@{CGPSData}}
+\subsubsection[{getTimeDate}]{\setlength{\rightskip}{0pt plus 5cm}bool CGPSData::getTimeDate (
+\begin{DoxyParamCaption}
+\item[{CTime $\ast$}]{ timestamp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a0b2a7356ee6838b3e499c09f01afe128}
+
+
+Retrieve time and data encapsulated in a convenient CTime structure ... 
+
+\hypertarget{classCGPSData_a36fa1f44defa2ebfce6345a8bc500f1a}{
+\index{CGPSData@{CGPSData}!invalidateData@{invalidateData}}
+\index{invalidateData@{invalidateData}!CGPSData@{CGPSData}}
+\subsubsection[{invalidateData}]{\setlength{\rightskip}{0pt plus 5cm}void CGPSData::invalidateData (
+\begin{DoxyParamCaption}
+\item[{bool}]{ inv\_\-lat = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-lon = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-alt = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-spd = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-dir = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-time = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-date = {\ttfamily true}, }
+\item[{bool}]{ inv\_\-name = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_a36fa1f44defa2ebfce6345a8bc500f1a}
+
+
+Invalidate some or all stored settings. By default all settings are invaldated. 
+
+\hypertarget{classCGPSData_a979ff9cfa092eb3aec37c54bd2470bb7}{
+\index{CGPSData@{CGPSData}!serialize@{serialize}}
+\index{serialize@{serialize}!CGPSData@{CGPSData}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}CString CGPSData::serialize (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{ mode}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSData_a979ff9cfa092eb3aec37c54bd2470bb7}
+
+
+Output GPS data in CSV or XML format (don't think XML is implemented). 
+
+\hypertarget{classCGPSData_af5972f0f81cedc5197d7abc61a5dd412}{
+\index{CGPSData@{CGPSData}!setData@{setData}}
+\index{setData@{setData}!CGPSData@{CGPSData}}
+\subsubsection[{setData}]{\setlength{\rightskip}{0pt plus 5cm}void CGPSData::setData (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat, }
+\item[{double $\ast$}]{ lon, }
+\item[{double $\ast$}]{ alt, }
+\item[{double $\ast$}]{ spd, }
+\item[{double $\ast$}]{ dir, }
+\item[{CTime $\ast$}]{ timestamp, }
+\item[{CString $\ast$}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classCGPSData_af5972f0f81cedc5197d7abc61a5dd412}
+
+
+Store data in class. 
+
+Wrapper function. Only difference to previous function is Timestamp in CTime format \hypertarget{classCGPSData_a19d2920213b594d6a689f547a6ed4f95}{
+\index{CGPSData@{CGPSData}!setData@{setData}}
+\index{setData@{setData}!CGPSData@{CGPSData}}
+\subsubsection[{setData}]{\setlength{\rightskip}{0pt plus 5cm}void CGPSData::setData (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat, }
+\item[{double $\ast$}]{ lon, }
+\item[{double $\ast$}]{ alt, }
+\item[{double $\ast$}]{ spd, }
+\item[{double $\ast$}]{ dir, }
+\item[{INT32 $\ast$}]{ xtime, }
+\item[{INT32 $\ast$}]{ xdate, }
+\item[{char $\ast$}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSData_a19d2920213b594d6a689f547a6ed4f95}
+
+
+Store data in class. 
+
+Wrapper function. Only difference to previous function is GPS name in char$\ast$ format \hypertarget{classCGPSData_a7fdad98ca21ad7c6681413ff38d9352c}{
+\index{CGPSData@{CGPSData}!setData@{setData}}
+\index{setData@{setData}!CGPSData@{CGPSData}}
+\subsubsection[{setData}]{\setlength{\rightskip}{0pt plus 5cm}void CGPSData::setData (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{ lat, }
+\item[{double $\ast$}]{ lon, }
+\item[{double $\ast$}]{ alt, }
+\item[{double $\ast$}]{ spd, }
+\item[{double $\ast$}]{ dir, }
+\item[{INT32 $\ast$}]{ xtime, }
+\item[{INT32 $\ast$}]{ xdate, }
+\item[{CString $\ast$}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{classCGPSData_a7fdad98ca21ad7c6681413ff38d9352c}
+
+
+Store data in class. 
+
+All parameters are passed as pointers and a NULL pointer value indicates that no valid data for this parameter is known / being supplied. 
+\begin{DoxyParams}{Parameters}
+\item[{\em lat}]-\/ latitude \mbox{[}deg\mbox{]}, negative values S \item[{\em lon}]-\/ longitude \mbox{[}deg\mbox{]}, negative values W \item[{\em alt}]-\/ altitude \mbox{[}m\mbox{]} \item[{\em spd}]-\/ speed \mbox{[}knots?\mbox{]} \item[{\em dir}]-\/ direction \mbox{[}deg?\mbox{]} \item[{\em xtime}]-\/ time \mbox{[}int32 = hhmmss\mbox{]} \item[{\em xdate}]-\/ date \mbox{[}int32 = ddmmyy\mbox{]} \item[{\em name}]-\/ GPS name \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCGPSData_a20f13f73b2834db116560dc3067184b5}{
+\index{CGPSData@{CGPSData}!gps\_\-date@{gps\_\-date}}
+\index{gps\_\-date@{gps\_\-date}!CGPSData@{CGPSData}}
+\subsubsection[{gps\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}INT32 {\bf CGPSData::gps\_\-date}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a20f13f73b2834db116560dc3067184b5}
+\hypertarget{classCGPSData_af1f3f6f7e4751c48e32a5e62d2d24224}{
+\index{CGPSData@{CGPSData}!gps\_\-name@{gps\_\-name}}
+\index{gps\_\-name@{gps\_\-name}!CGPSData@{CGPSData}}
+\subsubsection[{gps\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}CString {\bf CGPSData::gps\_\-name}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_af1f3f6f7e4751c48e32a5e62d2d24224}
+\hypertarget{classCGPSData_afb7905ff297607cc06e4846720ef6143}{
+\index{CGPSData@{CGPSData}!gps\_\-time@{gps\_\-time}}
+\index{gps\_\-time@{gps\_\-time}!CGPSData@{CGPSData}}
+\subsubsection[{gps\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}INT32 {\bf CGPSData::gps\_\-time}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_afb7905ff297607cc06e4846720ef6143}
+\hypertarget{classCGPSData_a6fdeb6174a04d86ee1f007d1db1b9002}{
+\index{CGPSData@{CGPSData}!loc\_\-alt@{loc\_\-alt}}
+\index{loc\_\-alt@{loc\_\-alt}!CGPSData@{CGPSData}}
+\subsubsection[{loc\_\-alt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CGPSData::loc\_\-alt}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a6fdeb6174a04d86ee1f007d1db1b9002}
+\hypertarget{classCGPSData_a06d07f0846f193d39382a68af36a285e}{
+\index{CGPSData@{CGPSData}!loc\_\-lat@{loc\_\-lat}}
+\index{loc\_\-lat@{loc\_\-lat}!CGPSData@{CGPSData}}
+\subsubsection[{loc\_\-lat}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CGPSData::loc\_\-lat}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a06d07f0846f193d39382a68af36a285e}
+\hypertarget{classCGPSData_acf00f72540ec6345d2422f33a5fd0b1f}{
+\index{CGPSData@{CGPSData}!loc\_\-lon@{loc\_\-lon}}
+\index{loc\_\-lon@{loc\_\-lon}!CGPSData@{CGPSData}}
+\subsubsection[{loc\_\-lon}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CGPSData::loc\_\-lon}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_acf00f72540ec6345d2422f33a5fd0b1f}
+\hypertarget{classCGPSData_a543d109aa9298d17278c9a7db58cdb4e}{
+\index{CGPSData@{CGPSData}!mov\_\-dir@{mov\_\-dir}}
+\index{mov\_\-dir@{mov\_\-dir}!CGPSData@{CGPSData}}
+\subsubsection[{mov\_\-dir}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CGPSData::mov\_\-dir}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a543d109aa9298d17278c9a7db58cdb4e}
+\hypertarget{classCGPSData_abbaf3f6b71e49e3aef87816449c28e48}{
+\index{CGPSData@{CGPSData}!mov\_\-spd@{mov\_\-spd}}
+\index{mov\_\-spd@{mov\_\-spd}!CGPSData@{CGPSData}}
+\subsubsection[{mov\_\-spd}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CGPSData::mov\_\-spd}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_abbaf3f6b71e49e3aef87816449c28e48}
+\hypertarget{classCGPSData_ac013f01207268ae1d22bb8a1fc77f424}{
+\index{CGPSData@{CGPSData}!val\_\-alt@{val\_\-alt}}
+\index{val\_\-alt@{val\_\-alt}!CGPSData@{CGPSData}}
+\subsubsection[{val\_\-alt}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CGPSData::val\_\-alt}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_ac013f01207268ae1d22bb8a1fc77f424}
+\hypertarget{classCGPSData_a00222a654d92f5ce8338b768ba6f42aa}{
+\index{CGPSData@{CGPSData}!val\_\-date@{val\_\-date}}
+\index{val\_\-date@{val\_\-date}!CGPSData@{CGPSData}}
+\subsubsection[{val\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CGPSData::val\_\-date}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a00222a654d92f5ce8338b768ba6f42aa}
+\hypertarget{classCGPSData_aba46466e3a48ba5e69c1a8bedc7daa00}{
+\index{CGPSData@{CGPSData}!val\_\-dir@{val\_\-dir}}
+\index{val\_\-dir@{val\_\-dir}!CGPSData@{CGPSData}}
+\subsubsection[{val\_\-dir}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CGPSData::val\_\-dir}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_aba46466e3a48ba5e69c1a8bedc7daa00}
+\hypertarget{classCGPSData_a36519c126bf507902e5d770ba8c95458}{
+\index{CGPSData@{CGPSData}!val\_\-lat@{val\_\-lat}}
+\index{val\_\-lat@{val\_\-lat}!CGPSData@{CGPSData}}
+\subsubsection[{val\_\-lat}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CGPSData::val\_\-lat}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a36519c126bf507902e5d770ba8c95458}
+\hypertarget{classCGPSData_a49a67e538fa5945e0bfc736a443174bf}{
+\index{CGPSData@{CGPSData}!val\_\-lon@{val\_\-lon}}
+\index{val\_\-lon@{val\_\-lon}!CGPSData@{CGPSData}}
+\subsubsection[{val\_\-lon}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CGPSData::val\_\-lon}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a49a67e538fa5945e0bfc736a443174bf}
+\hypertarget{classCGPSData_ac5c339f86542189ba70f5284f256b6e1}{
+\index{CGPSData@{CGPSData}!val\_\-name@{val\_\-name}}
+\index{val\_\-name@{val\_\-name}!CGPSData@{CGPSData}}
+\subsubsection[{val\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CGPSData::val\_\-name}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_ac5c339f86542189ba70f5284f256b6e1}
+\hypertarget{classCGPSData_a4cb88aa6709b11e2726ff08abf657601}{
+\index{CGPSData@{CGPSData}!val\_\-spd@{val\_\-spd}}
+\index{val\_\-spd@{val\_\-spd}!CGPSData@{CGPSData}}
+\subsubsection[{val\_\-spd}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CGPSData::val\_\-spd}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a4cb88aa6709b11e2726ff08abf657601}
+\hypertarget{classCGPSData_a5ef2d271e3356ee58b5dfdf9a0924a0a}{
+\index{CGPSData@{CGPSData}!val\_\-time@{val\_\-time}}
+\index{val\_\-time@{val\_\-time}!CGPSData@{CGPSData}}
+\subsubsection[{val\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf CGPSData::val\_\-time}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classCGPSData_a5ef2d271e3356ee58b5dfdf9a0924a0a}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+garmin-\/serial/\hyperlink{RPGarmCom_8h}{RPGarmCom.h}\item 
+garmin-\/serial/\hyperlink{RPGarmCom_8cpp}{RPGarmCom.cpp}\end{DoxyCompactItemize}

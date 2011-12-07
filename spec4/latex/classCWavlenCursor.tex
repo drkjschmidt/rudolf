@@ -1,0 +1,334 @@
+\hypertarget{classCWavlenCursor}{
+\section{CWavlenCursor Class Reference}
+\label{classCWavlenCursor}\index{CWavlenCursor@{CWavlenCursor}}
+}
+
+
+{\ttfamily \#include $<$WavlenCursor.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classCWavlenCursor_a96d76ca77dadc0d696e093e1b8c25359abf71df3d9858c0f33aa3a09d1c635577}{IDD} =  IDD\_\-CURSOR
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCWavlenCursor_a810778d0b494afa63b4ea07e5532d88e}{CWavlenCursor} (CWnd $\ast$pParent=NULL)
+\item 
+virtual \hyperlink{classCWavlenCursor_a70cf9d6052cf2b1d81c31a876f21904d}{$\sim$CWavlenCursor} ()
+\item 
+afx\_\-msg void \hyperlink{classCWavlenCursor_a3f255fea1e4f07e167c45d182930bec9}{OnBnClickedNameUp} ()
+\item 
+afx\_\-msg void \hyperlink{classCWavlenCursor_a48dd66ed252d8b3147e825e13904fbd2}{OnBnClickedNameDn} ()
+\item 
+afx\_\-msg void \hyperlink{classCWavlenCursor_a3702a1e2ebf267b926d96a790881d2d6}{OnBnClickedWavlenDn} ()
+\item 
+afx\_\-msg void \hyperlink{classCWavlenCursor_aaed72434a6ce511bf9bbe5a901031d55}{OnBnClickedWavlenUp} ()
+\item 
+afx\_\-msg void \hyperlink{classCWavlenCursor_ab3f463add780e47f75d912c10c0d1fa2}{OnBnClickedOk} ()
+\item 
+virtual BOOL \hyperlink{classCWavlenCursor_aaa0d3f5df823608dab62c7bd5a4d993b}{OnInitDialog} ()
+\item 
+void \hyperlink{classCWavlenCursor_ac4108fd970bd6b8509132021e5097ab1}{Handler} ()
+\item 
+afx\_\-msg void \hyperlink{classCWavlenCursor_a610780853de43fea97483d15525d8332}{OnEnChangeCurCounts} ()
+\item 
+afx\_\-msg void \hyperlink{classCWavlenCursor_acff7f35ae586a363021f4d1687ae3a86}{OnHScroll} (UINT nSBCode, UINT nPos, CScrollBar $\ast$pScrollBar)
+\item 
+afx\_\-msg void \hyperlink{classCWavlenCursor_a01e20fdcce2b0ffc7c3a37d2caaabba1}{OnVScroll} (UINT nSBCode, UINT nPos, CScrollBar $\ast$pScrollBar)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCAutoRepeatButton}{CAutoRepeatButton} \hyperlink{classCWavlenCursor_ac14f5bebc91fcd3a4eeb7f12549013dd}{curUp}
+\item 
+\hyperlink{classCAutoRepeatButton}{CAutoRepeatButton} \hyperlink{classCWavlenCursor_a9f702d65da2f59fbd4c6706df6cc6026}{curDown}
+\item 
+\hyperlink{classCAutoRepeatButton}{CAutoRepeatButton} \hyperlink{classCWavlenCursor_a85e1c77c5d6081e1280eaedc14e56c97}{curLeft}
+\item 
+\hyperlink{classCAutoRepeatButton}{CAutoRepeatButton} \hyperlink{classCWavlenCursor_ae95d7b3ced6a60f010c27856af2d81e9}{curRight}
+\item 
+CEdit \hyperlink{classCWavlenCursor_a5b72efe6c6f8d16f4da277b46aa54ae1}{curName}
+\item 
+CEdit \hyperlink{classCWavlenCursor_a0552c4999c0c89d78b08df094110cbc5}{curWavelen}
+\item 
+CEdit \hyperlink{classCWavlenCursor_a15484409f3aa1d3b3ac8b085fac411dc}{curIntensity}
+\item 
+CScrollBar \hyperlink{classCWavlenCursor_a3b8b0d18fe9509298d2143dc8d175672}{curHScroll}
+\item 
+CScrollBar \hyperlink{classCWavlenCursor_a1f0ee0280cfb1b6ce28ab4b9b009ac75}{curVScroll}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classCWavlenCursor_ab1367f2dd9a4634556580f57cf6f586d}{DoDataExchange} (CDataExchange $\ast$pDX)
+\item 
+virtual void \hyperlink{classCWavlenCursor_a3b650952421e4ca4bfccf62e207273a2}{OnOK} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classCWavlenCursor_ad3dc67ff86d2449e8edd0ab6b2fbf870}{cur\_\-wv\_\-min}
+\item 
+int \hyperlink{classCWavlenCursor_ad197cf25322f45cea6873263ff5e7b8d}{cur\_\-wv\_\-index}
+\item 
+int \hyperlink{classCWavlenCursor_a3101943218f7a8cc52adebb73f1ef779}{cur\_\-wv\_\-max}
+\item 
+int \hyperlink{classCWavlenCursor_aa6b6e05e1dc841fc626e5b28aa85d35c}{cur\_\-nm\_\-min}
+\item 
+int \hyperlink{classCWavlenCursor_aa14d6b28cf6824c4d0d725947f2403da}{cur\_\-nm\_\-index}
+\item 
+int \hyperlink{classCWavlenCursor_a63ab6490b4cfb1b6603a877a35775526}{cur\_\-nm\_\-max}
+\item 
+double \hyperlink{classCWavlenCursor_a7c9bc51a8fd1e98c7a3a10a2f6222d03}{cur\_\-wavelen}
+\item 
+double \hyperlink{classCWavlenCursor_a60cb232b75c734260959d991f895fa1d}{cur\_\-intensity}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCWavlenCursor_a96d76ca77dadc0d696e093e1b8c25359}{
+\subsubsection[{"@12}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}
+\label{classCWavlenCursor_a96d76ca77dadc0d696e093e1b8c25359}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IDD@{IDD}!CWavlenCursor@{CWavlenCursor}}\index{CWavlenCursor@{CWavlenCursor}!IDD@{IDD}}\item[{\em 
+\hypertarget{classCWavlenCursor_a96d76ca77dadc0d696e093e1b8c25359abf71df3d9858c0f33aa3a09d1c635577}{
+IDD}
+\label{classCWavlenCursor_a96d76ca77dadc0d696e093e1b8c25359abf71df3d9858c0f33aa3a09d1c635577}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCWavlenCursor_a810778d0b494afa63b4ea07e5532d88e}{
+\index{CWavlenCursor@{CWavlenCursor}!CWavlenCursor@{CWavlenCursor}}
+\index{CWavlenCursor@{CWavlenCursor}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{CWavlenCursor}]{\setlength{\rightskip}{0pt plus 5cm}CWavlenCursor::CWavlenCursor (
+\begin{DoxyParamCaption}
+\item[{CWnd $\ast$}]{ pParent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_a810778d0b494afa63b4ea07e5532d88e}
+\hypertarget{classCWavlenCursor_a70cf9d6052cf2b1d81c31a876f21904d}{
+\index{CWavlenCursor@{CWavlenCursor}!$\sim$CWavlenCursor@{$\sim$CWavlenCursor}}
+\index{$\sim$CWavlenCursor@{$\sim$CWavlenCursor}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{$\sim$CWavlenCursor}]{\setlength{\rightskip}{0pt plus 5cm}CWavlenCursor::$\sim$CWavlenCursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCWavlenCursor_a70cf9d6052cf2b1d81c31a876f21904d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCWavlenCursor_ab1367f2dd9a4634556580f57cf6f586d}{
+\index{CWavlenCursor@{CWavlenCursor}!DoDataExchange@{DoDataExchange}}
+\index{DoDataExchange@{DoDataExchange}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{DoDataExchange}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::DoDataExchange (
+\begin{DoxyParamCaption}
+\item[{CDataExchange $\ast$}]{ pDX}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classCWavlenCursor_ab1367f2dd9a4634556580f57cf6f586d}
+\hypertarget{classCWavlenCursor_ac4108fd970bd6b8509132021e5097ab1}{
+\index{CWavlenCursor@{CWavlenCursor}!Handler@{Handler}}
+\index{Handler@{Handler}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{Handler}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_ac4108fd970bd6b8509132021e5097ab1}
+\hypertarget{classCWavlenCursor_a48dd66ed252d8b3147e825e13904fbd2}{
+\index{CWavlenCursor@{CWavlenCursor}!OnBnClickedNameDn@{OnBnClickedNameDn}}
+\index{OnBnClickedNameDn@{OnBnClickedNameDn}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnBnClickedNameDn}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::OnBnClickedNameDn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_a48dd66ed252d8b3147e825e13904fbd2}
+\hypertarget{classCWavlenCursor_a3f255fea1e4f07e167c45d182930bec9}{
+\index{CWavlenCursor@{CWavlenCursor}!OnBnClickedNameUp@{OnBnClickedNameUp}}
+\index{OnBnClickedNameUp@{OnBnClickedNameUp}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnBnClickedNameUp}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::OnBnClickedNameUp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_a3f255fea1e4f07e167c45d182930bec9}
+\hypertarget{classCWavlenCursor_ab3f463add780e47f75d912c10c0d1fa2}{
+\index{CWavlenCursor@{CWavlenCursor}!OnBnClickedOk@{OnBnClickedOk}}
+\index{OnBnClickedOk@{OnBnClickedOk}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnBnClickedOk}]{\setlength{\rightskip}{0pt plus 5cm}afx\_\-msg void CWavlenCursor::OnBnClickedOk (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_ab3f463add780e47f75d912c10c0d1fa2}
+\hypertarget{classCWavlenCursor_a3702a1e2ebf267b926d96a790881d2d6}{
+\index{CWavlenCursor@{CWavlenCursor}!OnBnClickedWavlenDn@{OnBnClickedWavlenDn}}
+\index{OnBnClickedWavlenDn@{OnBnClickedWavlenDn}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnBnClickedWavlenDn}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::OnBnClickedWavlenDn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_a3702a1e2ebf267b926d96a790881d2d6}
+\hypertarget{classCWavlenCursor_aaed72434a6ce511bf9bbe5a901031d55}{
+\index{CWavlenCursor@{CWavlenCursor}!OnBnClickedWavlenUp@{OnBnClickedWavlenUp}}
+\index{OnBnClickedWavlenUp@{OnBnClickedWavlenUp}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnBnClickedWavlenUp}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::OnBnClickedWavlenUp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_aaed72434a6ce511bf9bbe5a901031d55}
+\hypertarget{classCWavlenCursor_a610780853de43fea97483d15525d8332}{
+\index{CWavlenCursor@{CWavlenCursor}!OnEnChangeCurCounts@{OnEnChangeCurCounts}}
+\index{OnEnChangeCurCounts@{OnEnChangeCurCounts}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnEnChangeCurCounts}]{\setlength{\rightskip}{0pt plus 5cm}afx\_\-msg void CWavlenCursor::OnEnChangeCurCounts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_a610780853de43fea97483d15525d8332}
+\hypertarget{classCWavlenCursor_acff7f35ae586a363021f4d1687ae3a86}{
+\index{CWavlenCursor@{CWavlenCursor}!OnHScroll@{OnHScroll}}
+\index{OnHScroll@{OnHScroll}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnHScroll}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::OnHScroll (
+\begin{DoxyParamCaption}
+\item[{UINT}]{ nSBCode, }
+\item[{UINT}]{ nPos, }
+\item[{CScrollBar $\ast$}]{ pScrollBar}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_acff7f35ae586a363021f4d1687ae3a86}
+\hypertarget{classCWavlenCursor_aaa0d3f5df823608dab62c7bd5a4d993b}{
+\index{CWavlenCursor@{CWavlenCursor}!OnInitDialog@{OnInitDialog}}
+\index{OnInitDialog@{OnInitDialog}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnInitDialog}]{\setlength{\rightskip}{0pt plus 5cm}BOOL CWavlenCursor::OnInitDialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCWavlenCursor_aaa0d3f5df823608dab62c7bd5a4d993b}
+\hypertarget{classCWavlenCursor_a3b650952421e4ca4bfccf62e207273a2}{
+\index{CWavlenCursor@{CWavlenCursor}!OnOK@{OnOK}}
+\index{OnOK@{OnOK}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnOK}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::OnOK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classCWavlenCursor_a3b650952421e4ca4bfccf62e207273a2}
+\hypertarget{classCWavlenCursor_a01e20fdcce2b0ffc7c3a37d2caaabba1}{
+\index{CWavlenCursor@{CWavlenCursor}!OnVScroll@{OnVScroll}}
+\index{OnVScroll@{OnVScroll}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{OnVScroll}]{\setlength{\rightskip}{0pt plus 5cm}void CWavlenCursor::OnVScroll (
+\begin{DoxyParamCaption}
+\item[{UINT}]{ nSBCode, }
+\item[{UINT}]{ nPos, }
+\item[{CScrollBar $\ast$}]{ pScrollBar}
+\end{DoxyParamCaption}
+)}}
+\label{classCWavlenCursor_a01e20fdcce2b0ffc7c3a37d2caaabba1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCWavlenCursor_a60cb232b75c734260959d991f895fa1d}{
+\index{CWavlenCursor@{CWavlenCursor}!cur\_\-intensity@{cur\_\-intensity}}
+\index{cur\_\-intensity@{cur\_\-intensity}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{cur\_\-intensity}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CWavlenCursor::cur\_\-intensity}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWavlenCursor_a60cb232b75c734260959d991f895fa1d}
+\hypertarget{classCWavlenCursor_aa14d6b28cf6824c4d0d725947f2403da}{
+\index{CWavlenCursor@{CWavlenCursor}!cur\_\-nm\_\-index@{cur\_\-nm\_\-index}}
+\index{cur\_\-nm\_\-index@{cur\_\-nm\_\-index}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{cur\_\-nm\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CWavlenCursor::cur\_\-nm\_\-index}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWavlenCursor_aa14d6b28cf6824c4d0d725947f2403da}
+\hypertarget{classCWavlenCursor_a63ab6490b4cfb1b6603a877a35775526}{
+\index{CWavlenCursor@{CWavlenCursor}!cur\_\-nm\_\-max@{cur\_\-nm\_\-max}}
+\index{cur\_\-nm\_\-max@{cur\_\-nm\_\-max}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{cur\_\-nm\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CWavlenCursor::cur\_\-nm\_\-max}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWavlenCursor_a63ab6490b4cfb1b6603a877a35775526}
+\hypertarget{classCWavlenCursor_aa6b6e05e1dc841fc626e5b28aa85d35c}{
+\index{CWavlenCursor@{CWavlenCursor}!cur\_\-nm\_\-min@{cur\_\-nm\_\-min}}
+\index{cur\_\-nm\_\-min@{cur\_\-nm\_\-min}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{cur\_\-nm\_\-min}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CWavlenCursor::cur\_\-nm\_\-min}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWavlenCursor_aa6b6e05e1dc841fc626e5b28aa85d35c}
+\hypertarget{classCWavlenCursor_a7c9bc51a8fd1e98c7a3a10a2f6222d03}{
+\index{CWavlenCursor@{CWavlenCursor}!cur\_\-wavelen@{cur\_\-wavelen}}
+\index{cur\_\-wavelen@{cur\_\-wavelen}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{cur\_\-wavelen}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf CWavlenCursor::cur\_\-wavelen}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWavlenCursor_a7c9bc51a8fd1e98c7a3a10a2f6222d03}
+\hypertarget{classCWavlenCursor_ad197cf25322f45cea6873263ff5e7b8d}{
+\index{CWavlenCursor@{CWavlenCursor}!cur\_\-wv\_\-index@{cur\_\-wv\_\-index}}
+\index{cur\_\-wv\_\-index@{cur\_\-wv\_\-index}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{cur\_\-wv\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CWavlenCursor::cur\_\-wv\_\-index}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWavlenCursor_ad197cf25322f45cea6873263ff5e7b8d}
+\hypertarget{classCWavlenCursor_a3101943218f7a8cc52adebb73f1ef779}{
+\index{CWavlenCursor@{CWavlenCursor}!cur\_\-wv\_\-max@{cur\_\-wv\_\-max}}
+\index{cur\_\-wv\_\-max@{cur\_\-wv\_\-max}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{cur\_\-wv\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CWavlenCursor::cur\_\-wv\_\-max}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWavlenCursor_a3101943218f7a8cc52adebb73f1ef779}
+\hypertarget{classCWavlenCursor_ad3dc67ff86d2449e8edd0ab6b2fbf870}{
+\index{CWavlenCursor@{CWavlenCursor}!cur\_\-wv\_\-min@{cur\_\-wv\_\-min}}
+\index{cur\_\-wv\_\-min@{cur\_\-wv\_\-min}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{cur\_\-wv\_\-min}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf CWavlenCursor::cur\_\-wv\_\-min}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classCWavlenCursor_ad3dc67ff86d2449e8edd0ab6b2fbf870}
+\hypertarget{classCWavlenCursor_a9f702d65da2f59fbd4c6706df6cc6026}{
+\index{CWavlenCursor@{CWavlenCursor}!curDown@{curDown}}
+\index{curDown@{curDown}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curDown}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CAutoRepeatButton} {\bf CWavlenCursor::curDown}}}
+\label{classCWavlenCursor_a9f702d65da2f59fbd4c6706df6cc6026}
+\hypertarget{classCWavlenCursor_a3b8b0d18fe9509298d2143dc8d175672}{
+\index{CWavlenCursor@{CWavlenCursor}!curHScroll@{curHScroll}}
+\index{curHScroll@{curHScroll}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curHScroll}]{\setlength{\rightskip}{0pt plus 5cm}CScrollBar {\bf CWavlenCursor::curHScroll}}}
+\label{classCWavlenCursor_a3b8b0d18fe9509298d2143dc8d175672}
+\hypertarget{classCWavlenCursor_a15484409f3aa1d3b3ac8b085fac411dc}{
+\index{CWavlenCursor@{CWavlenCursor}!curIntensity@{curIntensity}}
+\index{curIntensity@{curIntensity}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curIntensity}]{\setlength{\rightskip}{0pt plus 5cm}CEdit {\bf CWavlenCursor::curIntensity}}}
+\label{classCWavlenCursor_a15484409f3aa1d3b3ac8b085fac411dc}
+\hypertarget{classCWavlenCursor_a85e1c77c5d6081e1280eaedc14e56c97}{
+\index{CWavlenCursor@{CWavlenCursor}!curLeft@{curLeft}}
+\index{curLeft@{curLeft}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curLeft}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CAutoRepeatButton} {\bf CWavlenCursor::curLeft}}}
+\label{classCWavlenCursor_a85e1c77c5d6081e1280eaedc14e56c97}
+\hypertarget{classCWavlenCursor_a5b72efe6c6f8d16f4da277b46aa54ae1}{
+\index{CWavlenCursor@{CWavlenCursor}!curName@{curName}}
+\index{curName@{curName}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curName}]{\setlength{\rightskip}{0pt plus 5cm}CEdit {\bf CWavlenCursor::curName}}}
+\label{classCWavlenCursor_a5b72efe6c6f8d16f4da277b46aa54ae1}
+\hypertarget{classCWavlenCursor_ae95d7b3ced6a60f010c27856af2d81e9}{
+\index{CWavlenCursor@{CWavlenCursor}!curRight@{curRight}}
+\index{curRight@{curRight}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curRight}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CAutoRepeatButton} {\bf CWavlenCursor::curRight}}}
+\label{classCWavlenCursor_ae95d7b3ced6a60f010c27856af2d81e9}
+\hypertarget{classCWavlenCursor_ac14f5bebc91fcd3a4eeb7f12549013dd}{
+\index{CWavlenCursor@{CWavlenCursor}!curUp@{curUp}}
+\index{curUp@{curUp}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curUp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CAutoRepeatButton} {\bf CWavlenCursor::curUp}}}
+\label{classCWavlenCursor_ac14f5bebc91fcd3a4eeb7f12549013dd}
+\hypertarget{classCWavlenCursor_a1f0ee0280cfb1b6ce28ab4b9b009ac75}{
+\index{CWavlenCursor@{CWavlenCursor}!curVScroll@{curVScroll}}
+\index{curVScroll@{curVScroll}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curVScroll}]{\setlength{\rightskip}{0pt plus 5cm}CScrollBar {\bf CWavlenCursor::curVScroll}}}
+\label{classCWavlenCursor_a1f0ee0280cfb1b6ce28ab4b9b009ac75}
+\hypertarget{classCWavlenCursor_a0552c4999c0c89d78b08df094110cbc5}{
+\index{CWavlenCursor@{CWavlenCursor}!curWavelen@{curWavelen}}
+\index{curWavelen@{curWavelen}!CWavlenCursor@{CWavlenCursor}}
+\subsubsection[{curWavelen}]{\setlength{\rightskip}{0pt plus 5cm}CEdit {\bf CWavlenCursor::curWavelen}}}
+\label{classCWavlenCursor_a0552c4999c0c89d78b08df094110cbc5}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+spec4/\hyperlink{WavlenCursor_8h}{WavlenCursor.h}\item 
+spec4/\hyperlink{WavlenCursor_8cpp}{WavlenCursor.cpp}\end{DoxyCompactItemize}
