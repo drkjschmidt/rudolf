@@ -1,0 +1,5 @@
+[autorun]
+action=Start LightPilot QB Installer
+label=LightPilot QB Install Media
+icon=DumbInstaller.exe
+open=DumbInstaller.exe
