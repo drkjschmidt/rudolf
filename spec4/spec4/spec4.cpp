@@ -486,6 +486,11 @@ void Cspec4App::SetStatusLogPath(CString *path)
 	char strPathName[_MAX_PATH];
 
 	if (path == NULL) {
+// Traditionally we used to log to the application
+// folder ... that works well for privileged users,
+// not so well for unprivileged. New default is to
+// log to My Documents/lightpilot_qb_runlog.txt
+#if defined LOG_TO_APPFOLDER
 		::GetModuleFileName(NULL, strPathName, _MAX_PATH);
 
 		// The following code will allow you to get the path.
@@ -496,6 +501,11 @@ void Cspec4App::SetStatusLogPath(CString *path)
 		logpath = logpath.Left(fpos + 1);
 
 		logpath.Append("runlog.txt");
+#else
+		HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, strPathName);
+		logpath=strPathName;
+		logpath.Append("\\lightpilot_qb_runlog.txt");
+#endif
 	} 
 	else {
 		logpath=*path;
