@@ -21,7 +21,7 @@ Cspec4Cfg::Cspec4Cfg(void)
 {
 	// _MAX_PATH is defined in a system file:
 	// c:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\stdlib.h
-	CString savepath;
+	CString savepathtmp;
 	char strPathName[_MAX_PATH];
 
 // Traditionally we used to log to the application
@@ -34,49 +34,21 @@ Cspec4Cfg::Cspec4Cfg(void)
 	::GetModuleFileName(NULL, strPathName, _MAX_PATH);
 
 	// Strip the actual application name from the path
-	savepath=strPathName;
-	int fpos = savepath.ReverseFind('\\');
+	savepathtmp=strPathName;
+	int fpos = savepathtmp.ReverseFind('\\');
 
 	if (fpos != -1)
-	savepath = savepath.Left(fpos); // trim the backslash ... 
+	savepathtmp = savepathtmp.Left(fpos); // trim the backslash ... 
 #else
 	HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, strPathName);
-	savepath=strPathName;
-	savepath.Append("\\LightPilot QB");
+	savepathtmp=strPathName;
+	savepathtmp.Append("\\LightPilot QB");
 #endif
 
-	// Check if each of these is set in the registry and if so use that value
-	// otherwise initialize to sane default and write to registry
-	savepath_cfg=savepath + "\\";
-	savepath_log=savepath + "\\";
-	savepath_loc=savepath + "\\userloc\\";
-	savepath_spm=savepath + "\\spectra\\";
-	savepath_cal=savepath + "\\calfile\\";
-	savepath_gfg=savepath + "\\graphcf\\";
-
-	CString kval,tval;
-	kval=_T("SOFTWARE\\Wilson Analytical\\LightPilot QB");
-	RegistryHelper regworker;
-	if (regworker.Init(kval)) {
-
-#define REWRITE_REG(locname,varname) \
-		kval=_T(locname); \
-		if ((regworker.ReadStringValue(kval,tval)) && (! tval.IsEmpty())) { \
-			varname=tval; \
-		} else { \
-			regworker.WriteStringValue(kval,varname); \
-		}
-
-		REWRITE_REG("confloc",savepath_cfg);
-		REWRITE_REG("logsloc",savepath_log);
-		REWRITE_REG("userloc",savepath_loc);
-		REWRITE_REG("spectra",savepath_spm);
-		REWRITE_REG("calfile",savepath_cal);
-		REWRITE_REG("graphcf",savepath_gfg);
-	}
+	Init(savepathtmp);
 }
 
-Cspec4Cfg::Cspec4Cfg(CString savepath)
+Cspec4Cfg::Cspec4Cfg(CString savepathtmp)
 : lastSpectrometer(_T(""))
 , lastGPSPortType(_T(""))
 , lastGPSPort(_T(""))
@@ -91,18 +63,64 @@ Cspec4Cfg::Cspec4Cfg(CString savepath)
 , specAutoSaveWarn(true)
 , cfg_runmode(RUNMODE_ACQUISITION)
 {
-	savepath.TrimRight(_T("\\"));
+	savepathtmp.TrimRight(_T("\\"));
 
-	savepath_cfg=savepath + "\\";
-	savepath_log=savepath + "\\";
-	savepath_loc=savepath + "\\userloc\\";
-	savepath_spm=savepath + "\\spectra\\";
-	savepath_cal=savepath + "\\calfile\\";
-	savepath_gfg=savepath + "\\graphcf\\";
+	Init(savepathtmp);
 }
 
 Cspec4Cfg::~Cspec4Cfg(void)
 {
+}
+
+void
+Cspec4Cfg::Init(CString rootpath) {  
+	int ii;
+
+	// Populate lookup table
+	savenamearray.SetAtGrow(SAVE_PATH_CFG,"confloc");
+	savenamearray.SetAtGrow(SAVE_PATH_SPM,"spectra");
+	savenamearray.SetAtGrow(SAVE_PATH_CAL,"calfile");
+	savenamearray.SetAtGrow(SAVE_PATH_LOC,"userloc");
+	savenamearray.SetAtGrow(SAVE_PATH_LOG,"logsloc");
+	savenamearray.SetAtGrow(SAVE_PATH_GFG,"graphcf");
+
+	// Preset variables to a default value ...
+	savepatharray.SetAtGrow(SAVE_PATH_CFG,rootpath + "\\");
+	savepatharray.SetAtGrow(SAVE_PATH_SPM,rootpath + "\\spectra\\");
+	savepatharray.SetAtGrow(SAVE_PATH_CAL,rootpath + "\\calfile\\");
+	savepatharray.SetAtGrow(SAVE_PATH_LOC,rootpath + "\\userloc\\");
+	savepatharray.SetAtGrow(SAVE_PATH_LOG,rootpath + "\\");
+	savepatharray.SetAtGrow(SAVE_PATH_GFG,rootpath + "\\graphcf\\");
+
+	// ... then check registry for updated values
+	for (ii=0; ii<=SAVE_PATH_MAX; ii++) {
+		CString kval,tval;
+		kval=_T("SOFTWARE\\Wilson Analytical\\LightPilot QB");
+		RegistryHelper regworker;
+		if (regworker.Init(kval)) {
+			if ((regworker.ReadStringValue(savenamearray[ii],tval)) && (! tval.IsEmpty())) {
+				savepatharray[ii]=tval;
+			} else {
+				regworker.WriteStringValue(savenamearray[ii],savepatharray[ii]);
+			}
+		}
+	}
+}
+
+CString 
+Cspec4Cfg::getSavepath(int type) {  
+	return savepatharray[type];
+}
+
+void 
+Cspec4Cfg::setSavepath(int type,CString path,bool trim) { 
+	savepatharray[type]=(trim?TrimFileName(path):path); 
+
+	CString kval,tval;
+	kval=_T("SOFTWARE\\Wilson Analytical\\LightPilot QB");
+	RegistryHelper regworker;
+	if (regworker.Init(kval))
+		regworker.WriteStringValue(savenamearray[type],savepatharray[type]);
 }
 
 
