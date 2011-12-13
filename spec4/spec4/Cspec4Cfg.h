@@ -25,8 +25,8 @@ public:
 	bool Save(CString *filename);
 	bool Load(CString *filename);
 
-	inline bool Save() { return Save(&(savepath_cfg+savename)); }
-	inline bool Load() { return Load(&(savepath_cfg+savename)); }
+	inline bool Save() { return Save(&(savepatharray[SAVE_PATH_CFG]+savename)); }
+	inline bool Load() { return Load(&(savepatharray[SAVE_PATH_CFG]+savename)); }
 
 	inline CString getSpectrometer(void) {  return lastSpectrometer; }
 	inline void setSpectrometer(CString spec) { lastSpectrometer=spec; }
@@ -125,12 +125,13 @@ protected:
 	CString lastSpectrometer;
 	CString lastGPS;
 
-	CString savepath_cfg; // save path for the config file (this class)
-	CString savepath_spm; // save path for spectrum data files
-	CString savepath_cal; // save path for calibration curves
-	CString savepath_loc; // save path for user location data
-	CString savepath_gfg; // save path for graph config info (@@@ not implemented yet ... dropped from meny around Dec 4, 2009)
-	CString savepath_log; // save path for debug / status log
+	// now in array
+	// CString savepath_cfg; // save path for the config file (this class)
+	// CString savepath_spm; // save path for spectrum data files
+	// CString savepath_cal; // save path for calibration curves
+	// CString savepath_loc; // save path for user location data
+	// CString savepath_gfg; // save path for graph config info (@@@ not implemented yet ... dropped from meny around Dec 4, 2009)
+	// CString savepath_log; // save path for debug / status log
 
 	CString savename;
 	CString passwd; // currently just cleartext
