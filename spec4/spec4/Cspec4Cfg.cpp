@@ -2,6 +2,7 @@
 #include "Cspec4Cfg.h"
 #include "spec4.h"
 #include "spec4Doc.h"
+#include "RegistryHelper.h"
 
 Cspec4Cfg::Cspec4Cfg(void)
 : lastSpectrometer(_T(""))
@@ -23,6 +24,12 @@ Cspec4Cfg::Cspec4Cfg(void)
 	CString savepath;
 	char strPathName[_MAX_PATH];
 
+// Traditionally we used to log to the application
+// folder ... that works well for privileged users,
+// not so well for unprivileged. New default is to
+// log to My Documents\LightPilot QB\*\...
+#if defined LOG_TO_APPFOLDER
+
 	// I am assuming this gives us the application path name
 	::GetModuleFileName(NULL, strPathName, _MAX_PATH);
 
@@ -32,13 +39,41 @@ Cspec4Cfg::Cspec4Cfg(void)
 
 	if (fpos != -1)
 	savepath = savepath.Left(fpos); // trim the backslash ... 
+#else
+	HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, strPathName);
+	savepath=strPathName;
+	savepath.Append("\\LightPilot QB");
+#endif
 
+	// Check if each of these is set in the registry and if so use that value
+	// otherwise initialize to sane default and write to registry
 	savepath_cfg=savepath + "\\";
 	savepath_log=savepath + "\\";
 	savepath_loc=savepath + "\\userloc\\";
 	savepath_spm=savepath + "\\spectra\\";
 	savepath_cal=savepath + "\\calfile\\";
 	savepath_gfg=savepath + "\\graphcf\\";
+
+	CString kval,tval;
+	kval=_T("SOFTWARE\\Wilson Analytical\\LightPilot QB");
+	RegistryHelper regworker;
+	if (regworker.Init(kval)) {
+
+#define REWRITE_REG(locname,varname) \
+		kval=_T(locname); \
+		if ((regworker.ReadStringValue(kval,tval)) && (! tval.IsEmpty())) { \
+			varname=tval; \
+		} else { \
+			regworker.WriteStringValue(kval,varname); \
+		}
+
+		REWRITE_REG("confloc",savepath_cfg);
+		REWRITE_REG("logsloc",savepath_log);
+		REWRITE_REG("userloc",savepath_loc);
+		REWRITE_REG("spectra",savepath_spm);
+		REWRITE_REG("calfile",savepath_cal);
+		REWRITE_REG("graphcf",savepath_gfg);
+	}
 }
 
 Cspec4Cfg::Cspec4Cfg(CString savepath)

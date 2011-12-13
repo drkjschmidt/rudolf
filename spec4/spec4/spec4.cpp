@@ -165,6 +165,10 @@ BOOL Cspec4App::InitInstance()
 	// @@@
 
 #if !defined SUPPRESS_SPLASH
+	// This will set the output path for debug log. 
+	// @@@ Really this is ugly and it would likely be better to move the status
+	// @@@ message after the pConfig load so that we could override the path in
+	// @@@ the config file ... 
 	theApp.ChangeStatusText(_T("Splash Screen and Initializations here"));
 	CSplashDialog::ShowSplashScreen(m_pMainWnd,20000,500);
 #endif
@@ -465,12 +469,14 @@ void Cspec4App::LogToFile(LPCTSTR text)
 		text);
 
 	try {
-		logfile.Open(
+		if (logfile.Open(
 			logpath.GetString(),
-			CFile::modeCreate|CFile::modeNoTruncate|CFile::modeWrite|CFile::typeText);
-		logfile.SeekToEnd();
-		logfile.WriteString(tval);
-		logfile.Close();
+			CFile::modeCreate|CFile::modeNoTruncate|CFile::modeWrite|CFile::typeText))
+		{
+			logfile.SeekToEnd();
+			logfile.WriteString(tval);
+			logfile.Close();
+		}
 	}
 	catch(CFileException* pe)
 	{
@@ -479,8 +485,6 @@ void Cspec4App::LogToFile(LPCTSTR text)
 		MessageBox(NULL, szMsg, NULL, 0);
 		pe->Delete();
 	}
-	CString xval;
-	xval.s
 }
 
 void Cspec4App::SetStatusLogPath(CString *path) 
@@ -491,7 +495,7 @@ void Cspec4App::SetStatusLogPath(CString *path)
 // Traditionally we used to log to the application
 // folder ... that works well for privileged users,
 // not so well for unprivileged. New default is to
-// log to My Documents/lightpilot_qb_runlog.txt
+// log to My Documents\LightPilot QB\lightpilot_qb_runlog.txt
 #if defined LOG_TO_APPFOLDER
 		::GetModuleFileName(NULL, strPathName, _MAX_PATH);
 
@@ -506,7 +510,7 @@ void Cspec4App::SetStatusLogPath(CString *path)
 #else
 		HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, strPathName);
 		logpath=strPathName;
-		logpath.Append("\\lightpilot_qb_runlog.txt");
+		logpath.Append("\\LightPilot QB\\lightpilot_qb_runlog.txt");
 #endif
 	} 
 	else {
