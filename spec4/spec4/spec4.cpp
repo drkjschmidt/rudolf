@@ -479,6 +479,8 @@ void Cspec4App::LogToFile(LPCTSTR text)
 		MessageBox(NULL, szMsg, NULL, 0);
 		pe->Delete();
 	}
+	CString xval;
+	xval.s
 }
 
 void Cspec4App::SetStatusLogPath(CString *path) 

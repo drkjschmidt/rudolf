@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_02CFB83331A5496C82D0B12F318A91FF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_096DC520740C93E7179708E449757E89"
+        "OwnerKey" = "8:_B84D0E51C17249D08E494A9F3D338BDE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1D50BE5818314CB1A88285A4E7103865"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -57,6 +69,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_76BFDC69ABD4F66966345D829773A882"
+        "OwnerKey" = "8:_B84D0E51C17249D08E494A9F3D338BDE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8835AB706E9242979F9BA6ECD1DC60A9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -65,6 +83,18 @@
         {
         "MsmKey" = "8:_9AC0A90E17B04B05B334BEB612258215"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9E616FBB9D7FE18CA30CCC58FB04EA96"
+        "OwnerKey" = "8:_B84D0E51C17249D08E494A9F3D338BDE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B4C9459C88642DDC023345ACCA5DCED5"
+        "OwnerKey" = "8:_B84D0E51C17249D08E494A9F3D338BDE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -447,6 +477,46 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_02CFB83331A5496C82D0B12F318A91FF"
+            {
+            "SourcePath" = "8:..\\spec4.cfg"
+            "TargetName" = "8:spec4.cfg"
+            "Tag" = "8:"
+            "Folder" = "8:_C97A528CFD7D4375B9AD2A8A04EB12B9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_096DC520740C93E7179708E449757E89"
+            {
+            "SourcePath" = "8:OmniDriver32.dll"
+            "TargetName" = "8:OmniDriver32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_73DC444A9F4346D284927846F189621F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:4"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1D50BE5818314CB1A88285A4E7103865"
             {
             "SourcePath" = "8:..\\AC-Debug-Static\\lapackpp.dll"
@@ -492,7 +562,7 @@
             "SourcePath" = "8:..\\19.49000N-155.66000W-hawaii-mauna loa.loc"
             "TargetName" = "8:19.49000N-155.66000W-hawaii-mauna loa.loc"
             "Tag" = "8:"
-            "Folder" = "8:_AD31C8EB8079442BB3A1C153131237D3"
+            "Folder" = "8:_F9F095F79EFA42CFAA56D5B52539BCCA"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -512,7 +582,7 @@
             "SourcePath" = "8:..\\demo-spec0000.spm"
             "TargetName" = "8:demo-spec0000.spm"
             "Tag" = "8:"
-            "Folder" = "8:_31E4276D2AAE44EE9DAAD70F7C69743C"
+            "Folder" = "8:_675D2D2ABAF64791836969D201DF5E73"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -587,6 +657,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_76BFDC69ABD4F66966345D829773A882"
+            {
+            "SourcePath" = "8:oledlg.dll"
+            "TargetName" = "8:oledlg.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_73DC444A9F4346D284927846F189621F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8835AB706E9242979F9BA6ECD1DC60A9"
             {
             "SourcePath" = "8:..\\oo-installer.bat"
@@ -625,6 +715,46 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9E616FBB9D7FE18CA30CCC58FB04EA96"
+            {
+            "SourcePath" = "8:common32.dll"
+            "TargetName" = "8:common32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_73DC444A9F4346D284927846F189621F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B4C9459C88642DDC023345ACCA5DCED5"
+            {
+            "SourcePath" = "8:COMDLG32.dll"
+            "TargetName" = "8:COMDLG32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_73DC444A9F4346D284927846F189621F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CC7E61C746AC434AAC869A3D7ABD585D"
@@ -672,7 +802,7 @@
             "SourcePath" = "8:..\\demo_solid7.cal"
             "TargetName" = "8:demo_solid7.cal"
             "Tag" = "8:"
-            "Folder" = "8:_80BE0865DD9F4E8E87AB27620983C63F"
+            "Folder" = "8:_5A4DD538735D4B829233762F93F73F2D"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -780,37 +910,48 @@
             "Property" = "8:PersonalFolder"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_31E4276D2AAE44EE9DAAD70F7C69743C"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_C97A528CFD7D4375B9AD2A8A04EB12B9"
                     {
-                    "Name" = "8:spectra"
-                    "AlwaysCreate" = "11:TRUE"
+                    "Name" = "8:LightPilot QB"
+                    "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
-                    "Property" = "8:_84D231655E274679BD4FF101F391248A"
+                    "Property" = "8:_C31F7C0CEEDA497596C40A4301F3F54F"
                         "Folders"
                         {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_80BE0865DD9F4E8E87AB27620983C63F"
-                    {
-                    "Name" = "8:calfile"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_BA3B7F92E6AB4926962A3B05FFE218A0"
-                        "Folders"
-                        {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_AD31C8EB8079442BB3A1C153131237D3"
-                    {
-                    "Name" = "8:userloc"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_B5E19F023EFA4924BD55F1FB4FB8BBDA"
-                        "Folders"
-                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_5A4DD538735D4B829233762F93F73F2D"
+                            {
+                            "Name" = "8:calfile"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_BA3B7F92E6AB4926962A3B05FFE218A0"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_675D2D2ABAF64791836969D201DF5E73"
+                            {
+                            "Name" = "8:spectra"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_84D231655E274679BD4FF101F391248A"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_F9F095F79EFA42CFAA56D5B52539BCCA"
+                            {
+                            "Name" = "8:userloc"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_B5E19F023EFA4924BD55F1FB4FB8BBDA"
+                                "Folders"
+                                {
+                                }
+                            }
                         }
                     }
                 }
@@ -937,6 +1078,44 @@
                             "Transitive" = "11:FALSE"
                                 "Keys"
                                 {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_2EF70A71FABA4362ACFEEAD9EBDA7486"
+                                    {
+                                    "Name" = "8:LightPilot QB"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                        }
+                                        "Values"
+                                        {
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_285481E4257B4678809F9003F4DA47C4"
+                                            {
+                                            "Name" = "8:caldir"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_70D2BA8A658C4EEDA86AC59A4763F7D6"
+                                            {
+                                            "Name" = "8:spcdir"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_FE1E531AF9644D5593E23E66235F4086"
+                                            {
+                                            "Name" = "8:locdir"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:"
+                                            }
+                                        }
+                                    }
                                 }
                                 "Values"
                                 {
@@ -1388,7 +1567,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B84D0E51C17249D08E494A9F3D338BDE"
             {
-            "SourcePath" = "8:..\\xp-32-nmea-lapack-debug-static\\spec4.exe"
+            "SourcePath" = "8:..\\xp-32-gar-lapack-debug-static\\spec4.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_73DC444A9F4346D284927846F189621F"
