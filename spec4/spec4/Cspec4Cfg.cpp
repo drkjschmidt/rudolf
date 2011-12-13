@@ -133,7 +133,7 @@ Cspec4Cfg::Save(CString *fname)
 	if (fname == NULL) 
 	{
 		CFileDialog TempLoader(FALSE,_T(".cfg"), NULL, 0, "Config Files (*.cfg)|*.cfg|All Files(*.*)|*.*||");
-		TempLoader.m_pOFN->lpstrInitialDir=savepath_cfg;
+		TempLoader.m_pOFN->lpstrInitialDir=savepatharray[SAVE_PATH_CFG];
 
 		if (TempLoader.DoModal() == IDOK)
 		{
@@ -142,8 +142,8 @@ Cspec4Cfg::Save(CString *fname)
 			// savepath_cfg=TempLoader.GetFolderPath();
 			// savepath_cfg=savepath_cfg.TrimRight(_T("\\"));
 			filename=TempLoader.GetPathName();
-			savepath_cfg=filename;
-			savepath_cfg.Truncate(savepath_cfg.ReverseFind('\\'));
+			savepatharray[SAVE_PATH_CFG]=filename;
+			savepatharray[SAVE_PATH_CFG].Truncate(savepatharray[SAVE_PATH_CFG].ReverseFind('\\'));
 		}
 		else
 		{
@@ -233,7 +233,7 @@ Cspec4Cfg::Load(CString *fname)
 	if (fname == NULL) {
 
 		CFileDialog TempLoader(TRUE,_T(".cfg"), NULL, 0, "Config Files (*.cfg)|*.cfg|All Files(*.*)|*.*||");
-		TempLoader.m_pOFN->lpstrInitialDir=savepath_cfg;
+		TempLoader.m_pOFN->lpstrInitialDir=savepatharray[SAVE_PATH_CFG];
 
 		if (TempLoader.DoModal() == IDOK)
 		{
@@ -241,8 +241,8 @@ Cspec4Cfg::Load(CString *fname)
 			theApp.ChangeStatusText(_T("Selection OK"));
 			// savepath_cfg=TempLoader.GetFolderPath().TrimRight(_T("\\"));
 			filename=TempLoader.GetPathName();
-			savepath_cfg=filename;
-			savepath_cfg.Truncate(savepath_cfg.ReverseFind('\\'));
+			savepatharray[SAVE_PATH_CFG]=filename;
+			savepatharray[SAVE_PATH_CFG].Truncate(savepatharray[SAVE_PATH_CFG].ReverseFind('\\'));
 		}
 		else
 		{
