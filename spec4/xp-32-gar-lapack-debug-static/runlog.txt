@@ -1,0 +1,1211 @@
+[] 2011-12-05 13:11:10.821 [DBG 2] Loading logo spec4-plogo.bmp failed
+[] 2011-12-05 13:11:10.883 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [fd8; 0]
+[] 2011-12-05 13:11:10.883 [DBG 2] CDlgBarControl::Populate ... succeeded
+[] 2011-12-05 13:11:10.883 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[] 2011-12-05 13:11:10.883 [DBG 2] CDlgBarControl::Populate ... released interlock
+[] 2011-12-05 13:11:10.883 [DBG 2] CDlgBarControl::Populate trying to release lock ... [1:fd8; 0]
+[] 2011-12-05 13:11:10.883 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:11:11.305 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1276,902)
+[TESTBOX2-7E963C] 2011-12-05 13:11:11.321 Splash Screen and Initializations here
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.899 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (298,372,978,479)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.915 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (300,381,977,488)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.915 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (296,382,976,391)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.930 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (296,386,976,493)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.946 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (295,393,975,500)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.946 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (292,403,972,510)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.961 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (289,420,969,527)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.961 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (285,432,965,442)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.977 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (285,437,965,445)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.993 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (285,440,965,547)
+[TESTBOX2-7E963C] 2011-12-05 13:11:12.993 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (283,452,963,559)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.008 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (282,458,962,470)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.008 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (282,465,962,572)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.024 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,477,961,488)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.024 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,483,961,490)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.040 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,485,961,500)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.055 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,495,961,503)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.055 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,498,961,507)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.071 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,502,961,518)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.086 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,513,961,521)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.086 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,516,961,525)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.102 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,520,961,532)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.102 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,527,961,634)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.118 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,531,960,540)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.133 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,535,960,541)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.133 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,536,960,542)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.149 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,537,960,544)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.180 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,539,960,554)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.180 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,549,960,557)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.196 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,552,960,558)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.211 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,553,960,566)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.211 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,561,959,668)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.227 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (281,563,961,670)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.227 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (279,569,959,581)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.243 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (279,576,959,582)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.258 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (279,577,959,684)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.258 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,587,960,595)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.274 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,590,960,597)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.274 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,592,960,602)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.290 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,597,960,605)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.305 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,600,960,607)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.321 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (280,602,960,608)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.383 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (283,603,960,710)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.399 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (953,604,959,711)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.415 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (952,604,958,711)
+[TESTBOX2-7E963C] 2011-12-05 13:11:13.430 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (277,604,283,711)
+[TESTBOX2-7E963C] 2011-12-05 13:11:14.336 Load default config file FAILED
+[TESTBOX2-7E963C] 2011-12-05 13:11:14.352 Creating Spectrometer / Wrapper object
+[TESTBOX2-7E963C] 2011-12-05 13:11:15.258 ... loading Ocean Optics Wrapper succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:11:16.071  ... populating with spectrometers
+[TESTBOX2-7E963C] 2011-12-05 13:11:16.071 Found one or more spectrometers
+[TESTBOX2-7E963C] 2011-12-05 13:11:16.071 Did not found preset specrometer ... picking first one
+[TESTBOX2-7E963C] 2011-12-05 13:11:16.071 Creating GPS object
+[TESTBOX2-7E963C] 2011-12-05 13:11:26.086 Create CustomerDialog object
+[TESTBOX2-7E963C] 2011-12-05 13:11:28.118 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1276,902)
+[TESTBOX2-7E963C] 2011-12-05 13:11:30.118 (0,0,1276,775) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1276,775)
+[TESTBOX2-7E963C] 2011-12-05 13:11:48.586 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1091,834)
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.415 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [fd8; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.415 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.415 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.415 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [fd8,1]
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.415 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.415 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.415 [DBG 2] CDlgBarControl::Readback trying to release lock ... [fd8; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.415 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.430 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [fd8; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.430 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.430 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.430 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:fd8; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.430 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.430 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.430 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:fd8; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.430 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.446 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.446 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.446 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:11:57.446 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited: no valid data ...
+[TESTBOX2-7E963C] 2011-12-05 13:12:01.821 Open Preferences Dialog
+[TESTBOX2-7E963C] 2011-12-05 13:12:08.383 Waiting for GPS to return name. This may take a minute ...
+[TESTBOX2-7E963C] 2011-12-05 13:12:10.399 Found GPS
+[TESTBOX2-7E963C] 2011-12-05 13:12:16.274 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-05 13:12:16.290 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-05 13:12:16.399 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-05 13:12:16.508 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:12:16.508 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:12:16.571 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:12:25.321 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (77,413,560,618)
+[TESTBOX2-7E963C] 2011-12-05 13:12:25.336 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:12:25.336 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:12:25.336 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited: no valid data ...
+[TESTBOX2-7E963C] 2011-12-05 13:12:28.008 Save custom configuration
+[TESTBOX2-7E963C] 2011-12-05 13:12:34.836 Selection OK
+[TESTBOX2-7E963C] 2011-12-05 13:12:34.836 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (38,413,599,632)
+[TESTBOX2-7E963C] 2011-12-05 13:12:34.836 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:12:34.836 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:12:34.836 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited: no valid data ...
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.165 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [fd8; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.165 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.165 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.165 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [fd8,1]
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.165 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.165 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.165 [DBG 2] CDlgBarControl::Readback trying to release lock ... [fd8; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.165 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.180 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [fd8; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.180 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.180 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.180 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:fd8; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.180 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.180 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.180 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:fd8; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.180 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:12:45.196 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1091,834)
+[TESTBOX2-7E963C] 2011-12-05 13:12:55.977 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1091,834)
+[TESTBOX2-7E963C] 2011-12-05 13:13:00.024 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (166,179,741,536)
+[] 2011-12-05 13:13:35.743 [DBG 2] Loading logo spec4-plogo.bmp failed
+[] 2011-12-05 13:13:35.790 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[] 2011-12-05 13:13:35.790 [DBG 2] CDlgBarControl::Populate ... succeeded
+[] 2011-12-05 13:13:35.790 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[] 2011-12-05 13:13:35.790 [DBG 2] CDlgBarControl::Populate ... released interlock
+[] 2011-12-05 13:13:35.790 [DBG 2] CDlgBarControl::Populate trying to release lock ... [1:63c; 0]
+[] 2011-12-05 13:13:35.790 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:13:36.133 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1276,902)
+[TESTBOX2-7E963C] 2011-12-05 13:13:36.149 Splash Screen and Initializations here
+[TESTBOX2-7E963C] 2011-12-05 13:13:36.211 Load default config file SUCCEEDED
+[TESTBOX2-7E963C] 2011-12-05 13:13:36.211 Creating Spectrometer / Wrapper object
+[TESTBOX2-7E963C] 2011-12-05 13:13:36.493 ... loading Ocean Optics Wrapper succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:13:37.133  ... populating with spectrometers
+[TESTBOX2-7E963C] 2011-12-05 13:13:37.133 Found one or more spectrometers
+[TESTBOX2-7E963C] 2011-12-05 13:13:37.133 Did not found preset specrometer ... picking first one
+[TESTBOX2-7E963C] 2011-12-05 13:13:37.149 Creating GPS object
+[TESTBOX2-7E963C] 2011-12-05 13:13:46.071 Create CustomerDialog object
+[TESTBOX2-7E963C] 2011-12-05 13:13:48.102 (0,0,1276,775) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1276,775)
+[TESTBOX2-7E963C] 2011-12-05 13:13:51.336 (0,0,1276,775) <-> w:451mm w:1280px h:361mm h:1024px <-> (507,262,770,378)
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.071 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.071 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.071 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.071 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.071 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.071 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.071 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.071 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.086 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.086 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.086 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.086 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.086 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.086 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.086 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.086 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.102 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.102 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.102 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:00.102 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited: no valid data ...
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.321 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.336 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.336 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.336 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.336 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.336 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.336 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.336 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-05 13:14:06.352 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-05 13:14:08.946 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.055 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.071 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.086 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.086 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.086 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.118 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:14:09.118 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.649 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.649 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.649 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.649 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.665 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.665 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.665 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.665 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-05 13:14:34.665 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.180 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.352 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.352 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.368 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.383 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.415 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.415 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.446 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:14:37.446 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.540 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.540 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.540 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.540 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.540 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.540 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.540 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.540 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.555 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.555 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.555 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.555 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.586 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.586 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.618 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:14:55.618 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:27.993 Delete ... nsel=1items:={1,}
+[TESTBOX2-7E963C] 2011-12-05 13:15:27.993 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:27.993 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:27.993 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.008 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.024 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.024 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.024 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.024 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.024 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.024 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.024 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.024 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.055 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:28.055 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.930 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.930 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.930 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.930 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.930 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.930 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.930 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.930 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-05 13:15:30.946 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.477 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.586 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.602 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.602 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.602 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.602 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.602 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.602 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.602 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.602 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.618 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.618 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.618 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.618 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.618 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.618 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.649 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.649 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.680 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:33.680 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.274 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.274 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.274 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.274 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.274 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.274 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.274 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.274 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-05 13:15:50.290 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.821 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.977 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.977 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.977 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.977 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.977 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.977 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.977 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.977 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:15:52.993 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.008 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.008 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.008 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.008 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.008 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.008 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.040 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.040 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.071 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.071 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.102 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:15:53.102 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 Delete ... nsel=2items:={1,2,}
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.665 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.680 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.696 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.696 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.696 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.727 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:08.727 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.852 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.852 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.852 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.852 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.852 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.852 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.852 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.852 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-05 13:16:12.868 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.430 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.524 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.540 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.555 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.571 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.571 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.586 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.586 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.618 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:15.618 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.649 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.665 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.665 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.665 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.665 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.665 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.665 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.665 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-05 13:16:22.665 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.227 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.336 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,956,902)
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.352 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.368 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.368 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.368 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.383 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.383 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.415 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.415 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.446 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:25.446 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.274 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.274 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.274 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.274 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.274 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.274 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.430 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.430 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.430 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.430 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.446 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.446 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.633 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.633 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.633 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.633 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.633 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.633 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.774 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.774 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.790 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.790 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.790 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:30.790 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:31.008 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:31.008 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:31.008 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:31.024 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:31.024 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:31.024 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.633 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.633 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.633 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.633 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.633 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.633 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.743 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.743 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.743 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.743 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.743 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.743 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:16:32.743 Save a *new* calibration file
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.571 Selection OK
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.790 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (38,389,599,632)
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.790 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.790 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.790 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.790 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.790 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.805 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.805 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.821 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.821 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.836 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:39.836 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:16:54.149 Open Preferences Dialog
+[TESTBOX2-7E963C] 2011-12-05 13:16:59.571 Waiting for GPS to return name. This may take a minute ...
+[TESTBOX2-7E963C] 2011-12-05 13:17:01.571 Found GPS
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.727 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (77,389,560,618)
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.727 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.727 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.743 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.743 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.743 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.758 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.758 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.758 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.758 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.774 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:17:11.774 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.836 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.852 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.852 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.852 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [63c,1]
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.852 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.852 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.852 [DBG 2] CDlgBarControl::Readback trying to release lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.852 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.868 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.868 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.868 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.868 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 1]
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.868 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.868 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.868 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:63c; 0]
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.868 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-05 13:17:16.883 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1091,834)
+[TESTBOX2-7E963C] 2011-12-05 13:17:22.336 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,1091,834)
+[TESTBOX2-7E963C] 2011-12-05 13:17:28.305 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (166,179,741,536)
+[] 2011-12-06 17:10:56.140 [DBG 2] Loading logo spec4-plogo.bmp failed
+[] 2011-12-06 17:10:56.218 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[] 2011-12-06 17:10:56.218 [DBG 2] CDlgBarControl::Populate ... succeeded
+[] 2011-12-06 17:10:56.218 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[] 2011-12-06 17:10:56.218 [DBG 2] CDlgBarControl::Populate ... released interlock
+[] 2011-12-06 17:10:56.218 [DBG 2] CDlgBarControl::Populate trying to release lock ... [1:640; 0]
+[] 2011-12-06 17:10:56.218 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:10:56.546 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:10:56.578 Splash Screen and Initializations here
+[TESTBOX2-7E963C] 2011-12-06 17:10:58.796 Load default config file SUCCEEDED
+[TESTBOX2-7E963C] 2011-12-06 17:10:58.796 Creating Spectrometer / Wrapper object
+[TESTBOX2-7E963C] 2011-12-06 17:10:59.265 ... loading Ocean Optics Wrapper succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:10:59.859  ... populating with spectrometers
+[TESTBOX2-7E963C] 2011-12-06 17:10:59.859 Found one or more spectrometers
+[TESTBOX2-7E963C] 2011-12-06 17:10:59.859 Did not found preset specrometer ... picking first one
+[TESTBOX2-7E963C] 2011-12-06 17:10:59.859 Creating GPS object
+[TESTBOX2-7E963C] 2011-12-06 17:11:08.390 Create CustomerDialog object
+[TESTBOX2-7E963C] 2011-12-06 17:11:12.453 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:11:15.718 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:11:22.546 Optimizing GPS info quality ... (60.0s)
+[TESTBOX2-7E963C] 2011-12-06 17:11:24.546 All GPS data up to date
+[TESTBOX2-7E963C] 2011-12-06 17:11:24.546 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:11:53.140 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:12:00.953 Selection OK
+[TESTBOX2-7E963C] 2011-12-06 17:12:01.328 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:12:06.421 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-06 17:12:06.437 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-06 17:12:09.031 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-06 17:12:09.156 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:12:09.156 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:12:09.156 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:12:09.187 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:12:18.375 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-06 17:12:18.375 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-06 17:12:20.921 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-06 17:12:21.031 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:12:21.046 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:12:21.046 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:12:21.203 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:12:30.093 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:12:30.093 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:12:30.093 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:12:30.109 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:12:38.687 Selection OK
+[TESTBOX2-7E963C] 2011-12-06 17:12:38.906 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:12:38.906 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:12:38.906 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:12:38.968 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:12:58.609 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:12:58.656 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:12:58.656 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:12:58.828 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.281 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.281 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.281 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.281 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.281 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.281 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.281 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.281 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.296 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.296 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.296 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.296 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.296 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.296 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.296 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.296 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.312 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.312 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.312 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:00.312 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited: no valid data ...
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.281 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.281 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.281 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.281 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.281 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.296 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.296 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.296 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:02.296 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.828 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.937 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.953 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.984 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.984 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:04.984 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:05.015 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:05.015 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:11.234 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:11.234 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:11.234 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:11.250 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:11.250 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:11.250 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:12.562 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-06 17:13:12.562 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:12.562 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.125 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.234 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.250 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.265 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.265 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.265 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.296 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:15.296 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:19.859 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.421 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.531 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.531 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.531 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.531 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.531 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.531 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.531 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.546 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.562 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.562 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.562 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.562 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.562 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.593 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.593 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.625 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:22.625 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.250 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.250 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.250 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.265 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.265 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.265 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.265 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.265 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:26.265 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:28.828 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.000 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.000 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.000 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.000 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.000 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.000 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.000 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.000 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.015 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.015 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.015 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.015 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.015 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.015 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.031 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.031 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.031 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.031 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.031 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.031 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.031 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.031 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.046 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.062 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.062 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.093 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.093 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.125 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:29.125 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 Delete ... nsel=1items:={2,}
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.578 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.593 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.593 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.593 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.593 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.593 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.593 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.593 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.593 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.609 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.609 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.609 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.609 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.609 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.609 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.656 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.656 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.671 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:36.671 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.906 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.906 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.906 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.906 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.906 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.906 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.921 Acquiring Spectrum ... Please Wait ...
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.921 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:39.921 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.468 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 Finished Acquiring Spectrum
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.578 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.593 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.593 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.593 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.593 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.593 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.593 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.593 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.593 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.609 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.609 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.609 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.609 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.609 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.609 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.640 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.656 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.671 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.671 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.703 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:42.703 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.093 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.093 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.093 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.093 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.093 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.109 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.109 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.109 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.109 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.109 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.109 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.109 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.140 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.140 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.171 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.171 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.187 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:52.187 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.921 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.937 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.937 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.937 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.968 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.968 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.984 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:58.984 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:13:59.015 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:13:59.015 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.187 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.187 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.187 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.203 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.234 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.234 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.265 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.265 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.296 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:03.296 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.921 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.921 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.921 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.937 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.984 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.984 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:10.984 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.000 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.000 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.000 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.093 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.093 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.093 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.109 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.109 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.109 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.234 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.234 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.234 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.250 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.250 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.250 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.343 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.343 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.343 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.359 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.359 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.359 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.734 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.734 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.734 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.734 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.734 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.734 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.890 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.906 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.906 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.906 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.906 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:11.906 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.062 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.062 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.062 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.062 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.062 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.062 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.234 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.234 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.234 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.234 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.234 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.234 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.375 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.375 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.375 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.375 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.375 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.375 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.546 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.546 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.546 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.546 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.562 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:12.562 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.265 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.265 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.265 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.281 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.281 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.281 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.328 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.328 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.328 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.328 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.328 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.328 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.437 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.437 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.437 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.437 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.437 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.437 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.531 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.531 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.531 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.531 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.531 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.531 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.609 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.609 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.609 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.609 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.609 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:13.609 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.062 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.062 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.062 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.062 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.062 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.062 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.234 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.234 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.234 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.234 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.234 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.234 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.406 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.406 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.406 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.406 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.421 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.421 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.562 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.562 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.562 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.578 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.578 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.578 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.750 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.750 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.750 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.750 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.750 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:14.750 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.734 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.734 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.734 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.765 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.765 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.765 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.843 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.843 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.843 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.859 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.859 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.859 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.921 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.921 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.921 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.921 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.921 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:15.921 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.062 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.062 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.062 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.078 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.078 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.078 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.156 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.156 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.156 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.156 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.171 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.171 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.281 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.281 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.281 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.296 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.296 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.296 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.421 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.421 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.421 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.421 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.421 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.421 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.531 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.531 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.531 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.531 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.531 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.531 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.734 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.734 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.734 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.734 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.734 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:16.734 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.000 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.000 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.015 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.015 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.015 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.015 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.562 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.562 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.562 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.562 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.562 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.562 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.656 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.656 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.656 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.671 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.671 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.671 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.750 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.750 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.765 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.765 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.765 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.765 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.921 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.921 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.921 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.937 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.937 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:17.937 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.625 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.625 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.625 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.640 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.640 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.640 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.718 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.718 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.718 [DBG 2] CDlgBarControl::Readback ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.718 [DBG 2] CDlgBarControl::Readback ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.718 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.718 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:14:19.718 Save a *new* calibration file
+[TESTBOX2-7E963C] 2011-12-06 17:14:32.750 Selection OK
+[TESTBOX2-7E963C] 2011-12-06 17:14:32.953 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:14:32.968 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:14:32.968 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:14:32.984 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:32.984 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:33.000 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:14:33.000 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:33.000 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:33.015 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:33.015 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:33.031 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:33.031 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:14:44.765 Open Preferences Dialog
+[TESTBOX2-7E963C] 2011-12-06 17:14:53.312 Waiting for GPS to return name. This may take a minute ...
+[TESTBOX2-7E963C] 2011-12-06 17:14:56.390 Found GPS
+[TESTBOX2-7E963C] 2011-12-06 17:14:57.296 Initializing Spectrometer ... 
+[TESTBOX2-7E963C] 2011-12-06 17:14:57.296 Acquiring Spectrum ... please wait ... 
+[TESTBOX2-7E963C] 2011-12-06 17:14:59.812 ... acquisition finished
+[TESTBOX2-7E963C] 2011-12-06 17:14:59.921 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:14:59.921 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:14:59.937 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.906 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.906 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.906 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.906 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.906 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.906 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.921 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.921 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.937 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.937 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.953 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:02.953 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:05.890 Save custom configuration
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.187 Selection OK
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.218 (0,0,956,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.234 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.234 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.234 [DBG 2] CCalibrationCurve::PaintCalSpectra ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.234 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.234 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.250 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.250 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.265 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.265 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.281 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:08.281 [DBG 2] CCalibrationCurve::PaintCalSpectra ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.656 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.656 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.656 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.656 [DBG 2] CDlgBarControl::Readback trying for UI lock ... [640,1]
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.656 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.656 [DBG 2] CDlgBarControl::Readback ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.656 [DBG 2] CDlgBarControl::Readback trying to release lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.656 [DBG 2] CDlgBarControl::Readback ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.671 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.671 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.671 [DBG 2] CDlgBarControl::Populate ... skipped because of interlock
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.671 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 1]
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.671 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.671 [DBG 2] CDlgBarControl::Populate ... released interlock
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.671 [DBG 2] CDlgBarControl::Populate trying to release lock ... [2:640; 0]
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.671 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-06 17:15:31.687 (0,0,1276,775) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:15:39.875 Selection OK
+[TESTBOX2-7E963C] 2011-12-06 17:15:39.875 Loading spectrum C:\Documents and Settings\Administrator\Desktop\BUILD-TRUNK\spec4\spec4\xp-32-gar-lapack-debug-static\test.spm
+[TESTBOX2-7E963C] 2011-12-06 17:15:40.234 (0,0,1276,775) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:15:40.250 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:40.250 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:15:40.281 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:46.843 (0,0,1276,819) <-> w:215mm w:5100px h:279mm h:6600px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:15:46.890 (0,0,1276,819) <-> w:215mm w:5100px h:279mm h:6600px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:15:46.906 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:15:46.906 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:15:46.937 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[TESTBOX2-7E963C] 2011-12-06 17:15:46.937 [DEBUG] PaintCalCurve()
+[TESTBOX2-7E963C] 2011-12-06 17:15:46.937 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:16:01.421 (0,0,1276,775) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-06 17:16:01.421 [DBG 2] CSpectrumData::PaintSpectrum ... entered
+[TESTBOX2-7E963C] 2011-12-06 17:16:01.421 [DEBUG] CreateAxes()
+[TESTBOX2-7E963C] 2011-12-06 17:16:01.453 [DBG 2] CSpectrumData::PaintSpectrum ... exited
+[] 2011-12-12 12:04:48.708 [DBG 2] Loading logo spec4-plogo.bmp failed
+[] 2011-12-12 12:25:16.177 [DBG 2] Loading logo spec4-plogo.bmp failed
+[] 2011-12-12 12:25:16.302 [DBG 2] CDlgBarControl::Populate trying for UI lock ... [e38; 0]
+[] 2011-12-12 12:25:16.302 [DBG 2] CDlgBarControl::Populate ... succeeded
+[] 2011-12-12 12:25:16.302 [DBG 2] CDlgBarControl::Populate ... gained interlock
+[] 2011-12-12 12:25:16.302 [DBG 2] CDlgBarControl::Populate ... released interlock
+[] 2011-12-12 12:25:16.302 [DBG 2] CDlgBarControl::Populate trying to release lock ... [1:e38; 0]
+[] 2011-12-12 12:25:16.302 [DBG 2] CDlgBarControl::Populate ... succeeded
+[TESTBOX2-7E963C] 2011-12-12 12:25:16.646 (0,0,1276,902) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
+[TESTBOX2-7E963C] 2011-12-12 12:25:16.661 Splash Screen and Initializations here
+[TESTBOX2-7E963C] 2011-12-12 12:25:16.739 Load default config file SUCCEEDED
+[TESTBOX2-7E963C] 2011-12-12 12:25:16.739 Creating Spectrometer / Wrapper object
+[TESTBOX2-7E963C] 2011-12-12 12:25:19.177 ... loading Ocean Optics Wrapper succeeded
+[TESTBOX2-7E963C] 2011-12-12 12:25:20.661  ... populating with spectrometers
+[TESTBOX2-7E963C] 2011-12-12 12:25:20.661 Found one or more spectrometers
+[TESTBOX2-7E963C] 2011-12-12 12:25:20.661 Did not found preset specrometer ... picking first one
+[TESTBOX2-7E963C] 2011-12-12 12:25:20.661 Creating GPS object
+[TESTBOX2-7E963C] 2011-12-12 12:25:27.130 Create CustomerDialog object
+[TESTBOX2-7E963C] 2011-12-12 12:25:29.146 (0,0,1091,834) <-> w:451mm w:1280px h:361mm h:1024px <-> (0,0,0,0)
