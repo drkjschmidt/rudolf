@@ -10,6 +10,8 @@ public:
 	~Cspec4Cfg(void);
 
 protected:
+	void Init(CString savepath);
+
 	CString TrimFileName(CString fullpath) {
 		CString trimpath(fullpath);
 		int trimfpos = trimpath.ReverseFind('\\');
@@ -32,23 +34,32 @@ public:
 	inline CString getGPS(void) {  return lastGPS; }
 	inline void setGPS(CString GPS) { lastGPS=GPS; }
 
-	inline CString getSavepathCFG(void) {  return savepath_cfg; }
-	inline void setSavepathCFG(CString path,bool trim=true) { savepath_cfg=(trim?TrimFileName(path):path); }
+	enum savePaths {
+		SAVE_PATH_CFG = 0,
+		SAVE_PATH_SPM = 1,
+		SAVE_PATH_CAL = 2,
+		SAVE_PATH_LOC = 3,
+		SAVE_PATH_LOG = 4,
+		SAVE_PATH_GFG = 5,
+		SAVE_PATH_MAX = 5,
+	};
 
-	inline CString getSavepathSPM(void) {  return savepath_spm; }
-	inline void setSavepathSPM(CString path,bool trim=true) { savepath_spm=(trim?TrimFileName(path):path); }
+	CString getSavepath(int type);
+	void setSavepath(int type,CString path,bool trim=true);
 
-	inline CString getSavepathCAL(void) {  return savepath_cal; }
-	inline void setSavepathCAL(CString path,bool trim=true) { savepath_cal=(trim?TrimFileName(path):path); }
+	inline CString getSavepathCFG(void) {  return getSavepath(SAVE_PATH_CFG); }
+	inline CString getSavepathSPM(void) {  return getSavepath(SAVE_PATH_SPM); }
+	inline CString getSavepathCAL(void) {  return getSavepath(SAVE_PATH_CAL); }
+	inline CString getSavepathLOC(void) {  return getSavepath(SAVE_PATH_LOC); }
+	inline CString getSavepathLOG(void) {  return getSavepath(SAVE_PATH_LOG); }
+	inline CString getSavepathGFG(void) {  return getSavepath(SAVE_PATH_GFG); }
 
-	inline CString getSavepathLOC(void) {  return savepath_loc; }
-	inline void setSavepathLOC(CString path,bool trim=true) { savepath_loc=(trim?TrimFileName(path):path); }
-
-	inline CString getSavepathGFG(void) {  return savepath_gfg; }
-	inline void setSavepathGFG(CString path,bool trim=true) { savepath_gfg=(trim?TrimFileName(path):path); }
-
-	inline CString getSavepathLOG(void) {  return savepath_gfg; }
-	inline void setSavepathLOG(CString path,bool trim=true) { savepath_log=(trim?TrimFileName(path):path); }
+	inline void setSavepathCFG(CString path,bool trim=true) { setSavepath(SAVE_PATH_CFG,path,trim); }
+	inline void setSavepathSPM(CString path,bool trim=true) { setSavepath(SAVE_PATH_SPM,path,trim); }
+	inline void setSavepathCAL(CString path,bool trim=true) { setSavepath(SAVE_PATH_CAL,path,trim); }
+	inline void setSavepathLOC(CString path,bool trim=true) { setSavepath(SAVE_PATH_LOC,path,trim); }
+	inline void setSavepathLOG(CString path,bool trim=true) { setSavepath(SAVE_PATH_LOG,path,trim); }
+	inline void setSavepathGFG(CString path,bool trim=true) { setSavepath(SAVE_PATH_GFG,path,trim); }
 
 	inline CString getSavename(void) {  return savename; }
 	inline void setSavename(CString name) { savename=name; }
@@ -145,4 +156,10 @@ protected:
 	float print_logo_vc_off_in; // how to position logo veritcally: offset from center, can't go past edge
 	bool  print_logo_escape; // whether the logo may escape the bounding box
 
+protected:
+	// Save names, i.e. the search indexes in the registry initialized by constructor
+	CStringArray savenamearray;
+
+	// Save paths (initialized by constructor)
+	CStringArray savepatharray;
 };

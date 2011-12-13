@@ -2,6 +2,7 @@
 #include "Cspec4Cfg.h"
 #include "spec4.h"
 #include "spec4Doc.h"
+#include "RegistryHelper.h"
 
 Cspec4Cfg::Cspec4Cfg(void)
 : lastSpectrometer(_T(""))
@@ -26,28 +27,34 @@ Cspec4Cfg::Cspec4Cfg(void)
 {
 	// _MAX_PATH is defined in a system file:
 	// c:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\INCLUDE\stdlib.h
-	CString savepath;
+	CString savepathtmp;
 	char strPathName[_MAX_PATH];
+
+// Traditionally we used to log to the application
+// folder ... that works well for privileged users,
+// not so well for unprivileged. New default is to
+// log to My Documents\LightPilot QB\*\...
+#if defined LOG_TO_APPFOLDER
 
 	// I am assuming this gives us the application path name
 	::GetModuleFileName(NULL, strPathName, _MAX_PATH);
 
 	// Strip the actual application name from the path
-	savepath=strPathName;
-	int fpos = savepath.ReverseFind('\\');
+	savepathtmp=strPathName;
+	int fpos = savepathtmp.ReverseFind('\\');
 
 	if (fpos != -1)
-	savepath = savepath.Left(fpos); // trim the backslash ... 
+	savepathtmp = savepathtmp.Left(fpos); // trim the backslash ... 
+#else
+	HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, strPathName);
+	savepathtmp=strPathName;
+	savepathtmp.Append("\\LightPilot QB");
+#endif
 
-	savepath_cfg=savepath + "\\";
-	savepath_log=savepath + "\\";
-	savepath_loc=savepath + "\\userloc\\";
-	savepath_spm=savepath + "\\spectra\\";
-	savepath_cal=savepath + "\\calfile\\";
-	savepath_gfg=savepath + "\\graphcf\\";
+	Init(savepathtmp);
 }
 
-Cspec4Cfg::Cspec4Cfg(CString savepath)
+Cspec4Cfg::Cspec4Cfg(CString savepathtmp)
 : lastSpectrometer(_T(""))
 , lastGPS(_T(""))
 , savename(_T("spec4.cfg"))
@@ -68,18 +75,64 @@ Cspec4Cfg::Cspec4Cfg(CString savepath)
 , print_logo_vc_off_in(-1000)
 , print_logo_escape(false)
 {
-	savepath.TrimRight(_T("\\"));
+	savepathtmp.TrimRight(_T("\\"));
 
-	savepath_cfg=savepath + "\\";
-	savepath_log=savepath + "\\";
-	savepath_loc=savepath + "\\userloc\\";
-	savepath_spm=savepath + "\\spectra\\";
-	savepath_cal=savepath + "\\calfile\\";
-	savepath_gfg=savepath + "\\graphcf\\";
+	Init(savepathtmp);
 }
 
 Cspec4Cfg::~Cspec4Cfg(void)
 {
+}
+
+void
+Cspec4Cfg::Init(CString rootpath) {  
+	int ii;
+
+	// Populate lookup table
+	savenamearray.SetAtGrow(SAVE_PATH_CFG,"confloc");
+	savenamearray.SetAtGrow(SAVE_PATH_SPM,"spectra");
+	savenamearray.SetAtGrow(SAVE_PATH_CAL,"calfile");
+	savenamearray.SetAtGrow(SAVE_PATH_LOC,"userloc");
+	savenamearray.SetAtGrow(SAVE_PATH_LOG,"logsloc");
+	savenamearray.SetAtGrow(SAVE_PATH_GFG,"graphcf");
+
+	// Preset variables to a default value ...
+	savepatharray.SetAtGrow(SAVE_PATH_CFG,rootpath + "\\");
+	savepatharray.SetAtGrow(SAVE_PATH_SPM,rootpath + "\\spectra\\");
+	savepatharray.SetAtGrow(SAVE_PATH_CAL,rootpath + "\\calfile\\");
+	savepatharray.SetAtGrow(SAVE_PATH_LOC,rootpath + "\\userloc\\");
+	savepatharray.SetAtGrow(SAVE_PATH_LOG,rootpath + "\\");
+	savepatharray.SetAtGrow(SAVE_PATH_GFG,rootpath + "\\graphcf\\");
+
+	// ... then check registry for updated values
+	for (ii=0; ii<=SAVE_PATH_MAX; ii++) {
+		CString kval,tval;
+		kval=_T("SOFTWARE\\Wilson Analytical\\LightPilot QB");
+		RegistryHelper regworker;
+		if (regworker.Init(kval)) {
+			if ((regworker.ReadStringValue(savenamearray[ii],tval)) && (! tval.IsEmpty())) {
+				savepatharray[ii]=tval;
+			} else {
+				regworker.WriteStringValue(savenamearray[ii],savepatharray[ii]);
+			}
+		}
+	}
+}
+
+CString 
+Cspec4Cfg::getSavepath(int type) {  
+	return savepatharray[type];
+}
+
+void 
+Cspec4Cfg::setSavepath(int type,CString path,bool trim) { 
+	savepatharray[type]=(trim?TrimFileName(path):path); 
+
+	CString kval,tval;
+	kval=_T("SOFTWARE\\Wilson Analytical\\LightPilot QB");
+	RegistryHelper regworker;
+	if (regworker.Init(kval))
+		regworker.WriteStringValue(savenamearray[type],savepatharray[type]);
 }
 
 

@@ -444,12 +444,14 @@ void Cspec4App::LogToFile(LPCTSTR text)
 		text);
 
 	try {
-		logfile.Open(
+		if (logfile.Open(
 			logpath.GetString(),
-			CFile::modeCreate|CFile::modeNoTruncate|CFile::modeWrite|CFile::typeText);
-		logfile.SeekToEnd();
-		logfile.WriteString(tval);
-		logfile.Close();
+			CFile::modeCreate|CFile::modeNoTruncate|CFile::modeWrite|CFile::typeText))
+		{
+			logfile.SeekToEnd();
+			logfile.WriteString(tval);
+			logfile.Close();
+		}
 	}
 	catch(CFileException* pe)
 	{
@@ -468,7 +470,7 @@ void Cspec4App::SetStatusLogPath(CString *path)
 // Traditionally we used to log to the application
 // folder ... that works well for privileged users,
 // not so well for unprivileged. New default is to
-// log to My Documents/lightpilot_qb_runlog.txt
+// log to My Documents\LightPilot QB\lightpilot_qb_runlog.txt
 #if defined LOG_TO_APPFOLDER
 		::GetModuleFileName(NULL, strPathName, _MAX_PATH);
 
@@ -483,7 +485,7 @@ void Cspec4App::SetStatusLogPath(CString *path)
 #else
 		HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, strPathName);
 		logpath=strPathName;
-		logpath.Append("\\lightpilot_qb_runlog.txt");
+		logpath.Append("\\LightPilot QB\\lightpilot_qb_runlog.txt");
 #endif
 	} 
 	else {
