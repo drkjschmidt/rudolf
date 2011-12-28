@@ -554,7 +554,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/D &quot;PROGTYPE_ACQ&quot;"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;C:\Documents and Settings\Administrator\Desktop\BUILD\includes\GXCR40205\include&quot;;&quot;$(SolutionDir)\..\..\CLAPACK-3.1.1-VisualStudio\INCLUDE&quot;;&quot;$(SolutionDir)\..\..\includes\CSerialPort&quot;;&quot;$(SolutionDir)\garmin-serial&quot;;&quot;C:\Program Files\Ocean Optics\OmniDriverSPAM\include&quot;;&quot;C:\Program Files\Java\jdk1.6.0_24\include&quot;;&quot;C:\Program Files\Java\jdk1.6.0_24\include\win32&quot;;&quot;$(SolutionDir)\..\..\includes\EnumSerialPort&quot;;&quot;$(SolutionDir)\gps_generic&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)\..\..\..\includes\GXCR40205\include&quot;;&quot;$(SolutionDir)\..\..\..\includes\CSerialPort&quot;;&quot;$(SolutionDir)\..\..\CLAPACK-3.1.1-VisualStudio\INCLUDE&quot;;&quot;$(SolutionDir)\garmin-serial&quot;;&quot;C:\Program Files\Ocean Optics\OmniDriverSPAM\include&quot;;&quot;C:\Program Files\Java\jdk1.7.0_02\include&quot;;&quot;C:\Program Files\Java\jdk1.7.0_02\include\win32&quot;;&quot;$(SolutionDir)\..\..\includes\EnumSerialPort&quot;;&quot;$(SolutionDir)\gps_generic&quot;"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"

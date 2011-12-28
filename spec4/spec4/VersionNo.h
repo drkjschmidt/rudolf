@@ -1,5 +1,5 @@
-#define FILEVER        1,1,0,2
-#define PRODUCTVER     1,1,0,2
-#define STRFILEVER     "1, 1, 0, 2\0"
-#define STRPRODUCTVER  "1, 1, 0, 2\0"
-#define STRVERINFO     "LightPilot, Version 1.1.0 Build 2"
+#define FILEVER        1,1,0,8
+#define PRODUCTVER     1,1,0,8
+#define STRFILEVER     "1, 1, 0, 8\0"
+#define STRPRODUCTVER  "1, 1, 0, 8\0"
+#define STRVERINFO     "LightPilot, Version 1.1.0 Build 8"

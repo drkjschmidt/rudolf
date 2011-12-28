@@ -6,9 +6,12 @@
 #include "ugly_text_macros.h"
 
 // we need these to do curve fitting using lapack
+#define SUPPRESSLAPACK
 #include <math.h>
+#if ! defined SUPPRESSLAPACK
 #include <gmd.h>
 #include <laslv.h>
+#endif
 
 CCalibrationCurve::CCalibrationCurve(void)
 : type(CCalibrationCurve::curveType::Linear)
@@ -977,6 +980,9 @@ void CCalibrationCurve::SetupCalCurveList(CListCtrl *listCtrl,bool init)
 
 void CCalibrationCurve::CalcBestFit(bool update_spectra)
 {
+#if defined SUPPRESSLAPACK
+	return;
+#else
 	if (calCount < (int)type)
 		return;
 
@@ -1164,5 +1170,5 @@ void CCalibrationCurve::CalcBestFit(bool update_spectra)
 	// tval.Format("%g %g %g %g",calParms[0],calParms[1],calParms[2],calParms[3]);
 	// theApp.ChangeStatusText(tval.GetString());
 
-
+#endif
 }
