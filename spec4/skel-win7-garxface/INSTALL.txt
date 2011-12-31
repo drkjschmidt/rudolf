@@ -1,0 +1,63 @@
+INSTALLATION INSTRUCTIONS
+
+THIS VERSION NO LONGER ACCEPTS NMEA INPUT. INSTEAD IT DETECTS GARMIN GPS 
+DEVICES DIRECTLY. DO NOT USE GARMIN SPANNER.
+
+1. OBTAINING / UNPACKING THE DISTRIBUTION
+
+This distribution should be available for download from http://www.wilsonanalytical.com/
+
+The distribution comes in two versions:
+
+  2010-04-05-LightPilotQB-Build-891-full.zip - LightPilot and all support software
+  2010-04-05-LightPilotQB-Build-891.zip      - LightPilot installers only (for updates)
+
+To install, extract the zip file onto a USB stick, CD, or simply a directory, ensuring that you
+retain the following directory structure:
+
+  DumbInstaller.exe
+  AUTORUN.INF
+  installers/LPInstall.msi
+
+  installers/jre-6u16-windows-i586-s.exe
+  installers/lapackpp-2.5.1-setup.exe
+  installers/OmniDriverSPAM_1.0_Win32_full_release.exe
+  installers/SpannerSetup.exe
+
+If you have these files on a USB stick or a CD, inserting the stick / CD should autoplay the
+installer. If you want to install from a directory, execute the DumbInstaller.exe manually.
+
+2. INSTALLATION CAVEATS
+
+The proper functioning of this software depends on all the parts listed above being installed,
+on Garmin Spanner being operational and generating NMEA data, and on the spectrometer driver
+having recognized the spectrometer (unplugging and replugging spectrometer should solve this
+problem).
+
+The installer attempts to guide the user through the full install process and suggests a reboot.
+Please note that depending on your specific hardware, multiple reboots may be required. Please
+also note that the installer attempts to create a shortcut in the Startup folder to ensure that
+Spanner will be restarted on reboot, but this will only work if Spanner is installed in the
+default location (C:\Garmin\Spanner.exe). If you customized the install, please fix the shortcut.
+
+3. FIRST RUN
+
+The installer creates three default directories for your data in your My Documents folder:
+
+  calfile - this is where calibration curves (.cal) should be located
+  spectra - this is where data files (.spm) should be located
+  userloc - this is where location data (.loc) should be kept
+
+The software will remember your default data directories but we suggest to keep all your data in
+the pre-defined directories under My Documents as this makes it least likely that your data 
+will be lost.
+
+LightPilot will remember your last selection but you will have to guide it the first time.
+Specifically we suggest that you should use the "Browse" option on the Customer Info Dialog (F1)
+and select the Mauna Loa file provided.
+
+4. FURTHER READING
+
+For further instructions on how to use this software we suggest you consult the manual available
+with your spectometer purchase from Wilson Analytical.
+

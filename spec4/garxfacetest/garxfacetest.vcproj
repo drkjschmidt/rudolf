@@ -347,7 +347,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;C:\Documents and Settings\Administrator\Desktop\BUILD\spec4\spec4\garmin-serial&quot;;&quot;C:\Documents and Settings\Administrator\Desktop\BUILD\includes\GXCR40205\include&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)\garmin-serial&quot;;&quot;$(SolutionDir)\..\..\..\includes\GXCR40205\include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -369,7 +369,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="GarXface4Dll.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="&quot;C:\Documents and Settings\Administrator\Desktop\BUILD\includes\GXCR40205\lib&quot;;&quot;C:\Documents and Settings\Administrator\Desktop\BUILD\includes\GXCR40205\bin&quot;"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)\..\..\..\includes\GXCR40205\lib&quot;;&quot;$(SolutionDir)\..\..\..\includes\GXCR40205\bin&quot;"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				TargetMachine="1"

@@ -6,7 +6,7 @@
 #include "ugly_text_macros.h"
 
 // we need these to do curve fitting using lapack
-#define SUPPRESSLAPACK
+// #define SUPPRESSLAPACK
 #include <math.h>
 #if ! defined SUPPRESSLAPACK
 #include <gmd.h>
