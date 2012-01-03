@@ -27,45 +27,12 @@ Public Class Form1
     '
     Private Sub InstallJava_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles InstallJava.LinkClicked
         ToolStripStatusLabel1.Text = "Install Java"
-        myRunInstaller("jre-6u16-windows-i586-s.exe")
+        myRunInstaller("jre-7u2-windows-i586.exe")
     End Sub
     Private Sub InstallJava_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InstallJava.MouseEnter
         ToolStripStatusLabel1.Text = "Install Packaged Java Version"
     End Sub
     Private Sub InstallJava_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InstallJava.MouseLeave
-        ToolStripStatusLabel1.Text = ""
-    End Sub
-    '
-    ' SPANNER
-    '
-    Private Sub InstallSpanner_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles InstallSpanner.LinkClicked
-        ToolStripStatusLabel1.Text = "Install Garmin Spanner GPS driver"
-        myRunInstaller("SpannerSetup.exe")
-
-        ' Since I can't seem to make this work in LP installer, try to add a shortcut here ...
-        ' ... based on http://www.vbforums.com/showthread.php?t=234891
-        ' and http://www.knowdotnet.com/articles/specialfolders.html
-        ' Don't worry about the fact that VB doesn't know about the Imports / object ...
-        ' it still seems to work ... 
-        Dim wsh As Object
-        Dim msc As Object
-        Dim msp As String
-        msp = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Startup) & "\Spanner.lnk"
-        If Not System.IO.File.Exists(msp) Then
-            wsh = CreateObject("WScript.Shell")
-            msc = wsh.CreateShortcut(msp)
-            msc.TargetPath = "C:\Garmin\Spanner.exe"
-            msc.WorkingDirectory = "C:\Garmin\"
-            ' msc.IconLocation = msp & ",0"
-            msc.Save()
-        Else
-            ' MsgBox("Link " + msp + " exists!")
-        End If
-    End Sub
-    Private Sub InstallSpanner_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InstallSpanner.MouseEnter
-        ToolStripStatusLabel1.Text = "Install Garmin Spanner GPS driver"
-    End Sub
-    Private Sub InstallSpanner_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InstallSpanner.MouseLeave
         ToolStripStatusLabel1.Text = ""
     End Sub
     '
@@ -86,13 +53,13 @@ Public Class Form1
     '
     Private Sub InstallOO_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles InstallOO.LinkClicked
         ToolStripStatusLabel1.Text = "Install Ocean Optics Spectrometer Driver"
-        Clipboard.Clear()
-        Clipboard.SetText("Etm4QBn7gd")
-        MsgBox("This installer requires a password." + vbCrLf + _
-               "The password is: Etm4QBn7gd" + vbCrLf + _
-               "For your convenience the password is already in the clipboard!")
+        'Clipboard.Clear()
+        'Clipboard.SetText("Etm4QBn7gd")
+        'MsgBox("This installer requires a password." + vbCrLf + _
+        '       "The password is: Etm4QBn7gd" + vbCrLf + _
+        '       "For your convenience the password is already in the clipboard!")
 
-        myRunInstaller("OmniDriverSPAM_1.0_Win32_full_release.exe")
+        myRunInstaller("OmniDriverSPAM-2.01-win32-net2.0-redistributable-installer.exe")
     End Sub
     Private Sub InstallOO_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InstallOO.MouseEnter
         ToolStripStatusLabel1.Text = "Install Ocean Optics Spectrometer Driver"

@@ -15,6 +15,7 @@
 #include "RPGarmCom.h"
 #include "Cspec4Cfg.h"
 #include "VersionNo.h"
+#include "CheckPwd.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -318,6 +319,12 @@ void Cspec4App::OnToolsChange()
 {
 	// TODO: Add your command handler code here
 	theApp.ChangeStatusText(_T("Open Preferences Dialog"));
+
+	// We are now allowing this from everywhere so we need to check password ...
+	CCheckPwd *pwdDialog = new CCheckPwd();
+	if (!((pwdDialog->DoModal() == IDOK) && 
+		 (pwdDialog->getPass().Compare(theApp.pConfig->getPasswd()) == 0)))
+		return;
 
 	CSetupDialog *SetupDialog = new CSetupDialog();
 	SetupDialog->DoModal();

@@ -27,6 +27,8 @@
 #define IDD_DIALOG_PWD                  143
 #define IDD_DBAR_LEFT_REV               147
 #define IDD_CURSOR                      149
+#define IDB_BITMAP1                     152
+#define IDB_BITSPLASH2                  152
 #define IDC_SELECT_GPS                  1001
 #define IDC_TEST_GPS                    1002
 #define IDC_GPS_NAME                    1003
@@ -196,7 +198,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        150
+#define _APS_NEXT_RESOURCE_VALUE        153
 #define _APS_NEXT_COMMAND_VALUE         32847
 #define _APS_NEXT_CONTROL_VALUE         1082
 #define _APS_NEXT_SYMED_VALUE           101

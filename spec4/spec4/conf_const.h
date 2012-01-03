@@ -4,7 +4,7 @@
 
 // Preinit for BUGFIXINFO just in case
 #ifndef BUGFIXINFO
-#define BUGFIXINFO ", NORMAL"
+#define BUGFIXINFO ""
 #endif
 
 // Run mode

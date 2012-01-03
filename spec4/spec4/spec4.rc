@@ -80,7 +80,8 @@ IDR_spec4TYPE           ICON                    "res\\spec4Doc.ico"
 //
 
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
-IDB_BITSPLASH           BITMAP                  "res\\w-splash-3.bmp"
+IDB_BITSPLASH           BITMAP                  "C:\\Users\\frumpel\\Desktop\\BUILD\\spec4\\trunk\\spec4\\spec4\\res\\w-splash-4.bmp"
+IDB_BITSPLASH2          BITMAP                  "res\\w-splash-4.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -205,7 +206,7 @@ BEGIN
             MENUITEM "Location on map",             ID_GRAPHTYPE_LOCATIONONMAP
         END
     END
-    POPUP "&Tools", GRAYED
+    POPUP "&Tools"
     BEGIN
         MENUITEM "&Load Setup",                 ID_TOOLS_LOAD
         MENUITEM "&Change Setup",               ID_TOOLS_CHANGE
@@ -265,7 +266,7 @@ BEGIN
             MENUITEM "Location on map",             ID_GRAPHTYPE_LOCATIONONMAP
         END
     END
-    POPUP "&Tools", GRAYED
+    POPUP "&Tools"
     BEGIN
         MENUITEM "&Load Setup",                 ID_TOOLS_LOAD
         MENUITEM "&Change Setup",               ID_TOOLS_CHANGE
@@ -634,7 +635,7 @@ IDD_SPLASH DIALOGEX 0, 0, 288, 180
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    CONTROL         130,IDC_SPLASHIMG,"Static",SS_BITMAP,0,0,223,130
+    CONTROL         152,IDC_SPLASHIMG,"Static",SS_BITMAP,0,0,260,160
     CONTROL         "",IDC_PROGRESS3,"msctls_progress32",WS_BORDER,132,96,80,14
 END
 

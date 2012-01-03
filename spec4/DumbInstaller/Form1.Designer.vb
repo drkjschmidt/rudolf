@@ -22,12 +22,11 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.InstallJava = New System.Windows.Forms.LinkLabel
-        Me.Label1 = New System.Windows.Forms.Label
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.InstallSpanner = New System.Windows.Forms.LinkLabel
         Me.InstallLapack = New System.Windows.Forms.LinkLabel
         Me.InstallOO = New System.Windows.Forms.LinkLabel
         Me.InstallLP = New System.Windows.Forms.LinkLabel
@@ -39,7 +38,7 @@ Partial Class Form1
         '
         Me.InstallJava.AutoSize = True
         Me.InstallJava.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.InstallJava.Location = New System.Drawing.Point(161, 145)
+        Me.InstallJava.Location = New System.Drawing.Point(178, 162)
         Me.InstallJava.Name = "InstallJava"
         Me.InstallJava.Size = New System.Drawing.Size(72, 13)
         Me.InstallJava.TabIndex = 0
@@ -47,21 +46,12 @@ Partial Class Form1
         Me.InstallJava.Text = "1. Install Java"
         Me.InstallJava.VisitedLinkColor = System.Drawing.Color.Blue
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(303, 196)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Etm4QBn7gd" & Global.Microsoft.VisualBasic.ChrW(9)
-        '
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 264)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 260)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(392, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(384, 22)
         Me.StatusStrip1.SizingGrip = False
         Me.StatusStrip1.Stretch = False
         Me.StatusStrip1.TabIndex = 2
@@ -70,28 +60,17 @@ Partial Class Form1
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(111, 17)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(121, 17)
         Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.DumbInstaller.My.Resources.Resources.w_splash_3
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, -1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(390, 262)
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
-        '
-        'InstallSpanner
-        '
-        Me.InstallSpanner.AutoSize = True
-        Me.InstallSpanner.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.InstallSpanner.Location = New System.Drawing.Point(173, 162)
-        Me.InstallSpanner.Name = "InstallSpanner"
-        Me.InstallSpanner.Size = New System.Drawing.Size(89, 13)
-        Me.InstallSpanner.TabIndex = 4
-        Me.InstallSpanner.TabStop = True
-        Me.InstallSpanner.Text = "2. Install Spanner"
         '
         'InstallLapack
         '
@@ -102,7 +81,7 @@ Partial Class Form1
         Me.InstallLapack.Size = New System.Drawing.Size(85, 13)
         Me.InstallLapack.TabIndex = 5
         Me.InstallLapack.TabStop = True
-        Me.InstallLapack.Text = "3. Install Lapack"
+        Me.InstallLapack.Text = "2. Install Lapack"
         '
         'InstallOO
         '
@@ -113,7 +92,7 @@ Partial Class Form1
         Me.InstallOO.Size = New System.Drawing.Size(96, 13)
         Me.InstallOO.TabIndex = 6
         Me.InstallOO.TabStop = True
-        Me.InstallOO.Text = "4. Install OO Driver"
+        Me.InstallOO.Text = "3. Install OO Driver"
         '
         'InstallLP
         '
@@ -124,19 +103,17 @@ Partial Class Form1
         Me.InstallLP.Size = New System.Drawing.Size(92, 13)
         Me.InstallLP.TabIndex = 7
         Me.InstallLP.TabStop = True
-        Me.InstallLP.Text = "5. Install LightPilot"
+        Me.InstallLP.Text = "4. Install LightPilot"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(392, 286)
+        Me.ClientSize = New System.Drawing.Size(384, 282)
         Me.Controls.Add(Me.InstallLP)
         Me.Controls.Add(Me.InstallOO)
         Me.Controls.Add(Me.InstallLapack)
-        Me.Controls.Add(Me.InstallSpanner)
         Me.Controls.Add(Me.StatusStrip1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.InstallJava)
         Me.Controls.Add(Me.PictureBox1)
         Me.MaximizeBox = False
@@ -154,11 +131,9 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents InstallJava As System.Windows.Forms.LinkLabel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents InstallSpanner As System.Windows.Forms.LinkLabel
     Friend WithEvents InstallLapack As System.Windows.Forms.LinkLabel
     Friend WithEvents InstallOO As System.Windows.Forms.LinkLabel
     Friend WithEvents InstallLP As System.Windows.Forms.LinkLabel
