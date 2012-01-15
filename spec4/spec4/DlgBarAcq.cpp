@@ -470,7 +470,9 @@ CString CDlgBarAcq::UpdatePPM()
 	double wv=CalDataAcq.GetCalWavelength();
 	double in2;
 	double wv2=CalDataAcq.GetCalWavelength();
-	double ppm,dil;
+	double dil; // dilution factor ([0,1]=no dilution)
+	double ppm_msd; // ppm we would get based on intensity and calibration curve
+	double ppm_calc; // ppm this corresponds to after applying dilution factor
 	CString tval;
 
 	LastSpec.getXY(&wv,&in);
@@ -479,20 +481,22 @@ CString CDlgBarAcq::UpdatePPM()
 
 	// Get the dilution information from the spectrum data
 	dil=LastSpec.getDilution();
+	dil=(dil==0?1:dil);
 
 	// Calculate the concentratio based on calibration curve
 	// and multiply by dilution factor.
-	ppm=CalDataAcq.bestFitXY(in,in2) * dil;
+	ppm_msd  = CalDataAcq.bestFitXY(in,in2);
+	ppm_calc = ppm_msd *dil;
 
 	// Create ppm string ... 
 	// @@@ we still need to add some sort of mechanism for warnings ... 
-	tval=FormatPPM(ppm,dil);
+	tval=FormatPPM(ppm_calc,dil);
 
 	// @@@ Ugly wrapping ... I wonder if this should point directly to the DialogBar method ...
-	((CMainFrame *)(theApp.m_pMainWnd))->m_DlgTop.SetPPM(tval,ppm);
+	((CMainFrame *)(theApp.m_pMainWnd))->m_DlgTop.SetPPM(tval,ppm_msd);
 
 	// @@@ Is this the right place?
-	LastSpec.storeConc(ppm);
+	LastSpec.storeConc(ppm_calc);
 
 	return tval;
 }

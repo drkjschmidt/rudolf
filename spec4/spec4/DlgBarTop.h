@@ -55,14 +55,18 @@ public:
 	//! It would seem simpler to just pass the ppm value and do 
 	//! the string formatting here, but then we would be duplicating
 	//! functionality from CDlgBarAcq and that's a recipe for trouble
-	inline void SetPPM(CString ppmstr,double ppmundil) {
+	//
+	//! 2011-12 Ken pointed out that the coloring for being outside the sensitivity 
+	//! range should be done on the measured value, not on the pre-dilution
+	//! value!
+	inline void SetPPM(CString ppmstr,double ppm_msd) {
 		CString tval;
 		COLORREF setcol;
 
 		setcol=PPMColGood;
-		if ((warn_low!=warn_high) && ((ppmundil<warn_low) || (ppmundil>warn_high)))
+		if ((warn_low!=warn_high) && ((ppm_msd<warn_low) || (ppm_msd>warn_high)))
 			setcol=PPMColWarn;
-		if ((err_low!=err_high) && ((ppmundil<err_low) || (ppmundil>err_high)))
+		if ((err_low!=err_high) && ((ppm_msd<err_low) || (ppm_msd>err_high)))
 			setcol=PPMColErr;
 		if (setcol != curcol) {
 			curcol=setcol;
