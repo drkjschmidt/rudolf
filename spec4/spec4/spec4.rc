@@ -80,7 +80,7 @@ IDR_spec4TYPE           ICON                    "res\\spec4Doc.ico"
 //
 
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
-IDB_BITSPLASH           BITMAP                  "C:\\Users\\frumpel\\Desktop\\BUILD\\spec4\\trunk\\spec4\\spec4\\res\\w-splash-4.bmp"
+IDB_BITSPLASH           BITMAP                  "res\\w-splash-4.bmp"
 IDB_BITSPLASH2          BITMAP                  "res\\w-splash-4.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
