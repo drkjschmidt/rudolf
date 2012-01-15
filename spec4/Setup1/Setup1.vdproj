@@ -99,6 +99,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B805E36FAA42AA875032EBCEDD220D4E"
+        "OwnerKey" = "8:_B84D0E51C17249D08E494A9F3D338BDE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B84D0E51C17249D08E494A9F3D338BDE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -757,6 +763,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B805E36FAA42AA875032EBCEDD220D4E"
+            {
+            "SourcePath" = "8:GarXface4.dll"
+            "TargetName" = "8:GarXface4.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_73DC444A9F4346D284927846F189621F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CC7E61C746AC434AAC869A3D7ABD585D"
             {
             "SourcePath" = "8:..\\spec4-plogo.bmp"
@@ -995,7 +1021,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:LightPilot QB"
         "ProductCode" = "8:{9DFD3FF9-EC88-4EAE-AAE7-2B1E481D457F}"
-        "PackageCode" = "8:{EFDD8310-9331-44B8-8B3C-83D02E25736C}"
+        "PackageCode" = "8:{7734B049-0190-4772-BB3A-5C2AB2343953}"
         "UpgradeCode" = "8:{3831C983-587D-49F1-A974-DF165AC0F484}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
