@@ -15,7 +15,7 @@
 
 CCalibrationCurve::CCalibrationCurve(void)
 : type(CCalibrationCurve::curveType::Linear)
-, calWavelength(700)
+, calWavelength(490)
 , calCount(0)
 , calRSquare(0)
 , calIntegrationTime(250)
